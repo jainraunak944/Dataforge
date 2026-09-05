@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Memory Under Pressure — supporting explainer</title>
+<style>
+  @page { size: A4; margin: 18mm 19mm; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-size: 10.6pt; line-height: 1.5; color: #14141c;
+  }
+  h1 { font-family: Helvetica, Arial, sans-serif; font-size: 19pt; margin: 0 0 1mm; letter-spacing: -0.01em; }
+  h2 { font-family: Helvetica, Arial, sans-serif; font-size: 13pt; margin: 6mm 0 1.6mm; }
+  .meta { font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt; color: #555; margin-bottom: 4mm; }
+  p { margin: 0 0 2.6mm; }
+  .claim { border-left: 2.5pt solid #14141c; padding: 1.5mm 0 1.5mm 4mm; margin: 3mm 0; font-style: italic; }
+  code { font-family: Menlo, Consolas, monospace; font-size: 9.4pt; }
+  figure { margin: 3mm 0 4mm; break-inside: avoid; }
+  figure img { width: 100%; border: 0.6pt solid #c9c5b8; border-radius: 2mm; }
+  figcaption { font-family: Helvetica, Arial, sans-serif; font-size: 8.4pt; color: #555; margin-top: 1.2mm; }
+  .note { background: #f5f3ec; border: 0.6pt solid #c9c5b8; border-radius: 1.5mm; padding: 2.2mm 3mm; font-size: 9.6pt; margin: 3mm 0; }
+  .refs { font-size: 9pt; line-height: 1.4; }
+  .refs li { margin-bottom: 1.2mm; }
+  a { color: #2749c9; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<h1>Memory Under Pressure</h1>
+<p class="meta">Supporting explainer for the DataForge 2026 Pathway-track submission on Associative Memory and Fast Weights.
+All screenshots below are of the live artifact; every number in them was computed in the browser at capture time.
+Interactive artifact and source: <a href="https://github.com/jainraunak944/dataforge">github.com/jainraunak944/dataforge</a>, branch <code>claude/memory-under-pressure-p6vp89</code>.</p>
+
+<p class="claim">The claim the artifact teaches: for the additive memory in this explainer, storing two associations with orthogonal
+unit keys permits exact recall; increasing their key overlap introduces calculable interference while the recurrent matrix keeps
+the same shape and no trained parameters change.</p>
+
+<h2>Why a four-number memory is worth an essay</h2>
+<p>A Transformer remembers by keeping every token: its key–value cache grows with context, and attention re-scans it at each
+step. An old alternative is back at the frontier: store relationships in <em>rapidly changing connections</em> — fast weights —
+and keep the state a fixed size. The minimal version, with column vectors, is a single matrix updated by an outer product per
+association and read by one matrix–vector product:</p>
+<p style="text-align:center"><code>M<sub>t</sub> = λ·M<sub>t−1</sub> + v<sub>t</sub> k<sub>t</sub><sup>T</sup></code>&nbsp;&nbsp;&nbsp;&nbsp;<code>retrieved(q) = M<sub>t</sub> q</code></p>
+<p>This is precisely the memory a linear-attention layer maintains — Schlag, Irie and Schmidhuber proved the equivalence in 2021
+[3]. What makes it teachable is that at size 2×2 <em>nothing is hidden</em>: the learner can watch every scalar as memory
+succeeds, degrades, and fails.</p>
+
+<figure>
+  <img src="img/store.png" alt="Step 1 of the artifact: two cue/value pairs, the outer-product write, and the resulting 2×2 matrix with stepping controls" />
+  <figcaption>Step 1 — two associations written into four shared numbers. The stepping animation replays real computed matrix states (Play/Pause/Step, reduced-motion aware).</figcaption>
+</figure>
+
+<h2>One slider, one lesson</h2>
+<p>Everything interesting is controlled by the key overlap ρ = k<sub>A</sub>·k<sub>B</sub>. The artifact opens already running
+at ρ = 0.6; the learner drags one slider and watches truth sit beside estimate. Reading with cue A returns
+<code>[1, ρ]</code> against a desired <code>[1, 0]</code> — the other association leaks in, scaled by exactly ρ, and the
+displayed L2 error equals ρ. At ρ = 0 recall is exact. At ρ = 1 both cues are identical, both reads return
+<code>[1, 1]</code>, and the artifact reports a <em>tie</em>: the cue carries no information that could distinguish the two
+memories, and declaring a winner would be fabrication.</p>
+
+<figure>
+  <img src="img/collide.png" alt="Step 2: the overlap slider with desired, retrieved and reference vectors side by side and L2 errors" />
+  <figcaption>Step 2 — truth beside estimate. The third column is an independently coded explicit-history reference (Σ λ<sup>t−i</sup> v<sub>i</sub>(k<sub>i</sub>·q)); the recurrent and reference paths must agree within a stated 10⁻⁹ tolerance, so the app cannot confirm itself circularly.</figcaption>
+</figure>
+
+<p>The interference is not mysterious, and the artifact makes the learner point at its source: expanding the read gives
+<code>M k_A = v_A(k_A·k_A) + v_B(k_B·k_A)</code>. The second term — value B times the key overlap — lives in identifiable
+matrix cells, and clicking any cell decomposes it into what each write contributed.</p>
+
+<figure>
+  <img src="img/crossterm.png" alt="Step 3: clickable matrix cells decomposed into per-write contributions with the leaking cell highlighted" />
+  <figcaption>Step 3 — the cross term, locatable. With cue [1,0], only column 1 is read; the highlighted cell (written by B, value ρ) is the entire interference.</figcaption>
+</figure>
+
+<div class="note"><strong>Honesty rules baked into the build.</strong> The memory engine never receives item identities or
+ground truth — only vectors; the evaluator holds the truth and computes errors. Raw readouts are labeled scores, never
+probabilities. All caps (history ≤ 64 pairs, λ ∈ [0,1], |components| ≤ 4) are stated in the interface. 31 unit tests check
+hand-calculated fixtures; 21 browser checks include driving the slider and verifying the rendered numbers match the closed
+form — a machine check that no displayed value is painted.</div>
+
+<h2>Where this lives in BDH — and in BDH-CQ</h2>
+<p>The Dragon Hatchling (BDH) reformulates attention as synaptic memory [4]. Its GPU formulation carries a per-layer fast
+state ρ updated, per token, by an outer product of a learned value with the current sparse activation, then decayed
+(Eq. 8 of the paper): <code>ρ<sub>t,ℓ</sub> := (ρ<sub>t−1,ℓ</sub> + LN(E y<sub>t,ℓ−1</sub>) x<sub>t,ℓ</sub><sup>T</sup>) U</code>,
+read as <code>ρx</code> inside ReLU-gated machinery. The mapping to the toy is one-to-one — write, read, decay, state — with the
+differences stated: the value is learned (LN(Ey)), the key and query are the <em>same</em> non-negative activation x, and
+everything runs at n up to ~10⁶ dimensions with ~5% sparsity (author-reported). The artifact's variable-role table answers, for
+every symbol, the question the toy trains: <em>does it change during inference?</em> The state does; the trained matrices
+E, D<sub>x</sub>, D<sub>y</sub> do not. BDH is not a Mamba-style state-space model, and the artifact never presents the toy as an
+official BDH implementation.</p>
+
+<figure>
+  <img src="img/bdh.png" alt="Step 5: the BDH module with equation walkthrough and variable-role table" />
+  <figcaption>Step 5 — the BDH module: sourced equations (with equation numbers), a variable-role table with dimensions, the machinery the toy omits, and a self-check question. Below it, the BDH-CQ section separates state updates from parameter updates at the system level.</figcaption>
+</figure>
+
+<p>BDH-CQ [5] lifts the same distinction to task acquisition: reading demonstrations accumulates a contextual memory
+<code>S<sub>t</sub> = U<sub>θ</sub>(S<sub>t−1</sub>, D<sub>t</sub>)</code> — the report explicitly names additive per-demonstration
+accumulation as its linear-attention special case — and answering iterates a latent workspace against that frozen memory,
+with “no parameters … updated at inference time” (§1). On ARC-AGI-1 it reports 118/400 (29.50%) pass@2 at roughly 0.85
+H200 GPU-seconds per task, with accuracy scaling across latent-effort levels (21% → 27% → 29.5%). Those numbers are
+author-reported; the audit that reproduced them was run by co-authors (semi-independent), the update-rule internals are
+proprietary, and the report itself flags a training-data overlap caveat — all of which the artifact states next to the numbers.</p>
+
+<h2>Breaking it on purpose</h2>
+<p>The sandbox hands over decay λ and repeated writes, with presets for the claim's edge cases — orthogonal, partial overlap,
+identical cues, repeated writes, decay. Repeating writes scales magnitudes while the matrix stays 2×2; decay fades old writes
+geometrically (at λ = 0 only the newest survives, weight λ⁰ = 1 by stated convention). Neither removes interference — which is
+why DeltaNet replaces the blind add with an error-correcting write (its motivation quotes key “collisions” directly [1]) and
+Gated DeltaNet adds learned erasure [2]. At scale the stakes are stark: with unlimited context on WikiText-103, the purely
+additive model degrades beyond perplexity 260 while the delta-rule variant of the same size reaches 29.4 [3, Table 4].</p>
+
+<figure>
+  <img src="img/sandbox.png" alt="Step 6 sandbox: presets, decay and repeat controls, tie reporting and the honest memory accounting table" />
+  <figcaption>Step 6 — sandbox with honest accounting: 4 scalars of model state versus N·(d<sub>k</sub>+d<sub>v</sub>) for retained pairs, under a stated dtype — analytical counts, not GPU measurements.</figcaption>
+</figure>
+
+<h2>Try it, test it, refute it</h2>
+<p>The artifact ends by asking the learner to predict a held-out setting before the app computes it, then to say which state
+changed and what remains a limitation — deterministic feedback, no grader model. Everything is reproducible from the
+repository: <code>npm ci &amp;&amp; npm test &amp;&amp; npm run build &amp;&amp; npm run smoke</code>. The claim-to-source ledger
+(<code>docs/RESEARCH.md</code>) gives an equation-level locator and an evidence label for every scientific statement above —
+including which results are author-reported and which have no independent reproduction yet.</p>
+
+<h2>References</h2>
+<ol class="refs">
+  <li>[1] S. Yang, B. Wang, Y. Zhang, Y. Shen, Y. Kim. <em>Parallelizing Linear Transformers with the Delta Rule over Sequence Length.</em> NeurIPS 2024. arXiv:2406.06484.</li>
+  <li>[2] S. Yang, J. Kautz, A. Hatamizadeh. <em>Gated Delta Networks: Improving Mamba2 with Delta Rule.</em> ICLR 2025. arXiv:2412.06464.</li>
+  <li>[3] I. Schlag, K. Irie, J. Schmidhuber. <em>Linear Transformers Are Secretly Fast Weight Programmers.</em> ICML 2021. arXiv:2102.11174 (background; predates the 2022–2026 window).</li>
+  <li>[4] A. Kosowski, P. Uznański, J. Chorowski, Z. Stamirowska, M. Bartoszkiewicz. <em>The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain.</em> 2025. arXiv:2509.26507.</li>
+  <li>[5] B. Engdahl, A. Kosowski, J. Chorowski, et al. <em>BDH-CQ: In-Context Learning with Recurrent Latent Reasoning.</em> 2026. arXiv:2608.09888.</li>
+  <li>Official (toy) BDH implementation, MIT: github.com/pathwaycom/bdh. Pathway explainers: “The Equations of Reasoning”; “Why BDH uses a brain-inspired architecture”.</li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Concept summary — Associative Memory and Fast Weights</title>
+<style>
+  @page { size: A4; margin: 10.5mm 14mm; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-size: 9.7pt; line-height: 1.36; color: #14141c;
+  }
+  h1 { font-family: Helvetica, Arial, sans-serif; font-size: 13.5pt; margin: 0 0 1mm; letter-spacing: -0.01em; }
+  .meta { font-family: Helvetica, Arial, sans-serif; font-size: 7.8pt; color: #555; margin: 0 0 2.2mm; }
+  p { margin: 0 0 2mm; text-align: justify; }
+  b.k { font-family: Helvetica, Arial, sans-serif; font-size: 8pt; letter-spacing: 0.02em; }
+  .claim { border-left: 2.2pt solid #14141c; padding: 0.8mm 0 0.8mm 3mm; margin: 0 0 2mm; font-style: italic; }
+  code { font-family: Menlo, Consolas, monospace; font-size: 8.6pt; }
+  table { border-collapse: collapse; width: 100%; font-family: Helvetica, Arial, sans-serif; font-size: 7.4pt; margin: 1.2mm 0 2mm; }
+  th, td { border: 0.5pt solid #999; padding: 0.8mm 1.3mm; text-align: left; vertical-align: top; }
+  th { background: #f0efe9; }
+  .refs { font-size: 7.5pt; line-height: 1.3; color: #333; margin-top: 1.4mm; border-top: 0.5pt solid #999; padding-top: 1.2mm; }
+  .refs p { margin: 0; text-align: left; }
+</style>
+</head>
+<body>
+
+<h1>Associative Memory and Fast Weights: what a 2×2 matrix teaches about frontier memory architectures</h1>
+<p class="meta">Concept summary — “Memory Under Pressure”, DataForge 2026 Pathway track. Artifact &amp; sources: github.com/jainraunak944/dataforge (branch claude/memory-under-pressure-p6vp89).</p>
+
+<p><b class="k">DEFINITION &amp; DESIGN PRESSURE.</b> A fast-weight associative memory stores relationships in rapidly changing connection strengths and retrieves them when a similar cue returns. A Transformer instead appends every token to a key–value cache that grows with context and is re-scanned each step; the pressure is to replace that growing cache with a fixed-size state updated incrementally. The minimal mechanism, with column vectors <code>k∈R^dk</code>, <code>v∈R^dv</code>, state <code>M∈R^(dv×dk)</code>, is the additive write <code>M_t = λM_(t−1) + v_t k_tᵀ</code> with linear read <code>M q</code> — exactly the memory a linear-attention layer maintains [3, Eq.&nbsp;17].</p>
+
+<p class="claim">Our falsifiable claim: storing two associations with orthogonal unit keys in this memory permits exact recall; increasing key overlap ρ introduces calculable interference — retrieved(k_A)&nbsp;=&nbsp;v_A&nbsp;+&nbsp;ρ·v_B, L2 error exactly ρ — while the matrix keeps constant shape and no trained parameters change.</p>
+
+<p><b class="k">MECHANISM &amp; FAILURE MODE.</b> Writes superimpose rank-1 stamps; there are no slots. Reading returns every stored value weighted by cue–key similarity, so overlapping keys contaminate recall; at ρ=1 two associations become cue-indistinguishable (our artifact reports the tie rather than fabricating a winner). Capacity is bounded by key dimension: exceeding it forces overlap and guarantees retrieval error [3, §4.1]. At scale this bites: with unlimited context on WikiText-103, a purely additive fast-weight model degrades beyond perplexity 260 while an interference-correcting variant of equal size reaches 29.4 [3, Table&nbsp;4].</p>
+
+<p><b class="k">THE 2024–26 RESPONSES.</b> DeltaNet replaces the blind add with an error-correcting write — one gradient step on recall error — precisely because additive writes lead to key “collisions” [1, §2.2]; Gated DeltaNet adds learned decay for fast erasure [2, §3.1]. Both are competitive 1.3B-parameter LMs with open code.</p>
+
+<table>
+<tr><th>System</th><th>Update per token/demo</th><th>State</th><th>Key evidence (all author-reported)</th><th>Trades away</th></tr>
+<tr><td>Additive fast weights</td><td><code>S += v kᵀ</code></td><td>constant</td><td>formal capacity bound [3, §4.1]</td><td>recall purity under overlap</td></tr>
+<tr><td>DeltaNet [1]</td><td><code>S −= β(Sk−v)kᵀ</code>, insert</td><td>constant</td><td>1.3B: avg zero-shot 51.6 vs Mamba 50.0 [T.1]</td><td>no decay → length generalization</td></tr>
+<tr><td>Gated DeltaNet [2]</td><td>delta + decay α</td><td>constant</td><td>S-NIAH-2@4K 92.2 vs DeltaNet 18.6 [T.2]</td><td>retention (91.8 vs 98.8 @8K)</td></tr>
+<tr><td>BDH-GPU [4]</td><td><code>ρ := (ρ + LN(Ey)xᵀ)U</code> (Eq.&nbsp;8)</td><td>constant</td><td>GPT-2-class LM at 10M–1B [Fig.&nbsp;7]</td><td>maturity; no external replication</td></tr>
+<tr><td>BDH-CQ [5]</td><td><code>S_t = U_θ(S_(t−1), D_t)</code> (Eq.&nbsp;1)</td><td>constant</td><td>ARC-AGI-1 29.50% pass@2, ≈$0.0007/task [T.1, §5]</td><td>accuracy vs top LLMs; internals proprietary</td></tr>
+</table>
+
+<p><b class="k">WHERE BDH AND BDH-CQ FIT.</b> BDH reformulates attention as synaptic memory: BDH-GPU carries per-layer fast state ρ, written as the outer product of a learned value LN(Ey) with the current sparse non-negative activation x (serving as key <i>and</i> query), read as ρx, decayed by an operator U generalizing our λ [4, §3.2, Eq.&nbsp;8]. Trained matrices E, D<sub>x</sub>, D<sub>y</sub> stay frozen at inference — the state/parameter split our toy isolates. BDH is not a Mamba-style SSM; the paper derives it from local neuron–synapse rules, with linear attention in a high-dimensional neuronal space as its tensor form [4, §3]. BDH-CQ lifts the same split to task acquisition: contextual memory accumulates per demonstration (additive accumulation is its stated linear-attention special case [5, §3.2]), then a latent workspace iterates against the frozen memory — reasoning without chain-of-thought tokens and, explicitly, “no parameters are updated at inference time” [5, §1]. The roles are unequal: BDH supplies the mechanism our toy maps onto; BDH-CQ the system-level evidence that state-based adaptation works.</p>
+
+<p><b class="k">EVIDENCE, LABELED.</b> All numbers above are developer-reported. BDH-CQ’s 118/400 (≈0.85 H200 GPU-s/task) was audited black-box — by co-authors, hence semi-independent; its report discloses proprietary internals and a training-overlap caveat [5, §3.3, §6.5]. Pathway’s AWS work and 1B–600B scaling are company announcements, not evaluations. No system in the table has an independent external reproduction we could verify — the field’s most important missing evidence. Our maturity assessment (0–10; 10 = standardized infrastructure; ours, not official): delta-rule linear attention ≈6; BDH/BDH-CQ ≈3.</p>
+
+<p><b class="k">THE SUBMISSION.</b> An interactive essay where the claim is testable in under a minute: one overlap slider drives a live 2×2 memory with ground truth beside retrieval, an independently coded explicit-history reference (tolerance 10⁻⁹) prevents self-confirming code, cells decompose to show where interference is born, and a sourced BDH/BDH-CQ equation walkthrough asks, symbol by symbol, what changes during inference. The open question the learner leaves with: how should useful fast state consolidate into slow weights — unsolved in every system above.</p>
+
+<div class="refs">
+<p>[1] Yang et al., Parallelizing Linear Transformers with the Delta Rule over Sequence Length, NeurIPS 2024, arXiv:2406.06484 · [2] Yang, Kautz, Hatamizadeh, Gated Delta Networks, ICLR 2025, arXiv:2412.06464 · [3] Schlag, Irie, Schmidhuber, Linear Transformers Are Secretly Fast Weight Programmers, ICML 2021, arXiv:2102.11174 (background; pre-2022) · [4] Kosowski et al., The Dragon Hatchling, 2025, arXiv:2509.26507 · [5] Engdahl et al., BDH-CQ: In-Context Learning with Recurrent Latent Reasoning, 2026, arXiv:2608.09888. Equation-level ledger: docs/RESEARCH.md in the repo. Continue: [4] §3, [5] §3, Pathway’s “Equations of Reasoning”.</p>
+</div>
+
+</body>
+</html>
