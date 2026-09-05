@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+artifacts/screenshots/*.tmp.png
+# Organizer brief and downloaded third-party papers stay private inputs
+private-inputs/

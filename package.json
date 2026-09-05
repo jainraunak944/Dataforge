@@ -1,0 +1,36 @@
+{
+  "name": "memory-under-pressure",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Memory Under Pressure: How a Matrix Remembers and Interferes — DataForge 2026 Pathway track explainer on associative memory and fast weights",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "node scripts/smoke.mjs",
+    "pdfs": "node scripts/make-pdfs.mjs"
+  },
+  "dependencies": {
+    "katex": "0.16.11",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/katex": "0.16.7",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "playwright-core": "1.49.1",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vitest": "2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

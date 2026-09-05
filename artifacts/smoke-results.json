@@ -1,0 +1,112 @@
+{
+  "startedAt": "2026-09-05T09:14:23.815Z",
+  "checks": [
+    {
+      "name": "title set",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "claim rendered",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "all 7 steps + references render",
+      "ok": true,
+      "detail": "Store two things | Make the cues collide | Where did the extra signal come from? | What changed? | The same mechanism in BDH and BDH-CQ | Try to break the claim | Explain it back | References"
+    },
+    {
+      "name": "first Tab lands on skip link",
+      "ok": true,
+      "detail": "skip-link"
+    },
+    {
+      "name": "ρ=0 retrieved A is [1.000, 0.000]",
+      "ok": true,
+      "detail": "[1,0]"
+    },
+    {
+      "name": "ρ=0.37 retrieved A is [1.000, 0.370] (live math, not painted)",
+      "ok": true,
+      "detail": "[1,0.37]"
+    },
+    {
+      "name": "slider→render feedback under 1s (measured 25ms on this machine; not a device-independent guarantee)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ρ=1 ambiguity notice shown, reported as tie",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ρ=1 outcome stated as a tie, not a winner",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L2 error shown",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scores never labeled probabilities",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "honest-label badges present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "toy-not-BDH disclaimer present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "quiz reveals computed answer and grades deterministically",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "identical-cues preset triggers tie reporting in sandbox",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "orthogonal preset returns L2 error 0.000",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "settings mirrored to URL hash",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "URL-shared ρ restores state",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion: Play control announces instant mode",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: no horizontal page overflow",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "zero console errors across all pages",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "consoleErrors": [],
+  "finishedAt": "2026-09-05T09:14:35.530Z"
+}

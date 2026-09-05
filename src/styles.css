@@ -1,0 +1,583 @@
+/* Memory Under Pressure — quiet, high-contrast, single light theme. */
+
+:root {
+  --bg: #faf9f5;
+  --panel: #ffffff;
+  --ink: #191922;
+  --ink-soft: #4c4c58;
+  --line: #dedbd2;
+  --line-strong: #b9b5a8;
+  --a-color: #2749c9; /* association A — also marked with ● */
+  --a-soft: #e8edfb;
+  --b-color: #b0511a; /* association B — also marked with ▲ */
+  --b-soft: #f9ece2;
+  --good: #1a6b3c;
+  --warn: #8a4a00;
+  --bad: #a3242e;
+  --highlight: #fff3c4;
+  --focus: #7a2ff0;
+  --mono: 'SFMono-Regular', ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace;
+  --sans: ui-sans-serif, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --serif: Charter, 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 20px 96px;
+}
+
+/* ---------- typography ---------- */
+
+h1 {
+  font-family: var(--sans);
+  font-size: clamp(1.9rem, 5vw, 2.7rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 2.2rem 0 0.4rem;
+}
+
+.subtitle {
+  font-size: 1.12rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.4rem;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 1.45rem;
+  letter-spacing: -0.01em;
+  margin: 3.2rem 0 0.6rem;
+  scroll-margin-top: 1rem;
+}
+
+h3 {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  margin: 1.6rem 0 0.4rem;
+}
+
+p {
+  margin: 0.7rem 0;
+  max-width: 70ch;
+}
+
+a {
+  color: var(--a-color);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.stepkicker {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ink-soft);
+  margin-top: 3.2rem;
+}
+
+.stepkicker + h2 {
+  margin-top: 0.2rem;
+}
+
+/* ---------- claim banner ---------- */
+
+.claim {
+  border-left: 4px solid var(--ink);
+  background: var(--panel);
+  border-radius: 0 8px 8px 0;
+  padding: 0.9rem 1.2rem;
+  margin: 1.4rem 0;
+  font-size: 1.05rem;
+}
+
+.claim strong {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- badges (honest labeling) ---------- */
+
+.badge {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.1rem 0.45rem;
+  vertical-align: middle;
+  border: 1px solid;
+}
+
+.badge.live {
+  color: var(--good);
+  border-color: var(--good);
+  background: #eaf6ee;
+}
+
+.badge.source {
+  color: #29456e;
+  border-color: #29456e;
+  background: #e9eff8;
+}
+
+.badge.reported {
+  color: var(--warn);
+  border-color: var(--warn);
+  background: #fbf0df;
+}
+
+.badge.toy {
+  color: #5b3d8f;
+  border-color: #5b3d8f;
+  background: #f0e9fa;
+}
+
+/* ---------- panels ---------- */
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  margin: 1.1rem 0;
+}
+
+.panel-title {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin: 0 0 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.viz-row {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.viz-row > * {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+/* ---------- association identity (shape + color + letter) ---------- */
+
+.assoc {
+  font-family: var(--sans);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.assoc.a {
+  color: var(--a-color);
+}
+
+.assoc.b {
+  color: var(--b-color);
+}
+
+/* ---------- matrix + vector displays ---------- */
+
+.matrix {
+  display: inline-grid;
+  gap: 4px;
+  font-family: var(--mono);
+  font-size: 0.95rem;
+}
+
+.matrix .cell {
+  min-width: 72px;
+  padding: 0.5rem 0.4rem;
+  text-align: center;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.matrix .cell.hl {
+  background: var(--highlight);
+  border-color: var(--line-strong);
+}
+
+.matrix .cell.clickable {
+  cursor: pointer;
+}
+
+.matrix .cell.clickable:hover {
+  border-color: var(--ink);
+}
+
+.matrix .cell.selected {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}
+
+.matrix-label {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  text-align: center;
+  margin-top: 0.35rem;
+}
+
+.vec {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.95rem;
+}
+
+.vec .cell {
+  min-width: 72px;
+  padding: 0.35rem 0.4rem;
+  text-align: center;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.vec.accent-a .cell {
+  background: var(--a-soft);
+  border-color: var(--a-color);
+}
+
+.vec.accent-b .cell {
+  background: var(--b-soft);
+  border-color: var(--b-color);
+}
+
+/* ---------- controls ---------- */
+
+button,
+input,
+select {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+
+button {
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  border-radius: 7px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--ink);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+button.primary {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.slider-block {
+  margin: 0.8rem 0;
+}
+
+.slider-block label {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+input[type='range'] {
+  flex: 1;
+  accent-color: var(--ink);
+  height: 28px;
+}
+
+.slider-value {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  min-width: 4.5ch;
+  text-align: right;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.control-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.6rem 0;
+}
+
+/* ---------- tables ---------- */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.92rem;
+  font-family: var(--sans);
+  margin: 0.8rem 0;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--bg);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+td.num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+/* ---------- callouts ---------- */
+
+.note {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--line-strong);
+  background: var(--panel);
+  border-radius: 0 8px 8px 0;
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.note.warn {
+  border-left-color: var(--warn);
+}
+
+.note.good {
+  border-left-color: var(--good);
+}
+
+/* ---------- quiz ---------- */
+
+.quiz-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 0.35rem 0;
+  padding: 0.6rem 0.8rem;
+}
+
+.quiz-option[aria-pressed='true'] {
+  border-color: var(--ink);
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+
+.quiz-feedback {
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  border: 1px solid;
+}
+
+.quiz-feedback.correct {
+  color: var(--good);
+  border-color: var(--good);
+  background: #eaf6ee;
+}
+
+.quiz-feedback.incorrect {
+  color: var(--bad);
+  border-color: var(--bad);
+  background: #fbecec;
+}
+
+/* ---------- equations ---------- */
+
+.eq-block {
+  overflow-x: auto;
+  padding: 0.4rem 0;
+}
+
+.katex {
+  font-size: 1.06em;
+}
+
+/* ---------- error readout ---------- */
+
+.error-chip {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  border-radius: 6px;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--line-strong);
+  background: var(--bg);
+}
+
+.error-chip.zeroish {
+  color: var(--good);
+  border-color: var(--good);
+}
+
+.error-chip.nonzero {
+  color: var(--bad);
+  border-color: var(--bad);
+}
+
+/* ---------- footer / references ---------- */
+
+.refs li {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+/* ---------- toc / progress ---------- */
+
+nav.toc {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  padding: 0.8rem 1rem;
+  margin: 1.2rem 0;
+}
+
+nav.toc ol {
+  margin: 0.3rem 0 0;
+  padding-left: 1.4rem;
+}
+
+nav.toc li {
+  margin: 0.15rem 0;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 560px) {
+  body {
+    font-size: 16px;
+  }
+  .matrix .cell,
+  .vec .cell {
+    min-width: 58px;
+    font-size: 0.85rem;
+  }
+}
+
+/* visually hidden (for screen-reader text) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+}
