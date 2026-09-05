@@ -1,0 +1,164 @@
+{
+  "project": "Memory Under Pressure — DataForge 2026 Pathway track",
+  "generatedAt": "2026-09-05T09:27:27.718Z",
+  "sourceCommit": "c58d6deba130c596822c3cd4dbd2179b2c8d42b1",
+  "sourceCommitNote": "Commit at manifest generation; the commit that adds/updates this manifest is its child.",
+  "branch": "claude/memory-under-pressure-p6vp89",
+  "completion": {
+    "built": true,
+    "verifiedLocally": "see submission/SUBMISSION_CHECKLIST.md for the per-check record",
+    "publicUrls": "see SUBMISSION_CHECKLIST.md — external gates listed there; none claimed here"
+  },
+  "files": [
+    {
+      "category": "app",
+      "path": "index.html",
+      "sha256": "c86ed27c2b62e6188cb88c313221c1b0dcc3854d23adc2aea7c58fb991764d37",
+      "status": "present"
+    },
+    {
+      "category": "app",
+      "path": "src/App.tsx",
+      "sha256": "7764409e9c6dea911be98bcfd0cc8a9b20756fd06c26309900febe31281e3e0f",
+      "status": "present"
+    },
+    {
+      "category": "app",
+      "path": "src/memory/additiveMemory.ts",
+      "sha256": "af0fff24f0625041dae45305d06a39f41393386eb2c063f8994da6dab055dba6",
+      "status": "present"
+    },
+    {
+      "category": "app",
+      "path": "src/memory/reference.ts",
+      "sha256": "959a84bb8cc41b94a9f47119b0284a2c973ceac5c908b0e3f02e1a985adf92c1",
+      "status": "present"
+    },
+    {
+      "category": "app",
+      "path": "src/memory/session.ts",
+      "sha256": "cc500dfd1de84deac66b62cb82128604eed3e9e404d7f9239057df712527e1a6",
+      "status": "present"
+    },
+    {
+      "category": "tests",
+      "path": "tests/memory.test.ts",
+      "sha256": "116e6e3c4515c13e9d3da941ef1890aa14ace4db1c9ab75dcc0ffb08b285e1a7",
+      "status": "present"
+    },
+    {
+      "category": "tests",
+      "path": "tests/session.test.ts",
+      "sha256": "2fc86a9e2b8169ca4de1ff6528867fc73d9a0738c086fd60005111d8fd3cb80d",
+      "status": "present"
+    },
+    {
+      "category": "tests",
+      "path": "artifacts/smoke-results.json",
+      "sha256": "b306e3adad7ff399661bffe827b83e231abf58bf45010eef090cd1fb0c922783",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "README.md",
+      "sha256": "c80fa8653d64c462de79df094b3ef2c4c4391e2a38fbb510f71be461c11679fd",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/CLAIM.md",
+      "sha256": "bce8b3b225ff3019a0e692915c4715c8825396211df5a6e5b1bd931855dc364a",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/REQUIREMENTS.md",
+      "sha256": "783de87f6082bed0ddcb65a5c599951b15527bfa9e2a4d09f3ffda2f55965e61",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/RESEARCH.md",
+      "sha256": "58abe778f73ed664aff11fde4af2a485beb0c8ae2b8e9a19f9b1d00d7face44b",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "5ca911b02794dc014d259316741b27e455b352f87a3175531616b23c941746bf",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/LEARNER_TEST.md",
+      "sha256": "eb48e84c6eb0a735704a5383641f87e9c0457ce56c27facb41887e7e42cb79b0",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/PROVENANCE.md",
+      "sha256": "52fef35339c4bf6e9b4a3b7693b30f457ba4e9963241f410fe76ac70eba68e70",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/AI_DISCLOSURE.md",
+      "sha256": "382600ebf7a4dc3da8964bd6abf7887adcf7e383dd072b0e9eec503e52dfc297",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/DEFENSE_GUIDE.md",
+      "sha256": "a9c12613386a9123205506e205105b57677d44cb89ca242ea9c0eb9aa3f21ca6",
+      "status": "present"
+    },
+    {
+      "category": "docs",
+      "path": "docs/DEMO_SCRIPT.md",
+      "sha256": "bc2abe8577ddd8937281af280e5f1ffdcf474ba511687291c0eb735c76b313d1",
+      "status": "present"
+    },
+    {
+      "category": "submission",
+      "path": "submission/concept-summary.pdf",
+      "sha256": "258897baa0fb80c4607ebf3a5799fa0c3f462dab97785dcb495d4b8b7d6fa2ff",
+      "status": "present"
+    },
+    {
+      "category": "submission",
+      "path": "submission/src/concept-summary.html",
+      "sha256": "28bc267c1087b07544eb7c326ad2c2b0d3d8b33dbcb7b452279ec6c1bf9fd313",
+      "status": "present"
+    },
+    {
+      "category": "submission",
+      "path": "submission/blog.pdf",
+      "sha256": "9961ce3e4470c847dbf29107ac09af8d3baac9ee6d9c794ba021279e30f7f47f",
+      "status": "present"
+    },
+    {
+      "category": "submission",
+      "path": "submission/src/blog.html",
+      "sha256": "f8b08158319639577456ba929a57aad78a3e44f7aeb5257201e12ac60036c13b",
+      "status": "present"
+    },
+    {
+      "category": "submission",
+      "path": "submission/SUBMISSION_CHECKLIST.md",
+      "sha256": "de15075712d392713c059759d83755e036235fbc326c628da244e9b5343899cb",
+      "status": "present"
+    },
+    {
+      "category": "meta",
+      "path": "LICENSE",
+      "sha256": "69aa723cd4797b43610e8bde729d42d8d57eb0e006eff503ba3a692ca2bdce9b",
+      "status": "present"
+    },
+    {
+      "category": "meta",
+      "path": "package-lock.json",
+      "sha256": "957f4f3b2cb5a52ce2a8bd2d857d9c2cc8ab5322da4a72d790371e50a7aacd6d",
+      "status": "present"
+    }
+  ]
+}

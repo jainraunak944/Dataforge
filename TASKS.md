@@ -2,14 +2,14 @@
 
 Statuses: [ ] pending · [~] in progress · [x] done (verified where applicable)
 
-1. [~] Claim, requirement matrix, continuity files, repo scaffold
-2. [~] Research primary sources → `docs/research-notes/` → `docs/RESEARCH.md` ledger (3 background agents fetching BDH, BDH-CQ, delta-rule papers)
-3. [ ] Memory core + independent reference + Vitest math tests (all §9 checks)
-4. [ ] Guided lesson UI (React+TS+Vite, SVG, KaTeX): 7 steps + sandbox
-5. [ ] BDH + BDH-CQ teaching module (needs research notes for exact equation locators)
-6. [ ] Docs: ARCHITECTURE, LEARNER_TEST, PROVENANCE, AI_DISCLOSURE, DEFENSE_GUIDE, DEMO_SCRIPT, README
-7. [ ] Submission PDFs (concept-summary 1 page, blog w/ screenshots), checklist, manifest
-8. [ ] Verification: typecheck, tests, build, browser smoke, screenshots, fresh checkout
-9. [ ] Deployment prep + push; list external gates (Pages enablement, repo visibility)
+1. [x] Claim, requirement matrix, continuity files, repo scaffold
+2. [x] Research primary sources → `docs/research-notes/` → `docs/RESEARCH.md` ledger (all sources fetched live; one Pathway page unreachable, logged, nothing relies on it)
+3. [x] Memory core + independent reference + Vitest math tests — 31/31 pass
+4. [x] Guided lesson UI (React+TS+Vite, SVG, KaTeX): 7 steps + sandbox
+5. [x] BDH + BDH-CQ teaching module (Eq. 8 walkthrough, variable-role table, BDH-CQ section)
+6. [x] Docs: ARCHITECTURE, LEARNER_TEST (proposed), PROVENANCE, AI_DISCLOSURE, DEFENSE_GUIDE, DEMO_SCRIPT, README, LICENSE
+7. [x] Submission PDFs (concept-summary exactly 1 page / 802 words; blog with real screenshots), checklist, manifest
+8. [x] Verification: typecheck, 31 unit tests, build, 21/21 browser smoke, screenshots inspected, fresh-checkout reproduction incl. `npm run pdfs` and BASE_PATH build
+9. [x] Deployment prep (Pages workflow) + push — EXTERNAL GATES remain: G1 enable Pages, G2 repo visibility, G3 portal submission, G4 optional learner study (see submission/SUBMISSION_CHECKLIST.md)
 
-Next command if resuming cold: read `BUILD_STATUS.md`, then continue the first unchecked task.
+Nothing in progress. If resuming: read `BUILD_STATUS.md`; remaining work is only the external gates above.
