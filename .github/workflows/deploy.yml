@@ -44,10 +44,21 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # Tries to enable Pages via the workflow token; if the token may not,
-      # the one-time manual step is Settings → Pages → Source: GitHub Actions.
-      - uses: actions/configure-pages@v5
+      # Tries to enable Pages via the workflow token. While the repository is
+      # private this fails (Pages unavailable) — in that case the job exits
+      # green with a notice instead of a red run + failure email, and deploys
+      # automatically on the next push once the repo is public / Pages enabled.
+      - name: Enable or detect GitHub Pages
+        id: enable
+        continue-on-error: true
+        uses: actions/configure-pages@v5
         with:
           enablement: true
-      - id: deployment
+      - name: Deploy
+        if: steps.enable.outcome == 'success'
+        id: deployment
         uses: actions/deploy-pages@v4
+      - name: Pages not available yet — skipping deploy
+        if: steps.enable.outcome != 'success'
+        run: |
+          echo "::notice::GitHub Pages is not available yet (repository is likely still private). Complete gates G1-G2 in submission/SUBMISSION_CHECKLIST.md — make the repo public, then re-run this workflow or push any commit."
