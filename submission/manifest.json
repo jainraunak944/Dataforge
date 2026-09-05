@@ -1,7 +1,7 @@
 {
   "project": "Memory Under Pressure — DataForge 2026 Pathway track",
-  "generatedAt": "2026-09-05T09:27:27.718Z",
-  "sourceCommit": "c58d6deba130c596822c3cd4dbd2179b2c8d42b1",
+  "generatedAt": "2026-09-05T09:29:37.604Z",
+  "sourceCommit": "2221974730e957764f6858adbcf5a50044b859bf",
   "sourceCommitNote": "Commit at manifest generation; the commit that adds/updates this manifest is its child.",
   "branch": "claude/memory-under-pressure-p6vp89",
   "completion": {
@@ -145,7 +145,7 @@
     {
       "category": "submission",
       "path": "submission/SUBMISSION_CHECKLIST.md",
-      "sha256": "de15075712d392713c059759d83755e036235fbc326c628da244e9b5343899cb",
+      "sha256": "2235e9acf07e6ee8b1ea58c3ba3514a25e9d87eb7b049bc07e6a0b44bfdd4697",
       "status": "present"
     },
     {

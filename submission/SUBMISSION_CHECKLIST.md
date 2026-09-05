@@ -28,6 +28,8 @@ Statuses: **verified** = command/check actually ran and passed in this workspace
 | PDF page count / extraction / links | `pdfinfo`, `pdftotext`, raster inspection | concept summary exactly 1 page; both PDFs extract cleanly |
 | Fresh checkout follows README | clean clone + `npm ci` + typecheck + test + build + smoke | recorded below after final run |
 | Screenshots inspected (desktop full, panel, mobile) | manual review of `artifacts/screenshots/` | pass (one label-clipping defect found and fixed) |
+| Submission archive builds and opens; excludes organizer brief, papers, node_modules | `git archive --format=zip -o <path>.zip HEAD` then `unzip -t` | pass (80 files; no private inputs) |
+| CI on GitHub's own runner (independent of this machine) | Actions run #1 build job: npm ci, typecheck, tests, BASE_PATH build | pass (deploy job failed as expected — Pages not enabled; see G1/G2) |
 
 ## Ambiguity handling
 
