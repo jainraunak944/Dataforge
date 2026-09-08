@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-09-05T09:14:23.815Z",
+  "startedAt": "2026-09-08T13:37:54.315Z",
   "checks": [
     {
       "name": "title set",
@@ -32,7 +32,7 @@
       "detail": "[1,0.37]"
     },
     {
-      "name": "slider→render feedback under 1s (measured 25ms on this machine; not a device-independent guarantee)",
+      "name": "slider→render feedback under 1s (measured 35ms on this machine; not a device-independent guarantee)",
       "ok": true,
       "detail": ""
     },
@@ -92,6 +92,61 @@
       "detail": ""
     },
     {
+      "name": "invalid hash: page renders all lesson content, not a blank page",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: no uncaught page errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: guided ρ display normalized to 1.00",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: guided ρ slider holds the normalized value",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: sandbox ρ display normalized to 1.00",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: sandbox λ display normalized to 1.00",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: sandbox λ slider holds the normalized value",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: repeats display normalized to 32×",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: repeats slider holds the cap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: matrix caption counts 64 computed writes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid hash: displayed retrieved A equals computed [32, 32]",
+      "ok": true,
+      "detail": "[32,32]"
+    },
+    {
       "name": "reduced-motion: Play control announces instant mode",
       "ok": true,
       "detail": ""
@@ -108,5 +163,5 @@
     }
   ],
   "consoleErrors": [],
-  "finishedAt": "2026-09-05T09:14:35.530Z"
+  "finishedAt": "2026-09-08T13:38:08.853Z"
 }

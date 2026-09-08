@@ -64,6 +64,7 @@ export default function BreakTheClaim({
         <div className="slider-row">
           <input
             id={rhoId}
+            data-testid="sandbox-rho"
             type="range"
             min={0}
             max={1}
@@ -72,7 +73,7 @@ export default function BreakTheClaim({
             onChange={(e) => onParams({ ...params, rho: Number(e.target.value) })}
             aria-valuetext={`overlap ${fmt(params.rho, 2)}`}
           />
-          <span className="slider-value">{fmt(params.rho, 2)}</span>
+          <span className="slider-value" data-testid="sandbox-rho-value">{fmt(params.rho, 2)}</span>
         </div>
       </div>
 
@@ -83,6 +84,7 @@ export default function BreakTheClaim({
         <div className="slider-row">
           <input
             id={lambdaId}
+            data-testid="sandbox-lambda"
             type="range"
             min={0}
             max={1}
@@ -91,7 +93,7 @@ export default function BreakTheClaim({
             onChange={(e) => onParams({ ...params, lambda: Number(e.target.value) })}
             aria-valuetext={`decay ${fmt(params.lambda, 2)}`}
           />
-          <span className="slider-value">{fmt(params.lambda, 2)}</span>
+          <span className="slider-value" data-testid="sandbox-lambda-value">{fmt(params.lambda, 2)}</span>
         </div>
       </div>
 
@@ -103,6 +105,7 @@ export default function BreakTheClaim({
         <div className="slider-row">
           <input
             id={repeatsId}
+            data-testid="sandbox-repeats"
             type="range"
             min={1}
             max={MAX_REPEATS}
@@ -111,7 +114,7 @@ export default function BreakTheClaim({
             onChange={(e) => onParams({ ...params, repeats: Number(e.target.value) })}
             aria-valuetext={`${params.repeats} writes of each pair`}
           />
-          <span className="slider-value">{params.repeats}×</span>
+          <span className="slider-value" data-testid="sandbox-repeats-value">{params.repeats}×</span>
         </div>
       </div>
 
@@ -132,7 +135,7 @@ export default function BreakTheClaim({
             </h3>
             <div className="viz-row" style={{ gap: '0.5rem' }}>
               <VectorView v={q.report.desired} caption="desired" accent={q.label === 'A' ? 'a' : 'b'} />
-              <VectorView v={q.report.retrieved} caption="retrieved" />
+              <VectorView v={q.report.retrieved} caption="retrieved" testId={`sandbox-retrieved-${q.label}`} />
             </div>
             <p style={{ margin: '0.4rem 0 0' }}>
               <ErrorChip value={q.report.l2Error} />

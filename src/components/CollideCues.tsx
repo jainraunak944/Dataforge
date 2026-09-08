@@ -32,6 +32,7 @@ export default function CollideCues({
         <div className="slider-row">
           <input
             id={sliderId}
+            data-testid="guided-rho"
             type="range"
             min={0}
             max={1}
@@ -40,7 +41,7 @@ export default function CollideCues({
             onChange={(e) => onRho(Number(e.target.value))}
             aria-valuetext={`overlap ${fmt(rho, 2)}`}
           />
-          <output htmlFor={sliderId} className="slider-value">
+          <output htmlFor={sliderId} className="slider-value" data-testid="guided-rho-value">
             {fmt(rho, 2)}
           </output>
         </div>

@@ -6,6 +6,7 @@
  */
 
 import {
+  BOUNDS,
   outerProduct,
   readMemory,
   writeAssociation,
@@ -15,7 +16,7 @@ import {
 } from './additiveMemory';
 import { coreStateSlots, historySlots } from './accounting';
 import { argmaxOrTie, matchScores, recallReport, type RecallReport, type TieOutcome } from './evaluate';
-import { guidedFixture, type GuidedFixture } from './fixtures';
+import { clampRho, guidedFixture, type GuidedFixture } from './fixtures';
 import { HISTORY_CAP, maxAbsDifference, referenceRead, type Pair } from './reference';
 
 export interface SessionParams {
@@ -58,11 +59,26 @@ export function clampRepeats(r: number): number {
   return Math.min(MAX_REPEATS, Math.max(1, Math.round(r)));
 }
 
+/** Clamp λ to the engine's stated bounds; non-finite falls back to 1 (no decay — the app default). */
+export function clampLambda(lambda: number): number {
+  if (!Number.isFinite(lambda)) return 1;
+  return Math.min(BOUNDS.lambdaMax, Math.max(BOUNDS.lambdaMin, lambda));
+}
+
+/**
+ * The single normalization boundary for UI-facing params (URL hash, direct
+ * calls): ρ and λ to their stated [0, 1] bounds, repeats to an integer in
+ * [1, MAX_REPEATS]. The engine keeps its throw-never-clamp policy; sanitizing
+ * here means displayed and computed values come from the same numbers.
+ */
+export function normalizeSessionParams(p: SessionParams): SessionParams {
+  return { rho: clampRho(p.rho), lambda: clampLambda(p.lambda), repeats: clampRepeats(p.repeats) };
+}
+
 export function deriveSession(paramsRaw: SessionParams): SessionState {
-  const repeats = clampRepeats(paramsRaw.repeats);
-  const fixture = guidedFixture(paramsRaw.rho);
-  const lambda = paramsRaw.lambda;
-  const params: SessionParams = { rho: fixture.rho, lambda, repeats };
+  const params = normalizeSessionParams(paramsRaw);
+  const { lambda, repeats } = params;
+  const fixture = guidedFixture(params.rho);
 
   const writeSeq: { label: 'A' | 'B'; k: Vec; v: Vec }[] = [];
   for (let r = 0; r < repeats; r++) {

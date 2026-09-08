@@ -190,6 +190,79 @@ const browser = await chromium.launch({ executablePath });
   await page.close();
 }
 
+// ---------- invalid shared-hash regression ----------
+// A mistyped or edited share link must render with normalized values, not a
+// blank page (regression: "#lambda=2" used to throw RangeError in the first
+// render). Every value below derives from the stated public bounds:
+// ρ, λ ∈ [0, 1]; repeats capped so retained pairs stay ≤ 64, i.e. 64/2 each.
+{
+  const MAX_REPEATS = 64 / 2;
+  const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+  const pageErrors = [];
+  page.on('pageerror', (e) => {
+    pageErrors.push(String(e));
+    results.consoleErrors.push(String(e));
+  });
+  page.on('console', (m) => {
+    if (m.type() === 'error') results.consoleErrors.push(m.text());
+  });
+  await page.goto(`${base}#rho=7&lambda=2&repeats=500`, { waitUntil: 'networkidle' });
+
+  const stepHeads = await page.locator('main h2').allTextContents();
+  check('invalid hash: page renders all lesson content, not a blank page', stepHeads.length >= 8);
+  check(
+    'invalid hash: no uncaught page errors',
+    pageErrors.length === 0,
+    pageErrors.slice(0, 2).join(' | '),
+  );
+
+  check(
+    'invalid hash: guided ρ display normalized to 1.00',
+    (await page.getByTestId('guided-rho-value').textContent()).trim() === '1.00',
+  );
+  check(
+    'invalid hash: guided ρ slider holds the normalized value',
+    (await page.getByTestId('guided-rho').inputValue()) === '1',
+  );
+  check(
+    'invalid hash: sandbox ρ display normalized to 1.00',
+    (await page.getByTestId('sandbox-rho-value').textContent()).trim() === '1.00',
+  );
+  check(
+    'invalid hash: sandbox λ display normalized to 1.00',
+    (await page.getByTestId('sandbox-lambda-value').textContent()).trim() === '1.00',
+  );
+  check(
+    'invalid hash: sandbox λ slider holds the normalized value',
+    (await page.getByTestId('sandbox-lambda').inputValue()) === '1',
+  );
+  check(
+    `invalid hash: repeats display normalized to ${MAX_REPEATS}×`,
+    (await page.getByTestId('sandbox-repeats-value').textContent()).trim() === `${MAX_REPEATS}×`,
+  );
+  check(
+    'invalid hash: repeats slider holds the cap',
+    (await page.getByTestId('sandbox-repeats').inputValue()) === String(MAX_REPEATS),
+  );
+
+  // Display agrees with computation: 2·MAX_REPEATS writes actually ran, and at
+  // ρ = 1, λ = 1 each read returns MAX_REPEATS·[1, 1] (all writes superimpose).
+  const sandbox = page.locator('.panel', { hasText: 'Sandbox' });
+  check(
+    `invalid hash: matrix caption counts ${2 * MAX_REPEATS} computed writes`,
+    (await sandbox.locator('.matrix-label', { hasText: `M after ${2 * MAX_REPEATS} writes` }).count()) === 1,
+  );
+  const retrievedA = (
+    await page.getByTestId('sandbox-retrieved-A').locator('.cell').allTextContents()
+  ).map(Number);
+  check(
+    `invalid hash: displayed retrieved A equals computed [${MAX_REPEATS}, ${MAX_REPEATS}]`,
+    retrievedA.length === 2 && retrievedA[0] === MAX_REPEATS && retrievedA[1] === MAX_REPEATS,
+    JSON.stringify(retrievedA),
+  );
+  await page.close();
+}
+
 // ---------- reduced motion ----------
 {
   const page = await browser.newPage({

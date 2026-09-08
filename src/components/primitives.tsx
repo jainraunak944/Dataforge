@@ -51,14 +51,17 @@ export function VectorView({
   caption,
   accent,
   digits = 3,
+  testId,
 }: {
   v: Vec;
   caption: ReactNode;
   accent?: 'a' | 'b';
   digits?: number;
+  /** Stable hook for the browser smoke test; no visual effect. */
+  testId?: string;
 }) {
   return (
-    <div style={{ display: 'inline-block', textAlign: 'center' }}>
+    <div style={{ display: 'inline-block', textAlign: 'center' }} data-testid={testId}>
       <div className={`vec${accent ? ` accent-${accent}` : ''}`}>
         {v.map((c, i) => (
           <span key={i} className="cell">

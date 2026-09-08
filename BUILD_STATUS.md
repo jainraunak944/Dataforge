@@ -1,6 +1,11 @@
 # Build status
 
-Last update: 2026-09-08 (deployment completed)
+Last update: 2026-09-08 (shared-URL normalization fix + README revision)
+
+## Hardening + README (2026-09-08, after deployment)
+
+- Fixed: out-of-range shared-URL values. λ from the hash used to reach the engine unclamped (`#lambda=2` crashed the first render with RangeError → blank page), and raw hash values could show in labels while the math clamped (`#repeats=500` displayed 500× but computed 32). All params now pass through one `normalizeSessionParams` boundary (`src/memory/session.ts`) used by `deriveSession` and the new pure `parseHashSettings` (`src/hooks.ts`); the engine's throw-never-clamp policy is unchanged. Regression coverage: `tests/hooks.test.ts` (new), extended clamp test in `tests/session.test.ts`, and an invalid-hash section in `scripts/smoke.mjs` (data-testid hooks added to the sliders/readouts it asserts).
+- README.md restructured for first-time readers (live demo + screenshot up top, features, quick start, verification layers, built-with); hardcoded test counts replaced with non-stale wording; repo casing canonicalized to `Dataforge`. All brief-required README elements retained.
 
 ## Deployment (2026-09-08)
 
@@ -34,7 +39,7 @@ Last update: 2026-09-08 (deployment completed)
 
 ## Test results (latest)
 
-typecheck 0 errors · unit 31/31 · smoke 21/21 · concept-summary.pdf Pages: 1 · fresh checkout: all of the above reproduced.
+typecheck 0 errors · unit 37/37 · smoke 32/32 (2026-09-08, after the normalization fix) · concept-summary.pdf Pages: 1 · fresh-checkout reproduction last run 2026-09-05 (31 unit / 21 smoke at that time).
 
 ## Next command
 

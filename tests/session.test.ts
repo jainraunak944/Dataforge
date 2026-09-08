@@ -6,8 +6,14 @@
  */
 import { describe, expect, it } from 'vitest';
 import { PRESETS } from '../src/memory/fixtures';
-import { clampRepeats, deriveSession, MAX_REPEATS } from '../src/memory/session';
-import { FLOAT_TOLERANCE } from '../src/memory/reference';
+import {
+  clampLambda,
+  clampRepeats,
+  deriveSession,
+  MAX_REPEATS,
+  normalizeSessionParams,
+} from '../src/memory/session';
+import { FLOAT_TOLERANCE, maxAbsDifference } from '../src/memory/reference';
 
 describe('deriveSession', () => {
   it('is deterministic: same params, identical state', () => {
@@ -65,11 +71,52 @@ describe('deriveSession', () => {
   });
 
   it('clamps out-of-range params instead of crashing (stated bounds)', () => {
+    // repeats: integer in [1, MAX_REPEATS], existing Math.round behavior
     expect(clampRepeats(9999)).toBe(MAX_REPEATS);
     expect(clampRepeats(-5)).toBe(1);
+    expect(clampRepeats(0)).toBe(1);
+    expect(clampRepeats(2.4)).toBe(2);
+    expect(clampRepeats(2.5)).toBe(3);
     expect(clampRepeats(NaN)).toBe(1);
-    const s = deriveSession({ rho: 7, lambda: 1, repeats: 1 });
-    expect(s.params.rho).toBe(1);
+
+    // λ: engine bounds [0, 1]; non-finite falls back to 1 (no decay)
+    expect(clampLambda(2)).toBe(1);
+    expect(clampLambda(-0.5)).toBe(0);
+    expect(clampLambda(0.35)).toBe(0.35);
+    expect(clampLambda(NaN)).toBe(1);
+
+    // one normalization boundary for all three params
+    expect(normalizeSessionParams({ rho: 7, lambda: 2, repeats: 9999 })).toEqual({
+      rho: 1,
+      lambda: 1,
+      repeats: MAX_REPEATS,
+    });
+    expect(normalizeSessionParams({ rho: -3, lambda: -0.5, repeats: 0 })).toEqual({
+      rho: 0,
+      lambda: 0,
+      repeats: 1,
+    });
+
+    // deriveSession must be safe when called directly with invalid params
+    // (would previously throw RangeError from the engine for λ ∉ [0, 1])
+    expect(() => deriveSession({ rho: 7, lambda: 2, repeats: 9999 })).not.toThrow();
+    const s = deriveSession({ rho: 7, lambda: 2, repeats: 9999 });
+    expect(s.params).toEqual({ rho: 1, lambda: 1, repeats: MAX_REPEATS });
+    expect(s.writes.length).toBe(2 * MAX_REPEATS); // the effective repeats drove the math
+
+    expect(() => deriveSession({ rho: 0.5, lambda: -0.5, repeats: 0 })).not.toThrow();
+    const t = deriveSession({ rho: 0.5, lambda: -0.5, repeats: 0 });
+    expect(t.params).toEqual({ rho: 0.5, lambda: 0, repeats: 1 });
+    // Hand check that the normalized λ = 0 drove the computation: only the
+    // newest write (B) survives, so M·kB = vB·(kB·kB) = [0, 1] exactly.
+    expect(maxAbsDifference(t.queries[1].report.retrieved, [0, 1])).toBeLessThan(1e-12);
+
+    // recurrent and independent reference paths still agree after normalization
+    for (const session of [s, t]) {
+      for (const q of session.queries) {
+        expect(q.recurrentVsReferenceMaxDiff).toBeLessThan(FLOAT_TOLERANCE);
+      }
+    }
   });
 
   it('repeated-writes preset triples magnitude (λ=1, 3 repeats)', () => {
