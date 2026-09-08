@@ -1,6 +1,13 @@
 # Build status
 
-Last update: 2026-09-05 (end of build session)
+Last update: 2026-09-08 (deployment completed)
+
+## Deployment (2026-09-08)
+
+- Repo made **public** by the owner; confirmed `visibility: public` via GitHub API.
+- Owner enabled Pages (Settings → Pages → Source: GitHub Actions) — required because the workflow token cannot create the Pages site (run #5 recorded "Resource not accessible by integration").
+- Workflow run #6 (commit `a67aa13`): build green on GitHub's runner; `actions/deploy-pages@v4` logged "Reported success!"; environment URL `https://jainraunak944.github.io/Dataforge/`.
+- Not verified from the build container: a logged-out browser load of the URL (egress policy blocks github.io here). Team spot-check in incognito before portal upload.
 
 ## Completed and verified (commands actually ran in this workspace)
 
@@ -18,10 +25,10 @@ Last update: 2026-09-05 (end of build session)
 - Two clearly named PDFs supplied (ambiguity documented in REQUIREMENTS.md).
 - License MIT; organizer brief and paper texts NOT committed (private inputs).
 
-## Blockers / external gates (the only remaining work — user actions)
+## Blockers / external gates (remaining work — user actions)
 
-- G1: enable GitHub Pages (Settings → Pages → Source: GitHub Actions) on jainraunak944/dataforge, then verify the URL logged out. Workflow may need to exist on the default branch too.
-- G2: confirm repository visibility is Public.
+- G1: DONE except final spot-check — Pages deployed (run #6, success); open https://jainraunak944.github.io/Dataforge/ in incognito once before submitting.
+- G2: DONE — repository is Public (confirmed via API 2026-09-08).
 - G3: submit to the DataForge portal (team action).
 - G4 (optional): run the proposed 60-second learner protocol with ≥5 people, log results in docs/LEARNER_TEST.md.
 
@@ -31,4 +38,4 @@ typecheck 0 errors · unit 31/31 · smoke 21/21 · concept-summary.pdf Pages: 1 
 
 ## Next command
 
-None required locally. On resume after gates: verify public URL in incognito, then update README "URLs" + SUBMISSION_CHECKLIST G1 row and re-run `node scripts/make-manifest.mjs`.
+None. README URLs, SUBMISSION_CHECKLIST G1/G2, and REQUIREMENTS S1/S2 updated with the deployed URL; manifest regenerated. Remaining: team incognito spot-check of the URL, then portal upload (G3), optional learner study (G4).

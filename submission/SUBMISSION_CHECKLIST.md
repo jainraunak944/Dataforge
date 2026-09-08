@@ -6,8 +6,8 @@ Statuses: **verified** = command/check actually ran and passed in this workspace
 
 | Requirement | Path / URL | Status |
 |---|---|---|
-| Public artifact URL, opens without sign-in | GitHub Pages workflow at `.github/workflows/deploy.yml` (builds `dist/` from this branch) | **GATED** — see gate G1; no URL claimed |
-| Public source code repository | https://github.com/jainraunak944/dataforge branch `claude/memory-under-pressure-p6vp89` | **GATED** — pushed; public visibility is gate G2 |
+| Public artifact URL, opens without sign-in | https://jainraunak944.github.io/Dataforge/ (Pages workflow `.github/workflows/deploy.yml`) | **deployed** — run #6 (2026-09-08), GitHub Pages deployment status "success" for commit `a67aa13`; final incognito spot-check is the team's (see G1) |
+| Public source code repository | https://github.com/jainraunak944/Dataforge branch `claude/memory-under-pressure-p6vp89` | verified — repository visibility confirmed **public** via GitHub API on 2026-09-08 |
 | Blog as PDF | `submission/blog.pdf` (editable source `submission/src/blog.html`, real screenshots in `submission/src/img/`) | verified (rendered, 9 pages, text-extractable) |
 | One-page concept summary PDF | `submission/concept-summary.pdf` (source `submission/src/concept-summary.html`) | verified — exactly 1 A4 page (pdfinfo), 802 words, text extraction + ∈/ρ glyphs checked |
 | Complete README | `README.md` | verified against brief's required list |
@@ -35,15 +35,13 @@ Statuses: **verified** = command/check actually ran and passed in this workspace
 
 The brief calls one required PDF "the blog" (p.10) and separately specifies a one-page concept summary (p.11). Both are supplied, clearly named; the one-page summary is the primary concept briefing. Conservative packaging choice — not an invented organizer clarification.
 
-## External gates (exact remaining actions — for the team, not done by the build)
+## External gates (status as of 2026-09-08)
 
-Facts verified via the GitHub API on 2026-09-05: the repository `jainraunak944/Dataforge` is currently **private** (`visibility: private`, `has_pages: false`), and `claude/memory-under-pressure-p6vp89` is its **default branch**, so the committed deploy workflow is already active (run #1 triggered by the push).
-
-- **G2 first — make the repository Public.** GitHub → repository **Settings → General → Danger Zone → Change visibility → Public**. This is the owner's decision, deliberately not performed by the build. (On a free personal plan, GitHub Pages is unavailable while the repo is private, so G1 depends on this.)
-- **G1 — Public artifact URL.** After G2, re-run the "Deploy artifact to GitHub Pages" workflow (Actions tab → the workflow → Re-run). The workflow attempts to enable Pages itself (`actions/configure-pages@v5` with `enablement: true`); if that step fails, enable once manually: **Settings → Pages → Source: GitHub Actions**, then re-run. Expected URL: `https://jainraunak944.github.io/Dataforge/`. Before submitting it, verify in a logged-out/incognito session: page loads, slider works, no console errors, repo links resolve. Alternative (no Pages): host `dist/` on any static host (build with `BASE_PATH=/ npm run build` for a root path).
+- **G2 — repository Public: DONE.** Owner changed visibility on 2026-09-08; confirmed `visibility: public` via the GitHub API.
+- **G1 — Public artifact URL: DEPLOYED.** Owner set **Settings → Pages → Source: GitHub Actions** (the workflow token cannot create the Pages site itself — first attempt failed with "Resource not accessible by integration", recorded in run #5). Run #6 (2026-09-08, commit `a67aa13`) then built (npm ci, typecheck, tests, BASE_PATH build) and deployed; `actions/deploy-pages@v4` polled GitHub's Pages deployment status and logged "Reported success!" with environment URL `https://jainraunak944.github.io/Dataforge/`. Honest scope note: the build container's egress policy blocks `github.io`, so a logged-out **browser** load was not performed from the build environment — do the 10-second incognito spot-check (page loads, ρ slider works, no console errors) before pasting the URL into the portal.
 - **G3 — Competition portal.** Submission to the DataForge portal is the team's action; nothing was submitted on your behalf.
 - **G4 — Learner test.** `docs/LEARNER_TEST.md` is a proposed protocol; running ≥5 people and logging results is a team action (optional but strengthens the learning-effectiveness score).
 
 ## Label definitions used across the project
 
-**Built** = working code/deliverable exists locally. **Verified** = the relevant command/check actually passed. **Submission-ready** = all mandatory files present AND public links live and verified. Current overall status: **built + verified locally; submission-ready pending gates G1–G2.**
+**Built** = working code/deliverable exists locally. **Verified** = the relevant command/check actually passed. **Submission-ready** = all mandatory files present AND public links live and verified. Current overall status: **built + verified; repo public and Pages deployment reported success by GitHub (2026-09-08) — submission-ready after the team's incognito spot-check of the URL, then portal upload (G3).**

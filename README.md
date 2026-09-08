@@ -41,7 +41,7 @@ npm run smoke       # 21 browser checks incl. "no painted values" (needs Chromiu
 npm run pdfs        # regenerate submission PDFs from submission/src/
 ```
 
-**URLs:** public source repository: <https://github.com/jainraunak944/dataforge> (branch `claude/memory-under-pressure-p6vp89`). A public no-sign-in artifact URL is prepared via the GitHub Pages workflow in `.github/workflows/deploy.yml`; see `submission/SUBMISSION_CHECKLIST.md` for its status — no URL is claimed here until verified live.
+**URLs:** public source repository: <https://github.com/jainraunak944/Dataforge> (public; branch `claude/memory-under-pressure-p6vp89`). Public no-sign-in artifact: <https://jainraunak944.github.io/Dataforge/> — deployed 2026-09-08 by the GitHub Pages workflow (`.github/workflows/deploy.yml`, run #6); GitHub's Pages deployment status reported success for commit `a67aa13`. See `submission/SUBMISSION_CHECKLIST.md` for the verification record.
 
 ## Architecture (short version — full: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md))
 

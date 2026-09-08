@@ -28,8 +28,8 @@ Source of authority: the uploaded brief `Pathway PS.pdf` (14 pages; page numbers
 
 | # | Brief page | Requirement | Implementation | Verification | Status |
 |---|---|---|---|---|---|
-| S1 | 10 | Public artifact URL, no sign-in | GitHub Pages workflow prepared (`.github/workflows/deploy.yml`) | EXTERNAL GATE: repo owner must enable Pages | GATED — see submission/SUBMISSION_CHECKLIST.md (G1, G2) |
-| S2 | 10 | Public source repository | Branch pushed to github.com/jainraunak944/dataforge | EXTERNAL GATE: repo visibility is owner's choice | GATED — see submission/SUBMISSION_CHECKLIST.md (G1, G2) |
+| S1 | 10 | Public artifact URL, no sign-in | https://jainraunak944.github.io/Dataforge/ via Pages workflow (`.github/workflows/deploy.yml`) | Run #6 (2026-09-08): GitHub Pages deployment status "success" for `a67aa13`; team incognito spot-check before portal upload (build sandbox cannot reach github.io) | deployed — see submission/SUBMISSION_CHECKLIST.md (G1) |
+| S2 | 10 | Public source repository | github.com/jainraunak944/Dataforge, branch `claude/memory-under-pressure-p6vp89` | Repo visibility confirmed **public** via GitHub API on 2026-09-08 | verified |
 | S3 | 10 | Blog as PDF | `submission/blog.pdf` + editable source `submission/src/blog.html` | Rendered, inspected, text-extractable | verified |
 | S4 | 10 | Complete README | `README.md` (claim, audience, prerequisites, objectives, architecture, component roles, live/precomputed/synthetic/animated, reproduction, credits, licenses, disclosure) | Fresh-checkout follow-through | verified |
 | S5 | 10 | Setup instructions for local components | README "Run it locally" | Clean `npm ci` + build in fresh checkout | verified |
