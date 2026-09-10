@@ -58,9 +58,9 @@ async function main() {
     s.addImage({ data: K("drop", WH), x: 11.55, y: 4.35, w: 0.85, h: 0.85, transparency: 18 });
     // floating KPI mini-cards on the diagonal
     const mini = [
-      [9.0, 1.05, "chart_" + BR, "₹270 cr/yr", "private-pay TAM, 3 states"],
-      [9.95, 2.45, "target_" + BR, "3 buyers", "one 250 km service corridor"],
-      [8.6, 3.85, "trend_" + GN, "₹25.4 cr", "FY29 revenue, 2.2× FY26"],
+      [9.0, 1.05, "chart_" + BR, "₹270 cr/yr", "of private demand across 3 states"],
+      [9.95, 2.45, "target_" + BR, "3 buyers", "hotels, developers, hospitals"],
+      [8.6, 3.85, "trend_" + GN, "₹25.4 cr", "revenue we target by FY29"],
     ];
     mini.forEach(([x, y, ic, big, sub]) => {
       card(s, x, y, 2.5, 0.92, {});
@@ -76,11 +76,11 @@ async function main() {
     s.addText("CASE CONSILIUM 2026  ·  ROUND 2", { x: 0.55, y: 1.32, w: 3.1, h: 0.34, isTextBox: true, margin: 0, align: "center", valign: "middle", fontFace: F, fontSize: 8.5, bold: true, color: C.brand, charSpacing: 1.2 });
     // title
     s.addText([
-      T("Concentrate to Conquer\n", { color: C.ink }),
-      T("the Private Wastewater Market", { color: C.brand }),
+      T("How EPBL wins the\n", { color: C.ink }),
+      T("private wastewater market", { color: C.brand }),
     ], { x: 0.55, y: 2.30, w: 8.3, h: 1.6, isTextBox: true, margin: 0, fontFace: F, fontSize: 34, bold: true, lineSpacingMultiple: 1.04 });
     s.addShape("roundRect", { x: 0.58, y: 3.98, w: 1.1, h: 0.07, rectRadius: 0.03, fill: { color: C.brand }, line: { type: "none" } });
-    s.addText("Three compliance-driven buyers, one west-coast service corridor: ₹11.7 crore → ₹25.4 crore by FY29 on DRDO-certified bio-digesters, FRP modular STPs and recurring service revenue.", {
+    s.addText("Sell to the three buyers who are forced to treat their wastewater, start close to home, and let service income compound. That takes EPBL from ₹11.7 crore today to about ₹25 crore by FY29.", {
       x: 0.55, y: 4.22, w: 7.6, h: 0.85, isTextBox: true, margin: 0, fontFace: F, fontSize: 13, bold: true, color: C.ink, lineSpacingMultiple: 1.12,
     });
     // team
@@ -105,22 +105,22 @@ async function main() {
     header2(s, "", "One-page recommendation", "Executive ", "Summary", 2);
     // KPI row
     const kw = 2.985, kg = 0.13, ky = 1.40, kh = 1.06;
-    statCard(s, ICONS, 0.5, ky, kw, kh, "rupee_" + BR, "₹25.4 cr", "FY29 revenue, base case (cons ₹22.1 / up ₹29.3)", "2.2× the FY26 base of ₹11.7 cr");
-    statCard(s, ICONS, 0.5 + (kw + kg), ky, kw, kh, "chartline_" + BR, "₹21 cr", "cumulative NEW private-market revenue, FY27-29", "range ₹15-28 cr across scenarios");
-    statCard(s, ICONS, 0.5 + 2 * (kw + kg), ky, kw, kh, "target_" + BR, "7.2%", "share of ₹165 cr/yr serviceable demand by FY29", "from ~0% today");
-    statCard(s, ICONS, 0.5 + 3 * (kw + kg), ky, kw, kh, "recycle_" + BR, "₹2.4 cr/yr", "recurring AMC, O&M and monitoring revenue", "~10% of FY29 sales");
+    statCard(s, ICONS, 0.5, ky, kw, kh, "rupee_" + BR, "₹25.4 cr", "FY29 revenue in our base case (low ₹22.1, high ₹29.3)", "2.2x the FY26 base of ₹11.7 cr");
+    statCard(s, ICONS, 0.5 + (kw + kg), ky, kw, kh, "chartline_" + BR, "₹21 cr", "of new private-market revenue added over FY27-29", "₹15-28 cr depending on scenario");
+    statCard(s, ICONS, 0.5 + 2 * (kw + kg), ky, kw, kh, "target_" + BR, "7.2%", "of the ₹165 cr/yr serviceable market held by FY29", "starting from roughly zero today");
+    statCard(s, ICONS, 0.5 + 3 * (kw + kg), ky, kw, kh, "recycle_" + BR, "₹2.4 cr/yr", "comes back yearly from AMC, O&M and monitoring", "about 10% of FY29 sales");
 
     // three columns
     const cy = 2.66, ch = 3.30, cw = 3.97, cg = 0.21;
     // Col 1: the play
     card(s, 0.5, cy, cw, ch);
-    sec2(s, ICONS, "bulb_" + BR, "The play in 5 moves", 0.66, cy + 0.14, { w: 3.4 });
+    sec2(s, ICONS, "bulb_" + BR, "Our plan in five steps", 0.66, cy + 0.14, { w: 3.4 });
     const moves = [
-      "Prioritise 3 compliance-triggered buyers: hoteliers, Tier-2 developers, private hospitals",
-      "Start in Goa + the 250 km corridor; expand ONLY through KPI gates",
-      "Sell ₹25k audits → standard 10/25/50/100 KLD FRP packages, milestone-billed",
-      "Attach AMC to ≥60% of installs; add IoT monitoring for consent-ready data",
-      "Extend the installed base: retrofit & O&M, monitoring, water reuse (IISc)",
+      "Sell to the buyers who have no choice: hotels, Tier-2 developers and private hospitals",
+      "Start in Goa and towns within a day's drive; enter new cities only after old ones hit their targets",
+      "Open doors with a ₹25k site audit, then sell standard 10/25/50/100 KLD packages billed by milestone",
+      "Put AMC on at least 60% of installs, with IoT monitoring so clients clear consent renewals",
+      "Grow from the installed base: fix broken STPs, monitor them, then recycle their water (with IISc)",
     ];
     let my = cy + 0.56;
     moves.forEach((m, i) => {
@@ -132,11 +132,11 @@ async function main() {
     // Col 2: personas
     const c2x = 0.5 + cw + cg;
     card(s, c2x, cy, cw, ch);
-    sec2(s, ICONS, "users_" + BR, "Priority personas (weighted score)", c2x + 0.16, cy + 0.14, { w: 3.6, size: 12 });
+    sec2(s, ICONS, "users_" + BR, "Who we go after first (weighted score)", c2x + 0.16, cy + 0.14, { w: 3.6, size: 12 });
     const pers = [
-      ["hotel_" + BR, "Coastal & leisure hoteliers", "4.50", "20-150 keys · ₹18-45 L + AMC", "Trigger: PCB consent, expansion, water cost"],
-      ["building_" + BR, "Tier-2 residential developers", "3.80", "100-400 units · ₹35 L-1.2 cr", "Trigger: EC condition & occupancy certificate"],
-      ["hospital_" + BR, "Private hospitals & clinics", "3.75", "30-150 beds · ₹12-35 L + AMC", "Trigger: BMW Rules >10-bed ETP mandate"],
+      ["hotel_" + BR, "Coastal & leisure hoteliers", "4.50", "20-150 keys · ₹18-45 L + AMC", "Buys when PCB consent or water bills bite"],
+      ["building_" + BR, "Tier-2 residential developers", "3.80", "100-400 units · ₹35 L-1.2 cr", "Needs a working STP to get the occupancy certificate"],
+      ["hospital_" + BR, "Private hospitals & clinics", "3.75", "30-150 beds · ₹12-35 L + AMC", "BMW Rules make treatment compulsory above 10 beds"],
     ];
     let py = cy + 0.60;
     pers.forEach(([ic, nm, sc, pr, tg]) => {
@@ -151,11 +151,11 @@ async function main() {
     // Col 3: corridor + risk
     const c3x = 0.5 + 2 * (cw + cg);
     card(s, c3x, cy, cw, 1.92);
-    sec2(s, ICONS, "pin_" + BR, "Corridor sequencing", c3x + 0.16, cy + 0.14, { w: 3.4, size: 12 });
+    sec2(s, ICONS, "pin_" + BR, "Where, and in what order", c3x + 0.16, cy + 0.14, { w: 3.4, size: 12 });
     const phases = [
-      ["P1 · FY27", "Goa + Konkan, Kolhapur, Belagavi (≤250 km)"],
-      ["P2 · FY28", "Hubballi-Dharwad, Mangaluru, Mysuru + hubs"],
-      ["P3 · FY29", "Tier-3 depth via 25 certified partners"],
+      ["P1 · FY27", "Goa plus Konkan, Kolhapur, Belagavi (within 250 km)"],
+      ["P2 · FY28", "Hubballi-Dharwad, Mangaluru, Mysuru, with 2 hubs"],
+      ["P3 · FY29", "Deeper Tier-3 towns through 25 trained partners"],
     ];
     let phy = cy + 0.58;
     phases.forEach(([tag, txt]) => {
@@ -165,13 +165,13 @@ async function main() {
       phy += 0.42;
     });
     card(s, c3x, cy + 2.06, cw, 1.24, { fill: C.redT, lineColor: "F0C7BE" });
-    sec2(s, ICONS, "alert_" + RD, "Biggest execution risk", c3x + 0.16, cy + 2.18, { w: 3.4, size: 12, color: C.red, bg: "F7D9D2" });
+    sec2(s, ICONS, "alert_" + RD, "The risk that worries us most", c3x + 0.16, cy + 2.18, { w: 3.4, size: 12, color: C.red, bg: "F7D9D2" });
     s.addText([
-      T("Developer receivables straining working capital. ", { bold: true, color: C.ink, fontSize: 8.2 }),
-      T("Controls: 30-40-25-5 milestone billing with advances, credit checks + PDCs, exposure cap 25% of order book, expansion stops if DSO >75 days.", { color: C.ink, fontSize: 8.2 }),
+      T("Developers paying late and locking up working capital. ", { bold: true, color: C.ink, fontSize: 8.2 }),
+      T("Our guardrails: 30-40-25-5 milestone billing with an advance, credit checks with PDCs, developers capped at 25% of the order book, and no new city if DSO crosses 75 days.", { color: C.ink, fontSize: 8.2 }),
     ], { x: c3x + 0.16, y: cy + 2.56, w: 3.65, h: 0.68, isTextBox: true, margin: 0, fontFace: F, lineSpacingMultiple: 1.04 });
 
-    ribbon(s, ICONS, "flag_" + WH, "FY29 exit", "66 treatment projects + 400 bio-digesters delivered · 14 clusters via 2 hubs & 25 partners · ~₹6 cr investment, fully self-funded", 6.55, 0.44);
+    ribbon(s, ICONS, "flag_" + WH, "By FY29", "66 treatment projects and 400-plus bio-digesters, 14 clusters via 2 hubs and 25 partners, about ₹6 cr of self-funded spend", 6.55, 0.44, 11);
     footer2(s, "Figures from the p.4 market model and p.5 roadmap; FY26 base per BGCC problem statement. All FY27-29 figures are estimates.", 2);
   })();
 
@@ -179,11 +179,11 @@ async function main() {
   (() => {
     const s = pres.addSlide();
     s.background = { color: "FFFFFF" };
-    header2(s, "1", "Deliverable 1 · Customer segmentation & targeting", "Eight segments, ", "three worth pursuing", 3);
+    header2(s, "1", "Deliverable 1 · Customer segmentation & targeting", "Eight buyer groups scored: ", "three worth chasing", 3);
 
     // ---- left: bubble matrix ----
     const mx = 0.5, mw = 4.55, my2 = 1.86, mh = 3.42;
-    sec2(s, ICONS, "search_" + BR, "10-factor weighted attractiveness", mx, 1.44, { w: 4.5, size: 12.5 });
+    sec2(s, ICONS, "search_" + BR, "How we scored them (10 factors)", mx, 1.44, { w: 4.5, size: 12.5 });
     card(s, mx, my2, mw, mh, { noShadow: false, r: 0.06 });
     const X = v => mx + ((v - 2.2) / 2.9) * mw;
     const Y = v => my2 + mh - ((v - 2.5) / 2.5) * mh;
@@ -225,47 +225,47 @@ async function main() {
     card(s, mx, my2 + mh + 0.52, mw, 0.52, { fill: C.tint2, noShadow: true });
     s.addText([
       T("WEIGHTS  ", { bold: true, color: C.brand, fontSize: 7 }),
-      T("demand 15 · urgency 15 · fit 10 · ticket 10 · DM access 10 · payment 10 · repeat/AMC 10 · service 10 · rivalry 5 · cycle 5  (scores 1-5, backup p.9)", { color: C.gray, fontSize: 7 }),
+      T("demand 15 · urgency 15 · fit 10 · ticket 10 · access to decision maker 10 · payment 10 · repeat/AMC 10 · service reach 10 · rivalry 5 · cycle 5  (scored 1 to 5, detail on p.9)", { color: C.gray, fontSize: 7 }),
     ], { x: mx + 0.1, y: my2 + mh + 0.55, w: mw - 0.2, h: 0.46, isTextBox: true, margin: 0, fontFace: F, lineSpacingMultiple: 1.05, valign: "middle" });
 
     // ---- right: 3 persona cards ----
     const px0 = 5.32, pcw = 2.42, pcg = 0.18, pcy = 1.86, pch = 4.55;
-    sec2(s, ICONS, "users_" + BR, "Priority persona playbook", px0, 1.44, { w: 6, size: 12.5 });
+    sec2(s, ICONS, "users_" + BR, "The three buyers, up close", px0, 1.44, { w: 6, size: 12.5 });
     const cards3 = [
       {
         ic: "hotel_" + BR, nm: "Coastal & leisure\nhotelier", sc: "4.50",
         rows: [
-          ["bolt_" + BR, "Trigger", "PCB consent renewal, expansion, tanker-water cost"],
-          ["users_" + GY, "Decides", "Owner-promoter; GM + MEP consultant influence"],
-          ["rupee_" + BR, "Price", "₹18-45 L turnkey + AMC ₹0.6-1.5 L/yr"],
-          ["clock_" + GY, "Cycle", "2-4 months"],
-          ["certificate_" + BR, "Proof", "Local reference visits, NABL lab reports, DRDO tech"],
-          ["flag_" + BR, "Entry", "₹25k audit credited to order; install ≤4 weeks"],
-          ["recycle_" + GN, "Repeat", "Sister properties, reuse-module upsell, consumables"],
+          ["bolt_" + BR, "Why now", "Consent renewal due, property expanding, or tanker bills hurting"],
+          ["users_" + GY, "Who signs", "The owner; GM and MEP consultant weigh in"],
+          ["rupee_" + BR, "Budget", "₹18-45 L turnkey plus AMC of ₹0.6-1.5 L a year"],
+          ["clock_" + GY, "Timeline", "2 to 4 months"],
+          ["certificate_" + BR, "Proof", "A hotel they can visit, NABL lab reports, DRDO pedigree"],
+          ["flag_" + BR, "Way in", "₹25k audit, adjusted against the order; install inside 4 weeks"],
+          ["recycle_" + GN, "Repeat", "Sister properties, reuse add-on, consumables"],
         ],
       },
       {
         ic: "building_" + BR, nm: "Tier-2 residential\ndeveloper", sc: "3.80",
         rows: [
-          ["bolt_" + BR, "Trigger", "EC ≥20,000 sqm & occupancy certificate need live STP"],
-          ["users_" + GY, "Decides", "Promoter; MEP consultant + PMC specify"],
-          ["rupee_" + BR, "Price", "₹35 L-1.2 cr design-build, milestone billed"],
-          ["clock_" + GY, "Cycle", "6-9 months (tracks construction)"],
-          ["certificate_" + BR, "Proof", "200+ housing installs, ONGC 100-KLD MBR, BG"],
-          ["flag_" + BR, "Entry", "Free sizing at EC stage; spec-in via consultant"],
-          ["recycle_" + GN, "Repeat", "Next projects + society O&M annuity post-handover"],
+          ["bolt_" + BR, "Why now", "EC terms and the occupancy certificate demand a live STP"],
+          ["users_" + GY, "Who signs", "Promoter; MEP consultant and PMC write the spec"],
+          ["rupee_" + BR, "Budget", "₹35 L to 1.2 cr design-build, billed by milestone"],
+          ["clock_" + GY, "Timeline", "6 to 9 months, moving with construction"],
+          ["certificate_" + BR, "Proof", "200-plus housing installs, the ONGC 100 KLD job, bank guarantee"],
+          ["flag_" + BR, "Way in", "Free STP sizing at EC stage so we get written into the spec"],
+          ["recycle_" + GN, "Repeat", "Their next project, plus society O&M after handover"],
         ],
       },
       {
         ic: "hospital_" + BR, nm: "Private hospital\n& clinic", sc: "3.75",
         rows: [
-          ["bolt_" + BR, "Trigger", "BMW Rules >10-bed ETP mandate, NABH, consent"],
-          ["users_" + GY, "Decides", "Owner-doctor / trustee; administrator influences"],
-          ["rupee_" + BR, "Price", "₹12-35 L compact skid + AMC ₹0.8-2 L/yr"],
-          ["clock_" + GY, "Cycle", "3-6 months"],
-          ["certificate_" + BR, "Proof", "Compliance document pack, live-site install method"],
-          ["flag_" + BR, "Entry", "Liquid-waste audit + PCB liaison support"],
-          ["recycle_" + GN, "Repeat", "Sister facilities, disinfection upgrades, long AMC"],
+          ["bolt_" + BR, "Why now", "BMW Rules apply above 10 beds; NABH and consent add pressure"],
+          ["users_" + GY, "Who signs", "Owner-doctor or trustee; the administrator runs the process"],
+          ["rupee_" + BR, "Budget", "₹12-35 L compact skid plus AMC of ₹0.8-2 L a year"],
+          ["clock_" + GY, "Timeline", "3 to 6 months"],
+          ["certificate_" + BR, "Proof", "Compliance file, and proof we can install without shutting wards"],
+          ["flag_" + BR, "Way in", "Liquid-waste audit plus help dealing with the PCB"],
+          ["recycle_" + GN, "Repeat", "Sister facilities, disinfection upgrades, long AMC stays"],
         ],
       },
     ];
@@ -288,7 +288,7 @@ async function main() {
       });
     });
 
-    ribbon(s, ICONS, "target_" + WH, "Decision", "80% of new-business effort on these three. Homeowners stay dealer-led run-rate; industrial ETPs opportunistic only.", 6.58, 0.42);
+    ribbon(s, ICONS, "target_" + WH, "Our call", "Put 80% of new-business time on these three. Homeowners keep buying through dealers; industrial ETPs only when they come to us.", 6.58, 0.42, 11);
     footer2(s, "Sources: GSPCB consent framework (susbio.in guide); BMW Rules 2016; EIA 2006 item 8(a); KSPCB rules (Deccan Herald 2024); EPBL refs (epbiocomposites.com; EquityBulls Dec 2023). Scores: team analysis.", 3);
   })();
 
@@ -296,10 +296,10 @@ async function main() {
   (() => {
     const s = pres.addSlide();
     s.background = { color: "FFFFFF" };
-    header2(s, "2", "Deliverable 2a · Market opportunity & competitive positioning", "A ₹270 cr/yr market; ", "₹21 cr capture by FY29", 4);
+    header2(s, "2", "Deliverable 2a · Market opportunity & competitive positioning", "A ₹270 cr a year market: ", "we can take ₹21 cr of it", 4);
 
     // ---- left: concentric TAM/SAM/SOM ----
-    sec2(s, ICONS, "chart_" + BR, "Bottom-up sizing", 0.5, 1.44, { w: 3.6, size: 12.5 });
+    sec2(s, ICONS, "chart_" + BR, "Sized bottom-up, not from reports", 0.5, 1.44, { w: 3.7, size: 12.5 });
     const cxc = 2.15, byc = 4.02; // bottom of circles
     const circ = [
       [1.11, C.tint, "9FC2EE"], [0.81, "BBD7F5", "7FB0E8"], [0.50, C.brand, C.brandDk],
@@ -315,11 +315,11 @@ async function main() {
       { x: cxc - 0.5, y: byc - 0.86, w: 1.0, h: 0.56, isTextBox: true, margin: 0, align: "center", fontFace: F, lineSpacingMultiple: 0.95 });
     s.addText([
       T("● ", { color: "9FC2EE", fontSize: 6.8 }), T("TAM ", { bold: true, color: C.brandDk, fontSize: 6.8 }),
-      T("all private-pay Tier-2/3 demand, GA+MH+KA (₹239 cr STP/ETP + ₹32 cr bio)   ", { color: C.gray, fontSize: 6.8 }),
+      T("all private-pay Tier 2/3 demand in the 3 states (₹239 cr STP/ETP, ₹32 cr bio)   ", { color: C.gray, fontSize: 6.8 }),
       T("● ", { color: "7FB0E8", fontSize: 6.8 }), T("SAM ", { bold: true, color: C.brandDk, fontSize: 6.8 }),
-      T("corridor + capability, ₹5 L-2.5 cr projects   ", { color: C.gray, fontSize: 6.8 }),
+      T("what our corridor and skills can serve, ₹5 L-2.5 cr jobs   ", { color: C.gray, fontSize: 6.8 }),
       T("● ", { color: C.brand, fontSize: 6.8 }), T("SOM ", { bold: true, color: C.brandDk, fontSize: 6.8 }),
-      T("3-yr cumulative NEW revenue (₹15-28 cr) = 7.2% of SAM by FY29", { color: C.gray, fontSize: 6.8 }),
+      T("new revenue we add over FY27-29 (₹15-28 cr), 7.2% of SAM by FY29", { color: C.gray, fontSize: 6.8 }),
     ], { x: 0.5, y: 4.12, w: 3.8, h: 0.42, isTextBox: true, margin: 0, fontFace: F, lineSpacingMultiple: 1.05 });
     // state pills
     const states = [["MH", "59%"], ["KA", "28%"], ["Goa", "13%"]];
@@ -346,9 +346,9 @@ async function main() {
     });
     card(s, 4.42, 4.44, 4.15, 0.62, { fill: C.tint2, noShadow: true });
     s.addText([
-      T("Developers dominate value but pay slowly → ", { color: C.ink, fontSize: 7.6 }),
-      T("SOM tilts to hotels & hospitals; developer exposure ≤25% of order book. ", { bold: true, color: C.brandDk, fontSize: 7.6 }),
-      T("Formula: units × %lacking × fit × conversion × ticket (p.9).", { color: C.gray, fontSize: 7.6 }),
+      T("Developers are the biggest pool but pay slowly, so ", { color: C.ink, fontSize: 7.6 }),
+      T("we lean on hotels and hospitals and cap developers at 25% of the book. ", { bold: true, color: C.brandDk, fontSize: 7.6 }),
+      T("Formula: units x share lacking treatment x fit x conversion x ticket (p.9).", { color: C.gray, fontSize: 7.6 }),
     ], { x: 4.52, y: 4.50, w: 3.95, h: 0.52, isTextBox: true, margin: 0, fontFace: F, lineSpacingMultiple: 1.02 });
 
     // ---- right: scenarios + checks ----
@@ -364,13 +364,13 @@ async function main() {
     card(s, rx, 2.98, rw, 1.02, { fill: C.tint2, noShadow: true });
     s.addImage({ data: K("bolt", AM), x: rx + 0.10, y: 3.06, w: 0.2, h: 0.2 });
     s.addText([
-      T("SWING FACTORS  ", { bold: true, color: C.brand, fontSize: 7 }),
-      T("hotel conversion 6→10%/yr (±₹9 cr TAM); developer STP-trigger share 15→25% (±₹35 cr); proposal win-rate 15→25%.", { color: C.ink, fontSize: 7.4 }),
+      T("WHAT MOVES THE NUMBER  ", { bold: true, color: C.brand, fontSize: 7 }),
+      T("hotel conversion between 6 and 10% a year (₹9 cr swing); developer STP-trigger share between 15 and 25% (₹35 cr); proposal win rate between 15 and 25%.", { color: C.ink, fontSize: 7.4 }),
     ], { x: rx + 0.36, y: 3.04, w: rw - 0.5, h: 0.9, isTextBox: true, margin: 0, fontFace: F, lineSpacingMultiple: 1.04 });
     const checks = [
-      "FY29 needs 34 installs/yr = 5 crews (3 own + 2 partner) — feasible",
-      "Receivables @75 DSO = ₹5.2 cr vs net worth >₹12 cr + IPO WC",
-      "₹6.2 cr 3-yr investment funded from internal accruals",
+      "FY29 needs 34 installs a year; 5 crews (3 ours, 2 partner) can do it",
+      "At 75 receivable days, ₹5.2 cr is locked up, vs net worth above ₹12 cr",
+      "The ₹6.2 cr of investment over 3 years comes from internal accruals",
     ];
     let cyk = 4.06;
     checks.forEach(t => {
@@ -380,16 +380,16 @@ async function main() {
     });
 
     // ---- positioning ribbon, then evidence matrix ----
-    ribbon(s, ICONS, "shield_" + WH, "Positioning", "The west-coast compliance partner: certified tech + in-state FRP + 24-48h service — sell lifecycle cost, not lowest capex.", 5.10, 0.36, 10.5);
+    ribbon(s, ICONS, "shield_" + WH, "Our pitch", "The compliance partner next door: certified technology, FRP made in Goa, service within a day or two. We sell on lifetime cost, not the cheapest quote.", 5.10, 0.36, 10);
     const colDef = [
       ["COMPETITOR MATRIX", C.ink], ["EPBL", C.brand], ["Daiki Axis", C.daiki], ["Ion Exchange", C.ionx],
       ["Thermax", C.thermax], ["SUSBIO", C.susbio], ["Banka BioLoo", C.banka], ["NCR online", C.ncr],
     ];
     const matRows = [
       ["Technology", "DRDO bio-digester + MBBR/SBR/MBR + ozone FRP", "Johkasou FRP capsule, 1-50 KLD", "INDION packaged, SBR, MBR", "FabX MBBR, BioCask, custom ETP", "ECOTREAT anaerobic + MBBR FRP", "DRDO-inoculum bio-toilets, STP, FSM", "MBBR / MBR / SBR fabrication"],
-      ["Sweet spot", "5-100 KLD private compliance buyers", "Villas, hotels, institutions", "SME → municipal, all scales", "Industrial; >1 MLD EPC", "Hotels; ₹35k/KLD, 3-5 day install", "Railways, institutions (₹56.5 cr)", "Commercial & industrial"],
+      ["Sweet spot", "5-100 KLD private compliance buyers", "Villas, hotels, institutions", "SME up to municipal, all scales", "Industrial; above 1 MLD EPC", "Hotels; ₹35k/KLD, 3-5 day install", "Railways, institutions (₹56.5 cr)", "Commercial & industrial"],
       ["Presence & local O&M", "Goa OEM, 200+ installs, 24-48h corridor crews", "Dealers; ₹200 cr Tumakuru plant; dealer O&M", "Partner network; small jobs routed out", "Pan-India; distributor-sold small KLD", "MH & west; service base growing", "Hyderabad; rail O&M annuity focus", "SEO claims; remote response only"],
-      ["Whitespace for EPBL", "— defend with certification + service", "Premium import; thin turnkey civil", "Small jobs get no direct engineering", "10-50 KLD not a focus", "Sharpest rival: beat on GA/KA service", "Weak hospitality presence", "Local 24-48h service wins"],
+      ["Gap EPBL can use", "Ours to defend, with certification and service", "Premium import; thin turnkey civil work", "Small jobs get no direct engineering", "10-50 KLD is not their focus", "Toughest rival; beat them on Goa/KA service", "Weak hospitality presence", "Local 24-48h service wins"],
     ];
     const colW = [1.30, 1.62, 1.60, 1.55, 1.55, 1.58, 1.60, 1.53];
     const tbl = [colDef.map(([t, col], i) => cell(t, { bold: true, color: "FFFFFF", fill: { color: col }, fontSize: i ? 7.2 : 6.6, align: i ? "center" : "left", valign: "middle" }))];
@@ -408,23 +408,23 @@ async function main() {
   (() => {
     const s = pres.addSlide();
     s.background = { color: "FFFFFF" };
-    header2(s, "2", "Deliverable 2b · Three-year go-to-market roadmap", "36 months, ", "gated corridor by corridor", 5);
+    header2(s, "2", "Deliverable 2b · Three-year go-to-market roadmap", "A 36-month rollout ", "that earns each next step", 5);
 
     const pw = 3.85, gap = 0.39, py = 1.42, ph = 3.02;
     const phases = [
       {
-        n: "1", fy: "FY27", ttl: "Fortress Goa + Konkan", col: C.brand,
+        n: "1", fy: "FY27", ttl: "Goa and the Konkan belt", col: C.brand,
         rows: [
           ["pin_" + BR, "Where", "Goa (all), Sindhudurg-Ratnagiri, Kolhapur, Belagavi (≤250 km of Bicholim)"],
           ["users_" + BR, "Who", "Hoteliers first; hospitals; selective developers"],
           ["tag_" + BR, "Sell", "10/25/50 KLD FRP packages; ₹25k audit entry; bio-digester retail; STP Rescue"],
-          ["route_" + BR, "Route", "Founder-led ABM + 2 AMs; 15 MEP consultants; TTAG, GCCI, CREDAI Kolhapur; 10 dealers"],
+          ["route_" + BR, "Route", "Founder-led key accounts plus 2 salespeople; 15 MEP consultants; TTAG, GCCI, CREDAI Kolhapur; 10 dealers"],
           ["rupee_" + BR, "Invest", "₹1.4 cr: hires, demo skids, service van, CRM, NABL tie-up"],
           ["target_" + BR, "Target", "₹3.0-3.5 cr new orders · 10 installs · AMC ≥50%"],
         ],
       },
       {
-        n: "2", fy: "FY28", ttl: "Karnataka corridor", col: C.brandDk,
+        n: "2", fy: "FY28", ttl: "Into Karnataka", col: C.brandDk,
         rows: [
           ["pin_" + BR, "Where", "+ Hubballi-Dharwad, Mangaluru, Mysuru, Sangli probe; Belagavi hub + Mangaluru spoke"],
           ["users_" + BR, "Who", "Developers scaled up; hospitals; education & CSR"],
@@ -435,7 +435,7 @@ async function main() {
         ],
       },
       {
-        n: "3", fy: "FY29", ttl: "Tier-3 via partners", col: C.green,
+        n: "3", fy: "FY29", ttl: "Tier-3 through partners", col: C.green,
         rows: [
           ["pin_" + BR, "Where", "Davanagere, Shivamogga, Udupi, Hassan, Solapur; Nashik & Sambhajinagar partner-led"],
           ["users_" + BR, "Who", "All three personas + societies retrofit at scale"],
@@ -493,7 +493,7 @@ async function main() {
           { x: x + 0.15, y: 5.44, w: 1.08, h: 0.70, isTextBox: true, margin: 0, fontFace: F, valign: "middle", align: "center", lineSpacingMultiple: 0.96 });
       }
     });
-    s.addText("Cycle: hotels 2-4 mo · hospitals 3-6 mo · developers 6-9 mo   |   Crews: 2 own FY27 → 3 own + 2 partner FY29 (~8 installs/crew/yr)   |   KPIs: pipeline cover, proposal→win %, DSO, install cycle, AMC attach, uptime, repeat share", {
+    s.addText("Cycle: hotels 2-4 mo · hospitals 3-6 mo · developers 6-9 mo   |   Crews: 2 of our own in FY27, growing to 3 own + 2 partner by FY29 (~8 installs per crew a year)   |   KPIs: pipeline cover, proposal-to-win %, DSO, install cycle, AMC attach, uptime, repeat share", {
       x: 0.5, y: 6.22, w: 7.4, h: 0.34, isTextBox: true, margin: 0, fontFace: F, fontSize: 6.9, color: C.gray, lineSpacingMultiple: 1.0,
     });
     // revenue chart
@@ -508,7 +508,7 @@ async function main() {
       catAxisLabelColor: C.ink, catAxisLabelFontSize: 7.5, catAxisLabelFontFace: F,
       valAxisHidden: true, valGridLine: { style: "none" }, catGridLine: { style: "none" }, valAxisMaxVal: 30, barGapWidthPct: 55,
     });
-    ribbon(s, ICONS, "flag_" + WH, "Rule", "A new cluster opens only when the previous one passes its gate — service quality and cash discipline scale before geography.", 6.66, 0.40);
+    ribbon(s, ICONS, "flag_" + WH, "The rule", "We open a new city only after the last one passes its gate. Service quality and cash discipline grow first, geography second.", 6.66, 0.40, 11);
     footer2(s, "Targets from the p.4 model; distances from Bicholim, Goa. Investment funded by internal accruals + IPO working capital (problem statement).", 5);
   })();
 
@@ -516,7 +516,7 @@ async function main() {
   (() => {
     const s = pres.addSlide();
     s.background = { color: "FFFFFF" };
-    header2(s, "3", "Deliverable 3 · Risk assessment & mitigation", "Cash and credibility ", "are the binding constraints", 6);
+    header2(s, "3", "Deliverable 3 · Risk assessment & mitigation", "What can go wrong, ", "and what we would do about it", 6);
 
     // heatmap
     sec2(s, ICONS, "alert_" + BR, "Likelihood × impact heatmap", 0.5, 1.44, { w: 4.3, size: 12.5 });
@@ -549,7 +549,7 @@ async function main() {
     ], { x: 0.5, y: hy + 5 * chd + 0.46, w: 4.15, h: 1.1, isTextBox: true, margin: 0, fontFace: F, fontSize: 7.4, color: C.ink, lineSpacingMultiple: 1.12 });
 
     // mitigation table
-    sec2(s, ICONS, "shield_" + BR, "Mitigation playbook: six material risks", 5.05, 1.44, { w: 7.5, size: 12.5 });
+    sec2(s, ICONS, "shield_" + BR, "The six risks that matter, and our answers", 5.05, 1.44, { w: 7.5, size: 12.5 });
     const M = (t, o = {}) => cell(t, Object.assign({ fontSize: 7.2 }, o));
     const MH = (t) => hcell(t, { fontSize: 7.5 });
     const mit = [
@@ -559,21 +559,21 @@ async function main() {
       [M("R3 Commissioning & inoculum variation (Operational)", { bold: true }), M("Site variability; biology stabilises 4-8 weeks"), M(">2 sites off-norm at day-30"), M("Factory acceptance test; inoculum batch QC; 30/60/90-day NABL tests"), M("Rapid-response; ozone-assist retrofit"), M("Tech head")],
       [M("R4 Partner conflict (Distribution)", { bold: true }), M("Territory overlap, poaching; channel stalls"), M("Partner pipeline <30% plan; duplicate leads"), M("≤2 partners/territory; registered-lead lock; installer academy; tiers"), M("Territory reassignment; direct cover"), M("Channel mgr")],
       [M("R5 Expansion outruns service (Operational)", { bold: true, color: C.red }), M("Install base grows faster than technicians; SLA breach"), M("Response >48h; uptime <95%"), M("KPI gates; hub per ~150 km; 1 technician : 25 AMC sites"), M("Freeze clusters; contract service partners"), M("COO")],
-      [M("R6 Norms tighten (Regulatory — added)", { bold: true }), M("NGT / CPCB revisions strand designs"), M("Draft notifications; consent queries"), M("Design margin to stricter norms; IISc tertiary pipeline"), M("Paid retrofit-upgrade programme"), M("MD + Tech")],
+      [M("R6 Norms tighten (Regulatory, our added category)", { bold: true }), M("NGT / CPCB revisions strand designs"), M("Draft notifications; consent queries"), M("Design margin to stricter norms; IISc tertiary pipeline"), M("Paid retrofit-upgrade programme"), M("MD + Tech")],
     ];
     s.addTable(mit, { x: 5.05, y: 1.80, w: 7.78, colW: [1.38, 1.70, 1.10, 1.95, 1.05, 0.60], autoPage: false });
 
     // watch metrics for R7/R8
     card(s, 5.05, 5.05, 7.78, 1.28, { fill: C.tint2, noShadow: true });
-    sec2(s, ICONS, "eye_" + BR, "Watch metrics for the two monitored risks", 5.2, 5.17, { w: 7, size: 11.5 });
+    sec2(s, ICONS, "eye_" + BR, "The two risks we watch rather than fix upfront", 5.2, 5.17, { w: 7, size: 11.5 });
     s.addText([
       T("R7 Long cycles stall cash (Fin):  ", { bold: true, color: C.brandDk, fontSize: 8 }),
-      T("weekly pipeline-cover ratio ≥3× next-quarter target; audit-led entry offers shorten hotel cycles to 2-4 months; order-book coverage reviewed monthly.\n", { color: C.ink, fontSize: 8 }),
-      T("R8 Marquee-site failure (Reputation):  ", { bold: true, color: C.red, fontSize: 8 }),
-      T("IoT uptime alerts on every AMC site, 48-hour response SLA, preventive-maintenance calendar, annual third-party NABL effluent audit at reference sites.", { color: C.ink, fontSize: 8 }),
+      T("we track pipeline cover weekly (at least 3x the next quarter's target); the audit entry offer keeps hotel cycles down to 2-4 months.\n", { color: C.ink, fontSize: 8 }),
+      T("R8 A big-name site fails (Reputation):  ", { bold: true, color: C.red, fontSize: 8 }),
+      T("IoT uptime alerts on every AMC site, a 48-hour response promise, a preventive maintenance calendar, and a yearly NABL effluent audit at reference sites.", { color: C.ink, fontSize: 8 }),
     ], { x: 5.2, y: 5.52, w: 7.45, h: 0.75, isTextBox: true, margin: 0, fontFace: F, lineSpacingMultiple: 1.06 });
 
-    ribbon(s, ICONS, "shield_" + WH, "Control", "Milestone billing, exposure caps and gated expansion keep the plan self-funding; R7 and R8 stay on watch metrics.", 6.58, 0.42);
+    ribbon(s, ICONS, "shield_" + WH, "In short", "Milestone billing, exposure caps and gated expansion keep the plan self-funding. R7 and R8 sit on watch metrics, not in the red zone.", 6.58, 0.42, 11);
     footer2(s, "Likelihood/impact: team scoring from competitor research, CPCB 2021 utilisation gap and SME receivable norms. Impact scale: 3 = ₹0.5-1 cr; 5 = >₹2 cr or franchise damage.", 6);
   })();
 
@@ -581,7 +581,7 @@ async function main() {
   (() => {
     const s = pres.addSlide();
     s.background = { color: "FFFFFF" };
-    header2(s, "4", "Deliverable 4 · Portfolio expansion: adjacent products & technologies", "Rescue, monitor, recycle: ", "sequence the adjacencies", 7);
+    header2(s, "4", "Deliverable 4 · Portfolio expansion: adjacent products & technologies", "Three add-ons worth building, ", "in a set order", 7);
 
     sec2(s, ICONS, "chart_" + BR, "Weighted adjacency scores (7 criteria, 100 pts)", 0.5, 1.44, { w: 5, size: 12.5 });
     const adjLabels = ["Biogas & nutrient recovery", "Sludge / faecal-sludge svcs", "Water-as-a-service (BOOT)", "Constructed wetlands / DEWATS", "MBR premium line", "Advanced disinfection", "Greywater recycling", "Water-reuse module (tertiary)", "IoT monitoring & dashboards", "STP retrofit + O&M takeover"];
@@ -598,7 +598,7 @@ async function main() {
     card(s, 0.5, 5.48, 4.9, 0.60, { fill: C.tint2, noShadow: true });
     s.addText([
       T("CRITERIA (WEIGHTS)  ", { bold: true, color: C.brand, fontSize: 6.8 }),
-      T("demand 20 · synergy & feasibility 20 · capital 15 (inverse) · margin 15 · complexity 10 (inverse) · time-to-market 10 · recurring 10 — scores 1-5, matrix p.9", { color: C.gray, fontSize: 6.9 }),
+      T("demand 20 · synergy & feasibility 20 · capital 15 (inverse) · margin 15 · complexity 10 (inverse) · time-to-market 10 · recurring 10. Scored 1 to 5; full matrix on p.9", { color: C.gray, fontSize: 6.9 }),
     ], { x: 0.6, y: 5.52, w: 4.7, h: 0.52, isTextBox: true, margin: 0, fontFace: F, lineSpacingMultiple: 1.04, valign: "middle" });
 
     // three chosen cards
@@ -607,28 +607,28 @@ async function main() {
       {
         ic: "wrench_" + BR, nm: "STP Rescue: retrofit + O&M takeover", tag: "NOW (M0-3) · BUILD IN-HOUSE", h: 1.28,
         rows: [
-          ["bulb_" + BR, "Why", "CPCB 2021: a third of installed capacity idle/off-norm — certain demand, zero capex"],
-          ["rupee_" + BR, "Price", "₹3-15 L retrofit + ₹0.5-3 L/yr O&M (~35% GM)"],
+          ["bulb_" + BR, "Why", "CPCB found a third of installed capacity idle or off-norm, so demand is certain and capex is zero"],
+          ["rupee_" + BR, "Price", "₹3-15 L per retrofit plus ₹0.5-3 L a year for O&M (about 35% margin)"],
           ["pin_" + BR, "Pilot", "10 audits at Goa hotels"],
-          ["target_" + BR, "Metric", "25 retrofits + 40 O&M contracts by FY29; seeds AMC fleet"],
+          ["target_" + BR, "Metric", "25 retrofits and 40 O&M contracts by FY29; this also seeds the AMC fleet"],
         ],
       },
       {
         ic: "sensors_" + BR, nm: "SmartSTP: IoT monitoring & compliance", tag: "M6 · WHITE-LABEL + OWN DASHBOARD", h: 1.28,
         rows: [
-          ["bulb_" + BR, "Why", "Consent renewals demand data; differentiates every EPBL AMC"],
-          ["rupee_" + BR, "Price", "₹10-15k install + ₹3-5k/month per site; ₹50-70 L invest"],
+          ["bulb_" + BR, "Why", "Consent renewals increasingly ask for data, and it makes every EPBL AMC harder to replace"],
+          ["rupee_" + BR, "Price", "₹10-15k to install plus ₹3-5k a month per site; ₹50-70 L to set up"],
           ["pin_" + BR, "Pilot", "20 AMC sites in Goa"],
-          ["target_" + BR, "Metric", "150 connected sites by FY29, churn <10%"],
+          ["target_" + BR, "Metric", "150 connected sites by FY29, with churn under 10%"],
         ],
       },
       {
         ic: "recycle_" + BR, nm: "AquaLoop: treated-water reuse module", tag: "M9-12 · DEVELOP WITH IISc", h: 1.28,
         rows: [
-          ["bulb_" + BR, "Why", "Hotels pay tanker rates for water CGWA tells them to recycle; builds on oxy-STP + IISc MoU"],
-          ["rupee_" + BR, "Price", "₹6-18 L add-on skid (UF + carbon + UV/O3); ₹1-1.5 cr dev"],
-          ["pin_" + BR, "Pilot", "2 Goa resorts + 1 Kolhapur society"],
-          ["target_" + BR, "Metric", "Attached to 25% of new STP orders by FY29"],
+          ["bulb_" + BR, "Why", "Hotels pay tanker rates for water that CGWA already tells them to recycle; builds on the oxy-STP line and the IISc MoU"],
+          ["rupee_" + BR, "Price", "₹6-18 L add-on skid (UF, carbon, UV/ozone); ₹1-1.5 cr to develop"],
+          ["pin_" + BR, "Pilot", "2 Goa resorts and 1 Kolhapur society"],
+          ["target_" + BR, "Metric", "On 25% of new STP orders by FY29"],
         ],
       },
     ];
@@ -663,11 +663,11 @@ async function main() {
         { x: x + 0.32, y: cy2 + 0.36, w: 1.28, h: 0.42, isTextBox: true, margin: 0, fontFace: F, valign: "middle" });
       if (i < 3) s.addText("→", { x: x + 1.60, y: cy2 + 0.36, w: 0.26, h: 0.42, isTextBox: true, margin: 0, align: "center", valign: "middle", fontFace: F, fontSize: 12, bold: true, color: C.amber });
     });
-    s.addText("Deferred: full WaaS/BOOT (partner-financed pilot only), MBR premium line, FSTP, biogas — capex, municipal dependence or sub-scale economics. Combined: ~₹2.4 cr/yr recurring by FY29 at 35-40% GM.", {
+    s.addText("Parked for now: full WaaS (partner-financed pilot only), an MBR line, FSTP and biogas. Too much capex, too municipal, or too small. The three we picked add about ₹2.4 cr a year of recurring revenue by FY29 at 35-40% margins.", {
       x: cx, y: cy2 + 0.86, w: cw2, h: 0.36, isTextBox: true, margin: 0, fontFace: F, fontSize: 7.0, color: C.gray, lineSpacingMultiple: 1.0,
     });
 
-    ribbon(s, ICONS, "recycle_" + WH, "Thesis", "Each adjacency deepens the installed base and lifts recurring revenue to ~10% of sales by FY29 — no new manufacturing needed.", 6.58, 0.42, 11);
+    ribbon(s, ICONS, "recycle_" + WH, "Bottom line", "The add-ons sell into plants we already service and lift recurring revenue to about 10% of sales by FY29, with no new manufacturing.", 6.58, 0.42, 10.5);
     footer2(s, "CPCB 2021 (26,869 operational vs 31,841 MLD installed; 20,235 utilised); CGWA 2020 reuse mandate; IISc MoU (ANI, Feb 2026); Boson Whitewater WaaS benchmark (Zerodha Rainmatter).", 7);
   })();
 
@@ -722,7 +722,7 @@ async function main() {
     s.addImage({ data: K("flask", BR), x: 11.38, y: 1.54, w: 0.26, h: 0.26 });
     s.addText([
       T("METHODOLOGY\n", { bold: true, color: C.brand, fontSize: 8.5 }),
-      T("\nSizing: bottom-up per segment per state — units × %lacking × fit × conversion × ticket. No top-down report allocation.\n", { color: C.ink, fontSize: 7 }),
+      T("\nSizing: bottom-up per segment per state, as units x share lacking treatment x fit x conversion x ticket. No top-down report allocation.\n", { color: C.ink, fontSize: 7 }),
       T("\nScenarios: conversion, trigger-share, win-rate flexed; conservative = lowest defensible; upside = capacity-bound.\n", { color: C.ink, fontSize: 7 }),
       T("\nScoring: segmentation 10 factors / portfolio 7 criteria; weights on slides 3 & 7; evidence-based 1-5.\n", { color: C.ink, fontSize: 7 }),
       T("\nRounding: ₹cr to 1 decimal; estimates labelled; no false precision.", { color: C.ink, fontSize: 7 }),
@@ -799,7 +799,7 @@ async function main() {
       T("FY29 new-business mix: ", { bold: true, color: C.brandDk, fontSize: 7.4 }),
       T("26 STP/ETP (avg ₹32 L) ₹8.3 cr + 8 retrofits ₹1.0 cr + ~230 bio-digesters ₹1.8 cr + AMC/monitoring/O&M ₹0.8 cr = ₹11.9 cr.  ", { color: C.ink, fontSize: 7.4 }),
       T("Working capital: ", { bold: true, color: C.brandDk, fontSize: 7.4 }),
-      T("75 DSO → ₹5.2 cr receivables vs net worth >₹12 cr + IPO WC.  ", { color: C.ink, fontSize: 7.4 }),
+      T("at 75 receivable days that is ₹5.2 cr locked up, against net worth above ₹12 cr plus IPO working capital.  ", { color: C.ink, fontSize: 7.4 }),
       T("Segment scores: ", { bold: true, color: C.brandDk, fontSize: 7.4 }),
       T("hoteliers 4.50 · developers 3.80 · hospitals 3.75 · homeowners 3.45 · societies 3.20 · MSME 3.20 · schools 3.05 · commercial 3.05.", { color: C.ink, fontSize: 7.4 }),
     ], { x: ax + 0.12, y: by2 + 1.78, w: 8.2, h: 0.66, isTextBox: true, margin: 0, fontFace: F, lineSpacingMultiple: 1.06, valign: "top" });
