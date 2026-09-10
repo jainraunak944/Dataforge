@@ -5,3 +5,5 @@ dist/
 artifacts/screenshots/*.tmp.png
 # Organizer brief and downloaded third-party papers stay private inputs
 private-inputs/
+# Lead-research CSVs contain third-party personal data; never publish to this public repo
+output/
