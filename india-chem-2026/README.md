@@ -10,9 +10,12 @@ Submission deadline: 14 Sep 2026 via NIT Warangal's official institutional email
 
 | Path | What it is |
 |---|---|
-| `deck/India_Chem_2026_NITW_Raunak_Anushriya.pptx` | The 8-slide concept deck (editable; speaker notes embedded) |
-| `deck/India_Chem_2026_NITW_Raunak_Anushriya.pdf` | Visually identical PDF (rendered from the PPTX) |
-| `deck/build_deck.cjs` | Editable source that generates the deck (`npm i pptxgenjs && node build_deck.cjs`) |
+| `deck/India_Chem_2026_NITW_Raunak_Anushriya_v2.pptx` | **CURRENT deck (v2)**: purple redesign, infographic-led, references slide, speaker notes embedded |
+| `deck/India_Chem_2026_NITW_Raunak_Anushriya_v2.pdf` | Visually identical PDF of v2 (rendered from the PPTX) |
+| `deck/build_deck_v2.cjs` + `deck/strip_dashes.py` | Editable source that generates v2 (see rebuild steps below) |
+| `deck/India_Chem_2026_NITW_Raunak_Anushriya.pptx` | Superseded v1 deck (navy/teal), kept for reference |
+| `deck/India_Chem_2026_NITW_Raunak_Anushriya.pdf` | Superseded v1 PDF |
+| `deck/build_deck.cjs` | v1 generator source |
 | `model/train_fault_model.py` | Prototype fault-detection model (CWRU public data); rerun to reproduce metrics |
 | `model/results/` | metrics.json, confusion_matrix.csv, feature_importances.csv from the last run |
 | `economics/NAADI_pilot_economics.xlsx` | Live-formula economics workbook (blue+yellow cells = your inputs) |
@@ -54,9 +57,17 @@ following, and should not be submitted before:
        "India Chem 2026 Submission – Youth Innovation Challenge – National
        Institute of Technology Warangal", by 14 Sep 2026.
 
-## Rebuilding after edits
+## Rebuilding after edits (v2)
 
 ```bash
-cd deck && node build_deck.cjs          # regenerate PPTX
-soffice --headless --convert-to pdf India_Chem_2026_NITW_Raunak_Anushriya.pptx
+cd deck && npm i pptxgenjs             # once
+node build_deck_v2.cjs                 # regenerate PPTX
+python3 strip_dashes.py India_Chem_2026_NITW_Raunak_Anushriya_v2.pptx  # zero em/en dashes rule
+soffice --headless --convert-to pdf India_Chem_2026_NITW_Raunak_Anushriya_v2.pptx
 ```
+
+v2 conventions: white background on every slide; purple #5B2A86 as the only
+primary accent (green = validated/positive, amber = risk/uncertainty);
+per-claim citation numbers [1] to [11] resolved on slide 8; estimate and
+calculation labels beside the numbers; no em or en dashes anywhere in the
+file (the strip_dashes step also cleans the pptxgenjs slide-master bullets).

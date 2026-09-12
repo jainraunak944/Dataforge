@@ -51,6 +51,17 @@ of portable-route analysis vs online OEM systems (public vendor documentation
 classes, no specific vendor cited). The proposed stack's TCO/scalability
 scores presume estimate #12 — they inherit its uncertainty.
 
+## v2 deck citation numbering (12 Sep 2026 redesign)
+
+The v2 deck renumbers citations for its dedicated references slide (slide 8):
+[1] competition brief · [2] US DOE FEMP O&M guide 2010 · [3] Nowlan & Heap 1978
+· [4] McKee et al. 2011 · [5] CWRU dataset + team model code/results ·
+[6] ISO 20816-3 / 13374-1 / 17359 / 14224 · [7] NITI Aayog NSAI 2018 + DST
+NM-ICPS 2018 · [8] MHI SAMARTH Udyog · [9] HI/Europump/US DOE Pump LCC 2001 ·
+[10] PESO · [11] team economics workbook + calculation sheet.
+The PIB sector-size claim (register row 2 above) is not cited in v2 and was
+therefore dropped from the references slide per the only-cited-sources rule.
+
 ## Team decision record
 
 | Date | Decision | By |

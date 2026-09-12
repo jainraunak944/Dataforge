@@ -1,123 +1,124 @@
-# NAADI — Speaker notes (10-minute final-round script)
+# NAADI, speaker notes for the v2 deck (10-minute final-round script)
 
-Target: ~9.5 min talk + buffer; 60–75 s per substantive slide. The same notes
-are embedded in the PPTX (View → Notes). Suggested split: Raunak opens and
-takes slides 1–2, 5, 7; Anushriya takes 3–4, 6, 8 (chemical-plant context,
-pilot & way forward) — adjust to comfort. DRAFT for team rehearsal & rewrite.
+Matches India_Chem_2026_NITW_Raunak_Anushriya_v2.pptx (the same notes are
+embedded in the file under View, Notes). Target about 9.5 minutes plus buffer.
+Suggested split: Raunak opens and takes slides 1, 2, 5 and 7; Anushriya takes
+slides 3, 4, 6 and 8. Adjust to comfort. DRAFT for team rehearsal and rewrite.
+House rule for this deck: no em dashes or en dashes, including in these notes.
 
 ---
 
-**Slide 1 — Title (≈60 s)**
+**Slide 1, title (about 60 s)**
 Good morning. We are Raunak Jain, mechanical engineering, and Anushriya
-Bhattacharya, chemical engineering, from NIT Warangal. Our proposal is NAADI —
-the Sanskrit word for pulse — a predictive-maintenance stack for the pumps
-that keep a chemical plant alive. The one-line thesis: continuous vibration
-monitoring with interpretable machine learning on a plant's 25 worst pumps
-costs about ₹37 lakh, pays back in roughly eleven months, and — unlike
-proprietary cloud offerings — leaves the data and the models with the plant.
-The 35–45% downtime-reduction range is the US Department of Energy's published
-band for functioning predictive-maintenance programmes, not our invention.
-Everything you will see is either sourced, or computed by us in code we can
-hand you.
+Bhattacharya, chemical engineering, from NIT Warangal. Our proposal is NAADI,
+a predictive maintenance system for the critical pumps of a chemical plant.
+The idea in one sentence: continuous vibration sensing on a plant's 25 most
+failure-prone pumps, with interpretable machine learning that drafts work
+orders for the reliability engineer, while all data and models stay on the
+plant's own network. We are proposing a six-month pilot. The base-case
+economics, a public benchmark validation of our prototype, and the pilot
+design follow in the next seven slides.
 
-**Slide 2 — Problem (≈70 s)**
-Our use case is deliberately narrow: not "the chemical industry", but the 25
-worst centrifugal pumps in one mid-size speciality-chemicals plant. Using our
-assumption register — ₹500 crore revenue, 8,000 hours — each hour down costs
-about ₹1.9 lakh in contribution margin. Sixty hours of pump-caused outage plus
-twelve repairs a year is roughly ₹1.4 crore of annual exposure. These are
-labelled estimates; phase zero of the pilot replaces them with the plant's own
-24-month history. The root cause is structural: the classic
-reliability-centred-maintenance finding is that 89% of failure modes show no
-fixed wear-out age, so calendar-based maintenance is blind to them. Bearings
-and seals — which dominate pump failures — degrade over weeks. That window is
-our opportunity.
+**Slide 2, existing problem (about 70 s)**
+The use case is one representative mid-sized speciality chemicals plant, and
+inside it the 25 pumps whose trips actually stop production. The funnel on
+the left shows the filtering: about 200 pumps, 25 critical ones, an estimated
+60 outage hours a year, and roughly 1.4 crore of annual exposure once lost
+margin and repairs are added. These plant figures are labelled estimates, and
+the pilot's first phase replaces them with the plant's own 24-month history.
+The middle shows why this keeps happening: monthly inspection rounds leave
+long blind windows, and the foundational reliability study found 89 percent
+of failure modes have no predictable wear-out age, so calendar-based
+maintenance misses them. Bearing and seal problems develop over days to
+weeks. That is the window NAADI is designed to use.
 
-**Slide 3 — Benchmark & gap (≈70 s)**
+**Slide 3, global practices and the gap (about 65 s)**
 We compared five realistic approaches on the six criteria that decide
-adoption, weighting detection lead time and MSME scalability highest. Reactive
-and calendar-based maintenance fail on lead time — and calendar PM is today's
-Indian default. Monthly offline vibration rounds help, but leave four-week
-blind windows and depend on scarce analysts. Global best practice — continuous
-OEM cloud monitoring — is technically excellent but scores poorly for India:
-high per-point cost, subscriptions, and the plant's own condition data locked
-in a vendor silo. So the gap is not a sensing gap or an algorithm gap; it is
-an architecture-and-affordability gap. That analysis produces five design
-principles — continuous, interpretable, open, retrofit-friendly, human-in-loop
-— and those principles, not a product preference, define NAADI.
+adoption, weighting detection lead time and fit for mid-sized plants highest.
+Run to failure and calendar-based maintenance give no lead time for random
+faults, and calendar maintenance is still the common practice in Indian
+plants. Monthly offline vibration rounds help but leave blind windows of
+several weeks and depend on scarce analysts. OEM cloud monitoring is the
+global best practice and it works, but it scores poorly here on total cost
+and on data control, because the plant's condition history ends up in a
+vendor system. So the gap is architectural rather than technical. That
+analysis gives the five design choices at the bottom, and those choices
+define NAADI. The scores are our judgement and are labelled as such.
 
-**Slide 4 — Solution (≈75 s)**
-The architecture is four layers, and we are explicit about what is ours and
-what is not. Sensing is commodity and proven — Ex-certified wireless
-accelerometers that magnet-mount during normal operation, no shutdown. The
-edge layer computes sixteen interpretable condition indicators, and ISO 20816
-velocity zones give usable alarm limits from day one, before any learning. The
-learning layer is our contribution: an anomaly tier per pump plus a fault-type
-classifier, whose honest benchmark results are on the next slide. The act
-layer keeps a human in the loop — every alert becomes a drafted CMMS work
-order that the reliability engineer accepts or rejects, and those decisions
-retrain the system. Three defensible differences: openly validated metrics,
-plant-owned data, and a cost architecture — about one and a half lakh per pump
-— that a cluster of MSMEs can realistically share.
+**Slide 4, proposed solution (about 70 s)**
+This is the whole system on one picture. Wireless vibration and temperature
+sensors sit on both bearing housings of each pump, using hardware that meets
+the applicable PESO and IECEx requirements for hazardous areas. An area
+gateway extracts sixteen standard vibration indicators per measurement
+window, following ISO 13374, and ISO 20816-3 alarm zones give usable limits
+from day one. The model layer produces a per-pump anomaly score and a fault
+type. Results feed a reliability dashboard, and each alert arrives as a
+drafted work order inside the plant's existing CMMS. The reliability engineer
+approves or rejects every action, and confirmed findings feed back to retrain
+the model. Everything inside the dashed boundary runs on the plant network,
+so the condition history stays with the plant. What is genuinely ours is the
+model layer and the workflow integration; sensors and gateways are mature
+industrial products.
 
-**Slide 5 — Technical feasibility (≈75 s)**
-Why does this work? A defect in a bearing race strikes the rolling elements at
-a defect-specific frequency — energy moves into characteristic bands and the
-waveform turns impulsive. Sixteen classical indicators capture that; a random
-forest classifies it. We did not take anyone's word for this: we trained the
-prototype ourselves on Case Western's public bearing benchmark. Under the
-strictest split — whole recordings held out, and an entire motor-load
-condition never seen in training — fault-versus-healthy separation is perfect
-on this benchmark, and fault-type accuracy is 97.9%. One honesty point: many
-projects quote random window splits, which leak near-identical windows into
-the test set and inflate accuracy. We refuse to. And the limits are printed on
-the slide, not hidden: a test rig is not a plant, which is why our pilot
-success threshold is seventy percent early detection, not ninety-seven.
+**Slide 5, technical feasibility (about 75 s)**
+How the detection works: a bearing defect makes the vibration signal
+impulsive and shifts energy into characteristic frequency bands. We compute
+sixteen standard indicators per window, things like RMS, kurtosis, crest
+factor and band energies, and a random forest classifies them. We trained and
+tested this ourselves on the public Case Western bearing dataset. Under a
+strict protocol, with whole recordings held out and one motor load never seen
+in training, four-class accuracy is 97.9 percent, and none of the 237 healthy
+benchmark windows was misclassified. The confusion matrix shows the only
+errors are between fault types, not between faulty and healthy. The caveat is
+printed on the slide: this is a controlled test rig with seeded faults, not a
+chemical plant. Sensors, gateways and integration standards are mature; what
+still needs proof is plant noise, lead time and false-alert rate, which is
+exactly what the pilot measures.
 
-**Slide 6 — Execution & pilot (≈75 s)**
-Execution is a six-month pilot built around one principle: earn trust before
-touching anyone's maintenance schedule. Phase zero builds the baseline from
-the plant's own CMMS history and freezes the success criteria jointly with the
-plant — the pass bar is agreed before we install anything. Installation takes
-a month: wireless magnet-mount sensors fitted during routine access, no
-shutdown, hazardous-area permits handled properly. Then the crucial part:
-three months of shadow mode. Alerts are logged and adjudicated weekly against
-what maintenance actually finds — but nobody acts on them. The system earns
-its precision statistics in the open. The month-six gate is numeric: ≥70%
-early detection, ≤2 false alerts per pump-month, every validated alert a work
-order within 24 hours. Pass, and it goes live and scales. Fail, and we publish
-the post-mortem. Either way the plant keeps the data.
+**Slide 6, pilot and scale-up (about 75 s)**
+Execution is a six-month pilot with one principle: the system must earn trust
+before anyone relies on it. Months zero to one build the baseline from the
+plant's own maintenance records and fix the success criteria together with
+the plant, so the pass bar is agreed before installation. Month two is
+installation: wireless sensors magnet-mounted during routine access, no
+shutdown, permits handled through the plant's normal process. Month three
+commissions healthy baselines, and months three to six run in shadow mode:
+alerts are logged and compared weekly with what maintenance actually finds,
+but no decision depends on them yet. The month-six gate is numeric and is on
+the slide: seventy percent of confirmed developing faults caught at least
+fourteen days ahead, at most two false alerts per pump per month, and
+ninety-five percent data availability. Pass the gate and the system goes
+live, then scales to other rotating assets and, between months twelve and
+twenty-four, to a shared deployment across chemical clusters. What we need is
+one plant partner, the pumps, their history and six months of access.
 
-**Slide 7 — Economics & risk (≈75 s)**
-We show the calculation, not just the answer. Each avoided downtime hour is
-worth about ₹1.9 lakh of contribution margin. Applying the DOE's effectiveness
-ranges at the conservative end — 35% downtime reduction, 10% repair savings —
-annual benefit is about ₹47 lakh against ₹6 lakh operating cost. Against ₹37
-lakh of CapEx, that is an eleven-month payback and about ₹1.1 crore of
-five-year NPV at twelve percent. We stress-tested it: if the programme
-achieves only 20% reduction — below DOE's band — or CapEx overruns 30%,
-payback stays under 24 months; both together, still under two years.
-Environmentally, fewer seal blow-outs mean fewer releases, and the same data
-stream exposes cavitation and off-BEP operation for energy savings. The risk
-we respect most is false alarms destroying operator trust — which is exactly
-why the pilot runs in shadow mode behind a hard false-alert gate.
+**Slide 7, economics and risk (about 75 s)**
+The economics, with the calculation visible. Each avoided downtime hour is
+worth about 1.9 lakh of contribution margin. Taking the US Department of
+Energy's published effectiveness range at its low end, 35 percent downtime
+reduction and 10 percent repair savings, the waterfall builds to 47.4 lakh of
+annual benefit, less 6 lakh of operating cost, so 41.4 lakh net. Against an
+estimated 37 lakh of CapEx that is roughly an 11-month base-case payback and
+about 1.1 crore of five-year NPV at a 12 percent discount rate. The
+sensitivity chart stress-tests it: even if the programme delivers only 20
+percent reduction, below the DOE band, or CapEx overruns by 30 percent,
+payback stays under 24 months in the stacked downside. The risks we take most
+seriously are false-alert fatigue, hazardous-area compliance, OT security and
+the shortage of early failure examples; each has a specific mitigation on the
+slide. Environmentally, earlier seal-fault detection reduces leak risk, and
+the same data helps find cavitation and off-design operation. Our
+recommendation is deliberately conditional: proceed with the pilot, subject
+to plant-data validation and vendor quotations.
 
-**Slide 8 — Evidence & way forward (≈75 s)**
-To close: what is proven, and what is not. Proven, with sources: the DOE
-effectiveness band, the reliability-engineering failure logic, a standards
-pathway, and our own prototype's detection numbers on a public benchmark —
-reproducible from code we publish. Not yet proven, and we have said so on
-every slide: real-plant lead times, false-alarm rates, and Indian cost points.
-That is precisely what the six-month pilot measures. After the pilot:
-plant-wide coverage within a year, and by month 24 a shared-service model for
-MSME chemical clusters, aligned with the SAMARTH Udyog Industry 4.0 centres —
-because one shared edge stack is how this reaches plants that could never buy
-an OEM cloud contract. Our ask is one pilot partner: 25 pumps, their
-maintenance history, six months of access; we bring everything else, and the
-plant keeps the data, models and results, published either way. One line to
-remember: listen to the machines before they stop the plant — ₹37 lakh,
-eleven-month payback, and the plant keeps the brains. Thank you.
+**Slide 8, sources (about 30 s)**
+The reference slide groups everything we relied on: government guidance
+including the Department of Energy maintenance ranges, the engineering
+standards for vibration evaluation and reliability data, the technical
+literature behind the failure statistics, and our own dataset work and
+economics files. Numbers in square brackets throughout the deck point here.
+The basis-of-preparation note states plainly what is estimated, what is
+judgement and what has not yet been proven. We are happy to take questions.
 
 ---
-Total ≈ 9.4 minutes at a measured pace, leaving ~30 s buffer inside the
+Total about 9.4 minutes at a measured pace, leaving buffer inside the
 10-minute limit.
