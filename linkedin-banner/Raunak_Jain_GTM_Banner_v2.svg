@@ -1,0 +1,39 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GTM Engineer LinkedIn banner">
+  <!-- Editable source. Typefaces: IBM Plex Sans (700) and IBM Plex Mono (400/500/600).
+       Install both locally when editing, or keep the fallback stacks below. -->
+
+  <!-- Warm paper ground -->
+  <rect width="1584" height="396" fill="#F2EBDD"/>
+
+  <!-- Content-area hairline -->
+  <rect x="439" y="74" width="2" height="244" fill="#181816"/>
+
+  <!-- Category label -->
+  <rect x="470" y="74" width="148" height="28" fill="#E4572E"/>
+  <text x="482" y="93" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="13" font-weight="600" letter-spacing="2.5" fill="#FFFDF8">GTM ENGINEER</text>
+
+  <!-- Headline -->
+  <g font-family="'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-0.5" fill="#181816">
+    <text x="470" y="166">I build the systems</text>
+    <text x="470" y="222">behind smarter outbound.</text>
+  </g>
+
+  <!-- Supporting line -->
+  <text x="470" y="272" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="19" font-weight="500" letter-spacing="0.5" fill="#181816">Signals <tspan fill="#A69E90">/</tspan> Research <tspan fill="#A69E90">/</tspan> Enrichment <tspan fill="#A69E90">/</tspan> Automation</text>
+
+  <!-- Tool line -->
+  <text x="470" y="312" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="15" font-weight="400" letter-spacing="0.5" fill="#181816">Clay <tspan fill="#A69E90">·</tspan> Apollo <tspan fill="#A69E90">·</tspan> Smartlead <tspan fill="#A69E90">·</tspan> n8n</text>
+
+  <!-- Process index -->
+  <rect x="1252" y="120" width="1" height="168" fill="#A69E90"/>
+  <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="12.5" font-weight="500" letter-spacing="1.5">
+    <rect x="1249" y="116.5" width="7" height="7" fill="#181816"/>
+    <text x="1274" y="124.5"><tspan fill="#A69E90">01 — </tspan><tspan fill="#181816">SIGNALS</tspan></text>
+    <rect x="1249" y="172.5" width="7" height="7" fill="#181816"/>
+    <text x="1274" y="180.5"><tspan fill="#A69E90">02 — </tspan><tspan fill="#181816">RESEARCH</tspan></text>
+    <rect x="1249" y="228.5" width="7" height="7" fill="#181816"/>
+    <text x="1274" y="236.5"><tspan fill="#A69E90">03 — </tspan><tspan fill="#181816">ENRICH</tspan></text>
+    <rect x="1249" y="284.5" width="7" height="7" fill="#E4572E"/>
+    <text x="1274" y="292.5"><tspan fill="#A69E90">04 — </tspan><tspan fill="#181816">REACH</tspan></text>
+  </g>
+</svg>
