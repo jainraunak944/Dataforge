@@ -1,0 +1,17 @@
+feature,importance
+band_1000_1800Hz,0.1492
+std,0.1109
+band_100_300Hz,0.1049
+rms,0.0910
+peak_to_peak,0.0739
+band_1800_2800Hz,0.0737
+band_2800_4200Hz,0.0684
+band_4200_6000Hz,0.0578
+band_0_100Hz,0.0567
+band_300_600Hz,0.0508
+shape_factor,0.0508
+kurtosis,0.0300
+band_600_1000Hz,0.0300
+skewness,0.0286
+impulse_factor,0.0139
+crest_factor,0.0093

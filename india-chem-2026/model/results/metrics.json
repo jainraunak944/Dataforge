@@ -1,0 +1,62 @@
+{
+  "dataset": {
+    "source": "CWRU Bearing Data Center, 12k drive-end + normal baseline",
+    "n_recordings": 64,
+    "n_windows": 4367,
+    "window_samples": 2048,
+    "sampling_hz": 12000,
+    "features": [
+      "rms",
+      "peak_to_peak",
+      "std",
+      "kurtosis",
+      "skewness",
+      "crest_factor",
+      "shape_factor",
+      "impulse_factor",
+      "band_0_100Hz",
+      "band_100_300Hz",
+      "band_300_600Hz",
+      "band_600_1000Hz",
+      "band_1000_1800Hz",
+      "band_1800_2800Hz",
+      "band_2800_4200Hz",
+      "band_4200_6000Hz"
+    ]
+  },
+  "evaluations": [
+    {
+      "evaluation": "random_forest__train_0-2hp__test_unseen_3hp",
+      "n_test_windows": 1123,
+      "accuracy": 0.9786,
+      "macro_precision": 0.9769,
+      "macro_recall": 0.976,
+      "macro_f1": 0.9754,
+      "fault_detection_precision": 1.0,
+      "fault_detection_recall": 1.0,
+      "normal_misflagged_as_fault_rate": 0.0
+    },
+    {
+      "evaluation": "logistic_baseline__train_0-2hp__test_unseen_3hp",
+      "n_test_windows": 1123,
+      "accuracy": 0.9724,
+      "macro_precision": 0.9687,
+      "macro_recall": 0.9749,
+      "macro_f1": 0.9714,
+      "fault_detection_precision": 1.0,
+      "fault_detection_recall": 1.0,
+      "normal_misflagged_as_fault_rate": 0.0
+    },
+    {
+      "evaluation": "random_forest__grouped_5fold_by_recording",
+      "n_test_windows": 4367,
+      "accuracy": 0.9895,
+      "macro_precision": 0.9896,
+      "macro_recall": 0.9883,
+      "macro_f1": 0.9889,
+      "fault_detection_precision": 1.0,
+      "fault_detection_recall": 1.0,
+      "normal_misflagged_as_fault_rate": 0.0
+    }
+  ]
+}

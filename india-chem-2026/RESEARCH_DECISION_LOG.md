@@ -1,7 +1,9 @@
 # India Chem 2026 Youth Innovation Challenge — Research & Decision Log
 
-Team: Raunak Jain + Shreya, NIT Warangal
-Status: **Stage 1 — problem-statement selection. Awaiting team confirmation before any deck design.**
+Team: Raunak Jain + Anushriya Bhattacharya, NIT Warangal
+Status: **Stage 1 closed — team confirmed PS-7 (AI-driven predictive maintenance) on 12 Sep 2026
+and supplied team-member-2 details (Anushriya Bhattacharya, B.Tech Chemical Engineering, 2nd year).
+Stage 2 record: see RESEARCH_LOG.md and README.md ratification checklist.**
 This log is the working record required by the team's process. It is NOT part of the 8-slide submission.
 
 Last updated: 12 September 2026 (session date)
