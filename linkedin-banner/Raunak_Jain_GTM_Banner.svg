@@ -1,0 +1,97 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GTM Engineer LinkedIn banner">
+  <!-- Editable source. Typeface: Inter (weights 500/600). Install Inter locally or keep the fallback stack when editing. -->
+  <defs>
+    <radialGradient id="lift" cx="0.60" cy="0.42" r="0.80">
+      <stop offset="0" stop-color="#111E33"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </radialGradient>
+    <radialGradient id="tealTint" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5EEAD4" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gridFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.4" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.9"/>
+    </linearGradient>
+    <mask id="gridMask">
+      <rect width="1584" height="396" fill="url(#gridFade)"/>
+    </mask>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#7C8DA6"/>
+    </pattern>
+    <linearGradient id="pipe" x1="0" y1="0" x2="1584" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#64748B" stop-opacity="0.08"/>
+      <stop offset="0.55" stop-color="#64748B" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#5EEAD4" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1584" height="396" fill="#0B1220"/>
+  <rect width="1584" height="396" fill="url(#lift)"/>
+  <circle cx="1420" cy="110" r="430" fill="url(#tealTint)"/>
+  <rect x="420" y="0" width="1164" height="396" fill="url(#dots)" opacity="0.10" mask="url(#gridMask)"/>
+
+  <!-- Signal pipeline: faint inbound signals converge, pass through stages, resolve right -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M -10 318 C 180 322 380 344 560 356" stroke="#64748B" stroke-opacity="0.14" stroke-width="1"/>
+    <path d="M -10 356 C 200 356 380 356 560 356" stroke="#64748B" stroke-opacity="0.14" stroke-width="1"/>
+    <path d="M -10 388 C 180 386 380 368 560 356" stroke="#64748B" stroke-opacity="0.14" stroke-width="1"/>
+    <path d="M 560 356 L 1524 356" stroke="url(#pipe)" stroke-width="1.5"/>
+    <path d="M 560 356 C 640 338 750 338 830 356" stroke="#64748B" stroke-opacity="0.18" stroke-width="1"/>
+    <path d="M 830 356 C 915 338 1005 338 1090 356" stroke="#64748B" stroke-opacity="0.18" stroke-width="1"/>
+    <path d="M 1090 356 C 1175 336 1255 336 1340 356" stroke="#5EEAD4" stroke-opacity="0.28" stroke-width="1"/>
+    <path d="M 1340 356 C 1370 300 1400 278 1450 240" stroke="#5EEAD4" stroke-opacity="0.22" stroke-width="1"/>
+  </g>
+  <g>
+    <circle cx="150" cy="322" r="1.5" fill="#64748B" opacity="0.30"/>
+    <circle cx="300" cy="376" r="1.5" fill="#64748B" opacity="0.30"/>
+    <circle cx="560" cy="356" r="4" fill="#0B1220" stroke="#64748B" stroke-opacity="0.55" stroke-width="1.5"/>
+    <circle cx="830" cy="356" r="4" fill="#0B1220" stroke="#64748B" stroke-opacity="0.55" stroke-width="1.5"/>
+    <circle cx="1090" cy="356" r="4" fill="#0B1220" stroke="#8AA0B8" stroke-opacity="0.6" stroke-width="1.5"/>
+    <circle cx="1340" cy="356" r="5" fill="#5EEAD4" filter="url(#glow)"/>
+    <circle cx="1500" cy="356" r="2.5" fill="#5EEAD4" opacity="0.8"/>
+  </g>
+
+  <!-- Node constellation, upper right -->
+  <g fill="none" stroke="#64748B" stroke-opacity="0.30" stroke-width="1">
+    <path d="M 1320 112 L 1418 90"/>
+    <path d="M 1418 90 L 1482 152"/>
+    <path d="M 1320 112 L 1372 192"/>
+    <path d="M 1372 192 L 1482 152"/>
+    <path d="M 1482 152 L 1450 240"/>
+    <path d="M 1418 90 L 1502 100"/>
+  </g>
+  <g>
+    <circle cx="1320" cy="112" r="3.5" fill="#0B1220" stroke="#64748B" stroke-opacity="0.6" stroke-width="1.5"/>
+    <circle cx="1418" cy="90" r="3.5" fill="#0B1220" stroke="#64748B" stroke-opacity="0.6" stroke-width="1.5"/>
+    <circle cx="1482" cy="152" r="4.5" fill="#5EEAD4" opacity="0.9" filter="url(#glow)"/>
+    <circle cx="1372" cy="192" r="3" fill="#0B1220" stroke="#64748B" stroke-opacity="0.6" stroke-width="1.5"/>
+    <circle cx="1450" cy="240" r="3" fill="#0B1220" stroke="#5EEAD4" stroke-opacity="0.5" stroke-width="1.5"/>
+    <circle cx="1502" cy="100" r="2" fill="#64748B" opacity="0.5"/>
+    <circle cx="1264" cy="72" r="1.5" fill="#64748B" opacity="0.4"/>
+    <circle cx="1524" cy="204" r="1.5" fill="#64748B" opacity="0.4"/>
+  </g>
+
+  <!-- Copy -->
+  <g font-family="Inter, Manrope, 'Segoe UI', -apple-system, sans-serif">
+    <rect x="470" y="81" width="26" height="2" rx="1" fill="#5EEAD4"/>
+    <text x="508" y="88" font-size="15" font-weight="600" letter-spacing="4.5" fill="#5EEAD4">GTM ENGINEER</text>
+
+    <text x="470" y="157" font-size="54" font-weight="600" letter-spacing="-0.5" fill="#F8FAFC">Building GTM systems</text>
+    <text x="470" y="218" font-size="54" font-weight="600" letter-spacing="-0.5" fill="#F8FAFC">from <tspan fill="#5EEAD4">signal</tspan> to <tspan fill="#5EEAD4">conversation.</tspan></text>
+
+    <text x="470" y="262" font-size="20" font-weight="500" letter-spacing="0.4" fill="#B9C6D8">Research <tspan fill="#5EEAD4">•</tspan> Enrichment <tspan fill="#5EEAD4">•</tspan> Outbound <tspan fill="#5EEAD4">•</tspan> Automation</text>
+
+    <rect x="470" y="282" width="330" height="38" rx="19" fill="#5EEAD4" fill-opacity="0.05" stroke="#5EEAD4" stroke-opacity="0.28" stroke-width="1"/>
+    <text x="635" y="307" text-anchor="middle" font-size="16" font-weight="500" letter-spacing="0.6" fill="#C4D2E2">Clay <tspan fill="#5EEAD4">•</tspan> Apollo <tspan fill="#5EEAD4">•</tspan> Smartlead <tspan fill="#5EEAD4">•</tspan> n8n</text>
+  </g>
+</svg>
