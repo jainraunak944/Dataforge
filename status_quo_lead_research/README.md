@@ -4,9 +4,38 @@ Evidence-backed lead list of US B2B SaaS founders for Status Quo's LinkedIn
 ghostwriting and founder-personal-branding service.
 
 **Status: incomplete and resumable.** The deterministic stages (audit, normalization,
-deduplication, prefilter) are finished over the full dataset. Web research covers part
-of a 57,673-company queue. `outputs/08_run_summary.md` always carries the true
-remaining count — see [Resuming](#resuming).
+deduplication, prefilter) are finished over the full dataset. Web research has covered
+**72 of the 57,673-company queue**, yielding 43 qualified companies and 67 founder leads.
+`outputs/08_run_summary.md` always carries the true remaining count — see
+[Resuming](#resuming). Nothing here is presented as a finished list.
+
+### What research has changed so far
+
+Research is not a rubber stamp on the vendor data — **30 of the first 72 companies (42%)
+did not survive it**:
+
+- **8 were acquired** and the dataset had no way of knowing: Rhumbix (Autodesk),
+  Syxsense (Absolute Security), Falkonry (IFS), Multis (Safe Ecosystem Foundation),
+  Shaped (Whatnot), LoudCloud (Barnes & Noble Education), Peel Insights (founding team
+  acqui-hired by Shopify, product to Relay Commerce), plus Promoboxx where three CEOs
+  have passed through since the founder stepped back.
+- **7 are foreign-operated** despite a US country field: Vultus (Sweden), OnFinance
+  (Bengaluru), Vestberry (Bratislava), Inkle (Bengaluru), Midaxo (Helsinki), Pickspace
+  (Tel Aviv), Reloadly (Barcelona). Several are US-incorporated, which is a legal
+  domicile, not a headquarters.
+- **4 failed on business model**: DoctorLogic (self-describes as a healthcare marketing
+  agency), Trio (staff augmentation), Swoop (consumer marketplace), Good Money
+  (consumer neobank).
+- **8 sit just above the 50-employee ceiling** on current public data while the vendor
+  band said 11–50: Tesorio 53, MachineMetrics 51, Ordway 61, FIXE ~51, RhythmScience,
+  Tracer and Reloadly at 51–100. These are held for verification, not force-decided.
+
+The recurring pattern among the strongest leads is a **founder with a scarce credential
+and no personal publishing habit** — a critical-care nurse who built hospital staffing
+software, a founder who sold SteelBrick to Salesforce and now builds on the platform, a
+Chief Learning Officer from American Express who founded a behaviour-change company, a
+Lucidchart co-founder on company two. Several already appear on other people's podcasts
+or write under the company byline; almost none carry that voice on their own feed.
 
 ---
 

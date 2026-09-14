@@ -134,12 +134,23 @@ def main():
         if (c["employee_confidence"] or "") in ("Low",) or "ABOVE" in (c["employee_range_verified"] or "") \
            or "above" in (c["employee_range_verified"] or ""): unresolved.append("employee count")
         if (c["ability_to_pay"] or "") == "Uncertain": unresolved.append("ability to pay")
-        if (c["b2b_saas_confidence"] or "") in ("Low",): unresolved.append("business model")
-        if not c["founder_count"]: unresolved.append("founder identity")
-        unresolved.append("LinkedIn activity (not inspectable in this environment)")
+        if (c["b2b_saas_confidence"] or "") in ("Low", "Medium"): unresolved.append("business model")
+        # A Needs Verification company has no founder rows by construction, so an empty
+        # founder_count proves nothing. Flag founder identity only where the research
+        # actually recorded it as the open question.
+        notes = (c["research_notes"] or "").lower()
+        if any(k in notes for k in ("founder identity", "no founder is identified",
+                                    "founder operational status", "founder status",
+                                    "no operational founder", "founder control",
+                                    "still operational", "founders no longer")):
+            unresolved.append("founder identity / operational status")
+        if not unresolved:
+            unresolved.append("see research notes")
         c["unresolved_facts"] = "; ".join(unresolved)
+        # Environment limitation, recorded separately so it never reads as a company-specific blocker.
+        c["linkedin_activity_status"] = "not inspectable in this environment - unverified for every lead"
     NV_COLS = ["canonical_company_id","company_name","domain","website_url",
-               "linkedin_company_url","unresolved_facts","hq_city","hq_state","hq_country",
+               "linkedin_company_url","unresolved_facts","linkedin_activity_status","hq_city","hq_state","hq_country",
                "hq_confidence","employee_estimate","employee_range_verified",
                "employee_confidence","business_model","b2b_saas_confidence","revenue_estimate",
                "funding_total","ability_to_pay","ability_to_pay_reason","tam_status",

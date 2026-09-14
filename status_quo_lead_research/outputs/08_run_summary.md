@@ -1,6 +1,6 @@
 # Run summary — Status Quo US B2B SaaS founder lead research
 
-Generated 2026-09-14T09:48:06Z · research date 2026-09-14
+Generated 2026-09-14T10:05:30Z · research date 2026-09-14
 
 ## Counts
 
@@ -11,24 +11,24 @@ Generated 2026-09-14T09:48:06Z · research date 2026-09-14
 | Rows absorbed by merging | 1,132 |
 | Locally rejected | 114,314 |
 | Prefiltered research queue | 57,673 |
-| Fully researched | 38 |
-| Qualified companies | 27 |
-| Qualified founder leads | 44 |
-| Priority A | 5 |
-| Priority B | 22 |
+| Fully researched | 72 |
+| Qualified companies | 43 |
+| Qualified founder leads | 67 |
+| Priority A | 10 |
+| Priority B | 33 |
 | Priority C | 0 |
-| Needs Verification | 8 |
-| Rejected after research | 3 |
+| Needs Verification | 16 |
+| Rejected after research | 13 |
 | Blocked sources | 0 |
-| **Remaining unprocessed** | **57,635** |
+| **Remaining unprocessed** | **57,601** |
 
 ## Reconciliation
 
 - Rows to companies: 173,119 = 171,987 companies + 1,132 absorbed — **balances**
 - Companies to queue: 171,987 = 114,314 locally rejected + 57,673 queued — **balances**
-- Queue to classification: 57,673 = 38 classified + 57,635 pending — **balances**
+- Queue to classification: 57,673 = 72 classified + 57,601 pending — **balances**
 
-Run complete: **NO — 57,635 companies remain unresearched**
+Run complete: **NO — 57,601 companies remain unresearched**
 
 Founder rows may exceed company rows because one qualified company can yield more than one credible buyer; each additional founder is an intentional separate contact row.
 
