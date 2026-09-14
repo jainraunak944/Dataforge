@@ -1,0 +1,1848 @@
+{
+ "S": {
+  "pvkm": 198659.216511233,
+  "npvA": 1042535.27755608,
+  "npvB": 2726789.17884056,
+  "npvC": 1103313.24102329,
+  "lcA": 5.24785759183303,
+  "lcB": 13.7259636211561,
+  "lcC": 5.55379841116462,
+  "dBA": 1684253.90128448,
+  "dBC": 1623475.93781726,
+  "dCA": 60777.9634672176,
+  "fkm_cng": 3.48,
+  "fkm_h2": 14.8,
+  "fkm_petrol": 6.8,
+  "fkm_bev": 1.53,
+  "fkm_B": 12,
+  "fkm_A": 3.646,
+  "okm_A": 1.68781830278836,
+  "okm_B": 1.81291961531482,
+  "okm_C": 1.49346761023408,
+  "pvkg_shaped": 2002.97417607221,
+  "pvkg_flat": 2388.87707854758,
+  "be_A": -40.8764932692549,
+  "be_A_flat": -34.2732412487655,
+  "be_C": -10.5326355234692,
+  "parity_cng": 188.108108108108,
+  "parity_petrol": 367.567567567568,
+  "maxkit_A": 0,
+  "maxkit_C": 0,
+  "save1": -467283.273333334,
+  "payback": "none",
+  "af": 3.604776202345,
+  "minkm": "n/a",
+  "aBA": 327284.355637097,
+  "bBA": -4.45309009635981,
+  "cH2": 0.0363450222477266,
+  "chk": 0,
+  "aBC": -261993.180826195,
+  "bBC": 5.13681324234594,
+  "chk2": 0
+ },
+ "ER": {
+  "usable": 1.122,
+  "range": 60.6486486486486,
+  "range700": 105.308108108108,
+  "maxshare": 0.726331121540702,
+  "kgday": 2.008175,
+  "netmass": -13,
+  "h2ps": 42.432,
+  "kmkg": 54.0540540540541,
+  "effratio": 0.864864864864865,
+  "hcng": 0.0621086261980831,
+  "petrolrange": 555,
+  "dailyneed": 3.0895,
+  "fills": 2.75356506238859
+ },
+ "H2S": {
+  "delivered_pilot": 1432.83283285152,
+  "delivered_hub": 584.424899876105,
+  "carsper_hub": 174.2875994373,
+  "demand_pilot": 60.24525,
+  "disp_pilot": 2,
+  "deliv_pilot": 1.4057225,
+  "buffer_pilot": 90.367875,
+  "util_table": [
+   [
+    0.2,
+    2779.9180821288,
+    1161.74714956637
+   ],
+   [
+    0.35,
+    1817.71433264503,
+    815.35379975221
+   ],
+   [
+    0.5,
+    1432.83283285152,
+    676.796459826547
+   ],
+   [
+    0.65,
+    1225.58894834732,
+    602.188661405036
+   ],
+   [
+    0.8,
+    1096.0615205322,
+    555.558787391592
+   ],
+   [
+    0.95,
+    1007.43749097448,
+    523.654136750814
+   ]
+  ],
+  "build": {
+   "prod": [
+    400,
+    240
+   ],
+   "trans": [
+    45,
+    45
+   ],
+   "elec": [
+    27,
+    27
+   ],
+   "caprec": [
+    646.517494647832,
+    166.247355766585
+   ],
+   "om": [
+    146.118721461187,
+    37.573385518591
+   ],
+   "delivered": [
+    1432.83283285152,
+    584.424899876105
+   ],
+   "cap": [
+    150,
+    500
+   ],
+   "util": [
+    0.5,
+    0.7
+   ],
+   "kgyr": [
+    27375,
+    127750
+   ],
+   "carsper": [
+    37.3473427365643,
+    174.2875994373
+   ],
+   "fills": [
+    60,
+    74.6946854731286
+   ],
+   "disp": [
+    2,
+    2
+   ],
+   "comp": [
+    9.375,
+    31.25
+   ],
+   "buffer": [
+    90.367875,
+    112.5
+   ],
+   "deliv": [
+    1.4057225,
+    1.75
+   ],
+   "demand": [
+    60.24525,
+    75
+   ]
+  }
+ },
+ "MK": {
+  "eligible": 2253625,
+  "fleet": 450725,
+  "hub": 180290,
+  "adopters": 9014.5,
+  "supply": 1394.3007954984,
+  "fleet2030": 1394.3007954984,
+  "pv": 4507250,
+  "funnel": [
+   [
+    "CNG vehicles in India, all categories",
+    8195000
+   ],
+   [
+    "Passenger cars among them",
+    4507250
+   ],
+   [
+    "Technically eligible: factory-fitted, boot-cylinder layout, under 6 years old at 2028",
+    2253625
+   ],
+   [
+    "In commercial fleets (taxi, aggregator, corporate, institutional)",
+    450725
+   ],
+   [
+    "In cities with a hydrogen hub station by 2030",
+    180290
+   ],
+   [
+    "Plausible early adopters (return-to-base fleets willing to convert)",
+    9014.5
+   ],
+   [
+    "Supply-constrained capacity: stations x cars per station",
+    1394.3007954984
+   ],
+   [
+    "Realistic 2030 converted fleet (minimum of demand and supply)",
+    1394.3007954984
+   ],
+   [
+    "Round 1 claim for 2030",
+    100000
+   ]
+  ]
+ },
+ "EM": {
+  "A": 136.855,
+  "Bgreen": 89.4245527127563,
+  "Bgrid": 532.535,
+  "Bgrey": 207.86,
+  "C25": 175.666666666667,
+  "C30": 133.666666666667,
+  "redB": 0.346574456813735,
+  "redC": 0.0232971636647058,
+  "gridthr": 0.285052573640598,
+  "cithr": 5.94431994072712,
+  "avoidcar": 13.06945975,
+  "abate": 128869.435577433,
+  "pilot_t": 78.4167585,
+  "fleet_t": 3644.55162523186,
+  "fleet_h2": 924
+ },
+ "BOM": {
+  "pilot": 774375,
+  "volume": 322123.48,
+  "cyl_share": 0.492589363557106
+ },
+ "PB": {
+  "total": 375570972.388141,
+  "phases": [
+   9000000,
+   84823125,
+   152231250,
+   80529079.2505572
+  ],
+  "lines": [
+   [
+    "Phase 0: Feasibility and validation (Oct 2026 - Mar 2027)",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "Regulator and test-agency consultations, route definition (AISC, MoRTH, ARAI/ICAT, PESO)",
+    1,
+    2500000,
+    2500000
+   ],
+   [
+    null,
+    "Fleet and fuel-partner validation: 30 operator interviews, duty-cycle telematics on 20 cars",
+    1,
+    2500000,
+    2500000
+   ],
+   [
+    null,
+    "Donor inspection, packaging study, CAD and mule vehicle (boot mock-up)",
+    1,
+    4000000,
+    4000000
+   ],
+   [
+    null,
+    "Phase subtotal",
+    null,
+    null,
+    9000000
+   ],
+   [
+    "Phase 1: Engineering and controlled validation (Apr 2027 - Mar 2028)",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "Hydrogen engine test-cell time and instrumentation (calibration, NOx, abnormal combustion, 500 h)",
+    1,
+    30000000,
+    30000000
+   ],
+   [
+    null,
+    "Prototype conversions (3 vehicles) at pilot kit cost",
+    3,
+    774375,
+    2323125
+   ],
+   [
+    null,
+    "Prototype donor vehicles (used Tour S CNG)",
+    3,
+    500000,
+    1500000
+   ],
+   [
+    null,
+    "Storage system qualification samples and tests (burst, cycling, bonfire, drop, permeation)",
+    1,
+    15000000,
+    15000000
+   ],
+   [
+    null,
+    "Vehicle-level safety tests (leak, sled/crash structure, ventilation) at test agency",
+    1,
+    12000000,
+    12000000
+   ],
+   [
+    null,
+    "Engineering team (8 FTE x 12 months)",
+    96,
+    250000,
+    24000000
+   ],
+   [
+    null,
+    "Phase subtotal",
+    null,
+    null,
+    84823125
+   ],
+   [
+    "Phase 2: Certification and pilot build (Apr 2028 - Mar 2029)",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "Kit type approval and emissions testing at ARAI/ICAT (analogous to CNG kit approval)",
+    1,
+    10000000,
+    10000000
+   ],
+   [
+    null,
+    "Durability demonstration (2 vehicles x 80,000 km accelerated)",
+    1,
+    8000000,
+    8000000
+   ],
+   [
+    null,
+    "Pilot conversions (30 vehicles) at pilot kit cost",
+    30,
+    774375,
+    23231250
+   ],
+   [
+    null,
+    "Instrumentation and telematics (30 cars + 20 comparison cars)",
+    50,
+    60000,
+    3000000
+   ],
+   [
+    null,
+    "Hydrogen dispensing point at partner site (compressor, cascade, one dispenser, safety, PESO)",
+    1,
+    100000000,
+    100000000
+   ],
+   [
+    null,
+    "Workshop upgrade (ventilation, detection, training) at 2 service points",
+    2,
+    4000000,
+    8000000
+   ],
+   [
+    null,
+    "Phase subtotal",
+    null,
+    null,
+    152231250
+   ],
+   [
+    "Phase 3: Pilot operation and evaluation (Apr 2029 - Sep 2030)",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    "Hydrogen fuel for 30 cars, 18 months (kg at delivered pilot price)",
+    29821.39875,
+    1432.83283285152,
+    42729079.2505572
+   ],
+   [
+    null,
+    "Operations, safety officer, data analysis and independent evaluation (18 months)",
+    18,
+    1500000,
+    27000000
+   ],
+   [
+    null,
+    "Quarterly emissions and consumption tests at test agency",
+    6,
+    800000,
+    4800000
+   ],
+   [
+    null,
+    "Insurance, incident reserve and driver training",
+    1,
+    6000000,
+    6000000
+   ],
+   [
+    null,
+    "Phase subtotal",
+    null,
+    null,
+    80529079.2505572
+   ],
+   [
+    null,
+    "Subtotal all phases",
+    null,
+    null,
+    326583454.250557
+   ],
+   [
+    null,
+    "Contingency (share of subtotal)",
+    0.15,
+    null,
+    48987518.1375836
+   ],
+   [
+    null,
+    "Total programme budget to September 2030 (Rs)",
+    null,
+    null,
+    375570972.388141
+   ],
+   [
+    null,
+    "Total in Rs crore",
+    null,
+    null,
+    37.5570972388141
+   ],
+   [
+    null,
+    "Suzuki R&D Center India / Maruti Suzuki (engineering, prototypes, test cells)",
+    0.4,
+    null,
+    150228388.955256
+   ],
+   [
+    null,
+    "Public support sought (MNRE NGHM R&D or pilot scheme, state hydrogen policy)",
+    0.35,
+    null,
+    131449840.335849
+   ],
+   [
+    null,
+    "Fuel and station partner (OMC or gas utility): dispensing point",
+    0.15,
+    null,
+    56335645.8582211
+   ],
+   [
+    null,
+    "Fleet partner (vehicles, drivers, operations)",
+    0.1,
+    null,
+    37557097.2388141
+   ],
+   [
+    null,
+    "Item",
+    "2028",
+    "2029",
+    "2030"
+   ],
+   [
+    null,
+    "Converted cars in operation (cumulative)",
+    3,
+    30,
+    1394.3007954984
+   ],
+   [
+    null,
+    "Fleet-hub stations serving cars",
+    1,
+    1,
+    8
+   ],
+   [
+    null,
+    "Hydrogen demand from cars (t/yr)",
+    1.98809325,
+    19.8809325,
+    924
+   ]
+  ]
+ },
+ "SENS": {
+  "grid1": [
+   [
+    "Rs/kg \\ km/yr",
+    30000,
+    40000,
+    50000,
+    60000,
+    70000
+   ],
+   [
+    100,
+    3.02726719489482,
+    2.94540840773611,
+    2.86354962057739,
+    2.78169083341868,
+    2.69983204625996
+   ],
+   [
+    150,
+    3.57244252861072,
+    3.67230885269064,
+    3.77217517677056,
+    3.87204150085048,
+    3.97190782493039
+   ],
+   [
+    200,
+    4.11761786232662,
+    4.39920929764517,
+    4.68080073296372,
+    4.96239216828228,
+    5.24398360360083
+   ],
+   [
+    250,
+    4.66279319604252,
+    5.1261097425997,
+    5.58942628915689,
+    6.05274283571407,
+    6.51605938227126
+   ],
+   [
+    300,
+    5.20796852975842,
+    5.85301018755424,
+    6.49805184535005,
+    7.14309350314587,
+    7.78813516094169
+   ],
+   [
+    400,
+    6.29831919719022,
+    7.3068110774633,
+    8.31530295773639,
+    9.32379483800947,
+    10.3322867182826
+   ],
+   [
+    500,
+    7.38866986462202,
+    8.76061196737237,
+    10.1325540701227,
+    11.5044961728731,
+    12.8764382756234
+   ],
+   [
+    600,
+    8.47902053205382,
+    10.2144128572814,
+    11.949805182509,
+    13.6851975077367,
+    15.4205898329643
+   ],
+   [
+    800,
+    10.6597218669174,
+    13.1220146370996,
+    15.5843074072817,
+    18.0466001774639,
+    20.508892947646
+   ]
+  ],
+  "grid2": [
+   [
+    "Rs/kg \\ BEV price",
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   [
+    100,
+    3.71394014566711,
+    2.71394014566711,
+    1.71394014566711,
+    0.713940145667113,
+    -0.286059854332887,
+    -1.28605985433289
+   ],
+   [
+    150,
+    4.71542723370322,
+    3.71542723370322,
+    2.71542723370322,
+    1.71542723370322,
+    0.71542723370322,
+    -0.28457276629678
+   ],
+   [
+    200,
+    5.71691432173933,
+    4.71691432173933,
+    3.71691432173933,
+    2.71691432173933,
+    1.71691432173933,
+    0.716914321739328
+   ],
+   [
+    250,
+    6.71840140977544,
+    5.71840140977544,
+    4.71840140977544,
+    3.71840140977544,
+    2.71840140977544,
+    1.71840140977544
+   ],
+   [
+    300,
+    7.71988849781154,
+    6.71988849781154,
+    5.71988849781154,
+    4.71988849781154,
+    3.71988849781154,
+    2.71988849781154
+   ],
+   [
+    400,
+    9.72286267388376,
+    8.72286267388376,
+    7.72286267388376,
+    6.72286267388376,
+    5.72286267388376,
+    4.72286267388376
+   ],
+   [
+    500,
+    11.725836849956,
+    10.725836849956,
+    9.72583684995597,
+    8.72583684995597,
+    7.72583684995597,
+    6.72583684995597
+   ],
+   [
+    600,
+    13.7288110260282,
+    12.7288110260282,
+    11.7288110260282,
+    10.7288110260282,
+    9.72881102602818,
+    8.72881102602818
+   ],
+   [
+    800,
+    17.7347593781726,
+    16.7347593781726,
+    15.7347593781726,
+    14.7347593781726,
+    13.7347593781726,
+    12.7347593781726
+   ]
+  ],
+  "grid3": [
+   [
+    "Rs/kg \\ kit cost",
+    1.5,
+    2,
+    2.5,
+    3,
+    4,
+    6
+   ],
+   [
+    100,
+    1.10048498033929,
+    1.60048498033929,
+    2.10048498033929,
+    2.60048498033929,
+    3.60048498033929,
+    5.60048498033929
+   ],
+   [
+    150,
+    2.1019720683754,
+    2.6019720683754,
+    3.1019720683754,
+    3.6019720683754,
+    4.6019720683754,
+    6.6019720683754
+   ],
+   [
+    200,
+    3.1034591564115,
+    3.6034591564115,
+    4.1034591564115,
+    4.6034591564115,
+    5.6034591564115,
+    7.6034591564115
+   ],
+   [
+    250,
+    4.10494624444761,
+    4.60494624444761,
+    5.10494624444761,
+    5.60494624444761,
+    6.60494624444761,
+    8.60494624444761
+   ],
+   [
+    300,
+    5.10643333248372,
+    5.60643333248372,
+    6.10643333248372,
+    6.60643333248372,
+    7.60643333248372,
+    9.60643333248372
+   ],
+   [
+    400,
+    7.10940750855593,
+    7.60940750855593,
+    8.10940750855593,
+    8.60940750855593,
+    9.60940750855593,
+    11.6094075085559
+   ],
+   [
+    500,
+    9.11238168462815,
+    9.61238168462815,
+    10.1123816846281,
+    10.6123816846281,
+    11.6123816846281,
+    13.6123816846281
+   ],
+   [
+    600,
+    11.1153558607004,
+    11.6153558607004,
+    12.1153558607004,
+    12.6153558607004,
+    13.6153558607004,
+    15.6153558607004
+   ],
+   [
+    800,
+    15.1213042128448,
+    15.6213042128448,
+    16.1213042128448,
+    16.6213042128448,
+    17.6213042128448,
+    19.6213042128448
+   ]
+  ],
+  "oat": [
+   [
+    "Year-1 delivered hydrogen price (Rs/kg)",
+    550,
+    1000,
+    11.8351035726643,
+    20.8484873649892
+   ],
+   [
+    "Installed kit cost (Rs)",
+    273804.958,
+    402654.35,
+    16.3593537928448,
+    17.6478477128448
+   ],
+   [
+    "Annual km",
+    30000,
+    70000,
+    10.6597218669174,
+    20.508892947646
+   ],
+   [
+    "Hydrogen consumption (kg/100 km)",
+    1.6,
+    2.3,
+    14.6771615251992,
+    20.7402184906069
+   ],
+   [
+    "CNG price (Rs/kg)",
+    95,
+    78,
+    16.2055420308077,
+    17.5591606176366
+   ],
+   [
+    "Share of km on hydrogen",
+    0.85,
+    0.5,
+    18.9232136440225,
+    15.2820330394615
+   ]
+  ]
+ },
+ "TCO_rows": {
+  "A_total": [
+   0,
+   293946.726666667,
+   299974.658466667,
+   306183.428220667,
+   312578.461067287,
+   219165.344899305
+  ],
+  "B_total": [
+   316623.48,
+   761230,
+   712149.034,
+   668487.69562,
+   629719.3680286,
+   505370.556455458
+  ],
+  "C_total": [
+   730000,
+   166623.3,
+   168309.666,
+   170029.75932,
+   171784.2545064,
+   -246426.160403472
+  ],
+  "h2price": [
+   800,
+   720,
+   648,
+   583.2,
+   524.88
+  ],
+  "A_cap": 0,
+  "B_cap": 316623.48,
+  "C_cap": 730000
+ },
+ "INPUTS": {
+  "decision_year": {
+   "base": 2028,
+   "down": 2028,
+   "up": 2028,
+   "active": 2028,
+   "unit": "year",
+   "cls": "C",
+   "src": null,
+   "name": "Decision year for the owner's choice (first commercial kits after certification)"
+  },
+  "horizon": {
+   "base": 5,
+   "down": 5,
+   "up": 5,
+   "active": 5,
+   "unit": "years",
+   "cls": "C",
+   "src": null,
+   "name": "Analysis horizon (fixed at 5 years in the cash-flow table)"
+  },
+  "disc": {
+   "base": 0.12,
+   "down": 0.14,
+   "up": 0.1,
+   "active": 0.12,
+   "unit": "fraction",
+   "cls": "A",
+   "src": "W4-S29",
+   "name": "Discount rate (nominal)"
+  },
+  "days": {
+   "base": 330,
+   "down": 330,
+   "up": 330,
+   "active": 330,
+   "unit": "days",
+   "cls": "C",
+   "src": "R1",
+   "name": "Operating days per year"
+  },
+  "km_day": {
+   "base": 167,
+   "down": 212,
+   "up": 150,
+   "active": 167,
+   "unit": "km/day",
+   "cls": "A",
+   "src": "W4-S30",
+   "name": "Kilometres per operating day"
+  },
+  "fuel_esc": {
+   "base": 0.03,
+   "down": 0.02,
+   "up": 0.04,
+   "active": 0.03,
+   "unit": "fraction/yr",
+   "cls": "C",
+   "src": null,
+   "name": "Annual escalation of petrol and CNG prices"
+  },
+  "elec_esc": {
+   "base": 0.02,
+   "down": 0.01,
+   "up": 0.03,
+   "active": 0.02,
+   "unit": "fraction/yr",
+   "cls": "C",
+   "src": null,
+   "name": "Annual escalation of electricity tariffs"
+  },
+  "vot": {
+   "base": 150,
+   "down": 150,
+   "up": 150,
+   "active": 150,
+   "unit": "Rs/hour",
+   "cls": "C",
+   "src": null,
+   "name": "Value of in-shift time lost to refuelling or charging"
+  },
+  "donor_value_now": {
+   "base": 350000,
+   "down": 400000,
+   "up": 300000,
+   "active": 350000,
+   "unit": "Rs",
+   "cls": "C",
+   "src": "W4-S28",
+   "name": "Resale value of donor at decision date (taxi-registered)"
+  },
+  "donor_value_end": {
+   "base": 100000,
+   "down": 70000,
+   "up": 130000,
+   "active": 100000,
+   "unit": "Rs",
+   "cls": "C",
+   "src": "W4-S28",
+   "name": "Residual value of donor at end of horizon (about 8 years old, high km)"
+  },
+  "cng_price": {
+   "base": 87,
+   "down": 78,
+   "up": 95,
+   "active": 87,
+   "unit": "Rs/kg",
+   "cls": "A",
+   "src": "W4-S16",
+   "name": "CNG retail price, Delhi (IGL), September 2026"
+  },
+  "cng_kmkg": {
+   "base": 25,
+   "down": 27,
+   "up": 23,
+   "active": 25,
+   "unit": "km/kg",
+   "cls": "C",
+   "src": "W1-S3b;W1-S8a",
+   "name": "CNG consumption in fleet use (real world, AC, load)"
+  },
+  "petrol_price": {
+   "base": 102,
+   "down": 95,
+   "up": 111,
+   "active": 102,
+   "unit": "Rs/L",
+   "cls": "A",
+   "src": "W4-S19",
+   "name": "Petrol retail price, Delhi"
+  },
+  "petrol_kml": {
+   "base": 15,
+   "down": 16,
+   "up": 14,
+   "active": 15,
+   "unit": "km/L",
+   "cls": "C",
+   "src": "W1-S3a",
+   "name": "Petrol consumption in fleet use (real world, AC)"
+  },
+  "petrol_share_cng": {
+   "base": 0.05,
+   "down": 0.05,
+   "up": 0.05,
+   "active": 0.05,
+   "unit": "fraction",
+   "cls": "C",
+   "src": null,
+   "name": "Share of km run on petrol by the CNG car (CNG unavailable, queues)"
+  },
+  "maint_cng": {
+   "base": 0.9,
+   "down": 0.7,
+   "up": 1.2,
+   "active": 0.9,
+   "unit": "Rs/km",
+   "cls": "C",
+   "src": "W4-S22",
+   "name": "Maintenance and tyres, CNG car"
+  },
+  "ins_cng": {
+   "base": 18000,
+   "down": 18000,
+   "up": 18000,
+   "active": 18000,
+   "unit": "Rs/yr",
+   "cls": "C",
+   "src": null,
+   "name": "Insurance per year, CNG car"
+  },
+  "cng_retest": {
+   "base": 2000,
+   "down": 2000,
+   "up": 2000,
+   "active": 2000,
+   "unit": "Rs per test",
+   "cls": "A",
+   "src": "W2-S24",
+   "name": "CNG cylinder hydrostatic test every 3 years"
+  },
+  "time_cng_h": {
+   "base": 0.5,
+   "down": 0.4,
+   "up": 0.6,
+   "active": 0.5,
+   "unit": "hours/day",
+   "cls": "C",
+   "src": null,
+   "name": "In-shift time lost refuelling CNG per day (queues)"
+  },
+  "kit_cost": {
+   "base": 322123.48,
+   "down": 402654.35,
+   "up": 273804.958,
+   "active": 322123.48,
+   "unit": "Rs",
+   "cls": "B",
+   "src": "BOM",
+   "name": "Installed conversion cost at commercial volume, incl. taxes (from BOM sheet)"
+  },
+  "kit_cost_pilot": {
+   "base": 774375,
+   "down": 774375,
+   "up": 774375,
+   "active": 774375,
+   "unit": "Rs",
+   "cls": "B",
+   "src": "BOM",
+   "name": "Installed conversion cost per pilot vehicle (from BOM sheet)"
+  },
+  "salvage_cng": {
+   "base": 10000,
+   "down": 0,
+   "up": 20000,
+   "active": 10000,
+   "unit": "Rs",
+   "cls": "C",
+   "src": null,
+   "name": "Credit for removed CNG cylinder and kit"
+  },
+  "downtime_days": {
+   "base": 3,
+   "down": 4,
+   "up": 2,
+   "active": 3,
+   "unit": "days",
+   "cls": "C",
+   "src": null,
+   "name": "Conversion downtime"
+  },
+  "lost_margin_day": {
+   "base": 1500,
+   "down": 1500,
+   "up": 1500,
+   "active": 1500,
+   "unit": "Rs/day",
+   "cls": "C",
+   "src": null,
+   "name": "Lost contribution per day of downtime"
+  },
+  "h2_cons": {
+   "base": 1.85,
+   "down": 2.3,
+   "up": 1.6,
+   "active": 1.85,
+   "unit": "kg/100 km",
+   "cls": "B",
+   "src": "W1-S12a;W1-S12c;W1-S9a",
+   "name": "Hydrogen consumption, H2-ICE mode, fleet use (real world, AC)"
+  },
+  "h2_share": {
+   "base": 0.65,
+   "down": 0.5,
+   "up": 0.85,
+   "active": 0.65,
+   "unit": "fraction",
+   "cls": "C",
+   "src": null,
+   "name": "Share of km driven on hydrogen (rest on petrol backup)"
+  },
+  "h2_price_y1": {
+   "base": 800,
+   "down": 1000,
+   "up": 550,
+   "active": 800,
+   "unit": "Rs/kg",
+   "cls": "B",
+   "src": "W4-S22;W4-S46",
+   "name": "Delivered hydrogen price at dispenser, year 1 (2028), unsubsidised, shared hub station"
+  },
+  "h2_change": {
+   "base": -0.1,
+   "down": -0.03,
+   "up": -0.15,
+   "active": -0.1,
+   "unit": "fraction/yr",
+   "cls": "C",
+   "src": "W4-S22",
+   "name": "Annual change in delivered hydrogen price"
+  },
+  "maint_h2": {
+   "base": 1,
+   "down": 1.2,
+   "up": 0.85,
+   "active": 1,
+   "unit": "Rs/km",
+   "cls": "C",
+   "src": "W4-S22",
+   "name": "Maintenance and tyres, retrofitted car"
+  },
+  "ins_h2": {
+   "base": 21000,
+   "down": 24000,
+   "up": 19000,
+   "active": 21000,
+   "unit": "Rs/yr",
+   "cls": "C",
+   "src": "W2-S53",
+   "name": "Insurance per year, retrofitted car"
+  },
+  "h2_inspect_yr": {
+   "base": 4000,
+   "down": 6000,
+   "up": 3000,
+   "active": 4000,
+   "unit": "Rs/yr",
+   "cls": "C",
+   "src": "W2-S24",
+   "name": "Hydrogen system inspection and 3-yearly cylinder requalification, annualised"
+  },
+  "time_h2_h": {
+   "base": 0.4,
+   "down": 0.6,
+   "up": 0.3,
+   "active": 0.4,
+   "unit": "hours/day",
+   "cls": "C",
+   "src": null,
+   "name": "In-shift time lost for hydrogen refuelling and detour per day"
+  },
+  "mod_resid_factor": {
+   "base": 0.9,
+   "down": 0.8,
+   "up": 1,
+   "active": 0.9,
+   "unit": "fraction",
+   "cls": "C",
+   "src": null,
+   "name": "Residual value factor for a modified vehicle"
+  },
+  "kit_resid": {
+   "base": 0,
+   "down": 0,
+   "up": 20000,
+   "active": 0,
+   "unit": "Rs",
+   "cls": "C",
+   "src": null,
+   "name": "Residual value of the kit at end of horizon"
+  },
+  "bev_price": {
+   "base": 1050000,
+   "down": 900000,
+   "up": 1300000,
+   "active": 1050000,
+   "unit": "Rs",
+   "cls": "A",
+   "src": "W3-S27;W3-S25",
+   "name": "BEV ex-showroom price incl. GST (compact fleet BEV, 24-30 kWh)"
+  },
+  "bev_onroad": {
+   "base": 30000,
+   "down": 20000,
+   "up": 40000,
+   "active": 30000,
+   "unit": "Rs",
+   "cls": "A",
+   "src": "W4-S25",
+   "name": "Registration and first-year extras beyond ex-showroom"
+  },
+  "bev_kwh100": {
+   "base": 15,
+   "down": 13,
+   "up": 17,
+   "active": 15,
+   "unit": "kWh/100 km",
+   "cls": "A",
+   "src": "W3-S30;W4-S23",
+   "name": "BEV consumption measured at the meter (incl. charging losses)"
+  },
+  "depot_tariff": {
+   "base": 6,
+   "down": 5,
+   "up": 8,
+   "active": 6,
+   "unit": "Rs/kWh",
+   "cls": "A",
+   "src": "W4-S20;W3-S32",
+   "name": "Depot or home charging tariff, landed"
+  },
+  "pub_tariff": {
+   "base": 20,
+   "down": 16,
+   "up": 25,
+   "active": 20,
+   "unit": "Rs/kWh",
+   "cls": "A",
+   "src": "W4-S21;W3-S33",
+   "name": "Public DC fast-charging price"
+  },
+  "pub_share": {
+   "base": 0.3,
+   "down": 0.2,
+   "up": 0.5,
+   "active": 0.3,
+   "unit": "fraction",
+   "cls": "C",
+   "src": null,
+   "name": "Share of energy from public fast charging"
+  },
+  "maint_bev": {
+   "base": 0.5,
+   "down": 0.4,
+   "up": 0.8,
+   "active": 0.5,
+   "unit": "Rs/km",
+   "cls": "C",
+   "src": "W4-S22",
+   "name": "Maintenance and tyres, BEV"
+  },
+  "ins_bev": {
+   "base": 30000,
+   "down": 28000,
+   "up": 34000,
+   "active": 30000,
+   "unit": "Rs/yr",
+   "cls": "C",
+   "src": null,
+   "name": "Insurance per year, BEV"
+  },
+  "bev_resid": {
+   "base": 420000,
+   "down": 480000,
+   "up": 340000,
+   "active": 420000,
+   "unit": "Rs",
+   "cls": "C",
+   "src": "W4-S22",
+   "name": "BEV residual value at end of horizon"
+  },
+  "time_bev_h": {
+   "base": 0.5,
+   "down": 0.3,
+   "up": 1,
+   "active": 0.5,
+   "unit": "hours/day",
+   "cls": "C",
+   "src": null,
+   "name": "In-shift time lost for charging per day"
+  },
+  "cng_lhv": {
+   "base": 48,
+   "down": 48,
+   "up": 48,
+   "active": 48,
+   "unit": "MJ/kg",
+   "cls": "A",
+   "src": "W4-S62",
+   "name": "Lower heating value of CNG"
+  },
+  "petrol_lhv": {
+   "base": 32.2,
+   "down": 32.2,
+   "up": 32.2,
+   "active": 32.2,
+   "unit": "MJ/L",
+   "cls": "A",
+   "src": "W4-S62",
+   "name": "Lower heating value of petrol"
+  },
+  "h2_lhv": {
+   "base": 120,
+   "down": 120,
+   "up": 120,
+   "active": 120,
+   "unit": "MJ/kg",
+   "cls": "A",
+   "src": "W1-S13a",
+   "name": "Lower heating value of hydrogen"
+  },
+  "cyl_vol": {
+   "base": 60,
+   "down": 60,
+   "up": 60,
+   "active": 60,
+   "unit": "L",
+   "cls": "A",
+   "src": "W1-S2",
+   "name": "Hydrogen cylinder internal (water) volume"
+  },
+  "h2_density_350": {
+   "base": 24,
+   "down": 24,
+   "up": 24,
+   "active": 24,
+   "unit": "kg/m3",
+   "cls": "A",
+   "src": "W1-S13a",
+   "name": "Hydrogen density at 350 bar, 15 C"
+  },
+  "h2_density_700": {
+   "base": 40.2,
+   "down": 40.2,
+   "up": 40.2,
+   "active": 40.2,
+   "unit": "kg/m3",
+   "cls": "A",
+   "src": "W1-S13a",
+   "name": "Hydrogen density at 700 bar, 15 C"
+  },
+  "fill_soc": {
+   "base": 0.85,
+   "down": 0.8,
+   "up": 0.95,
+   "active": 0.85,
+   "unit": "fraction",
+   "cls": "C",
+   "src": "W1-S13d",
+   "name": "State of charge reached in a non-cooled 350 bar fill (hot ambient)"
+  },
+  "resid_density": {
+   "base": 1.7,
+   "down": 2,
+   "up": 1.5,
+   "active": 1.7,
+   "unit": "kg/m3",
+   "cls": "C",
+   "src": "W1-S13c",
+   "name": "Residual gas density at minimum usable pressure"
+  },
+  "fills_day": {
+   "base": 2,
+   "down": 1.5,
+   "up": 2.5,
+   "active": 2,
+   "unit": "fills/day",
+   "cls": "C",
+   "src": null,
+   "name": "Depot fills per day available to the driver"
+  },
+  "cyl_mass": {
+   "base": 36,
+   "down": 42,
+   "up": 32,
+   "active": 36,
+   "unit": "kg",
+   "cls": "A",
+   "src": "W1-S2",
+   "name": "Composite cylinder mass (60 L, 350 bar)"
+  },
+  "kit_other_mass": {
+   "base": 14,
+   "down": 16,
+   "up": 12,
+   "active": 14,
+   "unit": "kg",
+   "cls": "C",
+   "src": null,
+   "name": "Valve, frame, regulator, lines, ECU mass"
+  },
+  "cng_cyl_mass": {
+   "base": 55,
+   "down": 55,
+   "up": 55,
+   "active": 55,
+   "unit": "kg",
+   "cls": "A",
+   "src": "W1-S14a;W1-S14b",
+   "name": "Removed CNG cylinder (55 L Type I) mass"
+  },
+  "cng_kit_mass": {
+   "base": 8,
+   "down": 8,
+   "up": 8,
+   "active": 8,
+   "unit": "kg",
+   "cls": "C",
+   "src": null,
+   "name": "Removed CNG regulator, rail, lines mass"
+  },
+  "petrol_ps": {
+   "base": 81.6,
+   "down": 81.6,
+   "up": 81.6,
+   "active": 81.6,
+   "unit": "PS",
+   "cls": "A",
+   "src": "W1-S3a",
+   "name": "Donor engine power on petrol (Tour S 1.2 L)"
+  },
+  "cng_ps": {
+   "base": 70,
+   "down": 70,
+   "up": 70,
+   "active": 70,
+   "unit": "PS",
+   "cls": "C",
+   "src": "W1-S6",
+   "name": "Donor engine power on CNG"
+  },
+  "h2_power_factor": {
+   "base": 0.52,
+   "down": 0.45,
+   "up": 0.6,
+   "active": 0.52,
+   "unit": "fraction",
+   "cls": "B",
+   "src": "W1-S9a;W1-S9b",
+   "name": "H2 lean-burn peak power relative to petrol"
+  },
+  "petrol_tank": {
+   "base": 37,
+   "down": 37,
+   "up": 37,
+   "active": 37,
+   "unit": "L",
+   "cls": "A",
+   "src": "W1-S3a",
+   "name": "Petrol tank capacity"
+  },
+  "pilot_cars": {
+   "base": 30,
+   "down": 30,
+   "up": 30,
+   "active": 30,
+   "unit": "cars",
+   "cls": "D",
+   "src": null,
+   "name": "Pilot fleet size"
+  },
+  "h2_prod_cost": {
+   "base": 400,
+   "down": 560,
+   "up": 300,
+   "active": 400,
+   "unit": "Rs/kg",
+   "cls": "A",
+   "src": "W4-S33;W4-S34;W4-S38",
+   "name": "Green hydrogen production cost at plant gate (2026-28)"
+  },
+  "h2_prod_cost_2030": {
+   "base": 240,
+   "down": 320,
+   "up": 180,
+   "active": 240,
+   "unit": "Rs/kg",
+   "cls": "A",
+   "src": "W4-S22;W4-S57;W4-S36",
+   "name": "Green hydrogen production cost at plant gate (2030)"
+  },
+  "transport_cost": {
+   "base": 45,
+   "down": 60,
+   "up": 35,
+   "active": 45,
+   "unit": "Rs/kg",
+   "cls": "B",
+   "src": "W4-S44",
+   "name": "Tube-trailer transport to station"
+  },
+  "station_capex_pilot": {
+   "base": 100000000,
+   "down": 150000000,
+   "up": 80000000,
+   "active": 100000000,
+   "unit": "Rs",
+   "cls": "B",
+   "src": "W4-S56;W4-S43",
+   "name": "Dispensing point capex, pilot (compressor, cascade, one dispenser, civil, safety, PESO)"
+  },
+  "station_cap_pilot": {
+   "base": 150,
+   "down": 150,
+   "up": 150,
+   "active": 150,
+   "unit": "kg/day",
+   "cls": "C",
+   "src": null,
+   "name": "Dispensing point design capacity, pilot"
+  },
+  "station_util_pilot": {
+   "base": 0.5,
+   "down": 0.35,
+   "up": 0.65,
+   "active": 0.5,
+   "unit": "fraction",
+   "cls": "C",
+   "src": "W4-S22",
+   "name": "Station utilisation, pilot"
+  },
+  "station_capex_2030": {
+   "base": 120000000,
+   "down": 200000000,
+   "up": 90000000,
+   "active": 120000000,
+   "unit": "Rs",
+   "cls": "B",
+   "src": "W4-S56",
+   "name": "Station capex, 2030 hub scale (500 kg/day)"
+  },
+  "station_cap_2030": {
+   "base": 500,
+   "down": 500,
+   "up": 500,
+   "active": 500,
+   "unit": "kg/day",
+   "cls": "C",
+   "src": null,
+   "name": "Station design capacity, 2030 hub"
+  },
+  "station_util_2030": {
+   "base": 0.7,
+   "down": 0.5,
+   "up": 0.85,
+   "active": 0.7,
+   "unit": "fraction",
+   "cls": "C",
+   "src": "W4-S22;W4-S46",
+   "name": "Station utilisation, 2030 hub"
+  },
+  "station_life": {
+   "base": 10,
+   "down": 10,
+   "up": 10,
+   "active": 10,
+   "unit": "years",
+   "cls": "C",
+   "src": null,
+   "name": "Station capital recovery period"
+  },
+  "station_om": {
+   "base": 0.04,
+   "down": 0.05,
+   "up": 0.03,
+   "active": 0.04,
+   "unit": "fraction/yr",
+   "cls": "A",
+   "src": "W4-S22",
+   "name": "Fixed operation and maintenance, share of capex per year"
+  },
+  "comp_kwh": {
+   "base": 3,
+   "down": 3.5,
+   "up": 2.5,
+   "active": 3,
+   "unit": "kWh/kg",
+   "cls": "C",
+   "src": null,
+   "name": "Compression and dispensing electricity"
+  },
+  "ind_tariff": {
+   "base": 9,
+   "down": 10,
+   "up": 8,
+   "active": 9,
+   "unit": "Rs/kWh",
+   "cls": "C",
+   "src": null,
+   "name": "Industrial electricity tariff"
+  },
+  "h2_loss": {
+   "base": 0.03,
+   "down": 0.05,
+   "up": 0.02,
+   "active": 0.03,
+   "unit": "fraction",
+   "cls": "C",
+   "src": null,
+   "name": "Venting, purge and metering losses"
+  },
+  "h2_margin_tax": {
+   "base": 0.1,
+   "down": 0.15,
+   "up": 0.05,
+   "active": 0.1,
+   "unit": "fraction",
+   "cls": "C",
+   "src": null,
+   "name": "Retailer margin and taxes on delivered hydrogen"
+  },
+  "trailer_kg": {
+   "base": 300,
+   "down": 250,
+   "up": 350,
+   "active": 300,
+   "unit": "kg",
+   "cls": "C",
+   "src": null,
+   "name": "Tube-trailer payload"
+  },
+  "ef_cng": {
+   "base": 2.69,
+   "down": 2.69,
+   "up": 2.75,
+   "active": 2.69,
+   "unit": "kg CO2/kg",
+   "cls": "A",
+   "src": "W4-S62",
+   "name": "Tailpipe CO2 per kg CNG"
+  },
+  "wtt_cng": {
+   "base": 0.25,
+   "down": 0.15,
+   "up": 0.35,
+   "active": 0.25,
+   "unit": "fraction",
+   "cls": "C",
+   "src": "W4-S63;W4-S17",
+   "name": "Well-to-tank uplift for CNG in India"
+  },
+  "ef_petrol": {
+   "base": 2.27,
+   "down": 2.27,
+   "up": 2.31,
+   "active": 2.27,
+   "unit": "kg CO2/L",
+   "cls": "A",
+   "src": "W4-S62",
+   "name": "Tailpipe CO2 per litre petrol"
+  },
+  "wtt_petrol": {
+   "base": 0.2,
+   "down": 0.15,
+   "up": 0.25,
+   "active": 0.2,
+   "unit": "fraction",
+   "cls": "C",
+   "src": "W4-S63",
+   "name": "Well-to-tank uplift for petrol"
+  },
+  "ci_h2_green": {
+   "base": 2,
+   "down": 3.5,
+   "up": 1.2,
+   "active": 2,
+   "unit": "kg CO2e/kg H2",
+   "cls": "A",
+   "src": "W4-S63;W4-S64;W4-S65",
+   "name": "Carbon intensity, green hydrogen incl. compression and delivery"
+  },
+  "ci_h2_grid": {
+   "base": 39,
+   "down": 43,
+   "up": 35,
+   "active": 39,
+   "unit": "kg CO2e/kg H2",
+   "cls": "B",
+   "src": "W4-S59",
+   "name": "Carbon intensity, grid-electrolysis hydrogen (India grid 2025)"
+  },
+  "ci_h2_grey": {
+   "base": 12,
+   "down": 14,
+   "up": 10,
+   "active": 12,
+   "unit": "kg CO2e/kg H2",
+   "cls": "A",
+   "src": "W4-S64",
+   "name": "Carbon intensity, grey (SMR) hydrogen"
+  },
+  "grid_now": {
+   "base": 0.86,
+   "down": 0.86,
+   "up": 0.86,
+   "active": 0.86,
+   "unit": "kg CO2/kWh",
+   "cls": "A",
+   "src": "W4-S59",
+   "name": "Grid emission factor at the meter, 2025"
+  },
+  "grid_2030": {
+   "base": 0.58,
+   "down": 0.52,
+   "up": 0.66,
+   "active": 0.58,
+   "unit": "kg CO2/kWh",
+   "cls": "A",
+   "src": "W4-S60",
+   "name": "Grid emission factor at the meter, 2030"
+  },
+  "bev_mfg": {
+   "base": 7,
+   "down": 6,
+   "up": 8.5,
+   "active": 7,
+   "unit": "t CO2e",
+   "cls": "B",
+   "src": "W4-S63;W4-S66",
+   "name": "Manufacturing emissions, compact BEV incl. 27 kWh battery"
+  },
+  "bev_life_km": {
+   "base": 150000,
+   "down": 180000,
+   "up": 120000,
+   "active": 150000,
+   "unit": "km",
+   "cls": "C",
+   "src": null,
+   "name": "Lifetime km over which BEV manufacturing is amortised"
+  },
+  "kit_mfg": {
+   "base": 0.5,
+   "down": 0.7,
+   "up": 0.4,
+   "active": 0.5,
+   "unit": "t CO2e",
+   "cls": "B",
+   "src": null,
+   "name": "Manufacturing emissions of the retrofit kit"
+  },
+  "nox_bs6": {
+   "base": 60,
+   "down": 60,
+   "up": 60,
+   "active": 60,
+   "unit": "mg/km",
+   "cls": "A",
+   "src": "W4-S71",
+   "name": "BS-VI NOx limit, M1 positive ignition"
+  },
+  "cng_stock": {
+   "base": 8195000,
+   "down": 7500000,
+   "up": 8800000,
+   "active": 8195000,
+   "unit": "vehicles",
+   "cls": "A",
+   "src": "W3-S2",
+   "name": "CNG vehicles on road in India, all categories (March 2025)"
+  },
+  "cng_pv_share": {
+   "base": 0.55,
+   "down": 0.45,
+   "up": 0.6,
+   "active": 0.55,
+   "unit": "fraction",
+   "cls": "B",
+   "src": "W3-S10;W3-S12;W3-S15",
+   "name": "Share of passenger cars in the CNG stock"
+  },
+  "eligible_share": {
+   "base": 0.5,
+   "down": 0.45,
+   "up": 0.55,
+   "active": 0.5,
+   "unit": "fraction",
+   "cls": "B",
+   "src": "W3-S10;W3-S12",
+   "name": "Share of CNG cars that are factory-fitted, boot-cylinder layout, under 6 years old at 2028"
+  },
+  "fleet_share": {
+   "base": 0.2,
+   "down": 0.15,
+   "up": 0.25,
+   "active": 0.2,
+   "unit": "fraction",
+   "cls": "C",
+   "src": "W3-S18;W3-S25",
+   "name": "Share of eligible cars in commercial or institutional fleets"
+  },
+  "hub_share": {
+   "base": 0.4,
+   "down": 0.3,
+   "up": 0.5,
+   "active": 0.4,
+   "unit": "fraction",
+   "cls": "C",
+   "src": "W3-S36;W3-S37",
+   "name": "Share of fleet cars in cities with a hydrogen hub by 2030"
+  },
+  "adopter_share": {
+   "base": 0.05,
+   "down": 0.03,
+   "up": 0.08,
+   "active": 0.05,
+   "unit": "fraction",
+   "cls": "C",
+   "src": null,
+   "name": "Plausible early-adopter share (return-to-base fleets)"
+  },
+  "hub_stations_2030": {
+   "base": 8,
+   "down": 4,
+   "up": 15,
+   "active": 8,
+   "unit": "stations",
+   "cls": "D",
+   "src": "W3-S37",
+   "name": "Fleet-hub stations serving cars by 2030"
+  }
+ }
+}
