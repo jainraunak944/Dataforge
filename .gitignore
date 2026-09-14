@@ -5,3 +5,12 @@ dist/
 artifacts/screenshots/*.tmp.png
 # Organizer brief and downloaded third-party papers stay private inputs
 private-inputs/
+
+# Status Quo lead research: third-party lead database + derived research artefacts.
+# Kept out of git by default (large, and it is licensed third-party data).
+status_quo_lead_research/data/
+status_quo_lead_research/cache/
+status_quo_lead_research/evidence/
+status_quo_lead_research/checkpoints/
+status_quo_lead_research/logs/
+status_quo_lead_research/*.sqlite
