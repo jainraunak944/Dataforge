@@ -14,3 +14,5 @@ status_quo_lead_research/evidence/
 status_quo_lead_research/checkpoints/
 status_quo_lead_research/logs/
 status_quo_lead_research/*.sqlite
+__pycache__/
+*.pyc
