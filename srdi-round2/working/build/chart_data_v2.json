@@ -1,0 +1,109 @@
+{
+ "tco_cats": {
+  "A": {
+   "cap": 0.0,
+   "CNG fuel": 692734.2179653716,
+   "Petrol fuel (share of km)": 71243.08351730982,
+   "Maintenance and tyres": 178793.29486010983,
+   "Insurance": 64885.971642210076,
+   "Cylinder periodic test (annualised)": 2403.1841348966705,
+   "In-shift refuelling time cost": 89218.21100803884,
+   "resid": -56742.685571859896
+  },
+  "B": {
+   "cap": 316623.48,
+   "Hydrogen fuel": 1602379.3408577715,
+   "Petrol fuel (backup share of km)": 498701.5846211687,
+   "Maintenance and tyres": 198659.2165112332,
+   "Insurance": 75700.30024924508,
+   "Hydrogen system inspection and cylinder requalification": 14419.104809380016,
+   "In-shift refuelling time and detour cost": 71374.56880643108,
+   "resid": -51068.417014673905
+  },
+  "C": {
+   "cap": 730000.0,
+   "Electricity (depot and public mix)": 314941.4150911005,
+   "Maintenance and tyres": 99329.6082556166,
+   "Insurance": 108143.28607035012,
+   "In-shift charging time cost": 89218.21100803884,
+   "resid": -238319.27940181157
+  }
+ },
+ "bom": [
+  [
+   "Composite hydrogen cylinder, 60 L water volume, 350 bar (Type III or IV), 15-year life",
+   250000,
+   95000
+  ],
+  [
+   "On-tank valve with solenoid, excess-flow, manual shut-off and TPRD (UN R134 class)",
+   55000,
+   18000
+  ],
+  [
+   "Mounting frame, straps, boot bulkhead shield, TPRD vent duct, boot ventilation",
+   30000,
+   11000
+  ],
+  [
+   "H35 receptacle, check valve, high-pressure filter",
+   25000,
+   8000
+  ],
+  [
+   "Stainless (316L) high-pressure lines and fittings",
+   18000,
+   7000
+  ],
+  [
+   "Two-stage pressure regulator 350 bar to injection pressure, with pressure and temperature sensors",
+   55000,
+   15000
+  ],
+  [
+   "Hydrogen port-fuel injectors (4) and rail",
+   40000,
+   12000
+  ],
+  [
+   "Low-pressure hose, fuel shut-off, pressure relief",
+   8000,
+   3500
+  ],
+  [
+   "Hydrogen ECU (dual-map, CAN, automatic petrol fallback, diagnostics) with harness",
+   45000,
+   15000
+  ],
+  [
+   "Hydrogen leak sensors (boot and engine bay), controller, cabin warning, vent fan",
+   22000,
+   7000
+  ],
+  [
+   "Cold-grade spark plugs, PCV/oil-separator upgrade, coolant and knock sensor check",
+   8000,
+   4000
+  ],
+  [
+   "Lean-NOx aftertreatment provision (lean NOx trap) and lambda sensor",
+   35000,
+   15000
+  ],
+  [
+   "Removal of CNG kit and cylinder, installation labour (hours)",
+   24000,
+   8400
+  ],
+  [
+   "Per-vehicle leak test, commissioning, road test and documentation",
+   10000,
+   2500
+  ],
+  [
+   "Certification and engineering amortisation per kit",
+   0,
+   8000
+  ]
+ ]
+}

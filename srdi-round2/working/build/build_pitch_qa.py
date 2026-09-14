@@ -32,7 +32,7 @@ bullets(d, [
 ], size=10)
 d.add_heading("Do-not-say list (keeps the video consistent with the deck)", 2)
 bullets(d, ["No 'approved', 'fully safe', 'zero emission' (hydrogen combustion emits NOx), 'partnership' or 'letter of intent'.", "No numbers that are not on the slides; the pitch uses only slide figures rounded for speech.", "Say 'proposed partner' for IOCL, ARAI, fleets and Suzuki R&D Center India."], size=10)
-d.save(f"{SP}/out/Raunak_TeamWookies_NITWarangal_Pitch_Script.docx")
+d.save(f"{SP}/v2/Raunak_TeamWookies_NITWarangal_Pitch_Script.docx")
 # ---- Q&A and change log
 d = new_doc(landscape=False, base_size=10)
 para(d, "H2-SHIFT Round 2: judge Q&A, validation log and change log", size=16, bold=True, color=NAVY, space_after=2)
@@ -48,5 +48,5 @@ table(d, [["Element", "Round 1", "Round 2"]] + [list(r) for r in CHANGE_LOG], wi
 d.add_heading("4. Internal review framework (our own, not the organiser's scoring)", 2)
 para(d, "We reviewed the deck as an automotive R&D engineer (physics, packaging, power, NOx), a fleet operator (downtime, boot, refuelling, cost per km), a type-approval specialist (route, standards, evidence), a finance reviewer (fair TCO, no double counting, discounting) and a competition judge (answers the brief, builds on Round 1, honest). Corrections made during review: fallback fuel changed to petrol; kit cost raised; pump-price basis; payback claim withdrawn; roadmap and impact rebased; AIS-157 versus AIS-195 corrected; HiAce versus Hilux corrected; job claim removed. Official scoring weights were not published to us and are not assumed.", size=10)
 para(d, TEAM["leader_note"], size=9.5, italic=True, color=GREY)
-d.save(f"{SP}/out/Raunak_TeamWookies_NITWarangal_QA_Validation_ChangeLog.docx")
+d.save(f"{SP}/v2/Raunak_TeamWookies_NITWarangal_QA_Validation_ChangeLog.docx")
 print("saved pitch and QA docs")

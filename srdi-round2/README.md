@@ -28,6 +28,21 @@ Main presentation: 10 slides, PPTX and PDF each below 2 MB (limit 5 MB). Only th
 
 Hydrogen retrofits of factory-CNG cars can be engineered safely, but no approval route exists and, at any credible delivered hydrogen price to 2032, the conversion costs the owner more than staying on CNG (fuel parity needs about Rs 190/kg; the cheapest 2030 forecast found is about Rs 360/kg). The Round 2 strategy is therefore an option, not a launch: an HCNG step that needs no vehicle change, a 30-car H2-ICE retrofit validation pilot in a captive Faridabad fleet (Rs 37.6 crore over four gated phases), and a 2030 scale decision against explicit price and approval gates. Expected 2030 impact is bounded at about 1,400 cars and 3,600 t CO2e per year, conditional on those gates.
 
+
+## Redesigned deck (deliverables_v2/): dense, exhibit-led version
+
+Built on 14 Sep 2026 from the same model outputs and source register; numbers are unchanged from v1. Use this version for submission if the exhibit-led style is preferred; v1 (deliverables/) remains available.
+
+| File | Purpose | Size |
+|---|---|---|
+| deliverables_v2/Raunak_TeamWookies_NITWarangal.pptx | Redesigned 10-slide deck: exact Round 1 title slide; slides 2-10 editable exhibits (log-scale funnel, comparison matrix with status ladder, annotated sedan schematic, hazard and approval matrices, stacked ownership-cost and conversion-cost charts, supply flow and utilisation curves, five-lane Gantt with gates, scorecard and scenario table) | 1.2 MB |
+| deliverables_v2/Raunak_TeamWookies_NITWarangal.pdf | Matching PDF export (Liberation Sans embedded; DejaVu Sans for the rupee and subscript glyphs) | 1.5 MB |
+| deliverables_v2/Raunak_TeamWookies_NITWarangal_Pitch_Script.pdf (+ .docx) | Pitch script with the storyboard's visual-emphasis column updated to the new exhibits (slide order unchanged) | 0.1 MB |
+
+Redesign map: working/build/redesign_map.md. Generator: working/build/build_deck_v2.py with deck_lib.py (v2 helpers appended). Renders: working/renders_v2/. The annexure, workbook and Q&A files in deliverables/ apply to both versions.
+
+Checks performed on v2: every slide rendered and inspected at presentation size and as a contact sheet; title slide compared pixel-wise with the original render (differences are sub-pixel resampling only); PDF fonts inspected (no substitution beyond the metric-compatible Liberation Sans used on the build machine); slide count 10; both files below 2 MB.
+
 ## Working files (working/)
 
 - research/: the four research workstream reports (engineering; safety and regulation; market, infrastructure and benchmarks; economics and emissions) with source registers.

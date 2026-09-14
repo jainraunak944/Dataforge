@@ -418,3 +418,96 @@ def line_chart(slide, x, y, w, h, categories, series, colors, number_format='0',
 
 def picture(slide, path, x, y, w=None, h=None):
     return slide.shapes.add_picture(path, x, y, width=w, height=h)
+
+
+# ====================== v2 additions: consulting-style exhibits ======================
+from pptx.util import Emu
+import math
+
+def _no_line(shp):
+    shp.line.fill.background()
+
+def freeform(slide, points, fill, line=None, line_width=1.0, closed=True):
+    """points: list of (x, y) in EMU. Returns the shape."""
+    x0, y0 = points[0]
+    ff = slide.shapes.build_freeform(x0, y0, scale=1.0)
+    ff.add_line_segments(points[1:], close=closed)
+    shp = ff.convert_to_shape()
+    shp.fill.solid(); shp.fill.fore_color.rgb = fill
+    if line is None:
+        shp.line.fill.background()
+    else:
+        shp.line.color.rgb = line; shp.line.width = Pt(line_width)
+    shp.shadow.inherit = False
+    _strip_style(shp)
+    return shp
+
+def line(slide, x1, y1, x2, y2, color=DARKGREY, width=1.0, dash=False):
+    ln = slide.shapes.add_connector(1, x1, y1, x2, y2)
+    ln.line.color.rgb = color; ln.line.width = Pt(width)
+    _strip_style(ln)
+    if dash:
+        from pptx.enum.dml import MSO_LINE_DASH_STYLE
+        ln.line.dash_style = MSO_LINE_DASH_STYLE.DASH
+    return ln
+
+def dot(slide, x, y, d, fill):
+    c = rect(slide, x - d // 2, y - d // 2, d, d, fill, shape=MSO_SHAPE.OVAL)
+    return c
+
+def chip(slide, x, y, w, h, text, fill, color=WHITE, size=11, bold=True):
+    shp = rect(slide, x, y, w, h, fill, shape=MSO_SHAPE.ROUNDED_RECTANGLE, radius=0.5)
+    shape_text(shp, text, size=size, color=color, bold=bold, margins=(0.04, 0.0, 0.04, 0.0))
+    return shp
+
+def label(slide, x, y, w, h, text, size=12, color=DARKGREY, bold=False, align=PP_ALIGN.LEFT, anchor=MSO_ANCHOR.TOP, italic=False):
+    return textbox(slide, x, y, w, h, text, size=size, color=color, bold=bold, align=align, anchor=anchor, space_after=0, line_spacing=1.0, italic=italic, margins=(0.02, 0.0, 0.02, 0.0))
+
+def section_title(slide, x, y, w, text, size=14, color=DEEPNAVY, rule=True):
+    """Small exhibit title with a thin rule underneath (consulting style). Shrinks to stay on one line."""
+    w_in = w / 914400
+    if len(text) > w_in * 8.2: size = min(size, 12.5)
+    if len(text) > w_in * 9.6: size = min(size, 11.5)
+    label(slide, x, y, w, Inches(0.32), text, size=size, color=color, bold=True)
+    if rule:
+        line(slide, x, y + Inches(0.34), x + w, y + Inches(0.34), color=GREY2, width=0.75)
+    return y + Inches(0.42)
+
+def kpi(slide, x, y, w, h, value, caption, fill=MINTPALE, value_color=DEEPNAVY, value_size=22, cap_size=11):
+    rect(slide, x, y, w, h, fill, shape=MSO_SHAPE.RECTANGLE)
+    rect(slide, x, y, Inches(0.06), h, GREEN)
+    label(slide, x + Inches(0.14), y + Inches(0.05), w - Inches(0.2), Inches(0.5), value, size=value_size, color=value_color, bold=True)
+    label(slide, x + Inches(0.14), y + Inches(0.52), w - Inches(0.2), h - Inches(0.55), caption, size=cap_size, color=DARKGREY)
+
+def hbar_row(slide, x, y, w_total, h, frac, fill, text_left=None, text_right=None, size=12, track=True):
+    if track:
+        rect(slide, x, y, w_total, h, RGBColor(0xEE, 0xF1, 0xF0))
+    rect(slide, x, y, int(w_total * max(0.0, min(1.0, frac))), h, fill)
+    if text_left:
+        label(slide, x + Inches(0.08), y, w_total, h, text_left, size=size, color=WHITE if frac > 0.45 else DARKGREY, bold=True, anchor=MSO_ANCHOR.MIDDLE)
+    if text_right:
+        label(slide, x, y, w_total - Inches(0.08), h, text_right, size=size, color=DARKGREY, bold=True, align=PP_ALIGN.RIGHT, anchor=MSO_ANCHOR.MIDDLE)
+
+def stacked_chart(slide, x, y, w, h, categories, series, colors, number_format='0.0', font_size=11, gap_width=55,
+                  value_axis_title=None, legend=True, horizontal=False, max_val=None, min_val=None, label_size=10, data_labels=True):
+    return bar_chart(slide, x, y, w, h, categories, series, colors, number_format=number_format, font_size=font_size, stacked=True,
+                     horizontal=horizontal, gap_width=gap_width, value_axis_title=value_axis_title, max_val=max_val, legend=legend,
+                     data_labels=data_labels, label_size=label_size, overlap=100)
+
+def set_axis_min(chart, v):
+    chart.value_axis.minimum_scale = v
+
+def diamond(slide, x, y, d, fill, text=None, size=9):
+    shp = rect(slide, x, y, d, d, fill, shape=MSO_SHAPE.DIAMOND)
+    if text:
+        shape_text(shp, text, size=size, color=WHITE, bold=True, margins=(0, 0, 0, 0))
+    return shp
+
+def legend_row(slide, x, y, items, size=11, swatch=Inches(0.22), gap=Inches(0.25)):
+    cx = x
+    for text, fill in items:
+        rect(slide, cx, y + Inches(0.05), swatch, swatch, fill)
+        tw = Inches(0.12 * len(text) + 0.3)
+        label(slide, cx + swatch + Inches(0.08), y, tw, Inches(0.32), text, size=size, color=DARKGREY, anchor=MSO_ANCHOR.MIDDLE)
+        cx += swatch + Inches(0.08) + tw + gap
+    return cx
