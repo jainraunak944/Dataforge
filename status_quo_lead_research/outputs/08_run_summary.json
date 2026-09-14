@@ -1,0 +1,56 @@
+{
+  "generated_utc": "2026-09-14T09:33:09.704979+00:00",
+  "research_date": "2026-09-14",
+  "counts": {
+    "original_rows": 173119,
+    "deduplicated_companies": 171987,
+    "rows_absorbed_by_merging": 1132,
+    "locally_rejected": 114314,
+    "prefiltered_research_queue": 57673,
+    "fully_researched": 13,
+    "qualified_companies": 8,
+    "qualified_founder_leads": 12,
+    "priority_a": 1,
+    "priority_b": 7,
+    "priority_c": 0,
+    "needs_verification": 4,
+    "rejected_after_research": 1,
+    "blocked_sources": 0,
+    "remaining_unprocessed": 57660,
+    "duplicate_clusters_reviewed": 291,
+    "enrichment_suspect_rows_repaired": 12005
+  },
+  "reconciliation": {
+    "rows_to_companies": {
+      "original_rows": 173119,
+      "canonical_companies_plus_absorbed": 173119,
+      "balances": true
+    },
+    "companies_to_queue": {
+      "deduplicated_companies": 171987,
+      "locally_rejected_plus_queued": 171987,
+      "balances": true
+    },
+    "queue_to_classification": {
+      "queue": 57673,
+      "qualified_plus_needs_ver_plus_rejected_plus_blocked_plus_pending": 57673,
+      "balances": true,
+      "unprocessed_count": 57660,
+      "run_complete": false
+    },
+    "founder_rows_exceed_company_rows": true,
+    "founder_row_explanation": "A qualified company may yield more than one credible buyer, so the founder-level file can carry more rows than the company-level file."
+  },
+  "validation": {
+    "duplicate_domains_in_company_output": 0,
+    "duplicate_founder_linkedin_urls": 0,
+    "qualified_without_evidence": 0,
+    "qualified_without_founder": 0,
+    "qualified_with_low_confidence": 0,
+    "qualified_non_us": 0,
+    "qualified_with_hard_disqualifier": 0,
+    "scores_out_of_range": 0,
+    "tier_mismatches": 0,
+    "all_checks_pass": true
+  }
+}
