@@ -102,9 +102,13 @@ SOFTWARE_SUBIND_RE = re.compile(
     r"Logistics Technology|Manufacturing Software|Retail Technology|PropTech|"
     r"E-Learning Platforms|Marketing Technology|Sales Technology|HR Tech|SaaS|"
     r"Software|Platforms)", re.I)
+# Names that announce the company is already owned by someone else. The comma form
+# ("Syxsense, An Absolute Security Company") and the parenthetical form
+# ("Wonder Dynamics (an Autodesk Company)") are both common, as are dash and pipe
+# separators, so all four are matched.
 ACQUIRED_NAME_RE = re.compile(
-    r"(,\s*(an?|part of)\s+[\w\s&.\-']+\s+(company|group|brand)\b|"
-    r"\bacquired by\b|\(acquired\)|\ba\s+[\w\s&.\-']+\s+company\s*$)", re.I)
+    r"([,\-|(\[]\s*(an?|part of)\s+[\w\s&.\-']{2,40}?\s*(company|group|brand|business)\b"
+    r"|\bacquired by\b|\(acquired\)|\ban?\s+[\w\s&.\-']{2,40}?\s+company\s*[)\]]?\s*$)", re.I)
 
 def txt(r, *keys):
     return " ".join(str(r.get(k) or "") for k in keys)

@@ -1,6 +1,6 @@
 # Strict second-stage local qualification
 
-Generated 2026-09-14T10:25:07Z
+Generated 2026-09-14T10:34:00Z
 
 The first prefilter was deliberately broad, to avoid losing good companies to stale vendor data. At 57,673 companies it is too large to research one search at a time. This second stage is deliberately narrow: it uses **only existing dataset fields** — no new web research — to isolate the companies with the highest prior of qualifying.
 
@@ -8,11 +8,11 @@ The first prefilter was deliberately broad, to avoid losing good companies to st
 
 | Bucket | Companies |
 |---|---|
-| Already researched (preserved untouched) | 72 |
-| **Strict high-probability queue** | **9,278** |
-| Headcount verification | 13,257 |
+| Already researched (preserved untouched) | 80 |
+| **Strict high-probability queue** | **9,255** |
+| Headcount verification | 13,245 |
 | Affordability exception | 357 |
-| Newly rejected | 34,709 |
+| Newly rejected | 34,736 |
 | **Sum** | **57,673** |
 | Old queue | 57,673 |
 
@@ -26,22 +26,22 @@ The strict queue is a **6.2x reduction** on the old queue. At the research throu
 
 | Estimated revenue band | Companies |
 |---|---|
-| 1M-5M | 8,881 |
-| 5M-10M | 264 |
+| 1M-5M | 8,867 |
+| 5M-10M | 255 |
 | 10M-25M | 125 |
 | 25M-75M | 8 |
 
 | Company Type | Companies |
 |---|---|
-| Privately Held | 8,743 |
+| Privately Held | 8,720 |
 | Partnership | 302 |
 | (blank) | 137 |
 | Self Owned | 96 |
 
 | Business Type | Companies |
 |---|---|
-| B2B | 8,222 |
-| B2B,B2C | 609 |
+| B2B | 8,200 |
+| B2B,B2C | 608 |
 | (blank) | 430 |
 | B2B, B2C | 16 |
 | Unknown | 1 |
@@ -80,20 +80,20 @@ Each company is counted once, under its first failure.
 
 | Primary rejection reason | Companies |
 |---|---|
-| no SaaS / cloud / enterprise-software / platform / subscription evidence | 9,842 |
-| no B2B evidence in Business Type, Pattern Tags or description | 4,431 |
+| no SaaS / cloud / enterprise-software / platform / subscription evidence | 9,833 |
+| no B2B evidence in Business Type, Pattern Tags or description | 4,429 |
 | corrupted LinkedIn/company layer - name, HQ, size and description were cleared by the enri | 2,883 |
-| Industry 'IT Services and IT Consulting' is an excluded services/agency category | 2,621 |
+| Industry 'IT Services and IT Consulting' is an excluded services/agency category | 2,617 |
 | Business Type is B2C only | 1,874 |
 | Industry 'Advertising Services' is an excluded services/agency category | 1,073 |
 | revenue (missing) with no funding of $1M+ and no strong operating-scale evidence | 867 |
-| Industry 'Information Technology and Services' is an excluded services/agency category | 810 |
-| description reads as hardware-first | 658 |
+| Industry 'Information Technology and Services' is an excluded services/agency category | 809 |
+| description reads as hardware-first | 656 |
 | description reads as consulting / custom development / outsourcing / staffing | 643 |
 | employee size fails the strict rule (headcount 1, band '51-200 employees') | 512 |
-| Industry 'Business Consulting and Services' is an excluded services/agency category | 447 |
+| Industry 'Business Consulting and Services' is an excluded services/agency category | 446 |
 | Industry 'Marketing Services' is an excluded services/agency category | 385 |
-| employee size fails the strict rule (headcount 2, band '51-200 employees') | 371 |
+| employee size fails the strict rule (headcount 2, band '51-200 employees') | 370 |
 | employee size fails the strict rule (headcount 8, band '2-10 employees') | 363 |
 | employee size fails the strict rule (headcount 10, band '2-10 employees') | 360 |
 | employee size fails the strict rule (headcount 9, band '2-10 employees') | 355 |
@@ -107,10 +107,10 @@ The two largest groups are the business-model conjunction doing exactly what it 
 
 | Headcount conflict shape | Companies |
 |---|---|
-| headcount inside 11-50, band outside | 3,607 |
-| band says 11-50, headcount outside | 9,650 |
+| headcount inside 11-50, band outside | 3,601 |
+| band says 11-50, headcount outside | 9,644 |
 
-13,257 companies have a numeric headcount that contradicts their size band. Neither value is preferred, because preferring whichever one qualifies the company is exactly the bias the brief warns against. The larger group — band says 11–50 while the headcount says otherwise — is mostly rows whose headcount is 1 or 0 against a populated band, so a single current headcount check would resolve most of this queue cheaply.
+13,245 companies have a numeric headcount that contradicts their size band. Neither value is preferred, because preferring whichever one qualifies the company is exactly the bias the brief warns against. The larger group — band says 11–50 while the headcount says otherwise — is mostly rows whose headcount is 1 or 0 against a populated band, so a single current headcount check would resolve most of this queue cheaply.
 
 | Affordability exception revenue | Companies |
 |---|---|
@@ -122,7 +122,7 @@ The two largest groups are the business-model conjunction doing exactly what it 
 
 ## Preserved from the previous run
 
-The 72 already-researched companies were excluded from re-evaluation entirely — their records, founders, evidence and classifications are untouched. They appear in the reconciliation as their own bucket and nowhere else.
+The 80 already-researched companies were excluded from re-evaluation entirely — their records, founders, evidence and classifications are untouched. They appear in the reconciliation as their own bucket and nowhere else.
 
 ---
 

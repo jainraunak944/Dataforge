@@ -183,6 +183,14 @@ def main():
                  "confidence","fact_or_inference"])
 
     # ------------------------------------------------------ 08 run summary --
+    strict_report = {}
+    sp = C.DATA / "interim" / "strict_filter_report.json"
+    if sp.exists():
+        strict_report = json.loads(sp.read_text())
+    strict_pending = conn.execute(
+        "SELECT COUNT(*) FROM strict_bucket s JOIN companies c USING(canonical_company_id) "
+        "WHERE s.bucket='strict' AND c.research_status='Pending'").fetchone()[0] \
+        if strict_report else 0
     audit = json.loads((C.OUTPUTS / "00_data_audit.json").read_text())
     ded = json.loads((C.DATA / "interim" / "dedupe_report.json").read_text())
     pre = json.loads((C.DATA / "interim" / "prefilter_report.json").read_text())
@@ -206,7 +214,12 @@ def main():
             "needs_verification": len(needs_ver),
             "rejected_after_research": len(rejected),
             "blocked_sources": len(blocked),
-            "remaining_unprocessed": pending,
+            "remaining_unprocessed_old_queue": pending,
+            "strict_high_probability_queue": strict_report.get("strict_high_probability_queue"),
+            "strict_queue_remaining": strict_pending,
+            "headcount_verification_queue": strict_report.get("headcount_conflicts"),
+            "affordability_exception_queue": strict_report.get("affordability_exceptions"),
+            "deprioritised_by_strict_filter": strict_report.get("newly_rejected"),
             "duplicate_clusters_reviewed": ded["review_queue_clusters"],
             "enrichment_suspect_rows_repaired": ded["enrichment_repair"]["rows_flagged_suspect"],
         },
@@ -280,7 +293,14 @@ def main():
         f"| Needs Verification | {c_['needs_verification']:,} |",
         f"| Rejected after research | {c_['rejected_after_research']:,} |",
         f"| Blocked sources | {c_['blocked_sources']:,} |",
-        f"| **Remaining unprocessed** | **{c_['remaining_unprocessed']:,}** |",
+        f"| **Remaining unprocessed (old queue)** | **{c_['remaining_unprocessed_old_queue']:,}** |",
+        "", "## Strict second-stage queue", "",
+        "| Bucket | Count |", "|---|---:|",
+        f"| **Strict high-probability queue** | **{(c_.get('strict_high_probability_queue') or 0):,}** |",
+        f"| — of which still to research | {(c_.get('strict_queue_remaining') or 0):,} |",
+        f"| Headcount verification | {(c_.get('headcount_verification_queue') or 0):,} |",
+        f"| Affordability exception | {(c_.get('affordability_exception_queue') or 0):,} |",
+        f"| Deprioritised by the strict filter | {(c_.get('deprioritised_by_strict_filter') or 0):,} |",
         "", "## Reconciliation", "",
         f"- Rows to companies: {c_['original_rows']:,} = "
         f"{c_['deduplicated_companies']:,} companies + {c_['rows_absorbed_by_merging']:,} absorbed "
@@ -289,10 +309,10 @@ def main():
         f"{c_['locally_rejected']:,} locally rejected + {c_['prefiltered_research_queue']:,} queued "
         f"— **{'balances' if r_['companies_to_queue']['balances'] else 'DOES NOT BALANCE'}**",
         f"- Queue to classification: {c_['prefiltered_research_queue']:,} = "
-        f"{c_['fully_researched']:,} classified + {c_['remaining_unprocessed']:,} pending "
+        f"{c_['fully_researched']:,} classified + {c_['remaining_unprocessed_old_queue']:,} pending "
         f"— **{'balances' if r_['queue_to_classification']['balances'] else 'DOES NOT BALANCE'}**",
         "",
-        f"Run complete: **{'yes' if r_['queue_to_classification']['run_complete'] else 'NO — ' + format(c_['remaining_unprocessed'], ',') + ' companies remain unresearched'}**",
+        f"Run complete: **{'yes' if r_['queue_to_classification']['run_complete'] else 'NO — ' + format(c_.get('strict_queue_remaining') or 0, ',') + ' strict-queue companies remain unresearched (' + format(c_['remaining_unprocessed_old_queue'], ',') + ' across the full old queue)'}**",
         "",
         "Founder rows may exceed company rows because one qualified company can yield more "
         "than one credible buyer; each additional founder is an intentional separate contact row.",
