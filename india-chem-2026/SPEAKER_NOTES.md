@@ -11,13 +11,14 @@ House rule for this deck: no em dashes or en dashes, including in these notes.
 **Slide 1, title (about 60 s)**
 Good morning. We are Raunak Jain, mechanical engineering, and Anushriya
 Bhattacharya, chemical engineering, from NIT Warangal. Our proposal is NAADI,
-a predictive maintenance system for the critical pumps of a chemical plant.
-The idea in one sentence: continuous vibration sensing on a plant's 25 most
-failure-prone pumps, with interpretable machine learning that drafts work
-orders for the reliability engineer, while all data and models stay on the
-plant's own network. We are proposing a six-month pilot. The base-case
-economics, a public benchmark validation of our prototype, and the pilot
-design follow in the next seven slides.
+our response to the predictive maintenance problem statement: an early fault
+detection system for the critical pumps of a chemical plant. To be precise
+about the claim: NAADI does not predict the exact moment a pump will fail. It
+watches vibration continuously, spots developing faults early, and alerts the
+reliability engineer with a drafted work order, while all data and models
+stay on the plant's own network. We are proposing a six-month pilot to test
+exactly that. The base-case economics, a public benchmark validation of our
+prototype, and the pilot design follow in the next seven slides.
 
 **Slide 2, existing problem (about 70 s)**
 The use case is one representative mid-sized speciality chemicals plant, and
@@ -85,9 +86,12 @@ shutdown, permits handled through the plant's normal process. Month three
 commissions healthy baselines, and months three to six run in shadow mode:
 alerts are logged and compared weekly with what maintenance actually finds,
 but no decision depends on them yet. The month-six gate is numeric and is on
-the slide: seventy percent of confirmed developing faults caught at least
-fourteen days ahead, at most two false alerts per pump per month, and
-ninety-five percent data availability. Pass the gate and the system goes
+the slide. In plain terms: of the faults maintenance later confirms, at least
+seven in ten must have been flagged by NAADI beforehand, with at least
+fourteen days of notice, which is enough to plan the repair into a scheduled
+window instead of an emergency stop. Alongside that, at most two false alerts
+per pump per month, and ninety-five percent data availability. Pass the gate
+and the system goes
 live, then scales to other rotating assets and, between months twelve and
 twenty-four, to a shared deployment across chemical clusters. What we need is
 one plant partner, the pumps, their history and six months of access.

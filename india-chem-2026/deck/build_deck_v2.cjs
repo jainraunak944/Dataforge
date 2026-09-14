@@ -23,7 +23,7 @@ const W = 13.333, H = 7.5, MX = 0.55, CW = W - 2 * MX;
 const pres = new pptxgen();
 pres.layout = "LAYOUT_WIDE";
 pres.author = "Raunak Jain, Anushriya Bhattacharya, NIT Warangal";
-pres.title = "NAADI: plant-owned predictive maintenance for critical pumps";
+pres.title = "NAADI: early fault detection for critical pumps";
 
 let pageNo = 0;
 function newSlide() {
@@ -172,7 +172,7 @@ function pumpDrawing(s, x, y, scale = 1) {
   });
 
   txt(s, "NAADI", { x: MX + 0.28, y: 1.05, w: 6.5, h: 1.05, fontSize: 60, bold: true, color: PURPLE });
-  txt(s, "Plant-owned predictive maintenance for critical pumps", {
+  txt(s, "Early fault detection for critical pumps, on the plant's own network", {
     x: MX + 0.3, y: 2.2, w: 5.9, h: 0.85, fontSize: 22, bold: true, color: INK, lineSpacingMultiple: 1.05,
   });
   txt(s, "A six-month pilot to test early fault detection across 25 critical pumps in a mid-sized speciality chemicals plant.", {
@@ -230,9 +230,9 @@ function pumpDrawing(s, x, y, scale = 1) {
 
   s.addNotes(
     "Good morning. We are Raunak Jain, mechanical engineering, and Anushriya Bhattacharya, chemical engineering, from NIT Warangal. " +
-    "Our proposal is NAADI, a predictive maintenance system for the critical pumps of a chemical plant. " +
-    "The idea in one sentence: continuous vibration sensing on a plant's 25 most failure-prone pumps, with interpretable machine learning that drafts work orders for the reliability engineer, while all data and models stay on the plant's own network. " +
-    "We are proposing a six-month pilot. The base-case economics, a public benchmark validation of our prototype, and the pilot design follow in the next seven slides. About 60 seconds.");
+    "Our proposal is NAADI, our response to the predictive maintenance problem statement: an early fault detection system for the critical pumps of a chemical plant. " +
+    "To be precise about the claim: NAADI does not predict the exact moment a pump will fail. It watches vibration continuously, spots developing faults early, and alerts the reliability engineer with a drafted work order, while all data and models stay on the plant's own network. " +
+    "We are proposing a six-month pilot to test exactly that. The base-case economics, a public benchmark validation of our prototype, and the pilot design follow in the next seven slides. About 60 seconds.");
 }
 
 // =====================================================================
@@ -260,18 +260,24 @@ function pumpDrawing(s, x, y, scale = 1) {
   let yy = fy + 0.05;
   steps.forEach((st, i) => {
     const x = fcx - st.w / 2;
-    rect(s, x, yy, st.w, 0.62, st.fill, i < 2 ? { color: BORDER, width: 0.75 } : null);
-    txt(s, st.t, { x: x + 0.08, y: yy + 0.06, w: st.w - 0.16, h: 0.52, fontSize: 10, bold: i >= 2, color: st.ink, align: "center", valign: "middle", lineSpacingMultiple: 1.0 });
-    txt(s, st.tag, { x: fcx + 1.55, y: yy + 0.14, w: 1.35, h: 0.4, fontSize: 7.5, color: i >= 2 ? (i === 3 ? INK2 : AMBER) : INK2, lineSpacingMultiple: 1.0 });
-    if (i < 3) vline(s, fcx, yy + 0.62, 0.16, PURPLE2, 1.2);
-    yy += 0.78;
+    rect(s, x, yy, st.w, 0.56, st.fill, i < 2 ? { color: BORDER, width: 0.75 } : null);
+    txt(s, st.t, { x: x + 0.08, y: yy + 0.04, w: st.w - 0.16, h: 0.48, fontSize: 10, bold: i >= 2, color: st.ink, align: "center", valign: "middle", lineSpacingMultiple: 1.0 });
+    txt(s, st.tag, { x: fcx + 1.55, y: yy + 0.12, w: 1.35, h: 0.4, fontSize: 7.5, color: i >= 2 ? (i === 3 ? INK2 : AMBER) : INK2, lineSpacingMultiple: 1.0 });
+    if (i < 3) vline(s, fcx, yy + 0.56, 0.14, PURPLE2, 1.2);
+    yy += 0.7;
   });
+  // how the 1.4 crore figure is built (so the number can be challenged line by line)
+  rect(s, fx, yy + 0.06, 4.1, 0.84, LAV2, null);
+  txt(s, [
+    { text: "How ₹1.4 crore is worked out: ", options: { bold: true, color: PURPLE } },
+    { text: "60 h × ₹1.9 lakh per hour = ₹1.14 Cr of lost margin, plus 12 repairs × ₹2.5 lakh = ₹0.30 Cr. Team calculation from the labelled estimates [11].", options: { color: INK } },
+  ], { x: fx + 0.14, y: yy + 0.13, w: 3.85, h: 0.72, fontSize: 9.5, lineSpacingMultiple: 1.08 });
 
   // ---- middle: failure pathway
   const mx2 = 4.85, my = 1.72, mw = 3.35;
   txt(s, "How a routine fault becomes an outage", { x: mx2, y: my - 0.24, w: mw, h: 0.22, fontSize: 12, bold: true, color: INK });
   const path = [
-    "Bearing or seal degradation begins [4]",
+    "Bearing or seal degradation begins [8]",
     "Monthly inspection misses the developing fault",
     "Pump trips without warning",
     "Production interruption",
@@ -289,16 +295,16 @@ function pumpDrawing(s, x, y, scale = 1) {
   // ---- right: 89% statistic + implication
   const rx = 8.75, ry = 1.62, rw = 4.0;
   txt(s, "89%", { x: rx, y: ry, w: 2.0, h: 0.62, fontSize: 40, bold: true, color: PURPLE });
-  txt(s, "of failure modes in the foundational reliability study for RCM showed no predictable wear-out age [3]", {
+  txt(s, "of failure modes in the foundational reliability study for RCM showed no predictable wear-out age [7]", {
     x: rx + 1.5, y: ry + 0.1, w: rw - 1.5, h: 0.75, fontSize: 10, color: INK2, lineSpacingMultiple: 1.08,
   });
-  txt(s, "Fixed-interval maintenance cannot anticipate faults that arrive at random. Bearing and seal problems develop over days to weeks [4]; that window is where condition data helps.", {
+  txt(s, "Fixed-interval maintenance cannot anticipate faults that arrive at random. Bearing and seal problems develop over days to weeks [8]; that window is where condition data helps.", {
     x: rx, y: ry + 0.95, w: rw, h: 1.0, fontSize: 11.5, color: INK, lineSpacingMultiple: 1.12,
   });
   rect(s, rx, ry + 2.1, rw, 1.0, LAV2, null);
   txt(s, [
     { text: "What NAADI must do: ", options: { bold: true, color: PURPLE } },
-    { text: "flag developing faults on these 25 pumps about two weeks before failure and turn each one into a planned work order.", options: { color: INK } },
+    { text: "spot developing faults on these 25 pumps early (the target is two weeks of notice) and alert the engineer with a drafted work order.", options: { color: INK } },
   ], { x: rx + 0.15, y: ry + 2.2, w: rw - 0.3, h: 0.8, fontSize: 11, lineSpacingMultiple: 1.1, valign: "middle" });
 
   // ---- bottom KPI strip
@@ -360,7 +366,7 @@ function pumpDrawing(s, x, y, scale = 1) {
   });
   // highlight proposed row background
   rect(s, tx, ty + 0.34 * 5 + 0.34, 0, 0, WHITE, null); // no-op keeper
-  txt(s, "Weights in brackets, sum 100. Scores and marks are team judgement based on the documented behaviour of each approach class [2][6].", {
+  txt(s, "Weights in brackets, sum 100. Marks are team judgement based on the documented behaviour of each approach class [2][5].", {
     x: tx, y: ty + 2.55, w: tw, h: 0.4, fontSize: 8.5, color: INK2, lineSpacingMultiple: 1.05,
   });
 
@@ -383,7 +389,10 @@ function pumpDrawing(s, x, y, scale = 1) {
     txt(s, sc[1].toFixed(1), { x: bx + 1.9 + track + 0.08, y: y + 0.015, w: 0.45, h: 0.24, fontSize: 10.5, bold: true, color: sc[3] });
   });
   txt(s, "The gap is not sensing or algorithms. It is cost, data control and fit for mid-sized plants.", {
-    x: bx, y: by + 2.5, w: bw, h: 0.55, fontSize: 11, color: INK, lineSpacingMultiple: 1.1,
+    x: bx, y: by + 2.42, w: bw, h: 0.5, fontSize: 11, color: INK, lineSpacingMultiple: 1.1,
+  });
+  txt(s, "How a score is built: each approach gets a 1-to-5 mark per criterion; the score is the weighted average. NAADI: (5×30 + 4×20 + 3×10 + 5×10 + 4×10 + 4×20) / 100 = 4.3.", {
+    x: bx, y: by + 2.94, w: bw, h: 0.5, fontSize: 8.5, color: INK2, lineSpacingMultiple: 1.05,
   });
 
   // ---- bottom: design choices strip
@@ -446,11 +455,11 @@ function pumpDrawing(s, x, y, scale = 1) {
   pumpDrawing(s, ax + 0.3, rowAy + 0.05, 0.95);
   txt(s, "critical pump, DE and NDE sensor points", { x: ax + 0.25, y: rowAy + 1.15, w: 2.0, h: 0.35, fontSize: 8, color: INK2, lineSpacingMultiple: 1.0 });
   arrowR(s, ax + 2.35, rowAy + 0.5, 0.35);
-  node(ax + 2.75, rowAy, "Vibration + temperature sensors", "wireless, on both bearing housings; hardware meeting applicable PESO and IECEx requirements [10]");
+  node(ax + 2.75, rowAy, "Vibration + temperature sensors", "wireless, on both bearing housings; hardware meeting applicable PESO and IECEx requirements [6]");
   arrowR(s, ax + 2.75 + nodeW + 0.03, rowAy + 0.5, gap - 0.06);
   node(ax + 2.75 + nodeW + gap, rowAy, "Area gateway", "one per plant area; buffers data locally");
   arrowR(s, ax + 2.75 + 2 * (nodeW + gap) - gap + nodeW + 0.03 - nodeW, rowAy + 0.5, gap - 0.06);
-  node(ax + 2.75 + 2 * (nodeW + gap), rowAy, "Edge feature extraction", "16 vibration indicators per window, per ISO 13374 [6]");
+  node(ax + 2.75 + 2 * (nodeW + gap), rowAy, "Edge feature extraction", "16 vibration indicators per window, per ISO 13374 [5]");
   // corner elbow down to row B
   const lastAx = ax + 2.75 + 2 * (nodeW + gap);
   const rowBy = ay + 2.3;
@@ -460,11 +469,11 @@ function pumpDrawing(s, x, y, scale = 1) {
 
   // row B (right to left)
   const bx4 = lastAx; // classification under edge features
-  node(bx4, rowBy, "Anomaly + fault classification", "per-pump anomaly score and fault type; benchmark result on slide 5 [5]");
+  node(bx4, rowBy, "Anomaly + fault classification", "anomaly score and fault type per pump; benchmark on slide 5 [10]; the pilot tests it on real plant data");
   const bx3 = bx4 - nodeW - gap;
   const bx2 = bx3 - nodeW - gap;
   const bx1 = bx2 - nodeW - gap;
-  node(bx3, rowBy, "Reliability dashboard", "trends, alarm zones per ISO 20816-3 [6]");
+  node(bx3, rowBy, "Reliability dashboard", "trends, alarm zones per ISO 20816-3 [5]");
   node(bx2, rowBy, "CMMS work order", "drafted automatically in the plant's existing system");
   node(bx1, rowBy, "Engineer validation", "accepts or rejects every action; nothing is automatic", GREEN);
   icon(s, bx1 + nodeW - 0.42, rowBy + 0.06, "check", GREEN);
@@ -543,9 +552,9 @@ function pumpDrawing(s, x, y, scale = 1) {
   // ---- left: three metric tiles + caveat
   const my3 = 3.05;
   const tiles = [
-    ["97.9%", "four-class benchmark accuracy, unseen 3 hp load [5]"],
-    ["0 of 237", "healthy benchmark windows misclassified [5]"],
-    ["98.9%", "grouped cross-validation accuracy [5]"],
+    ["97.9%", "four-class benchmark accuracy, unseen 3 hp load [10]"],
+    ["0 of 237", "healthy benchmark windows misclassified [10]"],
+    ["98.9%", "grouped cross-validation accuracy [10]"],
   ];
   const tw3 = 2.28;
   txt(s, "Prototype benchmark results", { x: MX, y: my3 - 0.26, w: 5, h: 0.22, fontSize: 12, bold: true, color: INK });
@@ -565,7 +574,7 @@ function pumpDrawing(s, x, y, scale = 1) {
 
   // ---- right: confusion matrix
   const cmx = 8.55, cmy = 2.95, cell = 0.78, cellH = 0.44;
-  txt(s, "Confusion matrix, unseen 3 hp load [5]", { x: cmx, y: cmy - 0.26, w: 4.2, h: 0.22, fontSize: 12, bold: true, color: INK });
+  txt(s, "Confusion matrix, unseen 3 hp load [10]", { x: cmx, y: cmy - 0.26, w: 4.2, h: 0.22, fontSize: 12, bold: true, color: INK });
   const labels = ["Normal", "Inner race", "Ball", "Outer race"];
   const cm = [[237, 0, 0, 0], [0, 216, 21, 0], [0, 0, 236, 0], [0, 0, 3, 410]];
   txt(s, "actual", { x: cmx + 0.08, y: cmy + 0.16, w: 0.75, h: 0.2, fontSize: 8, color: INK2 });
@@ -595,7 +604,7 @@ function pumpDrawing(s, x, y, scale = 1) {
   const by5 = 5.85;
   hline(s, MX, by5 - 0.14, CW, BORDER, 1);
   txt(s, "Already established", { x: MX, y: by5, w: 2.6, h: 0.22, fontSize: 11.5, bold: true, color: GREEN });
-  const est = ["Industrial vibration sensors", "Wireless gateways", "OPC UA", "CMMS APIs", "ISO vibration guidance [6]"];
+  const est = ["Industrial vibration sensors", "Wireless gateways", "OPC UA", "CMMS APIs", "ISO vibration guidance [5]"];
   let ex = MX + 2.1;
   est.forEach((e) => {
     const wch = 0.16 + e.length * 0.062;
@@ -669,15 +678,15 @@ function pumpDrawing(s, x, y, scale = 1) {
   const kx = 8.55, ky6 = 1.75, kw6 = 4.22;
   txt(s, "Pilot success criteria", { x: kx, y: ky6 - 0.26, w: kw6, h: 0.22, fontSize: 12, bold: true, color: INK });
   const kpis6 = [
-    ["≥70%", "of confirmed developing faults detected", 0.7],
-    ["≥14 days", "warning before functional failure", 0.67],
-    ["≤2", "false alerts per pump per month", 0.25],
+    ["≥70%", "of the faults maintenance later confirms must have been flagged by NAADI in advance", 0.7],
+    ["≥14 days", "of notice: enough to plan the repair into a scheduled window instead of an emergency stop", 0.67],
+    ["≤2", "false alerts per pump per month, so operators keep trusting the alerts", 0.25],
     ["≥95%", "sensor data availability", 0.95],
   ];
   kpis6.forEach((k, i) => {
     const y = ky6 + 0.06 + i * 0.62;
     txt(s, k[0], { x: kx, y, w: 1.15, h: 0.34, fontSize: 17, bold: true, color: PURPLE });
-    txt(s, k[1], { x: kx + 1.2, y: y + 0.03, w: kw6 - 1.25, h: 0.3, fontSize: 9, color: INK2, lineSpacingMultiple: 0.95 });
+    txt(s, k[1], { x: kx + 1.2, y: y + 0.01, w: kw6 - 1.25, h: 0.34, fontSize: 8.5, color: INK2, lineSpacingMultiple: 0.95 });
     rect(s, kx, y + 0.36, kw6 - 0.1, 0.07, LAV, null);
     rect(s, kx, y + 0.36, (kw6 - 0.1) * k[2], 0.07, PURPLE2, null);
   });
@@ -692,7 +701,7 @@ function pumpDrawing(s, x, y, scale = 1) {
   const road = [
     ["Months 0 to 6", "pilot: 25 pumps, one plant"],
     ["Months 6 to 12", "100 or more rotating assets: compressors, agitators, fans"],
-    ["Months 12 to 24", "shared deployment across chemical clusters [7][8]"],
+    ["Months 12 to 24", "shared deployment across chemical clusters [3][4]"],
   ];
   const rw6 = 2.62;
   road.forEach((r, i) => {
@@ -715,7 +724,7 @@ function pumpDrawing(s, x, y, scale = 1) {
     "Months zero to one build the baseline from the plant's own maintenance records and fix the success criteria together with the plant, so the pass bar is agreed before installation. " +
     "Month two is installation: wireless sensors magnet-mounted during routine access, no shutdown, permits handled through the plant's normal process. " +
     "Month three commissions healthy baselines, and months three to six run in shadow mode: alerts are logged and compared weekly with what maintenance actually finds, but no decision depends on them yet. " +
-    "The month-six gate is numeric and is on the slide: seventy percent of confirmed developing faults caught at least fourteen days ahead, at most two false alerts per pump per month, and ninety-five percent data availability. " +
+    "The month-six gate is numeric and is on the slide. In plain terms: of the faults maintenance later confirms, at least seven in ten must have been flagged by NAADI beforehand, with at least fourteen days of notice, which is enough to plan the repair into a scheduled window instead of an emergency stop. Alongside that, at most two false alerts per pump per month, and ninety-five percent data availability. " +
     "Pass the gate and the system goes live, then scales to other rotating assets and, between months twelve and twenty-four, to a shared deployment across chemical clusters. " +
     "What we need is one plant partner, the pumps, their history and six months of access. About 75 seconds.");
 }
@@ -825,7 +834,7 @@ function pumpDrawing(s, x, y, scale = 1) {
   const mx7 = 3.35, mw7 = 5.1;
   const mits = [
     ["1  False-alert fatigue", "shadow mode first; at most 2 alerts per pump-month at the gate"],
-    ["2  Hazardous-area hardware", "hardware meeting applicable PESO and IECEx requirements [10]"],
+    ["2  Hazardous-area hardware", "hardware meeting applicable PESO and IECEx requirements [6]"],
     ["3  OT cybersecurity", "one-way data flow on a segregated network; no path to the DCS"],
     ["4  Few early failure examples", "anomaly-first models per pump; classifier added as data grows"],
   ];
@@ -838,7 +847,7 @@ function pumpDrawing(s, x, y, scale = 1) {
   const ex7 = 8.75, ew7 = 4.03;
   txt(s, "Environmental gains", { x: ex7, y: by7, w: ew7, h: 0.2, fontSize: 12, bold: true, color: GREEN });
   const envs = [
-    "Earlier detection of seal degradation can reduce leak-event risk [4]",
+    "Earlier detection of seal degradation can reduce leak-event risk [8]",
     "The same condition data can identify cavitation and off-design operation; pumping is close to 20% of world electric-motor demand [9]",
   ];
   envs.forEach((e, i) => {
@@ -892,23 +901,23 @@ function pumpDrawing(s, x, y, scale = 1) {
   group(L1, ya, "Government and industry guidance");
   ref(L1, ya, 1, "Department of Chemicals and Petrochemicals (GoI) and FICCI. Youth Innovation Challenge brief, India Chem 2026. 2026. Provided competition document.", null, 0.56);
   ref(L1, ya, 2, "US Department of Energy, FEMP. Operations and Maintenance Best Practices Guide, Release 3.0 (predictive maintenance chapter). 2010.", ["energy.gov", "https://www.energy.gov/sites/prod/files/2020/04/f74/omguide_complete_w-eo-disclaimer.pdf"], 0.56);
-  ref(L1, ya, 7, "NITI Aayog. National Strategy for Artificial Intelligence. 2018. And DST, National Mission on Interdisciplinary Cyber-Physical Systems. 2018.", ["dst.gov.in", "https://dst.gov.in/national-mission-interdisciplinary-cyber-physical-systems-nm-icps"], 0.56);
-  ref(L1, ya, 8, "Ministry of Heavy Industries. SAMARTH Udyog Bharat 4.0 (Industry 4.0 centres). 2024.", ["samarthudyog-i40.in", "https://samarthudyog-i40.in/"], 0.42);
+  ref(L1, ya, 3, "NITI Aayog. National Strategy for Artificial Intelligence. 2018. And DST, National Mission on Interdisciplinary Cyber-Physical Systems. 2018.", ["dst.gov.in", "https://dst.gov.in/national-mission-interdisciplinary-cyber-physical-systems-nm-icps"], 0.56);
+  ref(L1, ya, 4, "Ministry of Heavy Industries. SAMARTH Udyog Bharat 4.0 (Industry 4.0 centres). 2024.", ["samarthudyog-i40.in", "https://samarthudyog-i40.in/"], 0.42);
 
   ya.v += 0.12;
   group(L1, ya, "Engineering standards");
-  ref(L1, ya, 6, "ISO 20816-3:2022 machine vibration evaluation; ISO 13374-1:2003 condition-monitoring data processing; ISO 17359:2018 condition-monitoring guidelines; ISO 14224:2016 reliability data collection.", ["iso.org", "https://www.iso.org/standard/78311.html"], 0.7);
-  ref(L1, ya, 10, "Petroleum and Explosives Safety Organisation (PESO), DPIIT. Statutory approvals for equipment in hazardous areas.", ["peso.gov.in", "https://peso.gov.in"], 0.42);
+  ref(L1, ya, 5, "ISO 20816-3:2022 machine vibration evaluation; ISO 13374-1:2003 condition-monitoring data processing; ISO 17359:2018 condition-monitoring guidelines; ISO 14224:2016 reliability data collection.", ["iso.org", "https://www.iso.org/standard/78311.html"], 0.7);
+  ref(L1, ya, 6, "Petroleum and Explosives Safety Organisation (PESO), DPIIT. Statutory approvals for equipment in hazardous areas.", ["peso.gov.in", "https://peso.gov.in"], 0.42);
 
   const yb = { v: y2 };
   group(L2, yb, "Technical literature");
-  ref(L2, yb, 3, "Nowlan, F.S. and Heap, H.F. Reliability-Centered Maintenance. US DoD report AD-A066579. 1978.", null, 0.42);
-  ref(L2, yb, 4, "McKee, K. et al. A review of major centrifugal pump failure modes. ICOMS Asset Management Conference. 2011.", ["espace.curtin.edu.au", "https://espace.curtin.edu.au/handle/20.500.11937/28560"], 0.42);
+  ref(L2, yb, 7, "Nowlan, F.S. and Heap, H.F. Reliability-Centered Maintenance. US DoD report AD-A066579. 1978.", null, 0.42);
+  ref(L2, yb, 8, "McKee, K. et al. A review of major centrifugal pump failure modes. ICOMS Asset Management Conference. 2011.", ["espace.curtin.edu.au", "https://espace.curtin.edu.au/handle/20.500.11937/28560"], 0.42);
   ref(L2, yb, 9, "Hydraulic Institute, Europump and US DOE. Pump Life Cycle Costs: A Guide to LCC Analysis for Pumping Systems. 2001.", null, 0.42);
 
   yb.v += 0.12;
   group(L2, yb, "Dataset and team calculations");
-  ref(L2, yb, 5, "Case Western Reserve University Bearing Data Center, seeded-fault vibration dataset. Team model code train_fault_model.py and results metrics.json, 2026. Benchmark results only; not plant performance.", ["engineering.case.edu/bearingdatacenter", "https://engineering.case.edu/bearingdatacenter"], 0.7);
+  ref(L2, yb, 10, "Case Western Reserve University Bearing Data Center, seeded-fault vibration dataset. Team model code train_fault_model.py and results metrics.json, 2026. Benchmark results only; not plant performance.", ["engineering.case.edu/bearingdatacenter", "https://engineering.case.edu/bearingdatacenter"], 0.7);
   ref(L2, yb, 11, "Team economics: NAADI_pilot_economics.xlsx (live formulas and assumption register) and CALCULATIONS.md, 2026. Plant archetype values are team estimates pending pilot data.", null, 0.56);
 
   yb.v += 0.1;
