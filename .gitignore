@@ -16,3 +16,8 @@ status_quo_lead_research/logs/
 status_quo_lead_research/*.sqlite
 __pycache__/
 *.pyc
+# Large intermediate lead tables: regenerable from the source CSV via scripts/,
+# and they carry the third-party database content that stays out of the remote.
+status_quo_lead_research/outputs/01_deduplicated_companies.csv
+status_quo_lead_research/outputs/02_prefiltered_research_queue.csv
+status_quo_lead_research/outputs/02_locally_rejected.csv

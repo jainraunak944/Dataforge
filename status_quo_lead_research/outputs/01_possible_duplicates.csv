@@ -1,0 +1,1006 @@
+cluster_key,cluster_size,review_verdict,max_description_similarity,same_country,match_basis,merged_by_pipeline,source_row_id,company_name,company_name_normalized,domain,linkedin_company_url,locality,country,employee_range,revenue_band,description_excerpt
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,20205,Car-Part.com,car part com,us258autoparts.com,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,20528,Car-Part.com,car part com,tonysusedparts.com,,,,,,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,20810,Car-Part.com,car part com,tenacresinc.com,,,,,0-500K,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,21658,Car-Part.com,car part com,skipsdeluxe.com,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,22222,Car-Part.com,car part com,route7auto.com,,,,,0-500K,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,22727,Car-Part.com,car part com,quakercityparts.com,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,23402,Car-Part.com,car part com,palmerbrothersdodge.com,,,,,1M-5M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,24131,Car-Part.com,car part com,mynationwideautoparts.com,,,,,10M-25M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,24182,Car-Part.com,car part com,muap.net,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,24413,Car-Part.com,car part com,midwesternautoparts.com,,,,,1M-5M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,24741,Car-Part.com,car part com,majesticmotors.biz,,,,,1M-5M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,25279,Car-Part.com,car part com,kamautosalvage.com,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,26033,Car-Part.com,car part com,houston-autoparts.com,,,,,10M-25M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,26826,Car-Part.com,car part com,freedmaninc.com,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,26828,Car-Part.com,car part com,fredsautoparts.com,,,,,0-500K,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,26942,Car-Part.com,car part com,floresautowrecking.com,,,,,1M-5M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,28372,Car-Part.com,car part com,columbusautorecycling.com,,,,,5M-10M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,28620,Car-Part.com,car part com,carsnparts.org,,,,,1M-5M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,28649,Car-Part.com,car part com,capitolcityimports.com,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29002,Car-Part.com,car part com,baronsautowrecking.com,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29039,Car-Part.com,car part com,a-zenterprises.net,,,,,0-500K,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29080,Car-Part.com,car part com,autoskill.net,,,,,0-500K,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29105,Car-Part.com,car part com,austinexpressauto.com,,,,,1M-5M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29279,Car-Part.com,car part com,apexautosalvage.com,,,,,1M-5M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29378,Car-Part.com,car part com,allautodismantling.com,,,,,0-500K,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29419,Car-Part.com,car part com,airportautoparts.com,,,,,1M-5M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29535,Car-Part.com,car part com,accurate-auto.com,,,,,500K-1M,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29592,Car-Part.com,car part com,78westinc.com,,,,,0-500K,
+car part com||,29,likely_same_company,0.58,True,normalized_name + locality,no - kept separate pending review,29596,Car-Part.com,car part com,67motors.com,,,,,0-500K,
+catalis||,7,likely_same_company,0.595,True,normalized_name + locality,no - kept separate pending review,52105,Catalis,catalis,syscononline.com,,,,,1M-5M,
+catalis||,7,likely_same_company,0.595,True,normalized_name + locality,no - kept separate pending review,57081,Catalis,catalis,patriotproperties.com,,,,,1M-5M,
+catalis||,7,likely_same_company,0.595,True,normalized_name + locality,no - kept separate pending review,57596,Catalis,catalis,ncourt.com,,,,,10M-25M,
+catalis||,7,likely_same_company,0.595,True,normalized_name + locality,no - kept separate pending review,58959,Catalis,catalis,govoffice3.com,,,,,0-500K,
+catalis||,7,likely_same_company,0.595,True,normalized_name + locality,no - kept separate pending review,59427,Catalis,catalis,fivepointpayments.com,,,,,0-500K,
+catalis||,7,likely_same_company,0.595,True,normalized_name + locality,no - kept separate pending review,64716,Catalis,catalis,onpointtech.com,,,,,500K-1M,
+catalis||,7,likely_same_company,0.595,True,normalized_name + locality,no - kept separate pending review,66893,Catalis,catalis,govoffice2.com,,,,,10M-25M,
+germin8||,2,likely_same_company,0.587,True,normalized_name + locality,no - kept separate pending review,78895,Germin8,germin8,mitchellcartwrightbuilders.com,,,,,25M-75M,
+germin8||,2,likely_same_company,0.587,True,normalized_name + locality,no - kept separate pending review,88947,Germin8,germin8,andrewgreenwald.net,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,89740,Lazada Group,lazada,yborbarbershop.com,,,,,500K-1M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,89916,Lazada,lazada,wettsteinbrothers.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,90057,Lazada,lazada,voucherproject.org,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,90193,Lazada Group,lazada,vantagepointrange.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,90617,Lazada,lazada,thermaxaf.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,90679,Lazada,lazada,theinnandgardencafe.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,91513,Lazada Group,lazada,shanghaichinesecuisine.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,91545,Lazada,lazada,serenityspringssalonandspa.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,91592,Lazada,lazada,seabrookseafood.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,91663,Lazada Group,lazada,saratogagrill.com,,,,,500K-1M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,91748,Lazada,lazada,sacpal.org,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,92081,Lazada,lazada,rayelectcont.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,92214,Lazada,lazada,professionalpropertymanagementinc.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,92581,Lazada Group,lazada,paolapathways.org,,,,,75M-200M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,92617,Lazada Group,lazada,pacificasc.org,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,92661,Lazada Group,lazada,ottosplace.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,93133,Lazada,lazada,myanmarchildrensfoundation.org,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,93567,Lazada Group,lazada,managementeducationgroup.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,93911,Lazada,lazada,lassenseniorservices.org,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,93917,Lazada Group,lazada,lasercenterofmiami.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94007,Lazada Group,lazada,konkapot.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94043,Lazada Group,lazada,kippysicecream.com,,,,,500K-1M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94167,Lazada,lazada,joylandpark.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94774,Lazada,lazada,hansduusblacksmith.com,,,,,500K-1M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94833,Lazada,lazada,guestkeeperinnvw.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94845,Lazada,lazada,growlamesa.org,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94871,Lazada Group,lazada,gregbakerattorneys.com,,,,,5M-10M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94877,Lazada Group,lazada,greentiffin.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,94878,Lazada Group,lazada,greentiercommunities.org,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,95053,Lazada Group,lazada,gettingstarted.life,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,95435,Lazada Group,lazada,fblbank.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,95691,Lazada Group,lazada,elementsolar.com,,,,,25M-75M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,95718,Lazada,lazada,eiffeltowertulsa.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,95812,Lazada Group,lazada,dunningrealestate.com,,,,,,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,95976,Lazada,lazada,dietsbazar.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,96388,Lazada Group,lazada,coopersalehouse.com,,,,,500K-1M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,97405,Lazada Group,lazada,bestcookingsets.com,,,,,0-500K,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,97470,Lazada,lazada,bearbeachcafe.com,,,,,1M-5M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,97919,Lazada,lazada,amfireandems.org,,,,,25M-75M,
+lazada||,40,likely_same_company,0.739,True,normalized_name + locality,no - kept separate pending review,98055,Lazada,lazada,akronelectrician.net,,,,,5M-10M,
+mansion77||,6,likely_same_company,0.557,True,normalized_name + locality,no - kept separate pending review,90511,MANSION77,mansion77,tinospizza.com,,,,,500K-1M,
+mansion77||,6,likely_same_company,0.557,True,normalized_name + locality,no - kept separate pending review,91626,MANSION77,mansion77,schmittfarms.com,,,,,0-500K,
+mansion77||,6,likely_same_company,0.557,True,normalized_name + locality,no - kept separate pending review,92298,MANSION77,mansion77,portfoliocoffeehouse.com,,,,,1M-5M,
+mansion77||,6,likely_same_company,0.557,True,normalized_name + locality,no - kept separate pending review,92414,MANSION77,mansion77,pibeachcoma.com,,,,,1M-5M,
+mansion77||,6,likely_same_company,0.557,True,normalized_name + locality,no - kept separate pending review,92802,MANSION77,mansion77,oddfellowsliquorbar.com,,,,,1M-5M,
+mansion77||,6,likely_same_company,0.557,True,normalized_name + locality,no - kept separate pending review,95705,MANSION77,mansion77,elbasharestaurant.com,,,,,0-500K,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,14260,Menufy,menufy,sohoramenriverside.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,16645,Menufy,menufy,lafuenteop.com,,,,,,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,19981,Menufy,menufy,vietfirekitchenashburn.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,25201,Menufy,menufy,kingstonpizzarichmond.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,27436,Menufy,menufy,enchantedcoffeeca.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,29386,Menufy,menufy,alhamraaz.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,29650,Menufy,menufy,112thstreetdiner.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,32457,Menufy,menufy,pumpsushi.com,,,,,10M-25M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,33035,Menufy,menufy,orderhigoexpress.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,33036,Menufy,menufy,orderhibiscustree.com,,,,,,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,33605,Menufy,menufy,mrkusocafetemplecity.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,35012,Menufy,menufy,hotchickzlp.com,,,,,,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,36434,Menufy,menufy,downtowndawgsdecatur.com,,,,,1M-5M,
+menufy||,14,likely_same_company,0.791,True,normalized_name + locality,no - kept separate pending review,37041,Menufy,menufy,casadelmarisco.com,,,,,1M-5M,
+"mrmsoft||houston, tx",2,likely_same_company,1.0,True,normalized_name + locality,no - kept separate pending review,33603,MRMSoft Inc.,mrmsoft,mrmsoftinc.com,https://www.linkedin.com/company/mrmsoftinc,"Houston, TX",United States,11-50 employees,,"MRMSoft Inc. is all about the experience. We design simple, convincing, and efficient business development solutions that make it easy for users to quickly find exactly what they’re looking for when they arrive at your platform and then con"
+"mrmsoft||houston, tx",2,likely_same_company,1.0,True,normalized_name + locality,no - kept separate pending review,33604,MRMSoft Inc.,mrmsoft,mrm-soft.com,https://www.linkedin.com/company/mrmsoft,"Houston, TX",United States,11-50 employees,1M-5M,"MRMSoft Inc. is all about the experience. We design simple, convincing, and efficient business development solutions that make it easy for users to quickly find exactly what they’re looking for when they arrive at your platform and then con"
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,101303,ParentSquare,parentsquare,wwtech.org,,,,,1M-5M,
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,102851,ParentSquare,parentsquare,doverschools.net,,,,,1M-5M,
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,103227,ParentSquare,parentsquare,woodford.k12.ky.us,,,,,1M-5M,
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,104275,ParentSquare,parentsquare,summitcharter.org,,,,,1M-5M,
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,105655,ParentSquare,parentsquare,ortrail.k12.or.us,,,,,0-500K,
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,105828,ParentSquare,parentsquare,novamil.org,,,,,5M-10M,
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,107147,ParentSquare,parentsquare,hopkins.k12.ky.us,,,,,0-500K,
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,107618,ParentSquare,parentsquare,gabbartllc.com,,,,,1M-5M,
+parentsquare||,9,likely_same_company,0.566,True,normalized_name + locality,no - kept separate pending review,107619,ParentSquare,parentsquare,gabbarthost.com,,,,,1M-5M,
+presscentric||,2,likely_same_company,0.639,True,normalized_name + locality,no - kept separate pending review,6956,PressCentric,presscentric,patioprinting.com,,,,,,
+presscentric||,2,likely_same_company,0.639,True,normalized_name + locality,no - kept separate pending review,8522,PressCentric,presscentric,coxprinting.com,,,,,0-500K,
+saic||,3,likely_same_company,0.957,True,normalized_name + locality,no - kept separate pending review,99535,SAIC,saic,forterrainc.com,,,,,0-500K,
+saic||,3,likely_same_company,0.957,True,normalized_name + locality,no - kept separate pending review,134880,SAIC,saic,spectrumsdi.com,,,,,500K-1M,
+saic||,3,likely_same_company,0.957,True,normalized_name + locality,no - kept separate pending review,136215,SAIC,saic,scitorcorporation.com,,,,,0-500K,
+sikich||,5,likely_same_company,0.614,True,normalized_name + locality,no - kept separate pending review,101877,Sikich,sikich,reynoldsgroup.com,,,,,0-500K,
+sikich||,5,likely_same_company,0.614,True,normalized_name + locality,no - kept separate pending review,103900,Sikich,sikich,thornhillcpa.com,,,,,500K-1M,
+sikich||,5,likely_same_company,0.614,True,normalized_name + locality,no - kept separate pending review,104404,Sikich,sikich,srpc-cpa.com,,,,,10M-25M,
+sikich||,5,likely_same_company,0.614,True,normalized_name + locality,no - kept separate pending review,106641,Sikich,sikich,kolbco.com,,,,,,
+sikich||,5,likely_same_company,0.614,True,normalized_name + locality,no - kept separate pending review,107055,Sikich,sikich,icondigitaldesign.com,,,,,0-500K,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,64630,Slice,slice,orderwestbroadwaypizza.com,,,,,,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,65192,Slice,slice,myleospizza.com,,,,,1M-5M,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,65593,Slice,slice,marlucasmenu.com,,,,,,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,66232,Slice,slice,italianpizzaonu.com,,,,,1M-5M,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,72013,Slice,slice,thesquaredeli.com,,,,,1M-5M,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,76599,Slice,slice,pittsburghpizzapubmenu.com,,,,,,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,78982,Slice,slice,milliesburgerssteaksshakes.com,,,,,500K-1M,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,80303,Slice,slice,lafamigliaitalianamenu.com,,,,,1M-5M,
+slice||,9,likely_same_company,0.661,True,normalized_name + locality,no - kept separate pending review,87108,Slice,slice,ciaocristinapizza.com,,,,,1M-5M,
+"start right||asheville, north carolina",2,likely_same_company,1.0,True,normalized_name + locality,no - kept separate pending review,31311,Start Right LLC,start right,startrighttoday.com,https://www.linkedin.com/company/startrightavl,"Asheville, North Carolina",United States,Self-employed,,"We provide end-to-end solutions that integrate advanced AI technology into all our services. Whether you need help with marketing strategies, software development, or a unique project, our expert team is here to ensure your business thrives"
+"start right||asheville, north carolina",2,likely_same_company,1.0,True,normalized_name + locality,no - kept separate pending review,31312,Start Right LLC,start right,startrightllc.com,https://www.linkedin.com/company/startrightllc,"Asheville, North Carolina",United States,2-10 employees,,"We provide end-to-end solutions that integrate advanced AI technology into all our services. Whether you need help with marketing strategies, software development, or a unique project, our expert team is here to ensure your business thrives"
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,63202,Yahoo,yahoo,searchalgo.com,,,,,0-500K,
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,72328,Yahoo,yahoo,terigacek.net,,,,,500K-1M,
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,76740,Yahoo,yahoo,philwatkins.com,,,,,500K-1M,
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,89746,Yahoo,yahoo,yahoi.com,,,,,,
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,89747,Yahoo,yahoo,yahho.com,,,,,,
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,90099,Yahoo,yahoo,vincentjrusso.com,,,,,1M-5M,
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,91900,Yahoo,yahoo,rinnco.com,,,,,1M-5M,
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,95152,Yahoo,yahoo,galagency.com,,,,,500K-1M,
+yahoo||,9,likely_same_company,0.59,True,normalized_name + locality,no - kept separate pending review,95205,Yahoo,yahoo,frontiernet.net,,,,,,
+abrigo||,2,possible_same_company,0.471,True,normalized_name + locality,no - kept separate pending review,98694,Abrigo,abrigo,sageworks.com,,,,,10M-25M,
+abrigo||,2,possible_same_company,0.471,True,normalized_name + locality,no - kept separate pending review,117938,Abrigo,abrigo,farin.com,,,,,1M-5M,
+accrisoft||,2,possible_same_company,0.26,True,normalized_name + locality,no - kept separate pending review,12397,Accrisoft,accrisoft,conscienceinternational.org,,,,,0-500K,
+accrisoft||,2,possible_same_company,0.26,True,normalized_name + locality,no - kept separate pending review,19260,Accrisoft,accrisoft,accrinet.com,,,,,1M-5M,
+advarra||,3,possible_same_company,0.378,True,normalized_name + locality,no - kept separate pending review,98827,Advarra,advarra,forteresearch.com,,,,,25M-75M,
+advarra||,3,possible_same_company,0.378,True,normalized_name + locality,no - kept separate pending review,136424,Advarra,advarra,sairb.com,,,,,10M-25M,
+advarra||,3,possible_same_company,0.378,True,normalized_name + locality,no - kept separate pending review,137588,Advarra,advarra,quorumreview.com,,,,,25M-75M,
+agenolx||,2,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,91229,AGENOLX,agenolx,sparkmybiz.com,,,,,1M-5M,
+agenolx||,2,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,95486,AGENOLX,agenolx,expressocservices.com,,,,,1M-5M,
+airbet88||,4,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,90402,Airbet88,airbet88,treehousecomedy.com,,,,,1M-5M,
+airbet88||,4,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,93405,AIRBET88,airbet88,mercatowc.com,,,,,1M-5M,
+airbet88||,4,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,93945,AIRBET88,airbet88,lallipopdaycare.com,,,,,,
+airbet88||,4,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,94189,AIRBET88,airbet88,jointsinmotionchiro.com,,,,,0-500K,
+aledade||,3,possible_same_company,0.513,True,normalized_name + locality,no - kept separate pending review,124803,Aledade,aledade,medicaladvantagegroup.com,,,,,5M-10M,
+aledade||,3,possible_same_company,0.513,True,normalized_name + locality,no - kept separate pending review,124815,Aledade,aledade,medadvgrp.com,,,,,10M-25M,
+aledade||,3,possible_same_company,0.513,True,normalized_name + locality,no - kept separate pending review,139960,Aledade,aledade,npadvantage.com,,,,,1M-5M,
+alexistogel||,7,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,90227,Alexistogel,alexistogel,urbanunderground.org,,,,,1M-5M,
+alexistogel||,7,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,90395,Alexistogel,alexistogel,trevorexter.com,,,,,0-500K,
+alexistogel||,7,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,90746,Alexistogel,alexistogel,thecaid.org,,,,,1M-5M,
+alexistogel||,7,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,92371,Alexistogel,alexistogel,pixuru.com,,,,,0-500K,
+alexistogel||,7,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,93161,Alexistogel,alexistogel,mstrattoria.com,,,,,1M-5M,
+alexistogel||,7,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,95644,Alexistogel,alexistogel,embroideryunl.com,,,,,10M-25M,
+alexistogel||,7,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,96283,Alexistogel,alexistogel,crossfitcle.com,,,,,1M-5M,
+amerta88||,4,possible_same_company,0.403,True,normalized_name + locality,no - kept separate pending review,90014,AMERTA88,amerta88,waterstreetkitchenri.com,,,,,1M-5M,
+amerta88||,4,possible_same_company,0.403,True,normalized_name + locality,no - kept separate pending review,93941,AMERTA88,amerta88,lamesabistrosd.com,,,,,1M-5M,
+amerta88||,4,possible_same_company,0.403,True,normalized_name + locality,no - kept separate pending review,97203,AMERTA88,amerta88,boulderbrewpub.com,,,,,1M-5M,
+amerta88||,4,possible_same_company,0.403,True,normalized_name + locality,no - kept separate pending review,98250,AMERTA88,amerta88,51avecafe.com,,,,,,
+asialive||,3,possible_same_company,0.315,True,normalized_name + locality,no - kept separate pending review,89818,Asialive,asialive,womenscouncildallasarboretum.org,,,,,1M-5M,
+asialive||,3,possible_same_company,0.315,True,normalized_name + locality,no - kept separate pending review,90433,AsiaLive,asialive,trabuerestaurant.com,,,,,1M-5M,
+asialive||,3,possible_same_company,0.315,True,normalized_name + locality,no - kept separate pending review,94872,Asialive,asialive,greerfiredistrict.com,,,,,10M-25M,
+autospin88||,2,possible_same_company,0.301,True,normalized_name + locality,no - kept separate pending review,94815,Autospin88,autospin88,haahauto.com,,,,,10M-25M,
+autospin88||,2,possible_same_company,0.301,True,normalized_name + locality,no - kept separate pending review,96831,Autospin88,autospin88,ccmgaragedoors.com,,,,,500K-1M,
+avi systems||,2,possible_same_company,0.455,True,normalized_name + locality,no - kept separate pending review,149663,AVI Systems,avi systems,cimav.com,,,,,1M-5M,
+avi systems||,2,possible_same_company,0.455,True,normalized_name + locality,no - kept separate pending review,150728,AVI Systems,avi systems,avisystems.com,,,,,0-500K,
+bakar77||,2,possible_same_company,0.333,True,normalized_name + locality,no - kept separate pending review,96090,BAKAR77,bakar77,dctexashomes.com,,,,,1M-5M,
+bakar77||,2,possible_same_company,0.333,True,normalized_name + locality,no - kept separate pending review,97845,BAKAR77,bakar77,apexconveyor.com,,,,,0-500K,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,89848,BANGSAJP,bangsajp,winingerlawfirm.com,,,,,,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,90376,BANGSAJP,bangsajp,trinityofaugusta.com,,,,,1M-5M,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,91234,BANGSAJP,bangsajp,spanishgardeninn.com,,,,,1M-5M,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,91640,BANGSAJP,bangsajp,sawshopbistro.com,,,,,1M-5M,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,93594,BANGSAJP,bangsajp,mainefairs.org,,,,,1M-5M,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,94809,BANGSAJP,bangsajp,haciendasmexicangrill.com,,,,,,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,94904,BANGSAJP,bangsajp,greatergoodbbq.com,,,,,500K-1M,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,96244,BANGSAJP,bangsajp,csquaredciders.com,,,,,1M-5M,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,97265,BANGSAJP,bangsajp,blueskyyogalv.com,,,,,0-500K,
+bangsajp||,10,possible_same_company,0.508,True,normalized_name + locality,no - kept separate pending review,97519,BANGSAJP,bangsajp,barryspizza.com,,,,,500K-1M,
+bdslot88||,2,possible_same_company,0.26,True,normalized_name + locality,no - kept separate pending review,89742,BDSlot88,bdslot88,yakimarv.com,,,,,0-500K,
+bdslot88||,2,possible_same_company,0.26,True,normalized_name + locality,no - kept separate pending review,91348,BDSLOT88,bdslot88,smallaxetruck.com,,,,,1M-5M,
+bellus wines||,2,possible_same_company,0.309,True,normalized_name + locality,no - kept separate pending review,92415,Bellus Wines,bellus wines,pibarsf.com,,,,,1M-5M,
+bellus wines||,2,possible_same_company,0.309,True,normalized_name + locality,no - kept separate pending review,94044,Bellus Wines,bellus wines,kingsmpls.com,,,,,500K-1M,
+bentley systems||,4,possible_same_company,0.378,True,normalized_name + locality,no - kept separate pending review,4570,Bentley Systems,bentley systems,optram.com,,,,,1M-5M,
+bentley systems||,4,possible_same_company,0.378,True,normalized_name + locality,no - kept separate pending review,4919,Bentley Systems,bentley systems,infrasoft-civil.com,,,,,10M-25M,
+bentley systems||,4,possible_same_company,0.378,True,normalized_name + locality,no - kept separate pending review,5225,Bentley Systems,bentley systems,enterpriseinformatics.com,,,,,1M-5M,
+bentley systems||,4,possible_same_company,0.378,True,normalized_name + locality,no - kept separate pending review,8746,Bentley Systems,bentley systems,anauthenticpiece.com,,,,,0-500K,
+big777||,3,possible_same_company,0.44,True,normalized_name + locality,no - kept separate pending review,92889,BIG777,big777,northbeachsushi.com,,,,,1M-5M,
+big777||,3,possible_same_company,0.44,True,normalized_name + locality,no - kept separate pending review,92998,BIG777,big777,neurodevelop.com,,,,,0-500K,
+big777||,3,possible_same_company,0.44,True,normalized_name + locality,no - kept separate pending review,98007,BIG777,big777,allcelltech.com,,,,,10M-25M,
+bigtincan||,2,possible_same_company,0.284,True,normalized_name + locality,no - kept separate pending review,54184,Bigtincan,bigtincan,xinn.com,,,,,1M-5M,
+bigtincan||,2,possible_same_company,0.284,True,normalized_name + locality,no - kept separate pending review,60733,Bigtincan,bigtincan,zunos.com,,,,,1M-5M,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,63213,Bitly,bitly,scrncstfy.com,,,,,10M-25M,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,66969,Bitly,bitly,goduke.us,,,,,,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,68527,Bitly,bitly,cpatechpartners.com,,,,,0-500K,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,73127,Bitly,bitly,stio.info,,,,,10M-25M,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,75948,Bitly,bitly,pssn.io,,,,,10M-25M,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,85861,Bitly,bitly,disc.gs,,,,,10M-25M,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,88230,Bitly,bitly,belindachang.com,,,,,0-500K,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,92156,Bitly,bitly,pvtl.ventures,,,,,1M-5M,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,92305,Bitly,bitly,popbank.us,,,,,1M-5M,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,95226,Bitly,bitly,freestate.pub,,,,,10M-25M,
+bitly||,11,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,96217,Bitly,bitly,curryre.info,,,,,500K-1M,
+bloom intelligence||,2,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,162400,Bloom Intelligence,bloom intelligence,getsuperfi.com,,,,,1M-5M,
+bloom intelligence||,2,possible_same_company,0.317,True,normalized_name + locality,no - kept separate pending review,162565,Bloom Intelligence,bloom intelligence,gazellawifi.com,,,,,1M-5M,
+bosjoko||,2,possible_same_company,0.276,True,normalized_name + locality,no - kept separate pending review,92353,BOSJOKO,bosjoko,platinumadvertisingllc.com,,,,,200M-500M,
+bosjoko||,2,possible_same_company,0.276,True,normalized_name + locality,no - kept separate pending review,93910,BOSJOKO,bosjoko,lastchancebarandgrill.com,,,,,1M-5M,
+ceriabet||,4,possible_same_company,0.368,True,normalized_name + locality,no - kept separate pending review,94296,CERIABET,ceriabet,ivyglambeautybar.com,,,,,0-500K,
+ceriabet||,4,possible_same_company,0.368,True,normalized_name + locality,no - kept separate pending review,94907,CERIABET,ceriabet,greatamericanirishfest.com,,,,,500K-1M,
+ceriabet||,4,possible_same_company,0.368,True,normalized_name + locality,no - kept separate pending review,95221,CERIABET,ceriabet,frenchcornerbistro.com,,,,,1M-5M,
+ceriabet||,4,possible_same_company,0.368,True,normalized_name + locality,no - kept separate pending review,95362,CERIABET,ceriabet,fivealls.com,,,,,0-500K,
+churchspring||,2,possible_same_company,0.307,True,normalized_name + locality,no - kept separate pending review,13862,ChurchSpring,churchspring,tcwc.net,,,,,0-500K,
+churchspring||,2,possible_same_company,0.307,True,normalized_name + locality,no - kept separate pending review,18779,ChurchSpring,churchspring,cbcpreschool.org,,,,,1M-5M,
+cityof com||,2,possible_same_company,0.446,True,normalized_name + locality,no - kept separate pending review,133438,CityOf.com,cityof com,thecityofmesa.org,,,,,0-500K,
+cityof com||,2,possible_same_company,0.446,True,normalized_name + locality,no - kept separate pending review,133440,CityOf.com,cityof com,thecityofcorpuschristi.com,,,,,500K-1M,
+clarivate||,5,possible_same_company,0.53,True,normalized_name + locality,no - kept separate pending review,98530,Clarivate,clarivate,globalqinc.com,,,,,1M-5M,
+clarivate||,5,possible_same_company,0.53,True,normalized_name + locality,no - kept separate pending review,100118,Clarivate,clarivate,customersfirstnow.com,,,,,10M-25M,
+clarivate||,5,possible_same_company,0.53,True,normalized_name + locality,no - kept separate pending review,101916,Clarivate,clarivate,recap.com,,,,,1B-10B,
+clarivate||,5,possible_same_company,0.53,True,normalized_name + locality,no - kept separate pending review,102466,Clarivate,clarivate,isiresearchsoft.com,,,,,1M-5M,
+clarivate||,5,possible_same_company,0.53,True,normalized_name + locality,no - kept separate pending review,102972,Clarivate,clarivate,cabriniconnections.org,,,,,0-500K,
+cloudflare||,2,possible_same_company,0.307,True,normalized_name + locality,no - kept separate pending review,124781,Cloudflare,cloudflare,medprofinder.com,,,,,500K-1M,
+cloudflare||,2,possible_same_company,0.307,True,normalized_name + locality,no - kept separate pending review,127074,Cloudflare,cloudflare,gefsummerschool.org,,,,,1M-5M,
+coherent||,4,possible_same_company,0.521,True,normalized_name + locality,no - kept separate pending review,127712,Coherent Corp.,coherent,estechnology.co.uk,,,,,500K-1M,
+coherent||,4,possible_same_company,0.521,True,normalized_name + locality,no - kept separate pending review,136686,Coherent Corp.,coherent,rofin.com,,,,,1M-5M,
+coherent||,4,possible_same_company,0.521,True,normalized_name + locality,no - kept separate pending review,147423,Coherent Corp.,coherent,eotech.com,,,,,1M-5M,
+coherent||,4,possible_same_company,0.521,True,normalized_name + locality,no - kept separate pending review,150576,Coherent Corp.,coherent,beamdynamics.com,,,,,1M-5M,
+constellation1||,2,possible_same_company,0.459,True,normalized_name + locality,no - kept separate pending review,53439,Constellation1,constellation1,gopaperless.com,,,,,1M-5M,
+constellation1||,2,possible_same_company,0.459,True,normalized_name + locality,no - kept separate pending review,63748,Constellation1,constellation1,realestatedigital.com,,,,,10M-25M,
+cr7vip||,3,possible_same_company,0.467,True,normalized_name + locality,no - kept separate pending review,89726,CR7VIP,cr7vip,yogasciencefoundation.org,,,,,0-500K,
+cr7vip||,3,possible_same_company,0.467,True,normalized_name + locality,no - kept separate pending review,90764,CR7VIP,cr7vip,thebluemarblepub.com,,,,,,
+cr7vip||,3,possible_same_company,0.467,True,normalized_name + locality,no - kept separate pending review,96468,CR7VIP,cr7vip,commercialcad.com,,,,,1M-5M,
+data axle||,2,possible_same_company,0.304,True,normalized_name + locality,no - kept separate pending review,151860,Data Axle,data axle,yesmarketing.com,,,,,25M-75M,
+data axle||,2,possible_same_company,0.304,True,normalized_name + locality,no - kept separate pending review,151861,Data Axle,data axle,yeslifecyclemarketing.com,,,,,25M-75M,
+databank||,3,possible_same_company,0.46,True,normalized_name + locality,no - kept separate pending review,132097,DataBank,databank,utahcolocation.com,,,,,1M-5M,
+databank||,3,possible_same_company,0.46,True,normalized_name + locality,no - kept separate pending review,147881,DataBank,databank,edgewebhosting.net,,,,,5M-10M,
+databank||,3,possible_same_company,0.46,True,normalized_name + locality,no - kept separate pending review,147891,DataBank,databank,edgehosting.com,,,,,,
+dealer spike||,3,possible_same_company,0.45,True,normalized_name + locality,no - kept separate pending review,152337,Dealer Spike,dealer spike,watkinsoutdoor.com,,,,,,
+dealer spike||,3,possible_same_company,0.45,True,normalized_name + locality,no - kept separate pending review,154370,Dealer Spike,dealer spike,sweetwaterharley.com,,,,,1M-5M,
+dealer spike||,3,possible_same_company,0.45,True,normalized_name + locality,no - kept separate pending review,162768,Dealer Spike,dealer spike,freedompowersportsfayetteville.com,,,,,1M-5M,
+demandbase||,2,possible_same_company,0.341,True,normalized_name + locality,no - kept separate pending review,67873,Demandbase,demandbase,engagio.com,,,,,10M-25M,
+demandbase||,2,possible_same_company,0.341,True,normalized_name + locality,no - kept separate pending review,68360,Demandbase,demandbase,demandmatrix.com,,,,,10M-25M,
+descartes systems||,2,possible_same_company,0.274,True,normalized_name + locality,no - kept separate pending review,60595,Descartes Systems Group,descartes systems,appterra.com,,,,,500M-1B,
+descartes systems||,2,possible_same_company,0.274,True,normalized_name + locality,no - kept separate pending review,69030,Descartes Systems Group,descartes systems,bearwareinc.com,,,,,1M-5M,
+dewagacor138||,2,possible_same_company,0.441,True,normalized_name + locality,no - kept separate pending review,92342,DEWAGACOR138,dewagacor138,pleninaturals.com,,,,,1M-5M,
+dewagacor138||,2,possible_same_company,0.441,True,normalized_name + locality,no - kept separate pending review,94156,DEWAGACOR138,dewagacor138,juniorandhatter.com,,,,,1M-5M,
+dewatogel||,6,possible_same_company,0.254,True,normalized_name + locality,no - kept separate pending review,91176,DewaTogel,dewatogel,sports-ohio.com,,,,,1M-5M,
+dewatogel||,6,possible_same_company,0.254,True,normalized_name + locality,no - kept separate pending review,92921,DewaTogel,dewatogel,nltfire.org,,,,,0-500K,
+dewatogel||,6,possible_same_company,0.254,True,normalized_name + locality,no - kept separate pending review,94922,DewaTogel,dewatogel,grandslamtennis.net,,,,,1M-5M,
+dewatogel||,6,possible_same_company,0.254,True,normalized_name + locality,no - kept separate pending review,95463,DewaTogel,dewatogel,familymedicalassociates.net,,,,,5M-10M,
+dewatogel||,6,possible_same_company,0.254,True,normalized_name + locality,no - kept separate pending review,96152,DEWATOGEL,dewatogel,dane-studio.com,,,,,1M-5M,
+dewatogel||,6,possible_same_company,0.254,True,normalized_name + locality,no - kept separate pending review,98289,DewaTogel,dewatogel,13magickalmoons.com,,,,,1M-5M,
+dexis||,2,possible_same_company,0.376,True,normalized_name + locality,no - kept separate pending review,11795,DEXIS,dexis,gendex.com,,,,,25M-75M,
+dexis||,2,possible_same_company,0.376,True,normalized_name + locality,no - kept separate pending review,15567,DEXIS,dexis,palodexgroup.com,,,,,1M-5M,
+dorahoki||,3,possible_same_company,0.28,True,normalized_name + locality,no - kept separate pending review,90961,DORAHOKI,dorahoki,sushimurasakigreenville.com,,,,,1M-5M,
+dorahoki||,3,possible_same_company,0.28,True,normalized_name + locality,no - kept separate pending review,96291,DORAHOKI,dorahoki,crisfieldseafood.com,,,,,,
+dorahoki||,3,possible_same_company,0.28,True,normalized_name + locality,no - kept separate pending review,97181,DORAHOKI,dorahoki,brackenstore.com,,,,,500K-1M,
+durable||,3,possible_same_company,0.451,True,normalized_name + locality,no - kept separate pending review,59752,Durable,durable,empowermententerprisesstaffing.com,,,,,,
+durable||,3,possible_same_company,0.451,True,normalized_name + locality,no - kept separate pending review,66115,Durable,durable,junkndebris.com,,,,,0-500K,
+durable||,3,possible_same_company,0.451,True,normalized_name + locality,no - kept separate pending review,80026,Durable,durable,lionizeperformance.com,,,,,0-500K,
+dynata||,2,possible_same_company,0.366,True,normalized_name + locality,no - kept separate pending review,154404,Dynata,dynata,surveysampling.com,,,,,10M-25M,
+dynata||,2,possible_same_company,0.366,True,normalized_name + locality,no - kept separate pending review,156463,Dynata,dynata,researchnow.com,,,,,200M-500M,
+emplifi||,2,possible_same_company,0.402,True,normalized_name + locality,no - kept separate pending review,61674,Emplifi,emplifi,turntonetworks.com,,,,,10M-25M,
+emplifi||,2,possible_same_company,0.402,True,normalized_name + locality,no - kept separate pending review,64300,Emplifi,emplifi,pixlee.com,,,,,10M-25M,
+engage2excel||,3,possible_same_company,0.523,True,normalized_name + locality,no - kept separate pending review,153678,Engage2Excel,engage2excel,therobbinsco.com,,,,,10M-25M,
+engage2excel||,3,possible_same_company,0.523,True,normalized_name + locality,no - kept separate pending review,153908,Engage2Excel,engage2excel,tharperobbins.com,,,,,25M-75M,
+engage2excel||,3,possible_same_company,0.523,True,normalized_name + locality,no - kept separate pending review,164113,Engage2Excel,engage2excel,dtoolbox.com,,,,,10M-25M,
+"essential business software||gold canyon, az",2,possible_same_company,0.302,True,normalized_name + locality,no - kept separate pending review,879,The Essential Business Software Group,essential business software,ebs4domino.com,https://www.linkedin.com/company/the-essential-business-software-group,"Gold Canyon, AZ",United States,2-10 employees,0-500K,"The Essential Business Software Group [EBSG], is rapidly transforming itself from being an IBM Business Partner and Independent Software Vendor [ISV] with an exclusive focus on developing and promoting its own products and services, into a "
+"essential business software||gold canyon, az",2,possible_same_company,0.302,True,normalized_name + locality,no - kept separate pending review,2810,"Essential Business Software, Inc.",essential business software,ebsglobalsolutions.com,https://www.linkedin.com/company/essential-business-software-inc.,"Gold Canyon, AZ",United States,2-10 employees,0-500K,"Essential Business Software, Inc. [EBSUS] is the US arm of the Essential Business Software Group [EBSG] and is an IBM Business Partner, an Independent Software Vendor and the North American Reseller for a growing portfolio of the very best "
+everbridge||,3,possible_same_company,0.512,True,normalized_name + locality,no - kept separate pending review,53296,Everbridge,everbridge,infiniteblue.com,,,,,0-500K,
+everbridge||,3,possible_same_company,0.512,True,normalized_name + locality,no - kept separate pending review,53862,Everbridge,everbridge,cnlsoftware.com,,,,,0-500K,
+everbridge||,3,possible_same_company,0.512,True,normalized_name + locality,no - kept separate pending review,53979,Everbridge,everbridge,anvilgroup.com,,,,,0-500K,
+finastra||,2,possible_same_company,0.389,True,normalized_name + locality,no - kept separate pending review,12360,Finastra,finastra,customcreditsystems.com,,,,,10M-25M,
+finastra||,2,possible_same_company,0.389,True,normalized_name + locality,no - kept separate pending review,17655,Finastra,finastra,fundtech.com,,,,,1B-10B,
+firespring||,3,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,163390,Firespring,firespring,evolempirecreative.com,,,,,1M-5M,
+firespring||,3,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,164794,Firespring,firespring,copycat.cc,,,,,1M-5M,
+firespring||,3,possible_same_company,0.5,True,normalized_name + locality,no - kept separate pending review,165752,Firespring,firespring,andersonprint.com,,,,,1M-5M,
+fortinet||,3,possible_same_company,0.398,True,normalized_name + locality,no - kept separate pending review,127168,Fortinet,fortinet,ftnt.net,,,,,200M-500M,
+fortinet||,3,possible_same_company,0.398,True,normalized_name + locality,no - kept separate pending review,128603,Fortinet,fortinet,cybersponse.com,,,,,10M-25M,
+fortinet||,3,possible_same_company,0.398,True,normalized_name + locality,no - kept separate pending review,155488,Fortinet,fortinet,shieldx.com,,,,,1M-5M,
+franconnect||,2,possible_same_company,0.353,True,normalized_name + locality,no - kept separate pending review,6561,FranConnect,franconnect,rizepoint.com,,,,,1M-5M,
+franconnect||,2,possible_same_company,0.353,True,normalized_name + locality,no - kept separate pending review,9609,FranConnect,franconnect,steton.com,,,,,10M-25M,
+future||,2,possible_same_company,0.263,True,normalized_name + locality,no - kept separate pending review,137805,Future PLC,future,purch.com,,,,,25M-75M,
+future||,2,possible_same_company,0.263,True,normalized_name + locality,no - kept separate pending review,158712,Future PLC,future,newbaymedia.com,,,,,10M-25M,
+gacor22||,2,possible_same_company,0.265,True,normalized_name + locality,no - kept separate pending review,90307,GACOR22,gacor22,twincityhomeremodeling.net,,,,,0-500K,
+gacor22||,2,possible_same_company,0.265,True,normalized_name + locality,no - kept separate pending review,94204,GACOR22,gacor22,johncarey.org,,,,,1M-5M,
+gacor66||,4,possible_same_company,0.4,True,normalized_name + locality,no - kept separate pending review,89738,GACOR66,gacor66,yellowcabofnewportnews.com,,,,,0-500K,
+gacor66||,4,possible_same_company,0.4,True,normalized_name + locality,no - kept separate pending review,94002,GACOR66,gacor66,kpopchickenandbeer.com,,,,,1M-5M,
+gacor66||,4,possible_same_company,0.4,True,normalized_name + locality,no - kept separate pending review,96100,GACOR66,gacor66,daysinnantiochca.com,,,,,0-500K,
+gacor66||,4,possible_same_company,0.4,True,normalized_name + locality,no - kept separate pending review,98165,GACOR66,gacor66,acunitparts.com,,,,,1M-5M,
+gimmal||,2,possible_same_company,0.39,True,normalized_name + locality,no - kept separate pending review,9863,Gimmal,gimmal,sherpasoftware.com,,,,,1M-5M,
+gimmal||,2,possible_same_company,0.39,True,normalized_name + locality,no - kept separate pending review,11457,Gimmal,gimmal,infolinx.com,,,,,1M-5M,
+higher logic||,2,possible_same_company,0.258,True,normalized_name + locality,no - kept separate pending review,63742,Higher Logic,higher logic,realmagnet.com,,,,,10M-25M,
+higher logic||,2,possible_same_company,0.258,True,normalized_name + locality,no - kept separate pending review,66367,Higher Logic,higher logic,informz.com,,,,,10M-25M,
+hoki178||,2,possible_same_company,0.25,True,normalized_name + locality,no - kept separate pending review,91145,HOKI178,hoki178,stanzaslc.com,,,,,1M-5M,
+hoki178||,2,possible_same_company,0.25,True,normalized_name + locality,no - kept separate pending review,94591,HOKI178,hoki178,holmesteadfarm.com,,,,,1M-5M,
+hokiemas88||,3,possible_same_company,0.381,True,normalized_name + locality,no - kept separate pending review,94919,Hokiemas88,hokiemas88,granitestatetire.com,,,,,0-500K,
+hokiemas88||,3,possible_same_company,0.381,True,normalized_name + locality,no - kept separate pending review,97136,Hokiemas88,hokiemas88,brickandmortargrill.com,,,,,0-500K,
+hokiemas88||,3,possible_same_company,0.381,True,normalized_name + locality,no - kept separate pending review,97202,Hokiemas88,hokiemas88,boulderbridal.com,,,,,1M-5M,
+hokizeus88||,2,possible_same_company,0.442,True,normalized_name + locality,no - kept separate pending review,74888,HOKIZEUS88,hokizeus88,rosedaleproud.org,,,,,0-500K,
+hokizeus88||,2,possible_same_company,0.442,True,normalized_name + locality,no - kept separate pending review,95911,HOKIZEUS88,hokizeus88,donaareparestaurant.com,,,,,,
+indojaya168||,2,possible_same_company,0.312,True,normalized_name + locality,no - kept separate pending review,92768,Indojaya168,indojaya168,oldmissiontavern.com,,,,,0-500K,
+indojaya168||,2,possible_same_company,0.312,True,normalized_name + locality,no - kept separate pending review,93221,INDOJAYA168,indojaya168,montessorilearning.org,,,,,500K-1M,
+innovation algebra||,2,possible_same_company,0.342,True,normalized_name + locality,no - kept separate pending review,33005,Innovation Algebra,innovation algebra,oumy.com,,,,,0-500K,
+innovation algebra||,2,possible_same_company,0.342,True,normalized_name + locality,no - kept separate pending review,35390,Innovation Algebra,innovation algebra,godeeep.com,,,,,0-500K,
+inpixon||,2,possible_same_company,0.442,True,normalized_name + locality,no - kept separate pending review,19197,Inpixon,inpixon,airpatrolcorp.com,,,,,0-500K,
+inpixon||,2,possible_same_company,0.442,True,normalized_name + locality,no - kept separate pending review,21067,Inpixon,inpixon,sysorex.com,,,,,10M-25M,
+instructure||,2,possible_same_company,0.302,True,normalized_name + locality,no - kept separate pending review,98861,Instructure,instructure,concentricsky.com,,,,,10M-25M,
+instructure||,2,possible_same_company,0.302,True,normalized_name + locality,no - kept separate pending review,102962,Instructure,instructure,certicasolutions.com,,,,,5M-10M,
+intelerad||,2,possible_same_company,0.253,True,normalized_name + locality,no - kept separate pending review,52737,Intelerad,intelerad,penrad.com,,,,,10M-25M,
+intelerad||,2,possible_same_company,0.253,True,normalized_name + locality,no - kept separate pending review,60067,Intelerad,intelerad,digison.net,,,,,0-500K,
+ipar4d||,2,possible_same_company,0.253,True,normalized_name + locality,no - kept separate pending review,93711,Ipar4D,ipar4d,longbeachfishgrill.com,,,,,500K-1M,
+ipar4d||,2,possible_same_company,0.253,True,normalized_name + locality,no - kept separate pending review,94667,Ipar4D,ipar4d,herediadesigns.com,,,,,0-500K,
+iqvia||,3,possible_same_company,0.31,True,normalized_name + locality,no - kept separate pending review,121568,IQVIA,iqvia,skainfo.com,,,,,10M-25M,
+iqvia||,3,possible_same_company,0.31,True,normalized_name + locality,no - kept separate pending review,123328,IQVIA,iqvia,pharmasourcellc.com,,,,,1M-5M,
+iqvia||,3,possible_same_company,0.31,True,normalized_name + locality,no - kept separate pending review,144230,IQVIA,iqvia,imshealth.com,,,,,0-500K,
+jago777||,2,possible_same_company,0.348,True,normalized_name + locality,no - kept separate pending review,93592,JAGO777,jago777,mainerfordofbristow.com,,,,,1M-5M,
+jago777||,2,possible_same_company,0.348,True,normalized_name + locality,no - kept separate pending review,96710,JAGO777,jago777,chimentocontemporary.net,,,,,0-500K,
+janjislot||,2,possible_same_company,0.284,True,normalized_name + locality,no - kept separate pending review,92776,JANJISLOT,janjislot,oldcapitaltavern.com,,,,,0-500K,
+janjislot||,2,possible_same_company,0.284,True,normalized_name + locality,no - kept separate pending review,93266,Janjislot,janjislot,mncampuscompact.org,,,,,500K-1M,
+kaisar328||,2,possible_same_company,0.319,True,normalized_name + locality,no - kept separate pending review,92709,KAISAR328,kaisar328,operationmade.com,,,,,,
+kaisar328||,2,possible_same_company,0.319,True,normalized_name + locality,no - kept separate pending review,95496,KAISAR328,kaisar328,exotichardwoods.com,,,,,500K-1M,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,90564,KOITOTO,koitoto,thewinkblog.net,,,,,0-500K,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,91100,KOITOTO,koitoto,steppingstonesproject.org,,,,,0-500K,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,91136,KOITOTO,koitoto,staroftheseachurchsf.com,,,,,1M-5M,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,91494,KOITOTO,koitoto,shelleysprecisionauto.com,,,,,0-500K,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,91971,KOITOTO,koitoto,repealrestaurant.com,,,,,1M-5M,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,93063,KOITOTO,koitoto,napavalleytheater.org,,,,,0-500K,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,94152,KOITOTO,koitoto,justcookforkids.com,,,,,1M-5M,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,94516,KOITOTO,koitoto,humaneusa.org,,,,,1M-5M,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,95954,KOITOTO,koitoto,disabledparentrights.org,,,,,1M-5M,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,96207,KOITOTO,koitoto,customsvcs.com,,,,,1M-5M,
+koitoto||,11,possible_same_company,0.397,True,normalized_name + locality,no - kept separate pending review,96920,KOITOTO,koitoto,careeraccelerators.co,,,,,0-500K,
+kpa||,4,possible_same_company,0.529,True,normalized_name + locality,no - kept separate pending review,8706,KPA,kpa,autoadvisory.com,,,,,1M-5M,
+kpa||,4,possible_same_company,0.529,True,normalized_name + locality,no - kept separate pending review,11231,KPA,kpa,kpaonline.com,,,,,1M-5M,
+kpa||,4,possible_same_company,0.529,True,normalized_name + locality,no - kept separate pending review,12172,KPA,kpa,ecrinc.com,,,,,1M-5M,
+kpa||,4,possible_same_company,0.529,True,normalized_name + locality,no - kept separate pending review,12617,KPA,kpa,automotivecomplianceconsultants.com,,,,,0-500K,
+kudapoker||,6,possible_same_company,0.492,True,normalized_name + locality,no - kept separate pending review,90899,Kudapoker,kudapoker,tahoefrc.org,,,,,1M-5M,
+kudapoker||,6,possible_same_company,0.492,True,normalized_name + locality,no - kept separate pending review,91315,KUDAPOKER,kudapoker,snanh.org,,,,,0-500K,
+kudapoker||,6,possible_same_company,0.492,True,normalized_name + locality,no - kept separate pending review,94260,Kudapoker,kudapoker,jaylenschristianacademy.com,,,,,1M-5M,
+kudapoker||,6,possible_same_company,0.492,True,normalized_name + locality,no - kept separate pending review,94593,Kudapoker,kudapoker,hollidaypethospital.com,,,,,0-500K,
+kudapoker||,6,possible_same_company,0.492,True,normalized_name + locality,no - kept separate pending review,96551,Kudapoker,kudapoker,clubcenterevents.com,,,,,0-500K,
+kudapoker||,6,possible_same_company,0.492,True,normalized_name + locality,no - kept separate pending review,97488,Kudapoker,kudapoker,baystreetpub.com,,,,,0-500K,
+kudaslot||,4,possible_same_company,0.286,True,normalized_name + locality,no - kept separate pending review,90123,Kudaslot,kudaslot,victoryvillage.org,,,,,1M-5M,
+kudaslot||,4,possible_same_company,0.286,True,normalized_name + locality,no - kept separate pending review,91746,Kudaslot,kudaslot,saddlebrooketennisclub.net,,,,,1M-5M,
+kudaslot||,4,possible_same_company,0.286,True,normalized_name + locality,no - kept separate pending review,94810,Kudaslot,kudaslot,haciendadevega.com,,,,,1M-5M,
+kudaslot||,4,possible_same_company,0.286,True,normalized_name + locality,no - kept separate pending review,98168,Kudaslot,kudaslot,actoneyouththeater.org,,,,,1M-5M,
+kudatogel||,2,possible_same_company,0.369,True,normalized_name + locality,no - kept separate pending review,94901,Kudatogel,kudatogel,greatoakscinema.com,,,,,1M-5M,
+kudatogel||,2,possible_same_company,0.369,True,normalized_name + locality,no - kept separate pending review,97244,Kudatogel,kudatogel,bobwondriesford.com,,,,,1M-5M,
+lazada indonesia||,2,possible_same_company,0.394,True,normalized_name + locality,no - kept separate pending review,91321,Lazada Indonesia,lazada indonesia,smokeycanyon.com,,,,,500K-1M,
+lazada indonesia||,2,possible_same_company,0.394,True,normalized_name + locality,no - kept separate pending review,93010,Lazada Indonesia,lazada indonesia,neptunestropical.com,,,,,0-500K,
+leocity88||,2,possible_same_company,0.389,True,normalized_name + locality,no - kept separate pending review,89804,Leocity88,leocity88,woodlandsbbq.com,,,,,0-500K,
+leocity88||,2,possible_same_company,0.389,True,normalized_name + locality,no - kept separate pending review,91843,Leocity88,leocity88,rocketdogbratsandbrew.com,,,,,1M-5M,
+litera||,3,possible_same_company,0.438,True,normalized_name + locality,no - kept separate pending review,55127,Litera,litera,teravine.com,,,,,1M-5M,
+litera||,3,possible_same_company,0.438,True,normalized_name + locality,no - kept separate pending review,59960,Litera,litera,doxly.com,,,,,1M-5M,
+litera||,3,possible_same_company,0.438,True,normalized_name + locality,no - kept separate pending review,59999,Litera,litera,docscorp.com,,,,,10M-25M,
+lone wolf technologies||,3,possible_same_company,0.475,True,normalized_name + locality,no - kept separate pending review,55941,Lone Wolf Technologies,lone wolf technologies,sharp-atlanta.com,,,,,0-500K,
+lone wolf technologies||,3,possible_same_company,0.475,True,normalized_name + locality,no - kept separate pending review,57240,Lone Wolf Technologies,lone wolf technologies,optionrealtygroup.com,,,,,1M-5M,
+lone wolf technologies||,3,possible_same_company,0.475,True,normalized_name + locality,no - kept separate pending review,60219,Lone Wolf Technologies,lone wolf technologies,colemanrealtors.com,,,,,1M-5M,
+magnite||,2,possible_same_company,0.338,True,normalized_name + locality,no - kept separate pending review,120690,Magnite,magnite,telaria.com,,,,,10M-25M,
+magnite||,2,possible_same_company,0.338,True,normalized_name + locality,no - kept separate pending review,156090,Magnite,magnite,rubiconproject.com,,,,,10M-25M,
+meduit||,2,possible_same_company,0.312,True,normalized_name + locality,no - kept separate pending review,122387,Meduit,meduit,reveknow.com,,,,,500K-1M,
+meduit||,2,possible_same_company,0.312,True,normalized_name + locality,no - kept separate pending review,141905,Meduit,meduit,medarx.com,,,,,10M-25M,
+mn||,2,possible_same_company,0.36,True,normalized_name + locality,no - kept separate pending review,58144,Mn,mn,litchfield.k12.mn.us,,,,,0-500K,
+mn||,2,possible_same_company,0.36,True,normalized_name + locality,no - kept separate pending review,81814,Mn,mn,iasc.k12.mn.us,,,,,1M-5M,
+modern campus||,2,possible_same_company,0.439,True,normalized_name + locality,no - kept separate pending review,98489,Modern Campus,modern campus,omniupdate.com,,,,,10M-25M,
+modern campus||,2,possible_same_company,0.439,True,normalized_name + locality,no - kept separate pending review,102906,Modern Campus,modern campus,destinysolutions.com,,,,,0-500K,
+momentum telecom||,2,possible_same_company,0.28,True,normalized_name + locality,no - kept separate pending review,126178,Momentum Telecom,momentum telecom,ibbs.com,,,,,25M-75M,
+momentum telecom||,2,possible_same_company,0.28,True,normalized_name + locality,no - kept separate pending review,165794,Momentum Telecom,momentum telecom,alteva.com,,,,,25M-75M,
+natus medical||,4,possible_same_company,0.519,True,normalized_name + locality,no - kept separate pending review,32147,Natus Medical Incorporated,natus medical,retcam.com,,,,,1M-5M,
+natus medical||,4,possible_same_company,0.519,True,normalized_name + locality,no - kept separate pending review,42959,Natus Medical Incorporated,natus medical,optimamedical.com,,,,,1M-5M,
+natus medical||,4,possible_same_company,0.519,True,normalized_name + locality,no - kept separate pending review,43910,Natus Medical Incorporated,natus medical,mobergresearch.com,,,,,5M-10M,
+natus medical||,4,possible_same_company,0.519,True,normalized_name + locality,no - kept separate pending review,43911,Natus Medical Incorporated,natus medical,moberg.com,,,,,1M-5M,
+nenektogel4d||,3,possible_same_company,0.298,True,normalized_name + locality,no - kept separate pending review,90598,Nenektogel4d,nenektogel4d,thestationpizzeria.com,,,,,500K-1M,
+nenektogel4d||,3,possible_same_company,0.298,True,normalized_name + locality,no - kept separate pending review,92511,Nenektogel4D,nenektogel4d,pbkcleveland.org,,,,,1M-5M,
+nenektogel4d||,3,possible_same_company,0.298,True,normalized_name + locality,no - kept separate pending review,94370,Nenektogel4d,nenektogel4d,integratedchildrenstherapies.com,,,,,500K-1M,
+netskope||,2,possible_same_company,0.402,True,normalized_name + locality,no - kept separate pending review,121676,Netskope,netskope,siftsecurity.com,,,,,1M-5M,
+netskope||,2,possible_same_company,0.402,True,normalized_name + locality,no - kept separate pending review,125970,Netskope,netskope,infiot.com,,,,,1M-5M,
+nextech||,4,possible_same_company,0.505,True,normalized_name + locality,no - kept separate pending review,31752,Nextech,nextech,service-specialists.com,,,,,10M-25M,
+nextech||,4,possible_same_company,0.505,True,normalized_name + locality,no - kept separate pending review,32155,Nextech,nextech,ressacclimatecontrol.com,,,,,1M-5M,
+nextech||,4,possible_same_company,0.505,True,normalized_name + locality,no - kept separate pending review,36794,Nextech,nextech,core-mech.com,,,,,10M-25M,
+nextech||,4,possible_same_company,0.505,True,normalized_name + locality,no - kept separate pending review,50505,Nextech,nextech,arcticserviceshvac.com,,,,,1M-5M,
+nice||,2,possible_same_company,0.264,True,normalized_name + locality,no - kept separate pending review,52922,NICE,nice,nexidia.com,,,,,1B-10B,
+nice||,2,possible_same_company,0.264,True,normalized_name + locality,no - kept separate pending review,57728,NICE,nice,moxiesoft.com,,,,,10M-25M,
+oke4d||,2,possible_same_company,0.259,True,normalized_name + locality,no - kept separate pending review,92741,Oke4D,oke4d,onebarandgrill.com,,,,,1M-5M,
+oke4d||,2,possible_same_company,0.259,True,normalized_name + locality,no - kept separate pending review,93011,Oke4D,oke4d,neptunebarandgrill.com,,,,,1M-5M,
+olxtoto||,4,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,70281,OLXTOTO,olxtoto,webdesigncentric.com,,,,,1M-5M,
+olxtoto||,4,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,94874,OLXTOTO,olxtoto,greenwoodsongreenstreet.com,,,,,1M-5M,
+olxtoto||,4,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,95416,OLXTOTO,olxtoto,fernandofranco.com,,,,,0-500K,
+olxtoto||,4,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,96777,OLXTOTO,olxtoto,championschool.org,,,,,1M-5M,
+online138||,2,possible_same_company,0.46,True,normalized_name + locality,no - kept separate pending review,90345,Online138,online138,trustedhp.com,,,,,1M-5M,
+online138||,2,possible_same_company,0.46,True,normalized_name + locality,no - kept separate pending review,94798,Online138,online138,halcyonmolecular.com,,,,,1M-5M,
+opazeus||,5,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,90245,OPAZEUS,opazeus,unlvfreepress.com,,,,,1M-5M,
+opazeus||,5,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,92091,OPAZEUS,opazeus,rapidriverlodge.com,,,,,0-500K,
+opazeus||,5,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,93229,OPAZEUS,opazeus,monstervintage.com,,,,,10M-25M,
+opazeus||,5,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,93763,OPAZEUS,opazeus,littledogcoffeeshop.com,,,,,1M-5M,
+opazeus||,5,possible_same_company,0.431,True,normalized_name + locality,no - kept separate pending review,96345,OPAZEUS,opazeus,counterbalancebeer.com,,,,,1M-5M,
+opentext||,6,possible_same_company,0.493,True,normalized_name + locality,no - kept separate pending review,51143,OpenText,opentext,serena.com,,,,,75M-200M,
+opentext||,6,possible_same_company,0.493,True,normalized_name + locality,no - kept separate pending review,51441,OpenText,opentext,novell.com,,,,,0-500K,
+opentext||,6,possible_same_company,0.493,True,normalized_name + locality,no - kept separate pending review,53911,OpenText,opentext,borland.com,,,,,500K-1M,
+opentext||,6,possible_same_company,0.493,True,normalized_name + locality,no - kept separate pending review,53956,OpenText,opentext,attachmategroup.com,,,,,1M-5M,
+opentext||,6,possible_same_company,0.493,True,normalized_name + locality,no - kept separate pending review,57858,OpenText,opentext,microfocus.com,,,,,200M-500M,
+opentext||,6,possible_same_company,0.493,True,normalized_name + locality,no - kept separate pending review,60314,OpenText,opentext,catalystsecure.com,,,,,10M-25M,
+oxl88||,2,possible_same_company,0.362,True,normalized_name + locality,no - kept separate pending review,97267,OXL88,oxl88,bluepigpresents.com,,,,,1M-5M,
+oxl88||,2,possible_same_company,0.362,True,normalized_name + locality,no - kept separate pending review,98101,OXL88,oxl88,agave-tacobar.com,,,,,1M-5M,
+personify health||,3,possible_same_company,0.358,True,normalized_name + locality,no - kept separate pending review,131682,Personify Health,personify health,virginpulse.com,,,,,1M-5M,
+personify health||,3,possible_same_company,0.358,True,normalized_name + locality,no - kept separate pending review,135480,Personify Health,personify health,simplywell.com,,,,,10M-25M,
+personify health||,3,possible_same_company,0.358,True,normalized_name + locality,no - kept separate pending review,137247,Personify Health,personify health,redbrickhealth.com,,,,,,
+pgslot88||,3,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,89934,PGSLOT88,pgslot88,westover-plantation.com,,,,,0-500K,
+pgslot88||,3,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,92158,PGSLOT88,pgslot88,puzzlesbakerycafe.com,,,,,0-500K,
+pgslot88||,3,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,92696,PGSLOT88,pgslot88,orbitalinfrastructuregroup.com,,,,,200M-500M,
+photoshelter||,3,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,80632,PhotoShelter,photoshelter,kelseyrollinsphotography.com,,,,,0-500K,
+photoshelter||,3,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,80655,PhotoShelter,photoshelter,keaphotography.org,,,,,0-500K,
+photoshelter||,3,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,82395,PhotoShelter,photoshelter,hawaiianimages.net,,,,,0-500K,
+placester||,3,possible_same_company,0.42,True,normalized_name + locality,no - kept separate pending review,100654,Placester,placester,paramountcre.com,,,,,0-500K,
+placester||,3,possible_same_company,0.42,True,normalized_name + locality,no - kept separate pending review,102564,Placester,placester,homelandmo.com,,,,,500K-1M,
+placester||,3,possible_same_company,0.42,True,normalized_name + locality,no - kept separate pending review,103067,Placester,placester,630movenow.com,,,,,0-500K,
+plesk||,4,possible_same_company,0.408,True,normalized_name + locality,no - kept separate pending review,10062,Plesk,plesk,robbinsmemorial-church.org,,,,,0-500K,
+plesk||,4,possible_same_company,0.408,True,normalized_name + locality,no - kept separate pending review,12862,Plesk,plesk,yaculta.com,,,,,1M-5M,
+plesk||,4,possible_same_company,0.408,True,normalized_name + locality,no - kept separate pending review,24714,Plesk,plesk,mansionslakeway.com,,,,,0-500K,
+plesk||,4,possible_same_company,0.408,True,normalized_name + locality,no - kept separate pending review,25206,Plesk,plesk,kingave.org,,,,,1M-5M,
+pokermania88||,2,possible_same_company,0.423,True,normalized_name + locality,no - kept separate pending review,90043,POKERMANIA88,pokermania88,wafuasianbistro.com,,,,,1M-5M,
+pokermania88||,2,possible_same_company,0.423,True,normalized_name + locality,no - kept separate pending review,95099,POKERMANIA88,pokermania88,genbright.com,,,,,1M-5M,
+pov88||,2,possible_same_company,0.33,True,normalized_name + locality,no - kept separate pending review,93955,POV88,pov88,lahainapizzaco.com,,,,,500K-1M,
+pov88||,2,possible_same_company,0.33,True,normalized_name + locality,no - kept separate pending review,97891,POV88,pov88,anchurch.org,,,,,0-500K,
+productscope ai||,3,possible_same_company,0.276,True,normalized_name + locality,no - kept separate pending review,30811,ProductScope AI,productscope ai,theamazingpics.com,,,,,0-500K,
+productscope ai||,3,possible_same_company,0.276,True,normalized_name + locality,no - kept separate pending review,31677,ProductScope AI,productscope ai,shopwritersbloc.com,,,,,1M-5M,
+productscope ai||,3,possible_same_company,0.276,True,normalized_name + locality,no - kept separate pending review,32552,ProductScope AI,productscope ai,productscope.ai,,,,,1M-5M,
+proofpoint||,3,possible_same_company,0.44,True,normalized_name + locality,no - kept separate pending review,98752,Proofpoint,proofpoint,nextpage.com,,,,,75M-200M,
+proofpoint||,3,possible_same_company,0.44,True,normalized_name + locality,no - kept separate pending review,121673,Proofpoint,proofpoint,sigaba.com,,,,,10M-25M,
+proofpoint||,3,possible_same_company,0.44,True,normalized_name + locality,no - kept separate pending review,141596,Proofpoint,proofpoint,metanetworks.com,,,,,0-500K,
+qualus||,2,possible_same_company,0.36,True,normalized_name + locality,no - kept separate pending review,20588,Qualus,qualus,three-c.com,,,,,,
+qualus||,2,possible_same_company,0.36,True,normalized_name + locality,no - kept separate pending review,30297,Qualus,qualus,utilsplus.com,,,,,,
+quest software||,3,possible_same_company,0.346,True,normalized_name + locality,no - kept separate pending review,217,Quest Software,quest software,surgient.com,,,,,10M-25M,
+quest software||,3,possible_same_company,0.346,True,normalized_name + locality,no - kept separate pending review,1276,Quest Software,quest software,packettrap.com,,,,,1M-5M,
+quest software||,3,possible_same_company,0.346,True,normalized_name + locality,no - kept separate pending review,1363,Quest Software,quest software,kemma.com,,,,,1M-5M,
+rajaolympus||,2,possible_same_company,0.312,True,normalized_name + locality,no - kept separate pending review,90683,RajaOlympus,rajaolympus,thehunterhousecafe.com,,,,,1M-5M,
+rajaolympus||,2,possible_same_company,0.312,True,normalized_name + locality,no - kept separate pending review,96552,RAJAOLYMPUS,rajaolympus,clubarribamidland.com,,,,,0-500K,
+rajaslot||,4,possible_same_company,0.316,True,normalized_name + locality,no - kept separate pending review,89727,RAJASLOT,rajaslot,yogapbaw.com,,,,,0-500K,
+rajaslot||,4,possible_same_company,0.316,True,normalized_name + locality,no - kept separate pending review,90107,RAJASLOT,rajaslot,villagerotisserie.com,,,,,1M-5M,
+rajaslot||,4,possible_same_company,0.316,True,normalized_name + locality,no - kept separate pending review,97326,RAJASLOT,rajaslot,bittercreekwater.com,,,,,1M-5M,
+rajaslot||,4,possible_same_company,0.316,True,normalized_name + locality,no - kept separate pending review,97941,RAJASLOT,rajaslot,ambergtownship.com,,,,,,
+remedy logic||,3,possible_same_company,0.398,True,normalized_name + locality,no - kept separate pending review,138645,Remedy Logic,remedy logic,phodonghuong.com,,,,,1M-5M,
+remedy logic||,3,possible_same_company,0.398,True,normalized_name + locality,no - kept separate pending review,144575,Remedy Logic,remedy logic,hungrypocket.com,,,,,1M-5M,
+remedy logic||,3,possible_same_company,0.398,True,normalized_name + locality,no - kept separate pending review,150400,Remedy Logic,remedy logic,bitsandbitescafe.com,,,,,1M-5M,
+revascent||,2,possible_same_company,0.262,True,normalized_name + locality,no - kept separate pending review,110723,Revascent,revascent,patientaccountservices.com,,,,,10M-25M,
+revascent||,2,possible_same_company,0.262,True,normalized_name + locality,no - kept separate pending review,113241,Revascent,revascent,midwifesbillingservice.com,,,,,1M-5M,
+ribbon communications||,3,possible_same_company,0.538,True,normalized_name + locality,no - kept separate pending review,21486,Ribbon Communications,ribbon communications,sonus.net,,,,,25M-75M,
+ribbon communications||,3,possible_same_company,0.538,True,normalized_name + locality,no - kept separate pending review,22564,Ribbon Communications,ribbon communications,rbbn.com,,,,,500M-1B,
+ribbon communications||,3,possible_same_company,0.538,True,normalized_name + locality,no - kept separate pending review,39891,Ribbon Communications,ribbon communications,taqua.com,,,,,10M-25M,
+rick s produce market||,2,possible_same_company,0.439,True,normalized_name + locality,no - kept separate pending review,89960,Rick's Produce Market,rick s produce market,wellingtonnwa.com,,,,,500K-1M,
+rick s produce market||,2,possible_same_company,0.439,True,normalized_name + locality,no - kept separate pending review,96690,Rick's Produce Market,rick s produce market,chopshopseattle.com,,,,,10M-25M,
+rite hite||,2,possible_same_company,0.326,True,normalized_name + locality,no - kept separate pending review,108574,Rite-Hite,rite hite,cold-storage-doors.com,,,,,1M-5M,
+rite hite||,2,possible_same_company,0.326,True,normalized_name + locality,no - kept separate pending review,108886,Rite-Hite,rite hite,barracudasvc.com,,,,,0-500K,
+route4me||,2,possible_same_company,0.407,True,normalized_name + locality,no - kept separate pending review,12672,Route4Me,route4me,apisphere.com,,,,,1M-5M,
+route4me||,2,possible_same_company,0.407,True,normalized_name + locality,no - kept separate pending review,18861,Route4Me,route4me,broadmap.com,,,,,1M-5M,
+roya com||,7,possible_same_company,0.477,True,normalized_name + locality,no - kept separate pending review,14974,Roya.com,roya com,realtown.com,,,,,1M-5M,
+roya com||,7,possible_same_company,0.477,True,normalized_name + locality,no - kept separate pending review,20658,Roya.com,roya com,theprosperdoctors.com,,,,,0-500K,
+roya com||,7,possible_same_company,0.477,True,normalized_name + locality,no - kept separate pending review,23622,Roya.com,roya com,ontitle.com,,,,,1M-5M,
+roya com||,7,possible_same_company,0.477,True,normalized_name + locality,no - kept separate pending review,24411,Roya.com,roya com,midwestvisioncare.com,,,,,1M-5M,
+roya com||,7,possible_same_company,0.477,True,normalized_name + locality,no - kept separate pending review,28375,Roya.com,roya com,columbiapethospital.com,,,,,1M-5M,
+roya com||,7,possible_same_company,0.477,True,normalized_name + locality,no - kept separate pending review,28763,Roya.com,roya com,brennanrealestategroup.com,,,,,0-500K,
+roya com||,7,possible_same_company,0.477,True,normalized_name + locality,no - kept separate pending review,28950,Roya.com,roya com,bestsmiledoctor.com,,,,,1M-5M,
+rt138||,2,possible_same_company,0.262,True,normalized_name + locality,no - kept separate pending review,90204,RT138,rt138,uzumakiyaudon.com,,,,,1M-5M,
+rt138||,2,possible_same_company,0.262,True,normalized_name + locality,no - kept separate pending review,93053,RT138,rt138,nationfuneralhome.com,,,,,0-500K,
+sangoma technologies||,3,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,120906,Sangoma Technologies,sangoma technologies,switchvox.com,,,,,1M-5M,
+sangoma technologies||,3,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,121158,Sangoma Technologies,sangoma technologies,star2star.com,,,,,25M-75M,
+sangoma technologies||,3,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,162899,Sangoma Technologies,sangoma technologies,fonality.com,,,,,25M-75M,
+satelittogel||,3,possible_same_company,0.318,True,normalized_name + locality,no - kept separate pending review,92901,SatelitTogel,satelittogel,noramfence.com,,,,,1M-5M,
+satelittogel||,3,possible_same_company,0.318,True,normalized_name + locality,no - kept separate pending review,94209,SatelitTogel,satelittogel,joeodenministries.com,,,,,0-500K,
+satelittogel||,3,possible_same_company,0.318,True,normalized_name + locality,no - kept separate pending review,96784,SatelitTogel,satelittogel,cgaparentsclub.com,,,,,1M-5M,
+sawer4d||,3,possible_same_company,0.3,True,normalized_name + locality,no - kept separate pending review,88669,SAWER4D,sawer4d,asentralirb.com,,,,,0-500K,
+sawer4d||,3,possible_same_company,0.3,True,normalized_name + locality,no - kept separate pending review,92424,SAWER4D,sawer4d,phohaplus.com,,,,,10M-25M,
+sawer4d||,3,possible_same_company,0.3,True,normalized_name + locality,no - kept separate pending review,95485,Sawer4d,sawer4d,extremecollisionrepair.com,,,,,0-500K,
+sbobet88||,4,possible_same_company,0.308,True,normalized_name + locality,no - kept separate pending review,91227,SBOBET88,sbobet88,sparkysroadsidebarbecue.com,,,,,500K-1M,
+sbobet88||,4,possible_same_company,0.308,True,normalized_name + locality,no - kept separate pending review,92233,Sbobet88,sbobet88,primevet4u.com,,,,,0-500K,
+sbobet88||,4,possible_same_company,0.308,True,normalized_name + locality,no - kept separate pending review,94287,SBOBET88,sbobet88,jacquelinechurch.com,,,,,1M-5M,
+sbobet88||,4,possible_same_company,0.308,True,normalized_name + locality,no - kept separate pending review,97945,SBOBET88,sbobet88,alwaysthaichicago.com,,,,,1M-5M,
+sedayubet||,2,possible_same_company,0.386,True,normalized_name + locality,no - kept separate pending review,95431,SEDAYUBET,sedayubet,fcsagency.org,,,,,0-500K,
+sedayubet||,2,possible_same_company,0.386,True,normalized_name + locality,no - kept separate pending review,97298,SEDAYUBET,sedayubet,blairswesternwearsanangelo.com,,,,,1M-5M,
+semut69||,2,possible_same_company,0.286,True,normalized_name + locality,no - kept separate pending review,92416,Semut69,semut69,physicianssurgctr.com,,,,,1M-5M,
+semut69||,2,possible_same_company,0.286,True,normalized_name + locality,no - kept separate pending review,94974,Semut69,semut69,golfmasterssoftware.com,,,,,,
+shellback semiconductor technology||,2,possible_same_company,0.26,True,normalized_name + locality,no - kept separate pending review,122333,Shellback Semiconductor Technology,shellback semiconductor technology,rhetechinc.com,,,,,1M-5M,
+shellback semiconductor technology||,2,possible_same_company,0.26,True,normalized_name + locality,no - kept separate pending review,139721,Shellback Semiconductor Technology,shellback semiconductor technology,oemgroupinc.com,,,,,500K-1M,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,12554,Shift4Shop,shift4shop,bnrdesigns.com,,,,,0-500K,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,13369,Shift4Shop,shift4shop,uneeksupply.com,,,,,500K-1M,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,21188,Shift4Shop,shift4shop,sundanceleather.com,,,,,0-500K,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,21418,Shift4Shop,shift4shop,sperryballistics.com,,,,,1M-5M,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,21462,Shift4Shop,shift4shop,southwestscales.com,,,,,500K-1M,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,23168,Shift4Shop,shift4shop,picketthosiery.com,,,,,10M-25M,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,23215,Shift4Shop,shift4shop,petprints.com,,,,,0-500K,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,23418,Shift4Shop,shift4shop,pacificlegend.com,,,,,500K-1M,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,24272,Shift4Shop,shift4shop,monroeengraving.com,,,,,0-500K,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,26685,Shift4Shop,shift4shop,garlicfestival.com,,,,,0-500K,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,27211,Shift4Shop,shift4shop,executivedrafting.com,,,,,,
+shift4shop||,12,possible_same_company,0.547,True,normalized_name + locality,no - kept separate pending review,33615,Shift4Shop,shift4shop,mowercity.com,,,,,0-500K,
+sip33||,6,possible_same_company,0.384,True,normalized_name + locality,no - kept separate pending review,92070,SIP33,sip33,realfoodcatering.net,,,,,1M-5M,
+sip33||,6,possible_same_company,0.384,True,normalized_name + locality,no - kept separate pending review,92431,SIP33,sip33,phillybutterflypavilion.com,,,,,1M-5M,
+sip33||,6,possible_same_company,0.384,True,normalized_name + locality,no - kept separate pending review,93543,SIP33,sip33,mariandental.org,,,,,1M-5M,
+sip33||,6,possible_same_company,0.384,True,normalized_name + locality,no - kept separate pending review,94753,SIP33,sip33,harlangolf.com,,,,,500K-1M,
+sip33||,6,possible_same_company,0.384,True,normalized_name + locality,no - kept separate pending review,95375,SIP33,sip33,firstimpressionsmag.com,,,,,1M-5M,
+sip33||,6,possible_same_company,0.384,True,normalized_name + locality,no - kept separate pending review,97216,SIP33,sip33,boothbaygreenhouses.com,,,,,0-500K,
+slot777||,4,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,90631,SLOT777,slot777,theplazasuites.com,,,,,10M-25M,
+slot777||,4,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,91876,Slot777,slot777,riversleafarm.com,,,,,0-500K,
+slot777||,4,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,95014,Slot777,slot777,glenwoodumc.org,,,,,0-500K,
+slot777||,4,possible_same_company,0.355,True,normalized_name + locality,no - kept separate pending review,97533,SLOT777,slot777,bargainmattressoutlet.com,,,,,0-500K,
+sourcepass||,3,possible_same_company,0.344,True,normalized_name + locality,no - kept separate pending review,134733,Sourcepass,sourcepass,ssdel.com,,,,,10M-25M,
+sourcepass||,3,possible_same_company,0.344,True,normalized_name + locality,no - kept separate pending review,139934,Sourcepass,sourcepass,nst-li.com,,,,,10M-25M,
+sourcepass||,3,possible_same_company,0.344,True,normalized_name + locality,no - kept separate pending review,167394,Sourcepass,sourcepass,suite3.com,,,,,1M-5M,
+sphera||,2,possible_same_company,0.439,True,normalized_name + locality,no - kept separate pending review,8237,Sphera,sphera,ess-home.com,,,,,10M-25M,
+sphera||,2,possible_same_company,0.439,True,normalized_name + locality,no - kept separate pending review,10461,Sphera,sphera,petrotechnics.com,,,,,1M-5M,
+spiceworks||,2,possible_same_company,0.461,True,normalized_name + locality,no - kept separate pending review,54936,Spiceworks,spiceworks,toolbox.com,,,,,1M-5M,
+spiceworks||,2,possible_same_company,0.461,True,normalized_name + locality,no - kept separate pending review,69052,Spiceworks,spiceworks,b2bsignals.com,,,,,1M-5M,
+srikandi88||,3,possible_same_company,0.436,True,normalized_name + locality,no - kept separate pending review,89880,SRIKANDI88,srikandi88,wildflourbakery-cafe.com,,,,,0-500K,
+srikandi88||,3,possible_same_company,0.436,True,normalized_name + locality,no - kept separate pending review,90696,SRIKANDI88,srikandi88,thegrandoleecho.com,,,,,0-500K,
+srikandi88||,3,possible_same_company,0.436,True,normalized_name + locality,no - kept separate pending review,90793,SRIKANDI88,srikandi88,thankfulpaws.org,,,,,1M-5M,
+starjp||,2,possible_same_company,0.325,True,normalized_name + locality,no - kept separate pending review,90779,STARJP,starjp,theartofstyleboutique.com,,,,,0-500K,
+starjp||,2,possible_same_company,0.325,True,normalized_name + locality,no - kept separate pending review,98141,STARJP,starjp,adsana.io,,,,,0-500K,
+stratusvue||,2,possible_same_company,0.422,True,normalized_name + locality,no - kept separate pending review,10946,StratusVue,stratusvue,miraclemedicalclinic.com,,,,,500K-1M,
+stratusvue||,2,possible_same_company,0.422,True,normalized_name + locality,no - kept separate pending review,20887,StratusVue,stratusvue,technocorpinc.com,,,,,10M-25M,
+sultanslot||,2,possible_same_company,0.342,True,normalized_name + locality,no - kept separate pending review,91320,SULTANSLOT,sultanslot,smokinbarbque.com,,,,,1M-5M,
+sultanslot||,2,possible_same_company,0.342,True,normalized_name + locality,no - kept separate pending review,91395,SULTANSLOT,sultanslot,sipultralounge.com,,,,,1M-5M,
+synopsys||,2,possible_same_company,0.312,True,normalized_name + locality,no - kept separate pending review,53842,Synopsys,synopsys,coware.com,,,,,10M-25M,
+synopsys||,2,possible_same_company,0.312,True,normalized_name + locality,no - kept separate pending review,53957,Synopsys,synopsys,atrenta.com,,,,,25M-75M,
+tebra||,2,possible_same_company,0.345,True,normalized_name + locality,no - kept separate pending review,52748,Tebra,tebra,patientpop.com,,,,,1M-5M,
+tebra||,2,possible_same_company,0.345,True,normalized_name + locality,no - kept separate pending review,58360,Tebra,tebra,kareo.com,,,,,10M-25M,
+tektok777||,2,possible_same_company,0.256,True,normalized_name + locality,no - kept separate pending review,92066,Tektok777,tektok777,realityradiobook.org,,,,,500K-1M,
+tektok777||,2,possible_same_company,0.256,True,normalized_name + locality,no - kept separate pending review,94567,Tektok777,tektok777,hookerdunham.org,,,,,1M-5M,
+tentoto||,2,possible_same_company,0.325,True,normalized_name + locality,no - kept separate pending review,96812,TENTOTO,tentoto,center4ortho.com,,,,,10M-25M,
+tentoto||,2,possible_same_company,0.325,True,normalized_name + locality,no - kept separate pending review,97529,TENTOTO,tentoto,barkvineyards.com,,,,,0-500K,
+textmine||,3,possible_same_company,0.258,True,normalized_name + locality,no - kept separate pending review,74190,TextMine,textmine,shealycrumandpike.com,,,,,5M-10M,
+textmine||,3,possible_same_company,0.258,True,normalized_name + locality,no - kept separate pending review,91443,TextMine Limited,textmine,shubhashishit.com,,,,,10M-25M,
+textmine||,3,possible_same_company,0.258,True,normalized_name + locality,no - kept separate pending review,97508,TextMine,textmine,baskinfleece.com,,,,,1M-5M,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,91496,This,this,shavelogic.com,,,,,1M-5M,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,91784,This,this,rrwcwines.com,,,,,1M-5M,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,94751,This,this,harmerforcongress.com,,,,,0-500K,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,94858,This,this,grinnellhealthcarecenter.com,,,,,1M-5M,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,94964,This,this,goodshepherdrogers.org,,,,,5M-10M,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,95034,This,this,gigispetsalon.com,,,,,1M-5M,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,96055,This,this,delmarvaed.org,,,,,0-500K,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,96185,This,this,cypressplumbinginc.com,,,,,1M-5M,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,96333,This,this,coventrylakeview.com,,,,,0-500K,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,96478,This,this,columbusbrewerydistrict.com,,,,,0-500K,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,96727,This,this,chesterautowash.com,,,,,0-500K,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,97873,This,this,animalmedcare.com,,,,,1M-5M,
+this||,13,possible_same_company,0.37,True,normalized_name + locality,no - kept separate pending review,98130,This,this,advancingaiwisconsin.com,,,,,0-500K,
+thryv||,2,possible_same_company,0.306,True,normalized_name + locality,no - kept separate pending review,13721,Thryv,thryv,theberrycompany.com,,,,,0-500K,
+thryv||,2,possible_same_company,0.306,True,normalized_name + locality,no - kept separate pending review,18475,Thryv,thryv,dexmedia.com,,,,,200M-500M,
+tokek55||,2,possible_same_company,0.267,True,normalized_name + locality,no - kept separate pending review,95190,TOKEK55,tokek55,fullstringerbaitandtackle.com,,,,,,
+tokek55||,2,possible_same_company,0.267,True,normalized_name + locality,no - kept separate pending review,97113,TOKEK55,tokek55,brixtonsbakedpotato.com,,,,,1M-5M,
+top3dshop||,2,possible_same_company,0.373,True,normalized_name + locality,no - kept separate pending review,37764,Top3DShop,top3dshop,46375.org,,,,,1M-5M,
+top3dshop||,2,possible_same_company,0.373,True,normalized_name + locality,no - kept separate pending review,45448,Top3DShop,top3dshop,ize2belize.com,,,,,1M-5M,
+toto macau||,2,possible_same_company,0.367,True,normalized_name + locality,no - kept separate pending review,94130,Toto Macau,toto macau,kamaainapethospital.com,,,,,0-500K,
+toto macau||,2,possible_same_company,0.367,True,normalized_name + locality,no - kept separate pending review,94225,Toto Macau,toto macau,jinayoos.com,,,,,,
+totosaja||,3,possible_same_company,0.3,True,normalized_name + locality,no - kept separate pending review,92835,TOTOSAJA,totosaja,oakhillslanes.com,,,,,1M-5M,
+totosaja||,3,possible_same_company,0.3,True,normalized_name + locality,no - kept separate pending review,96977,TOTOSAJA,totosaja,calmasalon.com,,,,,1M-5M,
+totosaja||,3,possible_same_company,0.3,True,normalized_name + locality,no - kept separate pending review,97616,Totosaja,totosaja,avenuesyoga.com,,,,,1M-5M,
+tricitytrib||,2,possible_same_company,0.272,True,normalized_name + locality,no - kept separate pending review,90388,Tricitytrib,tricitytrib,tricitytrib.net,,,,,5M-10M,
+tricitytrib||,2,possible_same_company,0.272,True,normalized_name + locality,no - kept separate pending review,90389,Tricitytrib,tricitytrib,tricitytrib.com,,,,,1M-5M,
+tyler technologies||,2,possible_same_company,0.298,True,normalized_name + locality,no - kept separate pending review,8509,Tyler Technologies,tyler technologies,csisoft.com,,,,,1M-5M,
+tyler technologies||,2,possible_same_company,0.298,True,normalized_name + locality,no - kept separate pending review,11374,Tyler Technologies,tyler technologies,irondata.com,,,,,75M-200M,
+unitogel||,4,possible_same_company,0.339,True,normalized_name + locality,no - kept separate pending review,93359,Unitogel,unitogel,michellemaries.com,,,,,0-500K,
+unitogel||,4,possible_same_company,0.339,True,normalized_name + locality,no - kept separate pending review,94220,Unitogel,unitogel,joanriddlesrealty.com,,,,,0-500K,
+unitogel||,4,possible_same_company,0.339,True,normalized_name + locality,no - kept separate pending review,95841,Unitogel,unitogel,drmcdowall.com,,,,,0-500K,
+unitogel||,4,possible_same_company,0.339,True,normalized_name + locality,no - kept separate pending review,96329,Unitogel,unitogel,cowboycrepesandcafe.com,,,,,,
+uptimehealth||,2,possible_same_company,0.51,True,normalized_name + locality,no - kept separate pending review,13497,UptimeHealth,uptimehealth,transitionwhale.com,,,,,0-500K,
+uptimehealth||,2,possible_same_company,0.51,True,normalized_name + locality,no - kept separate pending review,28057,UptimeHealth,uptimehealth,dentalentrepreneurs.com,,,,,5M-10M,
+velosio||,2,possible_same_company,0.451,True,normalized_name + locality,no - kept separate pending review,98575,Velosio,velosio,criticaledgegroup.com,,,,,0-500K,
+velosio||,2,possible_same_company,0.451,True,normalized_name + locality,no - kept separate pending review,155027,Velosio,velosio,socius1.com,,,,,25M-75M,
+venture com||,3,possible_same_company,0.376,True,normalized_name + locality,no - kept separate pending review,127958,Venture.com,venture com,electricsigns.com,,,,,0-500K,
+venture com||,3,possible_same_company,0.376,True,normalized_name + locality,no - kept separate pending review,137557,Venture.com,venture com,rack.com,,,,,0-500K,
+venture com||,3,possible_same_company,0.376,True,normalized_name + locality,no - kept separate pending review,142096,Venture.com,venture com,masks.com,,,,,0-500K,
+vroozi||,2,possible_same_company,0.308,True,normalized_name + locality,no - kept separate pending review,52264,Vroozi,vroozi,smartoci.com,,,,,0-500K,
+vroozi||,2,possible_same_company,0.308,True,normalized_name + locality,no - kept separate pending review,58083,Vroozi,vroozi,ltcsupplysource.com,,,,,1M-5M,
+waktogel||,5,possible_same_company,0.338,True,normalized_name + locality,no - kept separate pending review,90461,WAKTOGEL,waktogel,topekapizza.com,,,,,1M-5M,
+waktogel||,5,possible_same_company,0.338,True,normalized_name + locality,no - kept separate pending review,90788,WAKTOGEL,waktogel,thealleycafe.com,,,,,500K-1M,
+waktogel||,5,possible_same_company,0.338,True,normalized_name + locality,no - kept separate pending review,91185,WAKTOGEL,waktogel,spocschool.org,,,,,1M-5M,
+waktogel||,5,possible_same_company,0.338,True,normalized_name + locality,no - kept separate pending review,93232,WAKTOGEL,waktogel,monikerbar.com,,,,,1M-5M,
+waktogel||,5,possible_same_company,0.338,True,normalized_name + locality,no - kept separate pending review,95829,WAKTOGEL,waktogel,drumdoc.net,,,,,500K-1M,
+wavoto||,2,possible_same_company,0.336,True,normalized_name + locality,no - kept separate pending review,123983,Wavoto,wavoto,nourishbodyandsoul.com,,,,,1M-5M,
+wavoto||,2,possible_same_company,0.336,True,normalized_name + locality,no - kept separate pending review,157296,Wavoto,wavoto,prepsoftballreport.com,,,,,0-500K,
+waystar||,3,possible_same_company,0.458,True,normalized_name + locality,no - kept separate pending review,10172,Waystar,waystar,recondotech.com,,,,,10M-25M,
+waystar||,3,possible_same_company,0.458,True,normalized_name + locality,no - kept separate pending review,11595,Waystar,waystar,healthcareip.com,,,,,1M-5M,
+waystar||,3,possible_same_company,0.458,True,normalized_name + locality,no - kept separate pending review,12785,Waystar,waystar,zirmed.com,,,,,75M-200M,
+weavy||,2,possible_same_company,0.353,True,normalized_name + locality,no - kept separate pending review,66420,Weavy,weavy,incentive-inc.com,,,,,1M-5M,
+weavy||,2,possible_same_company,0.353,True,normalized_name + locality,no - kept separate pending review,66421,Weavy,weavy,incentivecorp.com,,,,,0-500K,
+win4d||,3,possible_same_company,0.299,True,normalized_name + locality,no - kept separate pending review,90672,WIN4D,win4d,thela-lawyer.com,,,,,5M-10M,
+win4d||,3,possible_same_company,0.299,True,normalized_name + locality,no - kept separate pending review,93059,WIN4D,win4d,naresearchpartnership.org,,,,,0-500K,
+win4d||,3,possible_same_company,0.299,True,normalized_name + locality,no - kept separate pending review,94971,WIN4D,win4d,goodfellasitalian.com,,,,,500K-1M,
+win88||,3,possible_same_company,0.479,True,normalized_name + locality,no - kept separate pending review,91045,WIN88,win88,street14cafe.com,,,,,1M-5M,
+win88||,3,possible_same_company,0.479,True,normalized_name + locality,no - kept separate pending review,92356,Win88,win88,plantfoodandwine.com,,,,,10M-25M,
+win88||,3,possible_same_company,0.479,True,normalized_name + locality,no - kept separate pending review,94123,WIN88,win88,karlsqualitybakery.com,,,,,1M-5M,
+zeus4d||,4,possible_same_company,0.475,True,normalized_name + locality,no - kept separate pending review,90226,ZEUS4D,zeus4d,urologytyler.com,,,,,1M-5M,
+zeus4d||,4,possible_same_company,0.475,True,normalized_name + locality,no - kept separate pending review,94017,ZEUS4D,zeus4d,kobesushi-hibachiok.com,,,,,,
+zeus4d||,4,possible_same_company,0.475,True,normalized_name + locality,no - kept separate pending review,94995,Zeus4d,zeus4d,goddessbsupply.com,,,,,0-500K,
+zeus4d||,4,possible_same_company,0.475,True,normalized_name + locality,no - kept separate pending review,96861,ZEUS4D,zeus4d,catfishkettle.com,,,,,1M-5M,
+abowin88||,2,probable_name_collision,0.15,True,normalized_name + locality,no - kept separate pending review,90191,ABOWIN88,abowin88,vanwickleappraisal.com,,,,,0-500K,
+abowin88||,2,probable_name_collision,0.15,True,normalized_name + locality,no - kept separate pending review,91248,ABOWIN88,abowin88,southeasterntelephone.com,,,,,1M-5M,
+agen138||,2,probable_name_collision,0.217,True,normalized_name + locality,no - kept separate pending review,72270,Agen138,agen138,thaigourmethouston.com,,,,,1M-5M,
+agen138||,2,probable_name_collision,0.217,True,normalized_name + locality,no - kept separate pending review,91009,AGEN138,agen138,sugarpinecafe.com,,,,,500K-1M,
+ar||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,103162,Ar,ar,yellowjackets.k12.ar.us,,,,,10M-25M,
+ar||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,104562,Ar,ar,smackover.k12.ar.us,,,,,10M-25M,
+ar||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,106194,Ar,ar,midland.k12.ar.us,,,,,,
+"autonomy||san francisco, ca",2,probable_name_collision,0.148,True,normalized_name + locality,no - kept separate pending review,29088,Autonomy,autonomy,autonomy.computer,https://www.linkedin.com/company/autonomy-computer,"San Francisco, CA",United States,2-10 employees,,"Autonomy is a complete platform-as-a-service for building, running, and scaling agentic AI systems, including advanced “deep work” agents that can plan, reason, and execute long, complex workflows. Autonomy gives developers everything neede"
+"autonomy||san francisco, ca",2,probable_name_collision,0.148,True,normalized_name + locality,no - kept separate pending review,69078,Autonomy,autonomy,autonomylabs.ai,https://www.linkedin.com/company/autonomy-labs-ai,"San Francisco, CA",United States,2-10 employees,0-500K,"Completely autonomous systems, optimized for enterprise inference."
+"avior||irving, tx",2,probable_name_collision,0.092,True,normalized_name + locality,no - kept separate pending review,8693,Avior,avior,avior.tax,https://www.linkedin.com/company/aviordata,"irving, TX",United States,11-50 employees,1M-5M,"Based in Irving, Texas, Avior is a tax automation software company with a mission to provide premium services at lowest prices to our clients all over the US. 
+
+Avior provides industry leading tax automation software and services to supplie"
+"avior||irving, tx",2,probable_name_collision,0.092,True,normalized_name + locality,no - kept separate pending review,88449,Avior Inc.,avior,aviorus.com,https://www.linkedin.com/company/avior-inc-,"Irving, TX",United States,11-50 employees,1M-5M,"Avior Inc. is a Dallas based privately held technology innovation design research and development company. Avior's team includes highly talented business, marketing and research & development teams to help clients succeed and take advantage"
+besti69||,2,probable_name_collision,0.194,True,normalized_name + locality,no - kept separate pending review,90458,BESTI69,besti69,topnotchdrainservices.com,,,,,0-500K,
+besti69||,2,probable_name_collision,0.194,True,normalized_name + locality,no - kept separate pending review,94221,BESTI69,besti69,jnsautosales.com,,,,,1M-5M,
+bola88||,2,probable_name_collision,0.178,True,normalized_name + locality,no - kept separate pending review,93121,Bola88,bola88,myfcu.net,,,,,1M-5M,
+bola88||,2,probable_name_collision,0.178,True,normalized_name + locality,no - kept separate pending review,95842,Bola88,bola88,drmalinsky.com,,,,,1M-5M,
+cipit88||,2,probable_name_collision,0.139,True,normalized_name + locality,no - kept separate pending review,90251,Cipit88,cipit88,universalcafe.net,,,,,1M-5M,
+cipit88||,2,probable_name_collision,0.139,True,normalized_name + locality,no - kept separate pending review,93809,Cipit88,cipit88,lifespringchicago.com,,,,,0-500K,
+"clubly||san ramon, ca",2,probable_name_collision,0.183,True,normalized_name + locality,no - kept separate pending review,86922,Clubly,clubly,clubly.tech,https://www.linkedin.com/company/get-clubly,"San Ramon, CA",United States,2-10 employees,,"Clubly is an AI-powered platform created by students, for students, to make running a high school club easier, more impactful, and a lot less stressful. We know firsthand how much time and effort it takes to plan engaging meetings, create s"
+"clubly||san ramon, ca",2,probable_name_collision,0.183,True,normalized_name + locality,no - kept separate pending review,86923,Clubly,clubly,clubly.space,https://www.linkedin.com/company/clubly-space,"San Ramon, CA",United States,2-10 employees,,"Clubly is an AI-powered platform built to simplify the way student leaders run their clubs. From generating professional presentations in seconds to automatically transcribing and summarizing meetings, Clubly takes care of the tedious tasks"
+com||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,89824,Com,com,wolfmotorsport.com.au,,,,,0-500K,
+com||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,95591,Com,com,entrepreneur.com.ph,,,,,,
+com||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,97355,Com,com,biink.com.au,,,,,,
+connectpay||,2,probable_name_collision,0.214,True,normalized_name + locality,no - kept separate pending review,100602,ConnectPay,connectpay,practicalpayrollinc.com,,,,,0-500K,
+connectpay||,2,probable_name_collision,0.214,True,normalized_name + locality,no - kept separate pending review,102073,ConnectPay,connectpay,payrollsunlimited.com,,,,,1M-5M,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,3223,Co,co,housingpartners.co.uk,,,,,,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,30125,Co,co,visioninbusiness.co.uk,,,,,1M-5M,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,47029,Co,co,geometricresults.co.uk,,,,,,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,82345,Co,co,heatpumpservicesolutions.co.uk,,,,,,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,85037,Co,co,encore.co.uk,,,,,,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,88884,Co,co,apims.co.uk,,,,,,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,89073,Co,co,alpha-sys-consult.co.uk,,,,,,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,90011,Co,co,watfordmilamassages.co.uk,,,,,0-500K,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,90628,Co,co,thepolecompany.co.uk,,,,,0-500K,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,91215,Co,co,spectrumpropertycare.co.uk,,,,,0-500K,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,95870,Co,co,dragonbay.co.uk,,,,,0-500K,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,96520,Co,co,cocoricopatisserie.co.uk,,,,,0-500K,
+co||,13,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,97179,Co,co,bradleysmart.co.uk,,,,,75M-200M,
+"debrief||san francisco, california",2,probable_name_collision,0.068,True,normalized_name + locality,no - kept separate pending review,54807,Debrief,debrief,trydebrief.com,https://www.linkedin.com/company/pare-global,"San Francisco, California",United States,2-10 employees,0-500K,"Debrief is an AI chief of staff that helps you manage organizational output.
+
+We find important activity across your work apps and create briefings for any priority you want to track.
+
+Here's how it works:
+
+1. Connect: link your apps like S"
+"debrief||san francisco, california",2,probable_name_collision,0.068,True,normalized_name + locality,no - kept separate pending review,83433,Debrief,debrief,getdebrief.com,https://www.linkedin.com/company/debrief-video,"San Francisco, California",United States,2-10 employees,0-500K,"We make companies more efficient by helping remove redundant meetings, trainings, and information sessions. 
+
+Teams onboard more successfully using Debrief by 50%. They do this by saving highly paid trainer's time because no time-consuming "
+dipo4d||,2,probable_name_collision,0.218,True,normalized_name + locality,no - kept separate pending review,90982,DIPO4D,dipo4d,sunsetpoolscustomdesigns.com,,,,,0-500K,
+dipo4d||,2,probable_name_collision,0.218,True,normalized_name + locality,no - kept separate pending review,92413,DIPO4D,dipo4d,pica-pica.us,,,,,,
+dominobet||,2,probable_name_collision,0.24,True,normalized_name + locality,no - kept separate pending review,92462,Dominobet,dominobet,personaltouchmaidservices.com,,,,,0-500K,
+dominobet||,2,probable_name_collision,0.24,True,normalized_name + locality,no - kept separate pending review,96834,DominoBet,dominobet,ccdlawyers.com,,,,,1M-5M,
+"edge||san francisco, california",2,probable_name_collision,0.048,True,normalized_name + locality,no - kept separate pending review,61023,Edge,edge,withedge.com,https://www.linkedin.com/company/workwithedge,"San Francisco, California",United States,2-10 employees,0-500K,"The ultimate patent assistant.
+
+Edge revolutionizes the patent process by allowing patent practitioners to draft patents and disclosures up to 10x faster with consistent, high quality patents. Edge is not just a tool; it’s a strategic partn"
+"edge||san francisco, california",2,probable_name_collision,0.048,True,normalized_name + locality,no - kept separate pending review,68023,Edge,edge,edgeintelligence.xyz,https://www.linkedin.com/company/edgeagi,"San Francisco, California",United States,2-10 employees,0-500K,"Edge is a research & development foundation advancing edge intelligence. Established in early 2023, Edge was founded in response to the rapidly evolving AI and next-gen web landscape, emphasizing open, autonomous, and user-centric intellige"
+"envoy||san francisco, california",2,probable_name_collision,0.087,True,normalized_name + locality,no - kept separate pending review,69896,Envoy,envoy,worksphere.com,https://www.linkedin.com/company/envoy-inc,"San Francisco, California",United States,201-500 employees,0-500K,"Envoy empowers over 16,000 workplaces and properties around the globe to redefine how their workplaces run. We connect people, spaces, and data in one seamlessly integrated workplace platform, providing a single solution to manage every asp"
+"envoy||san francisco, california",2,probable_name_collision,0.087,True,normalized_name + locality,no - kept separate pending review,162230,Envoy,envoy,goenvoy.co,https://www.linkedin.com/company/goenvoy,"San Francisco, California",United States,11-50 employees,1M-5M,"Envoy’s strategic services transform CX into a major competitive advantage. We work with CX teams to harness tech disruption with tip-of-the-spear strategy, roadmap, and implementation projects. No one else can say that their 50 experts hav"
+"flyte||new york, ny",2,probable_name_collision,0.038,True,normalized_name + locality,no - kept separate pending review,59366,Flyte,flyte,flyteai.com,https://www.linkedin.com/company/flyteai,"New York, NY",United States,2-10 employees,0-500K,"Boost your deal pipeline with the most advanced revenue acceleration platform. Coach your frontline managers with impeccable coaching insights and competitive intelligence.
+
+Flyte integrates with Zoom, Microsoft Teams and other calling plat"
+"flyte||new york, ny",2,probable_name_collision,0.038,True,normalized_name + locality,no - kept separate pending review,83002,Flyte,flyte,gogoinflyte.com,https://www.linkedin.com/company/fromtheflytedeck,"New York, NY",United States,2-10 employees,,"Travel disruptions happen—Flyte makes sure you’re prepared. Using AI, we turn uncertainty into proactive solutions, giving travelers the clarity they need to move forward with confidence."
+"footprint||san francisco, california",2,probable_name_collision,0.08,True,normalized_name + locality,no - kept separate pending review,59349,Footprint,footprint,footprint.ventures,https://www.linkedin.com/company/footprintlabs,"San Francisco, California",United States,2-10 employees,0-500K,"We invent at the intersection of energy, computing, payments, social, and decentralization.
+
+$STORE is our R&D.
+
+http://footprint.ventures"
+"footprint||san francisco, california",2,probable_name_collision,0.08,True,normalized_name + locality,no - kept separate pending review,146518,footPrint,footprint,footprint.systems,https://www.linkedin.com/company/footprint-systems,"San Francisco, California",United States,2-10 employees,1M-5M,"footPrint is a monitoring and alerting platform that proactively checks if all critical interactions work for your users. Proactive monitoring helps detect issues such as slow load times, downtime, broken links, and poor design/navigation, "
+"forerunner||san francisco, ca",2,probable_name_collision,0.15,True,normalized_name + locality,no - kept separate pending review,114741,Forerunner,forerunner,withforerunner.com,https://www.linkedin.com/company/with-forerunner,"San Francisco, CA",United States,51-200 employees,1M-5M,"Forerunner is an AI-powered geospatial platform that enhances efficiency, automates workflows, and centralizes your agency’s most critical tasks."
+"forerunner||san francisco, ca",2,probable_name_collision,0.15,True,normalized_name + locality,no - kept separate pending review,120119,Forerunner,forerunner,tryforerunner.com,https://www.linkedin.com/company/tryforerunner,"San Francisco, CA",United States,2-10 employees,500K-1M,"Forerunner is an AI-powered platform for aircraft maintenance, repair, and overhaul.
+
+Backed by Y Combinator."
+formation||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,83971,Formation,formation,formation.cx,,,,,0-500K,
+formation||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,99536,Formation,formation,formation.com,,,,,,
+fortna||,2,probable_name_collision,0.226,True,normalized_name + locality,no - kept separate pending review,16264,FORTNA,fortna,mhsglobal.com,,,,,500M-1B,
+fortna||,2,probable_name_collision,0.226,True,normalized_name + locality,no - kept separate pending review,29574,FORTNA,fortna,a2i-systems.com,,,,,1M-5M,
+"frame||san francisco, ca",2,probable_name_collision,0.1,True,normalized_name + locality,no - kept separate pending review,127217,Frame,frame,frameyourfuture.com,https://www.linkedin.com/company/frameyourfuture,"San Francisco, CA",United States,11-50 employees,1M-5M,"Frame is the missing link on the family-building journey. Frame’s virtual care and AI-powered concierge model extends the care of in-person OB/GYN, primary care and fertility clinics by providing patients with 1:1 personalized support, tele"
+"frame||san francisco, ca",2,probable_name_collision,0.1,True,normalized_name + locality,no - kept separate pending review,127219,Frame,frame,frame.so,https://www.linkedin.com/company/joinframe,"San Francisco, CA",United States,11-50 employees,1M-5M,"Frame is an intelligent & unified company workspace, enabling enterprises to augment their workforce with AI employees."
+frontline education||,2,probable_name_collision,0.198,True,normalized_name + locality,no - kept separate pending review,11886,Frontline Education,frontline education,forecast5analytics.com,,,,,10M-25M,
+frontline education||,2,probable_name_collision,0.198,True,normalized_name + locality,no - kept separate pending review,17675,Frontline Education,frontline education,frontlineplacementtechnologies.com,,,,,1M-5M,
+"fulcrum||san francisco, california",2,probable_name_collision,0.128,True,normalized_name + locality,no - kept separate pending review,59281,Fulcrum,fulcrum,fulcrumapp.com,https://www.linkedin.com/company/fulcrum-mobile-data-collection,"San Francisco, California",United States,51-200 employees,10M-25M,"Fulcrum is a field-first SaaS platform transforming how organizations manage field data collection and inspections. Designed for the unique challenges of field teams, it automates workflows, captures real-time location data, and integrates "
+"fulcrum||san francisco, california",2,probable_name_collision,0.128,True,normalized_name + locality,no - kept separate pending review,69986,Fulcrum,fulcrum,withfulcrum.com,https://www.linkedin.com/company/fulcrumtechincorporated,"San Francisco, California",United States,11-50 employees,1M-5M,"Fulcrum provides insurance agencies and brokers with AI automations for time consuming manual tasks including proposal creation, policy checking, coverage comparisons and more. Instead of spending hours copy pasting and checking hundreds of"
+garuda303||,2,probable_name_collision,0.16,True,normalized_name + locality,no - kept separate pending review,92270,Garuda303,garuda303,powlsfeed.com,,,,,1M-5M,
+garuda303||,2,probable_name_collision,0.16,True,normalized_name + locality,no - kept separate pending review,97825,Garuda303,garuda303,applewoodliving.com,,,,,,
+"glue||seattle, washington",2,probable_name_collision,0.098,True,normalized_name + locality,no - kept separate pending review,59044,Glue,glue,gluestudio.com,https://www.linkedin.com/company/gluecorp,"Seattle, Washington",United States,2-10 employees,0-500K,Glue bridges the gap between the design and test phases of products in the built world. We accelerate validation and verification by leveraging cutting edge technology and expert systems to link product specifications and performance to har
+"glue||seattle, washington",2,probable_name_collision,0.098,True,normalized_name + locality,no - kept separate pending review,59046,Glue,glue,glue.co,https://www.linkedin.com/company/glueco,"Seattle, Washington",United States,11-50 employees,1M-5M,"Where people science meets data science. Glue’s AI-powered employee engagement platform combines insights with action to help you build happy, connected teams."
+gudang138||,2,probable_name_collision,0.245,True,normalized_name + locality,no - kept separate pending review,93801,GUDANG138,gudang138,lightsofamerica.com,,,,,0-500K,
+gudang138||,2,probable_name_collision,0.245,True,normalized_name + locality,no - kept separate pending review,93963,Gudang138,gudang138,ladinsubaru.com,,,,,1M-5M,
+"harpoon||san diego, california",2,probable_name_collision,0.064,True,normalized_name + locality,no - kept separate pending review,7858,harpoon Corp,harpoon,harpoon.io,https://www.linkedin.com/company/harpooncorp,"San Diego, California",United States,2-10 employees,0-500K,harpoon enables anyone creating a software project to dynamically generate software infrastructure and deploy it to the cloud provider of their choice without writing any code in 10 minutes or less.
+"harpoon||san diego, california",2,probable_name_collision,0.064,True,normalized_name + locality,no - kept separate pending review,46467,Harpoon,harpoon,harpoon.vc,https://www.linkedin.com/company/harpoon-ventures-portfolio,"San Diego, California",United States,11-50 employees,5M-10M,"Harpoon is America’s venture firm. We invest in early-stage
+founders building the technologies critical to U.S. power. 
+
+60+ portfolio companies. $1B+ in government contracts.
+
+We were early to the thesis that national resilience and geopol"
+"haystack||san francisco, california",2,probable_name_collision,0.073,True,normalized_name + locality,no - kept separate pending review,17514,Haystack,haystack,githustle.com,https://www.linkedin.com/company/haystack-analytics,"San Francisco, California",United States,2-10 employees,0-500K,"Haystack is a real-time delivery analytics platform designed for engineering leaders like CTOs, VPs of Engineering, Directors of Software Engineering, and Engineering Managers. Haystack provides actionable insights that enable data-driven d"
+"haystack||san francisco, california",2,probable_name_collision,0.073,True,normalized_name + locality,no - kept separate pending review,117533,Haystack,haystack,haystack.vc,https://www.linkedin.com/company/haystackvc,"San Francisco, California",United States,2-10 employees,500K-1M,"Since 2013, Haystack has made approximately 290 pre-seed or seed-stage investments, of which (after proactively marking down our portfolios in 2022), we have over 60 companies valued at $100M+, 16 companies valued at $1B+, and 36 accretive "
+"hearth||san francisco, ca",2,probable_name_collision,0.084,True,normalized_name + locality,no - kept separate pending review,82352,Hearth,hearth,hearthbuilt.com,https://www.linkedin.com/company/hearthbuilt,"San Francisco, CA",United States,2-10 employees,,"Hearth is a digital platform purpose-built for architects, interior designers, and builders to streamline how they discover, organize, and specify products across every project.
+
+Design teams rely on hundreds of materials and products to br"
+"hearth||san francisco, ca",2,probable_name_collision,0.084,True,normalized_name + locality,no - kept separate pending review,161734,Hearth,hearth,hearthhq.com,https://www.linkedin.com/company/hearthhq,"San Francisco, CA",United States,2-10 employees,0-500K,Hearth builds and grows SaaS businesses. Learn more at https://hearthhq.com
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,4925,IgniteTech,ignitetech,infinio.com,,,,,10M-25M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,5429,IgniteTech,ignitetech,bespeakinc.com,,,,,25M-75M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,5473,IgniteTech,ignitetech,agemni.com,,,,,1M-5M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,5489,IgniteTech,ignitetech,zumobi.com,https://www.linkedin.com/company/zumobi,,United States,51-200 employees,10M-25M,"As the leader in Enterprise Software, our powerful IgniteTech platform helps organizations grow revenue, optimize expense and accelerate transformation through a model where every customer has access to every product in our portfolio."
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,6104,IgniteTech,ignitetech,symphonycommerce.com,,,,,10M-25M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,6432,IgniteTech,ignitetech,sensage.com,,,,,25M-75M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,6819,IgniteTech,ignitetech,prairievistamiddle.org,,,,,1M-5M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,7044,IgniteTech,ignitetech,onespot.com,,,,,1M-5M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,7719,IgniteTech,ignitetech,infer.com,,,,,1M-5M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,7851,IgniteTech,ignitetech,hawthornemiddle.org,,,,,0-500K,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,7891,IgniteTech,ignitetech,grenada.k12.ca.us,,,,,5M-10M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,8120,IgniteTech,ignitetech,firstrain.com,,,,,10M-25M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,8666,IgniteTech,ignitetech,bgsp.k12.ca.us,,,,,1M-5M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,8701,IgniteTech,ignitetech,auto-trol.com,,,,,10M-25M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,12255,IgniteTech,ignitetech,doncallejon.org,,,,,1M-5M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,12529,IgniteTech,ignitetech,budcarsonmiddle.org,,,,,1M-5M,
+ignitetech||,17,probable_name_collision,0.552,False,normalized_name + locality,no - kept separate pending review,12590,IgniteTech,ignitetech,beckon.com,,,,,10M-25M,
+"ilean industrial systems||miami, florida",2,probable_name_collision,0.2,True,normalized_name + locality,no - kept separate pending review,58648,iLEAN industrial Systems,ilean industrial systems,ilean.ws,https://www.linkedin.com/company/ilean-industrialsystems,"Miami, Florida",United States,"1,001-5,000 employees",500M-1B,"Todas la Herramientas Lean fusionadas en 1 Inteligencia Artificial Industrial.
+Incluye Sistemas Kanban, 5S, TPM, Kaizen, Six Sigma, SMED, VSM, Hoshin Kanri, OEE, Toyota System, SCM...
+
+· Consigue resultados impensables en un antiguo proyect"
+"ilean industrial systems||miami, florida",2,probable_name_collision,0.2,True,normalized_name + locality,no - kept separate pending review,126093,iLEAN Industrial Systems,ilean industrial systems,ilean.ai,https://www.linkedin.com/company/ilean-foundation,"miami, florida",United States,201-500 employees,25M-75M,Utilización combinada de Lean Manufacturing e Inteligencia Artificial en herramientas de Industria 4.0 diseñadas para Potenciar al ser Humano en una Fábrica ... NO para sustituirlo.
+"infocon||ebensburg, pennsylvania",2,probable_name_collision,0.056,True,normalized_name + locality,no - kept separate pending review,25727,INFOCON Corporation,infocon,infoconcorporation.com,https://www.linkedin.com/company/infocon-corporation,"Ebensburg, Pennsylvania",United States,11-50 employees,1M-5M,"INFOCON Corporation is a computer software company based out of 172 Gateway Rd, Ebensburg, Pennsylvania, United States."
+"infocon||ebensburg, pennsylvania",2,probable_name_collision,0.056,True,normalized_name + locality,no - kept separate pending review,25943,Infocon Corp,infocon,ic-access.com,https://www.linkedin.com/company/infocon-corp,"Ebensburg, Pennsylvania",United States,11-50 employees,1M-5M,"Offering software solutions for business or government offices, printing and scanning services,access to PA public records,custom forms,computer supplies."
+"innfinity software systems||san diego, california",2,probable_name_collision,0.051,True,normalized_name + locality,no - kept separate pending review,697,Innfinity Software Systems,innfinity software systems,innfinity.com,https://www.linkedin.com/company/innfinity-software-systems,"San Diego, California",United States,11-50 employees,1M-5M,"Innfinity Software Systems transforms how organizations manage complex transportation and accommodation logistics worldwide. With 30+ years of evolution from hospitality software to comprehensive workforce logistics solutions, our platform "
+"innfinity software systems||san diego, california",2,probable_name_collision,0.051,True,normalized_name + locality,no - kept separate pending review,2649,"INNFINITY SOFTWARE SYSTEMS, LLC",innfinity software systems,innfinity.net,https://www.linkedin.com/company/innfinity-software-systems-llc,"San Diego, California",United States,2-10 employees,0-500K,"INNFINITY SOFTWARE SYSTEMS, LLC is a computer software company based out of 3131 Camino Del Rio North, San Diego, California, United States."
+"interact||san francisco, california",2,probable_name_collision,0.094,True,normalized_name + locality,no - kept separate pending review,28258,Interact,interact,craigaucutt.com,https://www.linkedin.com/company/interactllc,"San Francisco, California",United States,2-10 employees,0-500K,"Interact is a full-service digital agency specializing in software design and development. Interact also provided brand strategy and brand design services.
+
+Interact has had the privilege to work with leaders in the AI, Finance, DevOps, and"
+"interact||san francisco, california",2,probable_name_collision,0.094,True,normalized_name + locality,no - kept separate pending review,132558,Interact,interact,tryinteract.com,https://www.linkedin.com/company/interact-quiz-builder,"San Francisco, California",United States,2-10 employees,1M-5M,"Interact has helped over 150,000 customers realize the power of quizzes for their business. On any given day, over a million Interact quiz questions are answered on our platform, driving hyper-personalized marketing nurture campaigns, smart"
+jaggaer||,2,probable_name_collision,0.238,True,normalized_name + locality,no - kept separate pending review,56702,JAGGAER,jaggaer,puridiom.com,,,,,1M-5M,
+jaggaer||,2,probable_name_collision,0.238,True,normalized_name + locality,no - kept separate pending review,68860,Jaggaer,jaggaer,bravosolution.us,,,,,10M-25M,
+jawara79||,2,probable_name_collision,0.246,True,normalized_name + locality,no - kept separate pending review,89882,JAWARA79,jawara79,wilburcharter.org,,,,,,
+jawara79||,2,probable_name_collision,0.246,True,normalized_name + locality,no - kept separate pending review,97153,Jawara79,jawara79,breakyouout.com,,,,,1M-5M,
+kaskustoto||,3,probable_name_collision,0.247,True,normalized_name + locality,no - kept separate pending review,90232,KASKUSTOTO,kaskustoto,urbalactiv.com,,,,,1M-5M,
+kaskustoto||,3,probable_name_collision,0.247,True,normalized_name + locality,no - kept separate pending review,92453,KASKUSTOTO,kaskustoto,petersenjohnson.com,,,,,1M-5M,
+kaskustoto||,3,probable_name_collision,0.247,True,normalized_name + locality,no - kept separate pending review,93067,KASKUSTOTO,kaskustoto,nantucketcountryantiques.com,,,,,0-500K,
+kawantogel||,2,probable_name_collision,0.149,True,normalized_name + locality,no - kept separate pending review,90331,KAWANTOGEL,kawantogel,tschetterhohm.com,,,,,1M-5M,
+kawantogel||,2,probable_name_collision,0.149,True,normalized_name + locality,no - kept separate pending review,97999,KAWANTOGEL,kawantogel,allhealthpetcare.com,,,,,0-500K,
+kedai168||,2,probable_name_collision,0.236,True,normalized_name + locality,no - kept separate pending review,95620,KEDAI168,kedai168,encinolawyers.org,,,,,1M-5M,
+kedai168||,2,probable_name_collision,0.236,True,normalized_name + locality,no - kept separate pending review,96101,Kedai168,kedai168,daylesdayspa.com,,,,,1M-5M,
+"know||los angeles, california",2,probable_name_collision,0.139,True,normalized_name + locality,no - kept separate pending review,16692,KNOW,know,knowcorp.com,https://www.linkedin.com/company/knowai,"Los Angeles, California",United States,11-50 employees,1M-5M,"KNOW is a software company developing proprietary applications using Artificial Intelligence, Machine Learning, Neural Networks and Deep Learning technologies.
+
+Creators of Tidbits (tidbits.global), Your Mosaic for Microlearning!"
+"know||los angeles, california",2,probable_name_collision,0.139,True,normalized_name + locality,no - kept separate pending review,160511,Know,know,knowapp.com,https://www.linkedin.com/company/knowappinc,"Los Angeles, California",United States,2-10 employees,500K-1M,Know is the easiest way to manage your community and get together. Host all your events in one place with a calendar your members can subscribe to.
+lpages||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,18105,Lpages,lpages,endurance-financial.lpages.co,,,,,,
+lpages||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,18695,Lpages,lpages,coachingsop.lpages.co,,,,,,
+lpages||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,19051,Lpages,lpages,atsandcredit.lpages.co,,,,,,
+mancingduit||,2,probable_name_collision,0.197,True,normalized_name + locality,no - kept separate pending review,90883,MANCINGDUIT,mancingduit,tamarindoantojeria.com,,,,,500K-1M,
+mancingduit||,2,probable_name_collision,0.197,True,normalized_name + locality,no - kept separate pending review,93832,Mancingduit,mancingduit,lessonsinloyalty.com,,,,,1M-5M,
+"medical claims assistance||huntington, west virginia",2,probable_name_collision,0.237,True,normalized_name + locality,no - kept separate pending review,113301,Medical Claims Assistance,medical claims assistance,mcawv.com,https://www.linkedin.com/company/medical-claims-assistants,"Huntington, West Virginia",United States,2-10 employees,500K-1M,"Medical Claims Assistance is a Billing Service for Ambulance Providers, Private and Governmental Departments,, 836 4th St, Huntington, WV, 25701, United States."
+"medical claims assistance||huntington, west virginia",2,probable_name_collision,0.237,True,normalized_name + locality,no - kept separate pending review,141985,"Medical Claims Assistance, Inc.",medical claims assistance,mcaemsbilling.com,https://www.linkedin.com/company/mcaemsbilling.com,"Huntington, West Virginia",United States,51-200 employees,10M-25M,EMS billing service with 33 years experience.   Dedicated to an amazing industry.  Can bill for any state.
+memberlodge||,2,probable_name_collision,0.094,True,normalized_name + locality,no - kept separate pending review,79204,Memberlodge,memberlodge,memberlodge.org,,,,,0-500K,
+memberlodge||,2,probable_name_collision,0.094,True,normalized_name + locality,no - kept separate pending review,79205,Memberlodge,memberlodge,memberlodge.com,,,,,0-500K,
+"mesa||san francisco, california",2,probable_name_collision,0.08,True,normalized_name + locality,no - kept separate pending review,44119,Mesa,mesa,mesa-s.dev,https://www.linkedin.com/company/mesa-dev,"San Francisco, California",United States,2-10 employees,0-500K,"Graphic Desing | Web Desing | Development (Web, Software and Mobile) | Artificial Intelligence"
+"mesa||san francisco, california",2,probable_name_collision,0.08,True,normalized_name + locality,no - kept separate pending review,44120,Mesa,mesa,mesa.dev,https://www.linkedin.com/company/mesa-dot-dev,"San Francisco, California",United States,2-10 employees,,"Mesa is the fastest way to review, debug, optimize, maintain, and ship enterprise software as a large team."
+milo||san francisco,2,probable_name_collision,0.096,True,normalized_name + locality,no - kept separate pending review,80888,Milo,milo,joinmilo.com,https://www.linkedin.com/company/joinmilo,san francisco,United States,2-10 employees,,"Milo was born out of a simple but radical belief: parenting doesn’t need more. More apps, more alerts, more noise. It needs less. Avni Patel Thompson built Milo not to chase the hype of AI that replaces us, but to give parents something eve"
+milo||san francisco,2,probable_name_collision,0.096,True,normalized_name + locality,no - kept separate pending review,158366,Milo,milo,okmilo.com,https://www.linkedin.com/company/okmilo,San Francisco,United States,11-50 employees,1M-5M,"Milo - The Action Communicator. Speak with your friends while you ride, surf or ski."
+"mira||san francisco, california",2,probable_name_collision,0.094,True,normalized_name + locality,no - kept separate pending review,10860,MIRA,mira,mymira.ai,https://www.linkedin.com/company/mymira,"San Francisco, California",United States,2-10 employees,,"MIRA is the first dating software to employ AIand data algorithms to foster strong relationships. 
+
+Our sophisticated algorithm is trained on bothpsychological and astrological compatibility.
+
+We go further than matching: MIRA nurture conne"
+"mira||san francisco, california",2,probable_name_collision,0.094,True,normalized_name + locality,no - kept separate pending review,90337,MIRA,mira,trymira.com,https://www.linkedin.com/company/mira-glasses,"San Francisco, California",United States,2-10 employees,,"Mira is building the future of wearable intelligence — technology that feels like a superpower. We’ve reached 80M+ views across viral launches, been featured on the New York Times, TechCrunch, NBC, and Forbes, and are moving fast. Our team "
+"mosaic||new york, ny",2,probable_name_collision,0.105,True,normalized_name + locality,no - kept separate pending review,4706,Mosaic,mosaic,mosaicapp.com,https://www.linkedin.com/company/mosaicai,"New York, NY",United States,11-50 employees,10M-25M,"Headquartered in New York City and launched in 2019, Mosaic is the first resource management software that enables real-time collaboration for planning work. Harnessing the power of AI and automation, Mosaic enables data-driven resource pla"
+"mosaic||new york, ny",2,probable_name_collision,0.105,True,normalized_name + locality,no - kept separate pending review,159144,Mosaic,mosaic,mosaic.pe,https://www.linkedin.com/company/mosaic-pe,"New York, NY",United States,2-10 employees,1M-5M,"Mosaic is revolutionizing deal modeling with the world’s premier digital platform. Powered by cutting-edge technology and generative AI, Mosaic empowers high-performing deal teams managing over $1 trillion in assets to model deals faster, s"
+mpogacor88||,2,probable_name_collision,0.191,True,normalized_name + locality,no - kept separate pending review,92321,MPOGACOR88,mpogacor88,pointerrealty.com,,,,,0-500K,
+mpogacor88||,2,probable_name_collision,0.191,True,normalized_name + locality,no - kept separate pending review,95746,MPOGACOR88,mpogacor88,edgehillgolfcourse.com,,,,,0-500K,
+multibet88||,2,probable_name_collision,0.149,True,normalized_name + locality,no - kept separate pending review,93261,MULTIBET88,multibet88,mobilepaymentconference.com,,,,,0-500K,
+multibet88||,2,probable_name_collision,0.149,True,normalized_name + locality,no - kept separate pending review,95948,Multibet88,multibet88,disilviosfamilyrestaurant.com,,,,,1M-5M,
+"muse||new york, ny",2,probable_name_collision,0.139,True,normalized_name + locality,no - kept separate pending review,33568,Muse,muse,musetax.com,https://www.linkedin.com/company/muse-tax,"New York, NY",United States,2-10 employees,0-500K,"Muse was founded in February 2022 by CPAs, Colin Horsford and Busayo Ogunsanya, and uses artificial intelligence (AI) to navigate the complex and ever-evolving world of tax codes. Muse seamlessly integrates with financial, tax, and HR softw"
+"muse||new york, ny",2,probable_name_collision,0.139,True,normalized_name + locality,no - kept separate pending review,159039,Muse,muse,muse.io,https://www.linkedin.com/company/musesocial,"New York, NY",United States,2-10 employees,1M-5M,We’re on a mission to give every human the tools to unleash the power of their creativity.
+narrative||san francisco,2,probable_name_collision,0.076,True,normalized_name + locality,no - kept separate pending review,54798,Narrative,narrative,trynarrative.com,https://www.linkedin.com/company/trynarrative,San Francisco,United States,2-10 employees,0-500K,"Narrative is building AI agents that automates manual testing, identifies critical bugs, and generates reports that developers love."
+narrative||san francisco,2,probable_name_collision,0.076,True,normalized_name + locality,no - kept separate pending review,57617,Narrative,narrative,narrative.tech,https://www.linkedin.com/company/narrative-tech,San Francisco,United States,2-10 employees,0-500K,"Stop juggling agile tickets, backlogs and docs. Unify your whole team with a single narrative of your whole system."
+nenekslot||,3,probable_name_collision,0.231,True,normalized_name + locality,no - kept separate pending review,90892,Nenekslot,nenekslot,tajrishrestaurant.com,,,,,1M-5M,
+nenekslot||,3,probable_name_collision,0.231,True,normalized_name + locality,no - kept separate pending review,93039,Nenekslot,nenekslot,nazarethbread.com,,,,,0-500K,
+nenekslot||,3,probable_name_collision,0.231,True,normalized_name + locality,no - kept separate pending review,98245,Nenekslot,nenekslot,5lakesbrewing.com,,,,,1M-5M,
+"neon||san francisco, ca",2,probable_name_collision,0.089,True,normalized_name + locality,no - kept separate pending review,65083,Neon,neon,neonpay.com,https://www.linkedin.com/company/neonpay,"San Francisco, CA",United States,11-50 employees,1M-5M,"Neon is a global payments and e-commerce platform designed to help game publishers earn more money and independence from app stores. We believe commerce should be open and transparent: clear decisions, actionable insights, and aligned incen"
+"neon||san francisco, ca",2,probable_name_collision,0.089,True,normalized_name + locality,no - kept separate pending review,65085,Neon,neon,neon.com,https://www.linkedin.com/company/neondatabase,"San Francisco, CA",United States,51-200 employees,25M-75M,"Helping developers ship and scale faster with Postgre via decoupled storage and compute, autoscaling, branching, and instant restores."
+"nerve||san francisco, ca",2,probable_name_collision,0.115,True,normalized_name + locality,no - kept separate pending review,54656,Nerve,nerve,usenerve.com,https://www.linkedin.com/company/nerve-ai,"San Francisco, CA",United States,11-50 employees,0-500K,"Nerve connects to the apps your team already uses, searches through your internal content, and automates your most common workflows. It handles everything from writing docs, to updating your CRM, creating tickets in JIRA, and responding to "
+"nerve||san francisco, ca",2,probable_name_collision,0.115,True,normalized_name + locality,no - kept separate pending review,67129,Nerve,nerve,get-nerve.com,https://www.linkedin.com/company/get-nerve,"San Francisco, CA",United States,Self-employed,0-500K,"Nerve ties all your data sources into one API. It's like Postman, but it integrates your data for you.
+
+Sound interesting? Try the demo at https://playground.get-nerve.com !"
+"net synergy virtual solutions||lutz, florida",2,probable_name_collision,0.24,True,normalized_name + locality,no - kept separate pending review,124126,NET SYNERGY VIRTUAL SOLUTIONS LLC,net synergy virtual solutions,netsvs.com,https://www.linkedin.com/company/net-synergy-virtual-solutions-llc,"LUTZ, Florida",United States,2-10 employees,1M-5M,"NET SYNERGY VIRTUAL SOLUTIONS LLC is a company based out of 18958 N DALE MABRY HWY, LUTZ, Florida, United States."
+"net synergy virtual solutions||lutz, florida",2,probable_name_collision,0.24,True,normalized_name + locality,no - kept separate pending review,124291,Net Synergy Virtual Solutions,net synergy virtual solutions,mynetsvs.com,https://www.linkedin.com/company/net-synergy-virtual-solutions,"Lutz, Florida",United States,11-50 employees,1M-5M,"About NETSVS
+ Founded in 2008, NETSVS is strongly focused on harnessing the power of unstructured or dissimilar data through the ETL process. Through experience and constant education, NETSVS has managed to build a team that excels in the "
+"neuro equality||denver, co",2,probable_name_collision,0.141,True,normalized_name + locality,no - kept separate pending review,23986,Neuro Equality LLC,neuro equality,neuroequality.com,https://www.linkedin.com/company/neuroequality,"Denver, CO",United States,2-10 employees,,"NeuroEquality exists to globally empower individuals living with Intellectual or Developmental Disabilities (IDD), those on the Autism Spectrum (ASD), and people with diverse cognitive and communication needs.
+
+Through inclusive design and "
+"neuro equality||denver, co",2,probable_name_collision,0.141,True,normalized_name + locality,no - kept separate pending review,56217,Neuro Equality LLC,neuro equality,safe4allapp.com,https://www.linkedin.com/company/neuro-equality-llc,"Denver, CO",United States,2-10 employees,0-500K,"Neuro Equality LLC is the company that launched the Safe4all app. Safe4All is designed to assist caregivers of individuals with Autism and other IDDs with their daily routine with validated task management and secure communications, ensurin"
+"nexus||san jose, california",2,probable_name_collision,0.08,True,normalized_name + locality,no - kept separate pending review,52915,Nexus,nexus,nexuscenter.io,https://www.linkedin.com/company/nexus-hub,"San Jose, California",United States,11-50 employees,1M-5M,"Nexus supports the world’s leading organizations in planning, orchestrating, and measuring their most important customer and executive engagements—all in one unified platform.
+We are the only platform in the world that tracks clients across"
+"nexus||san jose, california",2,probable_name_collision,0.08,True,normalized_name + locality,no - kept separate pending review,133308,Nexus,nexus,thenexusof.ai,https://www.linkedin.com/company/nexus-generator,"San Jose, California",United States,2-10 employees,0-500K,"A generative AI company, currently doing text to image synthesis."
+nibung88||,2,probable_name_collision,0.235,True,normalized_name + locality,no - kept separate pending review,90966,Nibung88,nibung88,surgeonsni.com,,,,,500K-1M,
+nibung88||,2,probable_name_collision,0.235,True,normalized_name + locality,no - kept separate pending review,96996,Nibung88,nibung88,cajuncrawfishsantaana.com,,,,,1M-5M,
+"noble||san francisco, ca",2,probable_name_collision,0.086,True,normalized_name + locality,no - kept separate pending review,7982,Noble,noble,getnoble.net,https://www.linkedin.com/company/noblehq,"San Francisco, CA",United States,11-50 employees,1M-5M,"We build smart software to help organizations and businesses automate operations, reduce costs, and improve performance"
+"noble||san francisco, ca",2,probable_name_collision,0.086,True,normalized_name + locality,no - kept separate pending review,20752,Noble,noble,thatsnoble.com,https://www.linkedin.com/company/thatsnoble,"San Francisco, CA",United States,2-10 employees,1M-5M,"Noble is how you get discovered on AI search. Noble’s software identifies the search prompts that you don’t show up for and handles the outreach, negotiation, and payment on your behalf so you get mentioned in the articles and forums that L"
+"nudge||san francisco, california",2,probable_name_collision,0.084,True,normalized_name + locality,no - kept separate pending review,123936,The Nudge,nudge,nudgetext.com,https://www.linkedin.com/company/nudgetext,"San Francisco, California",United States,2-10 employees,10M-25M,"We’re the first AI-powered agent that Gen Z and Millennials let proactively text them like a friend and book local experiences for them.
+
+These interactions fuel a vibrant social network for discovering the best things to do in your city!
+
+"
+"nudge||san francisco, california",2,probable_name_collision,0.084,True,normalized_name + locality,no - kept separate pending review,123938,Nudge,nudge,nudgenow.com,https://www.linkedin.com/company/nudgenowdotcom,"San Francisco, California",United States,11-50 employees,1M-5M,Nudge enables commerce companies to launch personalized post-click experiences based on shopper context.
+oh||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,103200,Oh,oh,xenia.k12.oh.us,,,,,0-500K,
+oh||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,108141,Oh,oh,eguernsey.k12.oh.us,,,,,1M-5M,
+ok||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,103682,Ok,ok,tuskahoma.k12.ok.us,,,,,500K-1M,
+ok||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,104352,Ok,ok,stigler.k12.ok.us,,,,,0-500K,
+ok||,3,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,104718,Ok,ok,seq.k12.ok.us,,,,,1M-5M,
+olympus88||,2,probable_name_collision,0.224,True,normalized_name + locality,no - kept separate pending review,91250,OLYMPUS88,olympus88,southcarolinamuseums.org,,,,,0-500K,
+olympus88||,2,probable_name_collision,0.224,True,normalized_name + locality,no - kept separate pending review,93166,OLYMPUS88,olympus88,mrmssubs.com,,,,,1M-5M,
+openweb||new york,2,probable_name_collision,0.11,True,normalized_name + locality,no - kept separate pending review,64679,OpenWeb,openweb,openweb.com,https://www.linkedin.com/company/openwebhq,New York,United States,201-500 employees,25M-75M,"OpenWeb’s mission is to improve online conversation. As a product company, OpenWeb partners with publishers and brands to build strong, direct relationships with their audiences. OpenWeb’s technology empowers its partners to build vibrant c"
+openweb||new york,2,probable_name_collision,0.11,True,normalized_name + locality,no - kept separate pending review,77410,Openweb,openweb,openword.ai,https://www.linkedin.com/company/openwordai,New York,United States,2-10 employees,,Openword helps you to become the authority in your niche by discovering and answering the questions your audience is really asking
+"outline||san francisco, california",2,probable_name_collision,0.062,True,normalized_name + locality,no - kept separate pending review,59137,Outline,outline,getoutline.com,https://www.linkedin.com/company/general-outline,"San Francisco, California",United States,11-50 employees,1M-5M,"Blazing fast documents, team knowledge-base and wiki"
+"outline||san francisco, california",2,probable_name_collision,0.062,True,normalized_name + locality,no - kept separate pending review,82232,Outline,outline,heyoutline.com,https://www.linkedin.com/company/heyoutline,"San Francisco, California",United States,2-10 employees,0-500K,"Outline unifies customer activity across platforms, enabling teams to automate workflows, measure impact, and grow a thriving community at scale.
+
+Our mission is to bring customers to the center of everything."
+"overvue open source||los angeles, ca",2,probable_name_collision,0.22,True,normalized_name + locality,no - kept separate pending review,64565,OverVue (Open Source),overvue open source,overvue.org,https://www.linkedin.com/company/overvue-11,"Los Angeles, CA",United States,11-50 employees,1M-5M,"Accelerated by OS Labs, OverVue is a prototyping tool designed to help Vue developers seamlessly create and visualize Vue applications, utilizing an intuitive and responsive tree interface to display route & component hierarchy, as well as "
+"overvue open source||los angeles, ca",2,probable_name_collision,0.22,True,normalized_name + locality,no - kept separate pending review,64566,OverVue (Open Source),overvue open source,overvue.io,https://www.linkedin.com/company/overvue-3-0,"Los Angeles, CA",United States,2-10 employees,0-500K,"OverVue is a Prototype Driven Development (PDD) tool that allows developers to dynamically create and visualize a Vue application, implementing a real-time intuitive tree display of component hierarchy and a live-generated code preview."
+"parler||plano, texas",2,probable_name_collision,0.078,True,normalized_name + locality,no - kept separate pending review,105577,Parler,parler,parler.technology,https://www.linkedin.com/company/parlertechnologies,"Plano, Texas",United States,51-200 employees,,"Parler Technologies delivers a full-stack platform built for scale. Parler, PlayTV, Kyvo, Cartix, Edgecast, Triton Cloud, Parler News, the Optio Blockchain, and the OPT token all run inside one unified system.
+
+You get social, video, paymen"
+"parler||plano, texas",2,probable_name_collision,0.078,True,normalized_name + locality,no - kept separate pending review,105578,Parler,parler,parler.com,https://www.linkedin.com/company/parlerapp,"Plano, Texas",United States,51-200 employees,10M-25M,"Welcome to the official LinkedIn page of Parler, the dynamic and global social media platform redefining the digital landscape. As we embark on a journey to foster open dialogue worldwide, Parler stands as a beacon for free speech, ensuring"
+perficient||,2,probable_name_collision,0.237,True,normalized_name + locality,no - kept separate pending review,98787,Perficient,perficient,ipointsystems.com,,,,,10M-25M,
+perficient||,2,probable_name_collision,0.237,True,normalized_name + locality,no - kept separate pending review,141763,Perficient,perficient,medtouch.com,,,,,10M-25M,
+"persona||san francisco, california",3,probable_name_collision,0.178,True,normalized_name + locality,no - kept separate pending review,64384,Persona,persona,persona.io,https://www.linkedin.com/company/persona-hq,"San Francisco, California",United States,11-50 employees,1M-5M,Persona brings the first comprehensive solution that completely addresses all of the pain in managing your identity online.
+"persona||san francisco, california",3,probable_name_collision,0.178,True,normalized_name + locality,no - kept separate pending review,69978,Persona,persona,withpersona.com,https://www.linkedin.com/company/persona-identities,"San Francisco, California",United States,201-500 employees,25M-75M,"Persona helps businesses manage KYC/AML/KYB programs, fight fraud, and build trust by automating any identity-related use case with our flexible identity infrastructure. For example, we help Coursera verify learners’ identities before deliv"
+"persona||san francisco, california",3,probable_name_collision,0.178,True,normalized_name + locality,no - kept separate pending review,166645,PERSONA,persona,persona.so,https://www.linkedin.com/company/hipersona,"San Francisco, California",United States,2-10 employees,0-500K,"Unify Ad Channels and Processes & Perform Ad Spends in a single tool.
+
+We bring an innovative solution to the measurement of all traffic resources and perform ad spends of our users' ad channels in a single tool.
+
+Persona is a start-up focu"
+"polly||san francisco, california",2,probable_name_collision,0.081,True,normalized_name + locality,no - kept separate pending review,76404,Polly,polly,polly.fun,https://www.linkedin.com/company/pollyfun,"San Francisco, California",United States,2-10 employees,0-500K,"Polly is a fun social polling app for teens. The app allows users to create multiple-choice polls for sharing on Snapchat and other platforms. 
+
+Polly launched in stealth in August and it quickly became popular among teens, with 20 million "
+"polly||san francisco, california",2,probable_name_collision,0.081,True,normalized_name + locality,no - kept separate pending review,102018,Polly,polly,polly.io,https://www.linkedin.com/company/pollyex,"San Francisco, California",United States,51-200 employees,10M-25M,"We didn't just set a new bar in product and pricing technology; we redefined it. 
+
+Polly has pioneered the next generation of mortgage capital markets technology with its cutting-edge, data-driven platform. Its enterprise-grade solutions, i"
+"ppm works||boston, massachusetts",2,probable_name_collision,0.146,True,normalized_name + locality,no - kept separate pending review,157354,"PPM Works, Inc.",ppm works,ppmworks.com,https://www.linkedin.com/company/ppmworks,"Boston, Massachusetts",United States,11-50 employees,1M-5M,"We are a OnePlan and Microsoft Gold Partner offering full service Microsoft Work Management consultancy, focused on OnePlan, Microsoft 365, Project, Teams, Power Platform, and SharePoint services and solutions. Whether you’re looking for a "
+"ppm works||boston, massachusetts",2,probable_name_collision,0.146,True,normalized_name + locality,no - kept separate pending review,157472,PPM Works,ppm works,pmresourcegroup.com,https://www.linkedin.com/company/pm-resource-group-llc,"Boston, Massachusetts",United States,2-10 employees,0-500K,"PM Resource Group specializes in the implementation of Enterprise Project Management (EPM) solutions, utilizing Microsoft technologies to enable organizations to maximize investments and realize organizational goals. PMRG's full - service s"
+presidencc||,2,probable_name_collision,0.221,True,normalized_name + locality,no - kept separate pending review,92167,PRESIDENCC,presidencc,puredailybliss.com,,,,,1M-5M,
+presidencc||,2,probable_name_collision,0.221,True,normalized_name + locality,no - kept separate pending review,97691,PRESIDENCC,presidencc,atavolachicago.com,,,,,1M-5M,
+"primer||san francisco, california",2,probable_name_collision,0.148,True,normalized_name + locality,no - kept separate pending review,63266,Primer,primer,sayprimer.com,https://www.linkedin.com/company/sayprimer,"San Francisco, California",United States,11-50 employees,1M-5M,"Primer unlocks B2C-level targeting and activation for B2B marketers. Precision targeting, better leads, and more efficient spend. All in a single platform."
+"primer||san francisco, california",2,probable_name_collision,0.148,True,normalized_name + locality,no - kept separate pending review,162154,Primer,primer,goprimer.com,https://www.linkedin.com/company/goprimer,"San Francisco, California",United States,51-200 employees,10M-25M,"goprimer.com | Disruptive companies grow faster with conversion-optimized ad creative and landing page testing with Primer.
+
+We work with fast-growing companies that are looking for: 
+- Videos, images and landing pages for growth marketing
+"
+psg77||,2,probable_name_collision,0.16,True,normalized_name + locality,no - kept separate pending review,92666,PSG77,psg77,osungautobody.com,,,,,1M-5M,
+psg77||,2,probable_name_collision,0.16,True,normalized_name + locality,no - kept separate pending review,97528,PSG77,psg77,barleysprout.com,,,,,,
+"pulley||san francisco, ca",2,probable_name_collision,0.119,True,normalized_name + locality,no - kept separate pending review,61016,Pulley,pulley,withpulley.com,https://www.linkedin.com/company/pulley-permitting,"San Francisco, CA",United States,51-200 employees,10M-25M,"Pulley makes permitting fast and predictable for commercial project teams. Today, permitting takes four times longer than construction; we're changing that. Our expert-powered AI helps project teams verify requirements in 19,000+ jurisdicti"
+"pulley||san francisco, ca",2,probable_name_collision,0.119,True,normalized_name + locality,no - kept separate pending review,75921,Pulley,pulley,pulley.com,https://www.linkedin.com/company/pulley-cap-table,"San Francisco, CA",United States,11-50 employees,10M-25M,"Pulley's mission is to make it easier for anyone to start a company. We strongly believe that more startups should be created, and that founder-led companies are more successful in the long term. With Pulley’s cap table management tools, co"
+"quilt||san francisco, california",2,probable_name_collision,0.073,True,normalized_name + locality,no - kept separate pending review,75728,Quilt.co,quilt,quilt.co,https://www.linkedin.com/company/quilt-co,"San Francisco, California",United States,2-10 employees,0-500K,"Quilt provides fast-growing companies, communities, and professional networks beautiful space to grow ideas and insights that won’t get lost in the abyss.
+
+The platform lets you create or join private groups where colleagues can quickly sha"
+"quilt||san francisco, california",2,probable_name_collision,0.073,True,normalized_name + locality,no - kept separate pending review,122694,Quilt,quilt,quilt.bio,https://www.linkedin.com/company/quilt-bio,"San Francisco, California",United States,2-10 employees,1M-5M,"Quilt creates deeply versioned, context-rich data packages that allow teams to organize their data flexibly, while ensuring robust governance, compliance, and access control. Our platform supports secure and reliable data management without"
+"r tag software||santa cruz, ca",2,probable_name_collision,0.231,True,normalized_name + locality,no - kept separate pending review,2384,R-Tag Software LLC,r tag software,r-tag.com,https://www.linkedin.com/company/r-tag-llc,"Santa Cruz, CA",United States,2-10 employees,0-500K,"Software company, Bay area
+Specialize in report automation and document management for small business since 2004. Offices in Santa Cruz, CA and Prague, Czech republic. 
+
+Products :
+R-Tag Report Manager
+R-Tag Document management
+R-Tag "
+"r tag software||santa cruz, ca",2,probable_name_collision,0.231,True,normalized_name + locality,no - kept separate pending review,3451,R-Tag Software,r tag software,r-tagsoftware.com,https://www.linkedin.com/company/r-tagsoftware,"Santa Cruz, CA",United States,2-10 employees,0-500K,"Developing software for BI, report automation, version control for Crystal reports, MS SQL Server and Oracle"
+"rain||new york, ny",2,probable_name_collision,0.102,True,normalized_name + locality,no - kept separate pending review,22618,RAIN,rain,rain.agency,https://www.linkedin.com/company/rainagency,"New York, NY",United States,11-50 employees,10M-25M,"RAIN is a pioneer in voice and conversational AI. We move businesses forward through voice-first products and services. As voice tech evolves at a breakneck pace, we bring the best of it to our customers. 
+
+ 8+ Years of Specialization in Vo"
+"rain||new york, ny",2,probable_name_collision,0.102,True,normalized_name + locality,no - kept separate pending review,63819,RAIN,rain,raincareers.com,https://www.linkedin.com/company/raincareers,"New York, NY",United States,2-10 employees,1M-5M,"RAIN is an AI-native platform that guides students and recent graduates through every step of the job and internship search.
+
+No more messy spreadsheets, manual tracking, or endless hours spent preparing. RAIN automates the tedious parts of"
+raja99||,2,probable_name_collision,0.216,True,normalized_name + locality,no - kept separate pending review,91216,RAJA99,raja99,spectrumautosf.com,,,,,500K-1M,
+raja99||,2,probable_name_collision,0.216,True,normalized_name + locality,no - kept separate pending review,94503,RAJA99,raja99,hunters-restaurant.com,,,,,500K-1M,
+rajabandot||,3,probable_name_collision,0.234,True,normalized_name + locality,no - kept separate pending review,90030,RAJABANDOT,rajabandot,wannadocity.com,,,,,10M-25M,
+rajabandot||,3,probable_name_collision,0.234,True,normalized_name + locality,no - kept separate pending review,95538,RAJABANDOT,rajabandot,ethorn.com,,,,,25M-75M,
+rajabandot||,3,probable_name_collision,0.234,True,normalized_name + locality,no - kept separate pending review,97236,Rajabandot,rajabandot,bomboard.com,,,,,0-500K,
+"ravel||seattle, wa",2,probable_name_collision,0.107,True,normalized_name + locality,no - kept separate pending review,6678,RAVEL,ravel,ravelinc.com,https://www.linkedin.com/company/ravelorchestrate,"Seattle, WA",United States,11-50 employees,1M-5M,"RAVEL (formerly StratusCore) is at the forefront of digital transformation, providing innovative no-code orchestration software designed to streamline the complexities faced by DevOps and IT teams. With a singular focus on reducing friction"
+"ravel||seattle, wa",2,probable_name_collision,0.107,True,normalized_name + locality,no - kept separate pending review,56553,Ravel,ravel,ravel.com,https://www.linkedin.com/company/raveldata,"Seattle, WA",United States,2-10 employees,0-500K,"At Ravel, we provide in-depth, vertical-specific data and insights to businesses across various industries. Our offering is designed to empower organizations by delivering precise technographics, market insights, and detailed segmentation d"
+relevant systems||,2,probable_name_collision,0.114,False,normalized_name + locality,no - kept separate pending review,75334,Relevant Systems,relevant systems,relevant.systems,https://www.linkedin.com/company/relevant-systems,,United States,11-50 employees,1M-5M,"Welcome to Relevant Systems, a digital technology community that was initially established in Chicago, IL and has plans of becoming the global leader when it comes to empowering women/minority tech entrepreneurs all over the world. We belie"
+relevant systems||,2,probable_name_collision,0.114,False,normalized_name + locality,no - kept separate pending review,143549,Relevant Systems,relevant systems,jcldirect.com,https://www.linkedin.com/company/relevant-systems-rs,,,2-10 employees,0-500K,"Empowering Your Business to Seize the Moment with Tailored AI Solutions - Relevant Systems
+
+In a fast-paced digital age, the fraction of a second between a lead's interest and their commitment is oftentimes the critical juncture where busin"
+"render||san francisco, california",2,probable_name_collision,0.2,True,normalized_name + locality,no - kept separate pending review,22442,Render,render,render.com,https://www.linkedin.com/company/renderco,"San Francisco, California",United States,51-200 employees,10M-25M,Render is the modern cloud for developers and software teams of all sizes.
+"render||san francisco, california",2,probable_name_collision,0.2,True,normalized_name + locality,no - kept separate pending review,70974,Render,render,userender.com,https://www.linkedin.com/company/userender,"San Francisco, California",United States,2-10 employees,0-500K,Render is applied AI research company building for the next generation of human creativity in video games.
+"rep ai||new york, ny",2,probable_name_collision,0.131,True,normalized_name + locality,no - kept separate pending review,122452,Rep.ai,rep ai,rep.ai,https://www.linkedin.com/company/repdotai,"New York, NY",United States,11-50 employees,1M-5M,"B2B AI Live Chat that works alongside your reps around the clock to turn visitors into leads, meetings and pipeline. Detect target accounts, alert reps, and decide whether to watch the AI engage or jump in yourself."
+"rep ai||new york, ny",2,probable_name_collision,0.131,True,normalized_name + locality,no - kept separate pending review,126402,Rep AI,rep ai,hellorep.ai,https://www.linkedin.com/company/teamrepai,"New York, NY",United States,11-50 employees,1M-5M,"REP AI is a revolutionary plug-and-play solution designed to transform how e-commerce businesses engage with their customers. 
+Seamlessly integrating with Shopify, REP AI automatically reads your website, learning everything it needs to pro"
+rghcpa||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,91929,Rghcpa,rghcpa,rghcpa.net,,,,,0-500K,
+rghcpa||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,91930,Rghcpa,rghcpa,rghcpa.com,,,,,1M-5M,
+"robin||irvine, california",2,probable_name_collision,0.05,True,normalized_name + locality,no - kept separate pending review,16048,Robin,robin,myrobin.io,https://www.linkedin.com/company/joinrobin,"Irvine, California",United States,2-10 employees,0-500K,"Software engineering immersive bootcamp programs are gaining popularity, yet the graduates are still having difficulties snagging their first jobs.
+
+Employers tend to believe that bootcamp graduates and applicants with non-technical backgro"
+"robin||irvine, california",2,probable_name_collision,0.05,True,normalized_name + locality,no - kept separate pending review,61706,Robin,robin,tryrobin.com,https://www.linkedin.com/company/tryrobinapp,"Irvine, California",United States,11-50 employees,1M-5M,"Robin provides data-driven menu recommendations, and order management, for restaurants"
+"saldo||new york, ny",2,probable_name_collision,0.23,True,normalized_name + locality,no - kept separate pending review,74691,Saldo,saldo,saldo.energy,https://www.linkedin.com/company/saldolabs,"New York, NY",United States,2-10 employees,,"Saldo is an energy platform for the new energy economy. Tens of thousands of drivers, property owners, and fleet operators use Saldo to connect, charge, and optimize their energy resources. We power a seamless marketplace where energy can b"
+"saldo||new york, ny",2,probable_name_collision,0.23,True,normalized_name + locality,no - kept separate pending review,169517,Saldo,saldo,saldoenergy.com,https://www.linkedin.com/company/saldotechnologies,"New York, NY",United States,2-10 employees,,"Saldo connects drivers to any charging station, property owners to new revenue streams, and fleets to complete vehicle management, all in one operating system.
+
+Headquartered in New York and Milan, we're building the future of energy."
+salsalabs||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,52391,Salsalabs,salsalabs,salsalabs.com,,,,,1M-5M,
+salsalabs||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,91710,Salsalabs,salsalabs,salsalabs.org,,,,,0-500K,
+schoolfusion||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,74516,Schoolfusion,schoolfusion,schoolfusion.us,,,,,0-500K,
+schoolfusion||,2,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,74517,Schoolfusion,schoolfusion,schoolfusion.com,,,,,1M-5M,
+"sequence||new york, ny",2,probable_name_collision,0.12,True,normalized_name + locality,no - kept separate pending review,63099,Sequence,sequence,sequencehq.com,https://www.linkedin.com/company/sequence-hq,"New York, NY",United States,11-50 employees,1M-5M,"Sequence is the modern billing, CPQ and revrec platform to unlock error-free revenue workflows at scale.
+
+Backed by a16z and Salesforce Ventures, Sequence is working with leading B2B scaleups including Incident.io, Bridge (acq. by Stripe), "
+"sequence||new york, ny",2,probable_name_collision,0.12,True,normalized_name + locality,no - kept separate pending review,162411,Sequence,sequence,getsequence.io,https://www.linkedin.com/company/getsequence,"New York, NY",United States,11-50 employees,1M-5M,"The World's First Financial Router. Visualize Your Money Flow, Set Smart Rules, and Control Your Entire Financial Life From One Place. Join 1000s of People and Businesses to Build Your Money Map Now (In <5 Min)"
+"settle||san francisco, ca",2,probable_name_collision,0.075,True,normalized_name + locality,no - kept separate pending review,26144,Settle,settle,helloturbine.com,https://www.linkedin.com/company/settleco,"San Francisco, CA",United States,51-200 employees,0-500K,"We make the best tools for the teams behind consumer brands to grow fearlessly. 
+
+By combining inventory management, procurement, accounts payable automation, and working capital financing into one powerful platform, we help you streamline "
+"settle||san francisco, ca",2,probable_name_collision,0.075,True,normalized_name + locality,no - kept separate pending review,70968,Settle,settle,usesettle.com,https://www.linkedin.com/company/usesettle,"San Francisco, CA",United States,2-10 employees,,The first AI Proposal Manager built to help you win. Settle handles the grunt work — so your team can focus on strategy.
+"shadowsoft||irving, texas",2,probable_name_collision,0.206,True,normalized_name + locality,no - kept separate pending review,155539,SHADOWSOFT INCORPORATED,shadowsoft,shadowsoft.com,https://www.linkedin.com/company/shadowsoft-incorporated,"IRVING, Texas",United States,2-10 employees,1M-5M,"SHADOWSOFT INCORPORATED is a company based out of 7750 NMACARTHUR BLVD STE 120-290, IRVING, Texas, United States."
+"shadowsoft||irving, texas",2,probable_name_collision,0.206,True,normalized_name + locality,no - kept separate pending review,157041,Shadowsoft Inc,shadowsoft,publicdata.com,https://www.linkedin.com/company/shadowsoft-inc,"Irving, Texas",United States,11-50 employees,1M-5M,"Shadowsoft Inc is an information technology and services company based out of Irving, Texas, United States."
+"shift||san francisco, california",2,probable_name_collision,0.095,True,normalized_name + locality,no - kept separate pending review,121731,Shift,shift,shift.com,https://www.linkedin.com/company/shift-cars,"San Francisco, California",United States,"501-1,000 employees",500M-1B,"Shift (NASDAQ: SFT) is a leading end-to-end auto ecommerce platform transforming the used car industry with a technology-driven, hassle-free customer experience. Shift’s mission is to make car purchase and ownership simple — we make buying "
+"shift||san francisco, california",2,probable_name_collision,0.095,True,normalized_name + locality,no - kept separate pending review,135694,Shift,shift,shiftrx.io,https://www.linkedin.com/company/shifttechnologies,"San Francisco, California",United States,11-50 employees,1M-5M,"Shift is utilizing AI and LLMs to transform healthcare staffing, scheduling, and workforce management—starting in pharmacy. 
+
+Our platform today enables facilities to instantly build, credential, and manage reliable float and permanent staf"
+"simplify||san francisco, california",2,probable_name_collision,0.119,True,normalized_name + locality,no - kept separate pending review,59112,Simplify,simplify,getsimplify.ai,https://www.linkedin.com/company/getsimplify,"San Francisco, California",United States,11-50 employees,1M-5M,Simplify is the all-in-one Revenue OS that streamlines your entire revenue lifecycle—from Proposals and checkouts to billing and subscription management; From Recurring billing to Upgrades and insights. Whether you're scaling through Sales-
+"simplify||san francisco, california",2,probable_name_collision,0.119,True,normalized_name + locality,no - kept separate pending review,73976,Simplify,simplify,simplify.jobs,https://www.linkedin.com/company/simplifyjobs,"San Francisco, California",United States,2-10 employees,10M-25M,Simplify is building the AI-enabled infrastructure to power the next generation of hiring – reimagining how people discover and secure their next career opportunity. We believe that everyone deserves an all-star talent agent helping them pl
+slot828||,2,probable_name_collision,0.22,True,normalized_name + locality,no - kept separate pending review,92069,SLOT828,slot828,realfoodgen.org,,,,,1M-5M,
+slot828||,2,probable_name_collision,0.22,True,normalized_name + locality,no - kept separate pending review,95605,SLOT828,slot828,englishsetterrescue.org,,,,,1M-5M,
+slot88||,2,probable_name_collision,0.174,True,normalized_name + locality,no - kept separate pending review,94103,Slot88,slot88,keeplouisvillewell.com,,,,,0-500K,
+slot88||,2,probable_name_collision,0.174,True,normalized_name + locality,no - kept separate pending review,95477,SLOT88,slot88,fabrisons.com,,,,,0-500K,
+"smart senior||long beach, california",2,probable_name_collision,0.137,True,normalized_name + locality,no - kept separate pending review,55734,Smart Senior Corp.,smart senior,smartsenior.biz,https://www.linkedin.com/company/smartsenior-us,"Long Beach, California",United States,2-10 employees,0-500K,Store family memories forever in the Memory Tag. Never lose a cherished photo or video again. Keep and pass along all of your most important photos and documents to the present or future generations.
+"smart senior||long beach, california",2,probable_name_collision,0.137,True,normalized_name + locality,no - kept separate pending review,62831,Smart Senior Corp,smart senior,smartsenior.jp,https://www.linkedin.com/company/smartsenior,"Long Beach, California",United States,2-10 employees,0-500K,"At our core, we believe that every life holds a collection of unique stories – narratives that define who we are and shape the world around us. Our mission is to honor and safeguard these stories, preserving them for the generations to come"
+smartling||,2,probable_name_collision,0.233,True,normalized_name + locality,no - kept separate pending review,100200,Smartling,smartling,wernlawyers.com,,,,,1M-5M,
+smartling||,2,probable_name_collision,0.233,True,normalized_name + locality,no - kept separate pending review,100242,Smartling,smartling,verbalizeit.com,,,,,1M-5M,
+"snappr||san francisco, california",2,probable_name_collision,0.167,True,normalized_name + locality,no - kept separate pending review,62805,Snappr,snappr,snappr.com,https://www.linkedin.com/company/snappr,"San Francisco, California",United States,51-200 employees,25M-75M,"Founded in 2016, Snappr is the one-stop-shop for visual content creation. 
+
+From on-demand photoshoots and editing to automating massive workflows – if your need is a single gallery of images or hundreds of thousands, Snappr can power it.
+
+"
+"snappr||san francisco, california",2,probable_name_collision,0.167,True,normalized_name + locality,no - kept separate pending review,135189,Snappr,snappr,snappr.net,https://www.linkedin.com/company/snappr--,"San Francisco, California",United States,2-10 employees,1M-5M,"Snappr is a company based out of San Francisco, California, United States."
+spaceman slot||,2,probable_name_collision,0.241,True,normalized_name + locality,no - kept separate pending review,90745,Spaceman Slot,spaceman slot,thecathedralbuilding.com,,,,,1M-5M,
+spaceman slot||,2,probable_name_collision,0.241,True,normalized_name + locality,no - kept separate pending review,95178,Spaceman Slot,spaceman slot,fusionperuviangrill.com,,,,,0-500K,
+"sparrow||new york, ny",2,probable_name_collision,0.095,True,normalized_name + locality,no - kept separate pending review,73459,Sparrow,sparrow,sparrowup.com,https://www.linkedin.com/company/sparrowup,"New York, NY",United States,11-50 employees,1M-5M,"Sparrow empowers individuals to reach their full potential through AI-driven motion analysis and coaching. Our advanced Generative AI solutions redefine personal coaching, starting with golf. Our technology provides real-time, personalized "
+"sparrow||new york, ny",2,probable_name_collision,0.095,True,normalized_name + locality,no - kept separate pending review,154866,Sparrow,sparrow,sparrowfi.com,https://www.linkedin.com/company/sparrowfi,"New York, NY",United States,11-50 employees,1M-5M,"Sparrow is one of the fastest growing technology businesses serving credit unions nationwide.  Sparrow powers credit unions from $34 billion to $6 million in assets - and every size in between.
+
+Sparrow helps credit unions digitally scale t"
+"spiral||new york, ny",2,probable_name_collision,0.09,True,normalized_name + locality,no - kept separate pending review,121239,Spiral,spiral,spiraldb.com,https://www.linkedin.com/company/spiraldb,"New York, NY",United States,11-50 employees,1M-5M,Spiral builds data infrastructure for managing & processing multimodal data in Python.
+"spiral||new york, ny",2,probable_name_collision,0.09,True,normalized_name + locality,no - kept separate pending review,171215,Spiral,spiral,spiral.us,https://www.linkedin.com/company/spiral-gives,"New York, NY",United States,11-50 employees,25M-75M,"Headquartered in New York City, Spiral is an award-winning platform redefining how banks and credit unions grow core deposits and retention through personalized banking experiences. Trusted by dozens of financial institutions, Spiral has sa"
+"stafford press||redmond, washington",2,probable_name_collision,0.231,True,normalized_name + locality,no - kept separate pending review,14114,"Stafford Press, Inc.",stafford press,staffordpress.com,https://www.linkedin.com/company/stafford-press,"Redmond, Washington",United States,11-50 employees,1M-5M,"Stafford Press is a family owned company that was founded in 1990. Since then, we have grown to become an industry leader in thermal printers, software, ribbons, and all types of label and tag media in a variety of sizes and colors. Our in-"
+"stafford press||redmond, washington",2,probable_name_collision,0.231,True,normalized_name + locality,no - kept separate pending review,114787,"STAFFORD PRESS, INC.",stafford press,westhort.com,https://www.linkedin.com/company/stafford-press-inc.,"REDMOND, Washington",United States,11-50 employees,5M-10M,"STAFFORD PRESS, INC. is a company based out of 14612 NE 91ST, REDMOND, Washington, United States."
+stars77||,2,probable_name_collision,0.181,True,normalized_name + locality,no - kept separate pending review,72173,Stars77,stars77,theflowerexpert.com,,,,,0-500K,
+stars77||,2,probable_name_collision,0.181,True,normalized_name + locality,no - kept separate pending review,93027,STARS77,stars77,nebraskahistory.org,,,,,0-500K,
+"stealth startup||san francisco, california",2,probable_name_collision,0.017,True,normalized_name + locality,no - kept separate pending review,62557,Stealth Startup,stealth startup,stealthstartup.tech,https://www.linkedin.com/company/astealthmodestartup,"San Francisco, California",United States,11-50 employees,1M-5M,"Stealth Startup is a startup company that avoids the public eye.  We are in stealth mode, but will be revealing our innovative ideas soon!"
+"stealth startup||san francisco, california",2,probable_name_collision,0.017,True,normalized_name + locality,no - kept separate pending review,73171,Stealth Startup,stealth startup,stealth-startups.com,https://www.linkedin.com/company/stealth-startups-mode,"San Francisco, California",United States,2-10 employees,0-500K,Connecting visionary stealth startups  founders with top-tier talent to build and scale groundbreaking companies.
+"strategic marketing consultants||atlanta, georgia",2,probable_name_collision,0.137,True,normalized_name + locality,no - kept separate pending review,40191,Strategic Marketing Consultants,strategic marketing consultants,strategicmarketing-consultants.com,https://www.linkedin.com/company/strategic-marketing-consultants,"Atlanta, Georgia",United States,2-10 employees,0-500K,"Strategic Messaging Formula
+
+Believe it or not the process of creating an effective strategic marketing program is actually scientific.  All you need to do is follow the Strategic Messaging Formula. The challenge is you’ve been taught to "
+"strategic marketing consultants||atlanta, georgia",2,probable_name_collision,0.137,True,normalized_name + locality,no - kept separate pending review,148574,Strategic Marketing Consultants,strategic marketing consultants,digitalmarketingstrategies.consulting,https://www.linkedin.com/company/digital-marketing-strategies-consulting,"Atlanta, Georgia",United States,2-10 employees,0-500K,We’re a boutique digital marketing agency.  We focus on what we do best — building awesome and effective E-commerce websites while giving you the best customer experience along the way.  We approach things a little differently here at Digit
+"sutro||san francisco, ca",2,probable_name_collision,0.087,True,normalized_name + locality,no - kept separate pending review,134258,Sutro,sutro,sutro.design,https://www.linkedin.com/company/sutrodesign,"San Francisco, CA",United States,2-10 employees,1M-5M,"Sutro is a community-based design service for startups, bringing together the top independent design talent from around the globe while providing additional benefits, such as direct hiring, curated project packages, and access to design adv"
+"sutro||san francisco, ca",2,probable_name_collision,0.087,True,normalized_name + locality,no - kept separate pending review,135338,Sutro,sutro,skysight.inc,https://www.linkedin.com/company/sutro-sh,"San Francisco, CA",United States,2-10 employees,0-500K,"We build large-scale AI inference infrastructure to increase human leverage, grow productivity, and enable discovery."
+"swiftly||san francisco, california",2,probable_name_collision,0.111,True,normalized_name + locality,no - kept separate pending review,82881,"Swiftly, Inc.",swiftly,goswift.ly,https://www.linkedin.com/company/swiftlyinc,"San Francisco, California",United States,51-200 employees,10M-25M,"Swiftly is the leading transit data platform for agencies to share real-time passenger information, manage day-to-day operations, and improve service performance. Today, over 200 transit agencies in 12 countries—including LA Metro, MARTA, S"
+"swiftly||san francisco, california",2,probable_name_collision,0.111,True,normalized_name + locality,no - kept separate pending review,104228,Swiftly,swiftly,swiftly.com,https://www.linkedin.com/company/swiftlysystems,"San Francisco, California",United States,51-200 employees,25M-75M,"Swiftly is the digital operating system for brick-and-mortar retail, helping retailers of all sizes modernize shopper engagement, unlock new revenue streams, and measure results with precision. From single-store independents to national cha"
+"synapse||boston, ma",2,probable_name_collision,0.156,True,normalized_name + locality,no - kept separate pending review,39997,Synapse,synapse,synapseautomate.com,https://www.linkedin.com/company/synapse-marketing-llc,"Boston, MA",United States,2-10 employees,,"At Synapse, we empower B2B businesses to thrive in today’s fast-evolving digital landscape. As your trusted partner, we navigate the complex world of software, tools, and AI to identify and implement solutions that drive efficiency and grow"
+"synapse||boston, ma",2,probable_name_collision,0.156,True,normalized_name + locality,no - kept separate pending review,154326,Synapse,synapse,synapsesem.com,https://www.linkedin.com/company/synapse-sem,"Boston, MA",United States,11-50 employees,1M-5M,"Synapse converts marketing spend into business growth through smarter strategy, AI optimization, and performance that speaks for itself. 
+
+When you partner with Synapse, we go to work from inside your performance stack - connecting campaign"
+tawon4d||,2,probable_name_collision,0.172,True,normalized_name + locality,no - kept separate pending review,94205,Tawon4D,tawon4d,johnbarberglassdesigns.com,,,,,1M-5M,
+tawon4d||,2,probable_name_collision,0.172,True,normalized_name + locality,no - kept separate pending review,95623,Tawon4D,tawon4d,emrysfermentations.com,,,,,,
+"today payments||san diego, ca",2,probable_name_collision,0.173,True,normalized_name + locality,no - kept separate pending review,39271,Today Payments,today payments,todaypayments.com,https://www.linkedin.com/company/todaypayments,"San Diego, CA",United States,11-50 employees,1M-5M,"We offer a wide variety of payment processing solutions to fit any size business. By telling us (give us a call toll-free or send us an email) the type of payment service you are looking for, you will help us guide you to the solution that "
+"today payments||san diego, ca",2,probable_name_collision,0.173,True,normalized_name + locality,no - kept separate pending review,153468,Today Payments,today payments,todaygiving.com,https://www.linkedin.com/company/today-payments,"SAN DIEGO, CA",United States,,1M-5M,"Today Payments is a company based out of SAN DIEGO, CA, United States."
+togel138||,2,probable_name_collision,0.203,True,normalized_name + locality,no - kept separate pending review,90749,Togel138,togel138,theburritobarwv.com,,,,,1M-5M,
+togel138||,2,probable_name_collision,0.203,True,normalized_name + locality,no - kept separate pending review,96243,TOGEL138,togel138,csraeoaheadstart.org,,,,,10M-25M,
+tokyo88||,3,probable_name_collision,0.246,True,normalized_name + locality,no - kept separate pending review,93065,Tokyo88,tokyo88,nantucketshrimpshack.com,,,,,,
+tokyo88||,3,probable_name_collision,0.246,True,normalized_name + locality,no - kept separate pending review,94961,TOKYO88,tokyo88,goodtymesbarn.com,,,,,5M-10M,
+tokyo88||,3,probable_name_collision,0.246,True,normalized_name + locality,no - kept separate pending review,95094,Tokyo88,tokyo88,geneticexperts.org,,,,,0-500K,
+"torch||san francisco, california",2,probable_name_collision,0.128,True,normalized_name + locality,no - kept separate pending review,98629,Torch,torch,torch.io,https://www.linkedin.com/company/torch-labs,"San Francisco, California",United States,201-500 employees,10M-25M,"We exist to empower a new generation of leaders to evolve as fast as the world around them.
+
+The pace of global change has never been faster, yet leadership development hasn't kept up. At Torch, we believe organizations need a new kind of l"
+"torch||san francisco, california",2,probable_name_collision,0.128,True,normalized_name + locality,no - kept separate pending review,103834,Torch,torch,torchgrowth.com,https://www.linkedin.com/company/torchgrowth,"San Francisco, California",United States,2-10 employees,500K-1M,"We are a digital studio that builds and grows marketplace businesses.
+
+Testimonials 
+
+""Torch was instrumental in launching one of our key programs. They owned our acquisition end-to-end, helped us identify bottlenecks in our onboarding funn"
+tribuntogel||,3,probable_name_collision,0.188,True,normalized_name + locality,no - kept separate pending review,90524,TRIBUNTOGEL,tribuntogel,tileinstallationphoenix.net,,,,,0-500K,
+tribuntogel||,3,probable_name_collision,0.188,True,normalized_name + locality,no - kept separate pending review,92271,Tribuntogel,tribuntogel,powerinspiresprogress.com,,,,,0-500K,
+tribuntogel||,3,probable_name_collision,0.188,True,normalized_name + locality,no - kept separate pending review,94959,TRIBUNTOGEL,tribuntogel,gooeylouiecake.com,,,,,0-500K,
+"venyou||chicago, il",2,probable_name_collision,0.053,True,normalized_name + locality,no - kept separate pending review,70797,Venyou,venyou,venyou.social,https://www.linkedin.com/company/venyou-social,"Chicago, IL",United States,2-10 employees,0-500K,The app for spending more time with your friends - in real life.
+"venyou||chicago, il",2,probable_name_collision,0.053,True,normalized_name + locality,no - kept separate pending review,82848,"VenYou, Inc.",venyou,govenyouapp.com,https://www.linkedin.com/company/venyou-app,"Chicago, IL",United States,Self-employed,0-500K,VenYou utilizes the world's most extensive deal catalog to foster an engaging geo-location platform. Users connect with each other and exciting deals based on locale and preferences.
+"warp||new york, ny",2,probable_name_collision,0.103,True,normalized_name + locality,no - kept separate pending review,125634,Warp,warp,joinwarp.com,https://www.linkedin.com/company/joinwarp,"New York, NY",United States,11-50 employees,1M-5M,"The HR and payroll platform of choice for ambitious companies. Hire and pay in 30 seconds, automate all compliance and busywork. Warp powers 1000+ of fastest-growing startups and helps them save 10+ hours a month on HR ops."
+"warp||new york, ny",2,probable_name_collision,0.103,True,normalized_name + locality,no - kept separate pending review,131278,Warp,warp,warp.dev,https://www.linkedin.com/company/warpdotdev,"New York, NY",United States,11-50 employees,10M-25M,Ship agent-generated code all the way from prompt to production
+"workbench||san francisco, california",2,probable_name_collision,0.094,True,normalized_name + locality,no - kept separate pending review,60991,Workbench,workbench,workbenchdata.com,https://www.linkedin.com/company/tables,"San Francisco, California",United States,2-10 employees,0-500K,"Workbench brings all your data tools into one simple, API-charged spreadsheet. Connect live data sources, analyze and visualize insights without the need to code, and share step-by-step processes that are easy to learn from and reproduce."
+"workbench||san francisco, california",2,probable_name_collision,0.094,True,normalized_name + locality,no - kept separate pending review,111917,Workbench,workbench,tryworkbench.co,https://www.linkedin.com/company/workbenchgroup,"San Francisco, California",United States,2-10 employees,0-500K,"Workbench is building the AI-powered digital infrastructure for skilled trades in the U.S. Our vertical platform connects students, educators, and employers—closing workforce gaps, increasing the availability of workforce data, and strength"
+"xpert prime||dayton, ohio",2,probable_name_collision,0.131,True,normalized_name + locality,no - kept separate pending review,5546,Xpert Prime,xpert prime,xpertprime.com,https://www.linkedin.com/company/xpertprime1,"Dayton, Ohio",United States,51-200 employees,10M-25M,"At XPERT PRIME, we deliver world-class software solutions that help businesses accelerate growth, scale with confidence, and stay competitive in a digital-first world. With a strong team of 100+ skilled developers and 900+ completed project"
+"xpert prime||dayton, ohio",2,probable_name_collision,0.131,True,normalized_name + locality,no - kept separate pending review,114693,Xpert prime LLC,xpert prime,xpertprimellc.com,https://www.linkedin.com/company/xpertprimellc,"Dayton, Ohio",United States,51-200 employees,,Your perfect partner in delivering top CSR Services.
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168128,Yolasite,yolasite,juliasalterations.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168148,Yolasite,yolasite,jasonsairportexpress.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168249,Yolasite,yolasite,hubbardassociatesrealty.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168296,Yolasite,yolasite,hairnaildesignbykisha.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168339,Yolasite,yolasite,greenguruappliance.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168347,Yolasite,yolasite,gravesjohnsonassociates.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168418,Yolasite,yolasite,furtadoplumbing.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168429,Yolasite,yolasite,framesintime.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168454,Yolasite,yolasite,flowersfromhome.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168487,Yolasite,yolasite,federalfinancialgroup.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168576,Yolasite,yolasite,eb3therapeuticmassage.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168577,Yolasite,yolasite,eastbayhydronics.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168586,Yolasite,yolasite,dunnevents.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168587,Yolasite,yolasite,dunhamtraining.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168673,Yolasite,yolasite,cybergeo.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168750,Yolasite,yolasite,clevelandstyledeli.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168794,Yolasite,yolasite,catonsvillecounselingcommunity.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168798,Yolasite,yolasite,carstensmillworks.yolasite.com,,,,,,
+yolasite||,19,probable_name_collision,0.0,True,normalized_name + locality,no - kept separate pending review,168913,Yolasite,yolasite,atlantacargotaxi.yolasite.com,,,,,,
