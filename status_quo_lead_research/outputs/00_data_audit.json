@@ -1,0 +1,1978 @@
+{
+  "audit_generated_utc": "2026-09-14T09:02:29.488074+00:00",
+  "research_date": "2026-09-14",
+  "input": {
+    "filename": "us-software-saas-companies-cleaned.csv",
+    "path": "/home/user/Dataforge/status_quo_lead_research/data/us-software-saas-companies-cleaned.csv",
+    "file_size_bytes": 263947553,
+    "sha256": "c47bd9c3e2b884860954bc57b5f391ee7a4edf1083b68e2cfefa3516b03063ef",
+    "encoding": "utf-8",
+    "assembled_from_parts": 10,
+    "total_rows": 173119,
+    "total_columns_source": 27,
+    "column_names": [
+      "Domain",
+      "Company Name",
+      "LinkedIn Company URL",
+      "Industry",
+      "JSON Industry",
+      "Country",
+      "JSON Country",
+      "Employee Headcount",
+      "JSON Employee Headcount",
+      "Employee Size Range",
+      "JSON Employee Size Range",
+      "Description",
+      "Company Type",
+      "Business Type",
+      "Pattern Tags",
+      "Founded",
+      "Locality",
+      "Specialties",
+      "Annual Revenue Clay",
+      "Annual Revenue Hubspot",
+      "Total Funding Range",
+      "Scale Scope",
+      "SubIndustry",
+      "Derived Description",
+      "Derived Industry",
+      "Follower Count",
+      "Slug"
+    ],
+    "pipeline_added_columns": [
+      "source_part",
+      "source_row_id"
+    ]
+  },
+  "missing_values": {
+    "Domain": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Company Name": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "LinkedIn Company URL": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Industry": {
+      "missing_count": 2002,
+      "missing_pct": 1.156
+    },
+    "JSON Industry": {
+      "missing_count": 8171,
+      "missing_pct": 4.72
+    },
+    "Country": {
+      "missing_count": 567,
+      "missing_pct": 0.328
+    },
+    "JSON Country": {
+      "missing_count": 3596,
+      "missing_pct": 2.077
+    },
+    "Employee Headcount": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "JSON Employee Headcount": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Employee Size Range": {
+      "missing_count": 940,
+      "missing_pct": 0.543
+    },
+    "JSON Employee Size Range": {
+      "missing_count": 5966,
+      "missing_pct": 3.446
+    },
+    "Description": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Company Type": {
+      "missing_count": 11478,
+      "missing_pct": 6.63
+    },
+    "Business Type": {
+      "missing_count": 48195,
+      "missing_pct": 27.839
+    },
+    "Pattern Tags": {
+      "missing_count": 46661,
+      "missing_pct": 26.953
+    },
+    "Founded": {
+      "missing_count": 38946,
+      "missing_pct": 22.497
+    },
+    "Locality": {
+      "missing_count": 1340,
+      "missing_pct": 0.774
+    },
+    "Specialties": {
+      "missing_count": 64527,
+      "missing_pct": 37.273
+    },
+    "Annual Revenue Clay": {
+      "missing_count": 19226,
+      "missing_pct": 11.106
+    },
+    "Annual Revenue Hubspot": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Total Funding Range": {
+      "missing_count": 3931,
+      "missing_pct": 2.271
+    },
+    "Scale Scope": {
+      "missing_count": 46661,
+      "missing_pct": 26.953
+    },
+    "SubIndustry": {
+      "missing_count": 46720,
+      "missing_pct": 26.987
+    },
+    "Derived Description": {
+      "missing_count": 46659,
+      "missing_pct": 26.952
+    },
+    "Derived Industry": {
+      "missing_count": 46664,
+      "missing_pct": 26.955
+    },
+    "Follower Count": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "Slug": {
+      "missing_count": 761,
+      "missing_pct": 0.44
+    }
+  },
+  "identifiers": {
+    "domain": {
+      "present": 173119,
+      "missing": 0,
+      "normalized_nonblank": 173119,
+      "unique_normalized": 173118,
+      "duplicate_domain_values": 1,
+      "rows_sharing_a_duplicate_domain": 2,
+      "excess_rows_from_domain_dupes": 1,
+      "top_duplicates": [
+        {
+          "value": "adjutant.com",
+          "count": 2
+        }
+      ]
+    },
+    "linkedin_company_url": {
+      "present": 173119,
+      "missing": 0,
+      "parsed_slugs": 173119,
+      "unparseable_nonblank": 0,
+      "unique_slugs": 160322,
+      "duplicate_slug_values": 3479,
+      "rows_sharing_a_duplicate_slug": 16276,
+      "excess_rows_from_slug_dupes": 12797,
+      "top_duplicates": [
+        {
+          "value": "lazada",
+          "count": 5573
+        },
+        {
+          "value": "wix-com",
+          "count": 915
+        },
+        {
+          "value": "car-part.com",
+          "count": 122
+        },
+        {
+          "value": "menufy",
+          "count": 103
+        },
+        {
+          "value": "wild-apricot",
+          "count": 103
+        },
+        {
+          "value": "slice",
+          "count": 96
+        },
+        {
+          "value": "linkedin",
+          "count": 91
+        },
+        {
+          "value": "squarespace",
+          "count": 88
+        },
+        {
+          "value": "alibaba-com",
+          "count": 70
+        },
+        {
+          "value": "shift4shop",
+          "count": 66
+        },
+        {
+          "value": "bitly",
+          "count": 59
+        },
+        {
+          "value": "plesk",
+          "count": 53
+        },
+        {
+          "value": "appmasterio",
+          "count": 48
+        },
+        {
+          "value": "ignite-tech",
+          "count": 47
+        },
+        {
+          "value": "getlwolf",
+          "count": 47
+        },
+        {
+          "value": "placester-inc",
+          "count": 46
+        },
+        {
+          "value": "dealercenter",
+          "count": 39
+        },
+        {
+          "value": "parentsquare",
+          "count": 39
+        },
+        {
+          "value": "about",
+          "count": 38
+        },
+        {
+          "value": "yahoo",
+          "count": 36
+        },
+        {
+          "value": "photoshelter",
+          "count": 35
+        },
+        {
+          "value": "roya-com",
+          "count": 31
+        },
+        {
+          "value": "sportsengine",
+          "count": 30
+        },
+        {
+          "value": "finalsite",
+          "count": 29
+        },
+        {
+          "value": "wixstudio",
+          "count": 23
+        }
+      ]
+    },
+    "company_name": {
+      "present": 173119,
+      "missing": 0,
+      "unique_normalized": 157637,
+      "duplicate_name_values": 5311,
+      "rows_sharing_a_duplicate_name": 20792,
+      "excess_rows_from_name_dupes": 15481,
+      "top_duplicates": [
+        {
+          "value": "lazada",
+          "count": 5573
+        },
+        {
+          "value": "wix",
+          "count": 915
+        },
+        {
+          "value": "car part com",
+          "count": 122
+        },
+        {
+          "value": "menufy",
+          "count": 103
+        },
+        {
+          "value": "wildapricot by personify",
+          "count": 103
+        },
+        {
+          "value": "slice",
+          "count": 98
+        },
+        {
+          "value": "linkedin",
+          "count": 91
+        },
+        {
+          "value": "squarespace",
+          "count": 88
+        },
+        {
+          "value": "alibaba com",
+          "count": 70
+        },
+        {
+          "value": "shift4shop",
+          "count": 66
+        },
+        {
+          "value": "bitly",
+          "count": 59
+        },
+        {
+          "value": "plesk",
+          "count": 53
+        },
+        {
+          "value": "ignitetech",
+          "count": 48
+        },
+        {
+          "value": "appmaster",
+          "count": 48
+        },
+        {
+          "value": "lone wolf technologies",
+          "count": 47
+        },
+        {
+          "value": "placester",
+          "count": 46
+        },
+        {
+          "value": "dealercenter",
+          "count": 39
+        },
+        {
+          "value": "parentsquare",
+          "count": 39
+        },
+        {
+          "value": "about mobile",
+          "count": 38
+        },
+        {
+          "value": "yahoo",
+          "count": 36
+        },
+        {
+          "value": "photoshelter",
+          "count": 35
+        },
+        {
+          "value": "roya com",
+          "count": 31
+        },
+        {
+          "value": "sportsengine",
+          "count": 30
+        },
+        {
+          "value": "finalsite",
+          "count": 29
+        },
+        {
+          "value": "wix studio",
+          "count": 23
+        }
+      ]
+    },
+    "invalid_urls": {
+      "invalid_domain_values": 0,
+      "invalid_linkedin_values": 0
+    }
+  },
+  "country": {
+    "country_raw_distribution": [
+      {
+        "value": "United States",
+        "count": 162255
+      },
+      {
+        "value": "Singapore",
+        "count": 5623
+      },
+      {
+        "value": "Israel",
+        "count": 962
+      },
+      {
+        "value": "Canada",
+        "count": 594
+      },
+      {
+        "value": "(blank)",
+        "count": 567
+      },
+      {
+        "value": "United Kingdom",
+        "count": 551
+      },
+      {
+        "value": "India",
+        "count": 439
+      },
+      {
+        "value": "Germany",
+        "count": 289
+      },
+      {
+        "value": "Australia",
+        "count": 142
+      },
+      {
+        "value": "France",
+        "count": 141
+      },
+      {
+        "value": "China",
+        "count": 123
+      },
+      {
+        "value": "Netherlands",
+        "count": 87
+      },
+      {
+        "value": "Switzerland",
+        "count": 75
+      },
+      {
+        "value": "Denmark",
+        "count": 64
+      },
+      {
+        "value": "PK",
+        "count": 58
+      },
+      {
+        "value": "Sweden",
+        "count": 58
+      },
+      {
+        "value": "Japan",
+        "count": 55
+      },
+      {
+        "value": "Belgium",
+        "count": 55
+      },
+      {
+        "value": "Brazil",
+        "count": 53
+      },
+      {
+        "value": "Italy",
+        "count": 53
+      },
+      {
+        "value": "United Arab Emirates",
+        "count": 50
+      },
+      {
+        "value": "Ireland",
+        "count": 48
+      },
+      {
+        "value": "Spain",
+        "count": 46
+      },
+      {
+        "value": "TW",
+        "count": 36
+      },
+      {
+        "value": "Mexico",
+        "count": 31
+      },
+      {
+        "value": "TR",
+        "count": 29
+      },
+      {
+        "value": "South Korea",
+        "count": 28
+      },
+      {
+        "value": "Finland",
+        "count": 27
+      },
+      {
+        "value": "Norway",
+        "count": 26
+      },
+      {
+        "value": "ZA",
+        "count": 25
+      },
+      {
+        "value": "New Zealand",
+        "count": 25
+      },
+      {
+        "value": "CO",
+        "count": 23
+      },
+      {
+        "value": "Austria",
+        "count": 23
+      },
+      {
+        "value": "Poland",
+        "count": 21
+      },
+      {
+        "value": "US",
+        "count": 21
+      },
+      {
+        "value": "BD",
+        "count": 21
+      },
+      {
+        "value": "AR",
+        "count": 21
+      },
+      {
+        "value": "EE",
+        "count": 18
+      },
+      {
+        "value": "CZ",
+        "count": 17
+      },
+      {
+        "value": "NG",
+        "count": 17
+      },
+      {
+        "value": "EG",
+        "count": 14
+      },
+      {
+        "value": "HK",
+        "count": 14
+      },
+      {
+        "value": "ID",
+        "count": 13
+      },
+      {
+        "value": "RO",
+        "count": 12
+      },
+      {
+        "value": "PT",
+        "count": 11
+      },
+      {
+        "value": "SA",
+        "count": 10
+      },
+      {
+        "value": "CY",
+        "count": 10
+      },
+      {
+        "value": "RU",
+        "count": 10
+      },
+      {
+        "value": "KE",
+        "count": 10
+      },
+      {
+        "value": "LK",
+        "count": 9
+      },
+      {
+        "value": "CL",
+        "count": 9
+      },
+      {
+        "value": "PR",
+        "count": 9
+      },
+      {
+        "value": "PE",
+        "count": 9
+      },
+      {
+        "value": "MY",
+        "count": 8
+      },
+      {
+        "value": "CR",
+        "count": 8
+      },
+      {
+        "value": "PH",
+        "count": 8
+      },
+      {
+        "value": "KZ",
+        "count": 8
+      },
+      {
+        "value": "BG",
+        "count": 7
+      },
+      {
+        "value": "IR",
+        "count": 7
+      },
+      {
+        "value": "QA",
+        "count": 7
+      }
+    ],
+    "country_normalized_distribution": [
+      {
+        "value": "United States",
+        "count": 162276
+      },
+      {
+        "value": "Singapore",
+        "count": 5623
+      },
+      {
+        "value": "Israel",
+        "count": 962
+      },
+      {
+        "value": "Canada",
+        "count": 594
+      },
+      {
+        "value": "(blank)",
+        "count": 567
+      },
+      {
+        "value": "United Kingdom",
+        "count": 551
+      },
+      {
+        "value": "India",
+        "count": 439
+      },
+      {
+        "value": "Germany",
+        "count": 289
+      },
+      {
+        "value": "Australia",
+        "count": 142
+      },
+      {
+        "value": "France",
+        "count": 141
+      },
+      {
+        "value": "China",
+        "count": 123
+      },
+      {
+        "value": "Netherlands",
+        "count": 87
+      },
+      {
+        "value": "Switzerland",
+        "count": 75
+      },
+      {
+        "value": "Denmark",
+        "count": 64
+      },
+      {
+        "value": "Pakistan",
+        "count": 58
+      },
+      {
+        "value": "Sweden",
+        "count": 58
+      },
+      {
+        "value": "Japan",
+        "count": 55
+      },
+      {
+        "value": "Belgium",
+        "count": 55
+      },
+      {
+        "value": "Brazil",
+        "count": 53
+      },
+      {
+        "value": "Italy",
+        "count": 53
+      },
+      {
+        "value": "United Arab Emirates",
+        "count": 50
+      },
+      {
+        "value": "Ireland",
+        "count": 48
+      },
+      {
+        "value": "Spain",
+        "count": 46
+      },
+      {
+        "value": "Taiwan",
+        "count": 36
+      },
+      {
+        "value": "Mexico",
+        "count": 31
+      },
+      {
+        "value": "Turkey",
+        "count": 29
+      },
+      {
+        "value": "South Korea",
+        "count": 28
+      },
+      {
+        "value": "Finland",
+        "count": 27
+      },
+      {
+        "value": "Norway",
+        "count": 26
+      },
+      {
+        "value": "South Africa",
+        "count": 25
+      },
+      {
+        "value": "New Zealand",
+        "count": 25
+      },
+      {
+        "value": "Colombia",
+        "count": 23
+      },
+      {
+        "value": "Austria",
+        "count": 23
+      },
+      {
+        "value": "Poland",
+        "count": 21
+      },
+      {
+        "value": "Bangladesh",
+        "count": 21
+      },
+      {
+        "value": "Argentina",
+        "count": 21
+      },
+      {
+        "value": "Estonia",
+        "count": 18
+      },
+      {
+        "value": "Czechia",
+        "count": 17
+      },
+      {
+        "value": "Nigeria",
+        "count": 17
+      },
+      {
+        "value": "Egypt",
+        "count": 14
+      },
+      {
+        "value": "Indonesia",
+        "count": 14
+      },
+      {
+        "value": "Hong Kong",
+        "count": 14
+      },
+      {
+        "value": "Romania",
+        "count": 12
+      },
+      {
+        "value": "Portugal",
+        "count": 11
+      },
+      {
+        "value": "Chile",
+        "count": 10
+      },
+      {
+        "value": "Saudi Arabia",
+        "count": 10
+      },
+      {
+        "value": "Cyprus",
+        "count": 10
+      },
+      {
+        "value": "Russia",
+        "count": 10
+      },
+      {
+        "value": "Kenya",
+        "count": 10
+      },
+      {
+        "value": "Sri Lanka",
+        "count": 9
+      },
+      {
+        "value": "Puerto Rico",
+        "count": 9
+      },
+      {
+        "value": "Peru",
+        "count": 9
+      },
+      {
+        "value": "Malaysia",
+        "count": 8
+      },
+      {
+        "value": "Costa Rica",
+        "count": 8
+      },
+      {
+        "value": "Philippines",
+        "count": 8
+      },
+      {
+        "value": "Kazakhstan",
+        "count": 8
+      },
+      {
+        "value": "Bulgaria",
+        "count": 7
+      },
+      {
+        "value": "Iran",
+        "count": 7
+      },
+      {
+        "value": "Qatar",
+        "count": 7
+      },
+      {
+        "value": "Hungary",
+        "count": 6
+      }
+    ],
+    "json_country_distribution": [
+      {
+        "value": "United States",
+        "count": 165243
+      },
+      {
+        "value": "US",
+        "count": 3740
+      },
+      {
+        "value": "(blank)",
+        "count": 3596
+      },
+      {
+        "value": "us",
+        "count": 504
+      },
+      {
+        "value": "GB",
+        "count": 8
+      },
+      {
+        "value": "CA",
+        "count": 6
+      },
+      {
+        "value": "IL",
+        "count": 4
+      },
+      {
+        "value": "United Kingdom",
+        "count": 2
+      },
+      {
+        "value": "Australia",
+        "count": 2
+      },
+      {
+        "value": "AE",
+        "count": 1
+      },
+      {
+        "value": "sa",
+        "count": 1
+      },
+      {
+        "value": "AU",
+        "count": 1
+      },
+      {
+        "value": "IE",
+        "count": 1
+      },
+      {
+        "value": "MY",
+        "count": 1
+      },
+      {
+        "value": "ES",
+        "count": 1
+      },
+      {
+        "value": "PR",
+        "count": 1
+      },
+      {
+        "value": "PH",
+        "count": 1
+      },
+      {
+        "value": "au",
+        "count": 1
+      },
+      {
+        "value": "CZ",
+        "count": 1
+      },
+      {
+        "value": "Canada",
+        "count": 1
+      }
+    ],
+    "us_status_from_country": {
+      "us": 162276,
+      "foreign": 10266,
+      "unknown": 567,
+      "us_territory": 10
+    },
+    "us_status_from_json_country": {
+      "us": 169487,
+      "unknown": 3596,
+      "foreign": 35,
+      "us_territory": 1
+    },
+    "rows_where_country_and_json_country_differ": 10312,
+    "json_country_claims_us_but_country_is_foreign": 10266,
+    "country_is_us_but_json_country_is_foreign": 35,
+    "note": "JSON Country labels ~98% of rows United States and cannot be used as evidence of a US headquarters. Country is the primary location filter."
+  },
+  "employees": {
+    "headcount_missing_or_blank": 0,
+    "headcount_zero": 3498,
+    "headcount_positive": 169621,
+    "headcount_describe": {
+      "count": 169621.0,
+      "mean": 1048.0709640905313,
+      "std": 7845.327350256189,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 6.0,
+      "75%": 22.0,
+      "max": 779949.0
+    },
+    "headcount_buckets": {
+      "1-10": 110776,
+      "11-50": 32332,
+      "51-200": 11458,
+      "201-1000": 5363,
+      "1001+": 9692
+    },
+    "size_range_distribution": [
+      {
+        "value": "2-10 employees",
+        "count": 78470
+      },
+      {
+        "value": "11-50 employees",
+        "count": 49262
+      },
+      {
+        "value": "51-200 employees",
+        "count": 16587
+      },
+      {
+        "value": "Self-employed",
+        "count": 10480
+      },
+      {
+        "value": "5,001-10,000 employees",
+        "count": 6090
+      },
+      {
+        "value": "201-500 employees",
+        "count": 4966
+      },
+      {
+        "value": "1,001-5,000 employees",
+        "count": 3243
+      },
+      {
+        "value": "501-1,000 employees",
+        "count": 2100
+      },
+      {
+        "value": "10,001+ employees",
+        "count": 975
+      },
+      {
+        "value": "(blank)",
+        "count": 940
+      },
+      {
+        "value": "0-1 employees",
+        "count": 6
+      }
+    ],
+    "employee_field_conflicts": 43109,
+    "initial_fit_distribution": {
+      "below": 88087,
+      "above": 24355,
+      "in_range": 60677
+    },
+    "note": "Numeric headcount and the size band are independent estimates. Where they disagree the row is retained and flagged for verification rather than resolved toward whichever value would qualify the company."
+  },
+  "revenue": {
+    "clay_band_distribution": [
+      {
+        "value": "0-500K",
+        "count": 68435
+      },
+      {
+        "value": "1M-5M",
+        "count": 52315
+      },
+      {
+        "value": "(blank)",
+        "count": 19226
+      },
+      {
+        "value": "10M-25M",
+        "count": 16399
+      },
+      {
+        "value": "500K-1M",
+        "count": 7625
+      },
+      {
+        "value": "25M-75M",
+        "count": 3965
+      },
+      {
+        "value": "5M-10M",
+        "count": 2761
+      },
+      {
+        "value": "75M-200M",
+        "count": 1295
+      },
+      {
+        "value": "200M-500M",
+        "count": 426
+      },
+      {
+        "value": "1B-10B",
+        "count": 354
+      },
+      {
+        "value": "500M-1B",
+        "count": 291
+      },
+      {
+        "value": "10B-100B",
+        "count": 25
+      },
+      {
+        "value": "100B-1T",
+        "count": 2
+      }
+    ],
+    "clay_missing": 19226,
+    "hubspot_distinct_values": [
+      {
+        "value": "0",
+        "count": 173119
+      }
+    ],
+    "hubspot_all_zero": true,
+    "note": "Annual Revenue Hubspot is 0 for every one of the 173,119 rows and carries no information; it is never read as evidence of no revenue. Annual Revenue Clay is an estimate used for preliminary filtering only."
+  },
+  "funding": {
+    "band_distribution": [
+      {
+        "value": "Funding unknown",
+        "count": 154494
+      },
+      {
+        "value": "Under $1M",
+        "count": 4372
+      },
+      {
+        "value": "(blank)",
+        "count": 3931
+      },
+      {
+        "value": "$1M - $5M",
+        "count": 3927
+      },
+      {
+        "value": "$10M - $25M",
+        "count": 2124
+      },
+      {
+        "value": "$5M - $10M",
+        "count": 1835
+      },
+      {
+        "value": "$25M - $50M",
+        "count": 1073
+      },
+      {
+        "value": "$50M - $100M",
+        "count": 682
+      },
+      {
+        "value": "$100M - $250M",
+        "count": 475
+      },
+      {
+        "value": "$250M+",
+        "count": 206
+      }
+    ],
+    "funding_unknown": 154494,
+    "missing": 3931
+  },
+  "business_type_distribution": [
+    {
+      "value": "B2B",
+      "count": 97935
+    },
+    {
+      "value": "(blank)",
+      "count": 48195
+    },
+    {
+      "value": "B2C",
+      "count": 14830
+    },
+    {
+      "value": "B2B,B2C",
+      "count": 8911
+    },
+    {
+      "value": "Nonprofit",
+      "count": 2541
+    },
+    {
+      "value": "Unknown",
+      "count": 517
+    },
+    {
+      "value": "B2B, B2C",
+      "count": 188
+    },
+    {
+      "value": "B2G",
+      "count": 2
+    }
+  ],
+  "company_type_distribution": [
+    {
+      "value": "Privately Held",
+      "count": 122589
+    },
+    {
+      "value": "(blank)",
+      "count": 11478
+    },
+    {
+      "value": "Self Owned",
+      "count": 10486
+    },
+    {
+      "value": "Partnership",
+      "count": 10221
+    },
+    {
+      "value": "Public Company",
+      "count": 9424
+    },
+    {
+      "value": "Self Employed",
+      "count": 4603
+    },
+    {
+      "value": "Non Profit",
+      "count": 3252
+    },
+    {
+      "value": "Educational",
+      "count": 942
+    },
+    {
+      "value": "Government Agency",
+      "count": 124
+    }
+  ],
+  "industry_distribution": [
+    {
+      "value": "Software Development",
+      "count": 64808
+    },
+    {
+      "value": "Technology, Information and Internet",
+      "count": 14035
+    },
+    {
+      "value": "IT Services and IT Consulting",
+      "count": 10656
+    },
+    {
+      "value": "Advertising Services",
+      "count": 6968
+    },
+    {
+      "value": "Information Technology and Services",
+      "count": 5068
+    },
+    {
+      "value": "Financial Services",
+      "count": 4050
+    },
+    {
+      "value": "Hospitals and Health Care",
+      "count": 3654
+    },
+    {
+      "value": "Marketing Services",
+      "count": 3259
+    },
+    {
+      "value": "Business Consulting and Services",
+      "count": 2979
+    },
+    {
+      "value": "Telecommunications",
+      "count": 2871
+    },
+    {
+      "value": "Computer and Network Security",
+      "count": 2222
+    },
+    {
+      "value": "(blank)",
+      "count": 2002
+    },
+    {
+      "value": "Appliances, Electrical, and Electronics Manufacturing",
+      "count": 1739
+    },
+    {
+      "value": "Technology, Information and Media",
+      "count": 1577
+    },
+    {
+      "value": "Design Services",
+      "count": 1525
+    },
+    {
+      "value": "Venture Capital and Private Equity Principals",
+      "count": 1437
+    },
+    {
+      "value": "Information Services",
+      "count": 1431
+    },
+    {
+      "value": "Wellness and Fitness Services",
+      "count": 1414
+    },
+    {
+      "value": "E-Learning Providers",
+      "count": 1219
+    },
+    {
+      "value": "Transportation, Logistics, Supply Chain and Storage",
+      "count": 1030
+    },
+    {
+      "value": "Automation Machinery Manufacturing",
+      "count": 959
+    },
+    {
+      "value": "Data Infrastructure and Analytics",
+      "count": 859
+    },
+    {
+      "value": "Research Services",
+      "count": 814
+    },
+    {
+      "value": "Biotechnology Research",
+      "count": 802
+    },
+    {
+      "value": "Consumer Services",
+      "count": 775
+    },
+    {
+      "value": "Medical Equipment Manufacturing",
+      "count": 769
+    },
+    {
+      "value": "Security and Investigations",
+      "count": 767
+    },
+    {
+      "value": "Computer Hardware Manufacturing",
+      "count": 729
+    },
+    {
+      "value": "Computers and Electronics Manufacturing",
+      "count": 678
+    },
+    {
+      "value": "Mobile Computing Software Products",
+      "count": 667
+    },
+    {
+      "value": "Education Administration Programs",
+      "count": 667
+    },
+    {
+      "value": "Non-profit Organizations",
+      "count": 656
+    },
+    {
+      "value": "Human Resources Services",
+      "count": 650
+    },
+    {
+      "value": "IT System Custom Software Development",
+      "count": 626
+    },
+    {
+      "value": "Entertainment Providers",
+      "count": 623
+    },
+    {
+      "value": "Mental Health Care",
+      "count": 611
+    },
+    {
+      "value": "Semiconductor Manufacturing",
+      "count": 602
+    },
+    {
+      "value": "Defense and Space Manufacturing",
+      "count": 585
+    },
+    {
+      "value": "Industrial Machinery Manufacturing",
+      "count": 578
+    },
+    {
+      "value": "Machinery Manufacturing",
+      "count": 550
+    },
+    {
+      "value": "Education",
+      "count": 542
+    },
+    {
+      "value": "Media Production",
+      "count": 528
+    },
+    {
+      "value": "Computer Games",
+      "count": 527
+    },
+    {
+      "value": "Events Services",
+      "count": 525
+    },
+    {
+      "value": "Motor Vehicle Manufacturing",
+      "count": 519
+    },
+    {
+      "value": "Engineering Services",
+      "count": 518
+    },
+    {
+      "value": "Market Research",
+      "count": 509
+    },
+    {
+      "value": "Computer Networking Products",
+      "count": 465
+    },
+    {
+      "value": "Professional Training and Coaching",
+      "count": 442
+    },
+    {
+      "value": "Manufacturing",
+      "count": 435
+    }
+  ],
+  "subindustry_distribution": [
+    {
+      "value": "(blank)",
+      "count": 46720
+    },
+    {
+      "value": "Enterprise Software Solutions",
+      "count": 6387
+    },
+    {
+      "value": "IT Services and Cybersecurity",
+      "count": 5155
+    },
+    {
+      "value": "Enterprise Software Solutions,Advertising, Marketing and Multimedia Design",
+      "count": 4128
+    },
+    {
+      "value": "Advertising, Marketing and Multimedia Design,IT Services and Cybersecurity",
+      "count": 3610
+    },
+    {
+      "value": "Enterprise Software Solutions,IT Services and Cybersecurity",
+      "count": 2808
+    },
+    {
+      "value": "Healthcare Software,Digital Health and Telemedicine",
+      "count": 2492
+    },
+    {
+      "value": "Consumer Software",
+      "count": 2211
+    },
+    {
+      "value": "AI and ML Platforms",
+      "count": 1675
+    },
+    {
+      "value": "Management Consulting and Strategy Consulting,IT Services and Cybersecurity",
+      "count": 1566
+    },
+    {
+      "value": "IT Services and Cybersecurity,Security and Identity Software",
+      "count": 1405
+    },
+    {
+      "value": "Retail and Ecommerce Software",
+      "count": 1391
+    },
+    {
+      "value": "Developer Tools and Platforms",
+      "count": 1364
+    },
+    {
+      "value": "Gaming, Esports and Interactive Entertainment",
+      "count": 1338
+    },
+    {
+      "value": "Cloud and Infrastructure Software,IT Services and Cybersecurity",
+      "count": 1337
+    },
+    {
+      "value": "Enterprise Software Solutions,Management Consulting and Strategy Consulting",
+      "count": 1276
+    },
+    {
+      "value": "Human Resources, Staffing and Recruitment,Enterprise Software Solutions",
+      "count": 1219
+    },
+    {
+      "value": "Advertising, Marketing and Multimedia Design,Data and Analytics Software",
+      "count": 1170
+    },
+    {
+      "value": "Data and Analytics Software",
+      "count": 987
+    },
+    {
+      "value": "Enterprise Software Solutions,AI and ML Platforms",
+      "count": 950
+    },
+    {
+      "value": "Advertising, Marketing and Multimedia Design,Enterprise Software Solutions",
+      "count": 950
+    },
+    {
+      "value": "Advertising, Marketing and Multimedia Design",
+      "count": 903
+    },
+    {
+      "value": "Financial Services Software,Enterprise Software Solutions",
+      "count": 842
+    },
+    {
+      "value": "Healthcare Software",
+      "count": 826
+    },
+    {
+      "value": "Healthcare Software,IT Services and Cybersecurity",
+      "count": 811
+    },
+    {
+      "value": "Financial Services Software,Financial Services Platforms",
+      "count": 795
+    },
+    {
+      "value": "Healthcare Software,Enterprise Software Solutions",
+      "count": 794
+    },
+    {
+      "value": "Management Consulting and Strategy Consulting,Data and Analytics Software",
+      "count": 783
+    },
+    {
+      "value": "Healthcare Software,AI and ML Platforms",
+      "count": 780
+    },
+    {
+      "value": "Enterprise Software Solutions,Retail Technology",
+      "count": 740
+    },
+    {
+      "value": "Industrial Machinery and Equipment",
+      "count": 736
+    },
+    {
+      "value": "Enterprise Software Solutions,E-Learning Platforms and EdTech",
+      "count": 735
+    },
+    {
+      "value": "E-Learning Platforms and EdTech,Enterprise Software Solutions",
+      "count": 731
+    },
+    {
+      "value": "Digital Health and Telemedicine,Healthcare Software",
+      "count": 701
+    },
+    {
+      "value": "Enterprise Software Solutions,Logistics Technology",
+      "count": 679
+    },
+    {
+      "value": "Financial Services Software",
+      "count": 635
+    },
+    {
+      "value": "Venture Capital and Private Equity",
+      "count": 625
+    },
+    {
+      "value": "Cloud and Infrastructure Software",
+      "count": 622
+    },
+    {
+      "value": "Retail and Ecommerce Software,Advertising, Marketing and Multimedia Design",
+      "count": 621
+    },
+    {
+      "value": "Retail and Ecommerce Software,Enterprise Software Solutions",
+      "count": 621
+    },
+    {
+      "value": "Digital Publishing and Streaming Platforms",
+      "count": 621
+    },
+    {
+      "value": "Hardware and Networking",
+      "count": 620
+    },
+    {
+      "value": "Consumer Software,Digital Publishing and Streaming Platforms",
+      "count": 606
+    },
+    {
+      "value": "Real Estate and PropTech Software",
+      "count": 595
+    },
+    {
+      "value": "Online Commerce and Marketplaces",
+      "count": 591
+    },
+    {
+      "value": "Security and Identity Software",
+      "count": 587
+    },
+    {
+      "value": "E-Learning Platforms and EdTech",
+      "count": 585
+    },
+    {
+      "value": "IT Services and Cybersecurity,Electronics and Computer Equipment",
+      "count": 565
+    },
+    {
+      "value": "Enterprise Software Solutions,Legal Services and Regulatory Compliance",
+      "count": 559
+    },
+    {
+      "value": "AI and ML Platforms,Digital Health and Telemedicine",
+      "count": 549
+    }
+  ],
+  "derived_industry_distribution": [
+    {
+      "value": "Software and IT",
+      "count": 60251
+    },
+    {
+      "value": "(blank)",
+      "count": 46664
+    },
+    {
+      "value": "Professional, Business and Legal Services",
+      "count": 24120
+    },
+    {
+      "value": "Finance and Insurance",
+      "count": 7751
+    },
+    {
+      "value": "Media, Entertainment and Culture",
+      "count": 6262
+    },
+    {
+      "value": "Education and Training",
+      "count": 5232
+    },
+    {
+      "value": "Retail and Consumer Channels",
+      "count": 5144
+    },
+    {
+      "value": "Automotive, Aerospace and Defense Manufacturing",
+      "count": 2553
+    },
+    {
+      "value": "Transportation and Logistics",
+      "count": 2172
+    },
+    {
+      "value": "Energy, Utilities and Environmental Services",
+      "count": 1782
+    },
+    {
+      "value": "Hospitality, Food and Travel Services",
+      "count": 1726
+    },
+    {
+      "value": "Real Estate and Construction",
+      "count": 1461
+    },
+    {
+      "value": "Personal and Home Services",
+      "count": 1445
+    },
+    {
+      "value": "Industrial Manufacturing and Materials",
+      "count": 1114
+    },
+    {
+      "value": "Healthcare and Life Sciences",
+      "count": 986
+    },
+    {
+      "value": "Agriculture, Forestry and Fisheries",
+      "count": 659
+    },
+    {
+      "value": "Industry-Specific Software Solutions",
+      "count": 607
+    },
+    {
+      "value": "Professional, Business and Legal Services, Software and IT",
+      "count": 494
+    },
+    {
+      "value": "Non-Profit, Public Sector and Education (Non-Commercial)",
+      "count": 325
+    },
+    {
+      "value": "Enterprise Software Solutions",
+      "count": 202
+    },
+    {
+      "value": "Technology",
+      "count": 197
+    },
+    {
+      "value": "Software and IT, Healthcare and Life Sciences",
+      "count": 183
+    },
+    {
+      "value": "Miscellaneous",
+      "count": 181
+    },
+    {
+      "value": "Professional & Business Services",
+      "count": 151
+    },
+    {
+      "value": "Finance and Insurance, Software and IT",
+      "count": 145
+    },
+    {
+      "value": "Software and IT, Professional, Business and Legal Services",
+      "count": 130
+    },
+    {
+      "value": "Education and Training, Software and IT",
+      "count": 118
+    },
+    {
+      "value": "Media, Entertainment and Culture, Software and IT",
+      "count": 118
+    },
+    {
+      "value": "Retail and Consumer Channels, Software and IT",
+      "count": 89
+    },
+    {
+      "value": "Software and IT, Industrial Manufacturing and Materials",
+      "count": 72
+    },
+    {
+      "value": "Healthcare & Life Sciences",
+      "count": 52
+    },
+    {
+      "value": "Industrial Manufacturing",
+      "count": 50
+    },
+    {
+      "value": "Education & Training",
+      "count": 46
+    },
+    {
+      "value": "Media & Entertainment",
+      "count": 38
+    },
+    {
+      "value": "Consumer Software",
+      "count": 36
+    },
+    {
+      "value": "Software and IT, Media, Entertainment and Culture",
+      "count": 35
+    },
+    {
+      "value": "Software and IT, Real Estate and Construction",
+      "count": 28
+    },
+    {
+      "value": "Hospitality, Food and Travel Services, Software and IT",
+      "count": 28
+    },
+    {
+      "value": "Transportation and Logistics, Software and IT",
+      "count": 27
+    },
+    {
+      "value": "Finance & Insurance",
+      "count": 24
+    },
+    {
+      "value": "Emerging Software Technologies",
+      "count": 22
+    },
+    {
+      "value": "Personal and Home Services, Software and IT",
+      "count": 20
+    },
+    {
+      "value": "Software and IT, Non-Profit, Public Sector and Education (Non-Commercial)",
+      "count": 20
+    },
+    {
+      "value": "Software and IT, Retail and Consumer Channels",
+      "count": 19
+    },
+    {
+      "value": "Automotive, Aerospace & Defense Manufacturing",
+      "count": 19
+    },
+    {
+      "value": "Automotive, Aerospace and Defense Manufacturing, Software and IT",
+      "count": 17
+    },
+    {
+      "value": "Real Estate and Construction, Software and IT",
+      "count": 16
+    },
+    {
+      "value": "Retail",
+      "count": 15
+    },
+    {
+      "value": "Energy, Utilities and Environmental Services, Software and IT",
+      "count": 14
+    },
+    {
+      "value": "Energy & Utilities",
+      "count": 12
+    }
+  ],
+  "founded": {
+    "missing_or_unparseable": 39020,
+    "min": 1819,
+    "max": 2026,
+    "buckets": {
+      "pre-1990": 6213,
+      "1990-1999": 8640,
+      "2000-2009": 20428,
+      "2010-2014": 25400,
+      "2015-2019": 32845,
+      "2020-2026": 40573
+    }
+  },
+  "followers": {
+    "missing": 0,
+    "describe": {
+      "count": 173119.0,
+      "mean": 75307.93835454225,
+      "std": 873078.1343981841,
+      "min": 0.0,
+      "25%": 18.0,
+      "50%": 131.0,
+      "75%": 1194.0,
+      "max": 40101437.0
+    },
+    "buckets": {
+      "0-49": 64773,
+      "50-199": 30846,
+      "200-1999": 42415,
+      "2000-19999": 21375,
+      "20000+": 13710
+    }
+  },
+  "malformed": {
+    "missing_company_name": 0,
+    "missing_domain": 0,
+    "missing_linkedin_url": 0,
+    "rows_with_no_usable_identifier": 0,
+    "width_malformed_rows_at_assembly": [
+      {
+        "part": "us-software-saas-companies-part-01.csv",
+        "records": 16365,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-02.csv",
+        "records": 17990,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-03.csv",
+        "records": 18169,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-04.csv",
+        "records": 18690,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-05.csv",
+        "records": 26452,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-06.csv",
+        "records": 17533,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-07.csv",
+        "records": 17560,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-08.csv",
+        "records": 17202,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-09.csv",
+        "records": 16492,
+        "malformed_width": 0
+      },
+      {
+        "part": "us-software-saas-companies-part-10.csv",
+        "records": 6666,
+        "malformed_width": 0
+      }
+    ]
+  },
+  "duplicate_clusters": {
+    "domain_clusters": 1,
+    "linkedin_slug_clusters": 3479,
+    "name_plus_locality_clusters": 3550,
+    "rows_in_name_plus_locality_clusters": 16424,
+    "estimated_total_excess_rows": 1
+  },
+  "material_issues": [
+    {
+      "issue": "JSON Country is unusable as location evidence",
+      "detail": "JSON Country reports a US value for 169,488 of 173,119 rows (97.9%), including 10,266 rows whose Country column names a foreign country.",
+      "handling": "Country is the primary filter; JSON Country is never used as proof of US HQ."
+    },
+    {
+      "issue": "Annual Revenue Hubspot is entirely zero",
+      "detail": "All 173,119 rows contain 0. The column carries no signal.",
+      "handling": "Excluded from all filtering; never read as evidence of zero revenue."
+    },
+    {
+      "issue": "Total Funding Range is mostly unknown",
+      "detail": "154,494 rows are 'Funding unknown'.",
+      "handling": "Absence of funding data never rejects a company on its own."
+    },
+    {
+      "issue": "Singapore over-represented for a US dataset",
+      "detail": "5,623 rows are Singapore-registered, the second largest country group, despite the file being labelled US companies.",
+      "handling": "Rejected at the local US filter unless other evidence indicates a US HQ."
+    },
+    {
+      "issue": "Employee fields disagree",
+      "detail": "43,109 rows have a numeric headcount that contradicts the size band; 3,498 rows have headcount 0.",
+      "handling": "Both estimates retained, conflict flagged, verification required before qualifying."
+    },
+    {
+      "issue": "Most rows are outside the target employee band",
+      "detail": "78,470 rows are 2-10 employees and 10,480 are Self-employed.",
+      "handling": "Filtered at Stage 4; borderline and conflicting cases are researched, not discarded."
+    }
+  ]
+}

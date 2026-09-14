@@ -19,10 +19,13 @@ Expected: 10 parts of `us-software-saas-companies-cleaned.csv`
 | 05 | `us-software-saas-companies-part-05.csv` | 27999197 | 103155 | same | balanced | yes | `afc21248d2f4fc68…` |
 | 06 | `us-software-saas-companies-part-06.csv` | 27999258 | 88852 | same | balanced | yes | `e26fc850ac8ef096…` |
 | 07 | `us-software-saas-companies-part-07.csv` | 27999467 | 80002 | same | balanced | yes | `76980e228ee0fbe4…` |
+| 08 | `us-software-saas-companies-part-08.csv` | 27999991 | 77893 | same | balanced | yes | `c7d60edacf9c1610…` |
+| 09 | `us-software-saas-companies-part-09.csv` | 27999602 | 88433 | same | balanced | yes | `6044b89aff49d230…` |
+| 10 | `us-software-saas-companies-part-10.csv` | 10165454 | 48456 | same | balanced | yes | `be6f4f5a410ac4e6…` |
 
-Parts received: 7 of 10.
-Missing: 08 09 10 
-Total on disk: 195992857 bytes across 684841 physical lines.
+Parts received: 10 of 10.
+Missing: none — all 10 parts received
+Total on disk: 262157904 bytes across 899623 physical lines.
 
 Every copy was verified byte-identical (sha256) against its upload at receipt time.
 Full checksums:
@@ -35,6 +38,9 @@ d635c61e2daa02906d85a0bbdbb9e5d2a5400fb52943b84f98a9d19a82b0dc20  us-software-sa
 afc21248d2f4fc68f868c59e83bfda16f1f1fdc7479283a94061a356eeeae9bf  us-software-saas-companies-part-05.csv
 e26fc850ac8ef096328bd37107b8ec7bf8ee62ad8f8a23b51426a833423bf469  us-software-saas-companies-part-06.csv
 76980e228ee0fbe492acf4392e58e213b120e3e7107d29ecb0c11e0629a4b400  us-software-saas-companies-part-07.csv
+c7d60edacf9c1610aabe968dd1792f83f01054ad8e35cd875aeec8fa5dcc7a26  us-software-saas-companies-part-08.csv
+6044b89aff49d23037be49ec5bc63f42f44888d5c2b52b3366a6dd608f6fce8d  us-software-saas-companies-part-09.csv
+be6f4f5a410ac4e6043efd03f48b87e5f754974efd543bb26d4657661855706e  us-software-saas-companies-part-10.csv
 ```
 
 ## Schema
