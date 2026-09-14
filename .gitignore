@@ -21,3 +21,6 @@ __pycache__/
 status_quo_lead_research/outputs/01_deduplicated_companies.csv
 status_quo_lead_research/outputs/02_prefiltered_research_queue.csv
 status_quo_lead_research/outputs/02_locally_rejected.csv
+status_quo_lead_research/outputs/02b_strict_high_probability_queue.csv
+status_quo_lead_research/outputs/02b_headcount_conflicts.csv
+status_quo_lead_research/outputs/02b_newly_rejected.csv
