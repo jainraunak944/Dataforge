@@ -1,0 +1,7 @@
+pathway,d90,m12,m24
+entry_only,61.9,61.9,61.9
+repeat_no_upgrade,120.7,150.1,208.9
+upgrade_via_credit,147.0,255.2,358.6
+fts_direct,147.0,298.9,455.0
+EXPECTED tournament entrant,102.4,135.8,180.0
+EXPECTED session entrant,50.1,62.7,81.1

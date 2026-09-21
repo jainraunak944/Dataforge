@@ -1,0 +1,15 @@
+sku,price_inr,status,label,contribution_before_marketing_inr
+session_masters_prime,39,proposed,"Session pass, Masters/Finals, India-friendly start",28.5
+session_masters_overnight,29,proposed,"Session pass, Masters/Finals, overnight start (live + 48h replay)",20.4
+session_500_prime,29,proposed,"Session pass, ATP 500, India-friendly",20.4
+session_500_overnight,19,proposed,"Session pass, ATP 500, overnight",12.3
+session_250,19,proposed,"Session pass, ATP 250, any start",12.3
+session_model,29,model mix,Blended session price used in cohort model,20.4
+tournament_250_500,79,existing (case: ₹79-₹99),"Tournament pass, ATP 250/500",55.8
+tournament_masters,89,existing (case: ₹79-₹99),"Tournament pass, Masters 1000",61.9
+tournament_finals,99,existing (case: ₹79-₹99),"Tournament pass, Nitto ATP Finals",69.9
+finish_season,199,proposed,"Finish-the-Season pass (5 Oct-22 Nov 2026: Shanghai, Basel/Vienna, Paris, ATP Finals + all 250s, weekly show, replays)",136.7
+season_2027,399,existing (case: ₹399),ATP Season Pass 2027 (list),262.2
+season_2027_loyalty,349,proposed,ATP Season Pass 2027 loyalty price for 2026 season/FTS holders buying by 15 Jan 2027,221.8
+monthly_pass,179,"existing (fancode.com, S10)","FanCode Monthly Pass, all sports",124.5
+f1_weekend,99,"existing (Autocar India, S14; secondary)",F1 race-weekend pass,71.9
