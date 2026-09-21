@@ -4,21 +4,25 @@
   "evidence_cutoff": "2026-09-21",
   "budget_inr": 1000000,
   "implementation_budget_inr": 400000,
-  "implementation_note": "Separate one-off budget (assumption): ~6 engineer-weeks for morning mode (spoiler-free surfaces, timed replay push) and credit-ladder checkout logic (~\u20b93.6 lakh) plus analytics tooling (~\u20b90.4 lakh). Included in total programme economics, not in the \u20b910 lakh marketing budget.",
+  "implementation_note": "Separate one-off engineering budget (assumption): spoiler-free replay surfaces, timed replay push automation and credit-ladder checkout (~6 engineer-weeks) plus analytics tooling. Released only at gate G2; Stage 1 runs CRM-only (v0) without engineering.",
   "cac_target_low": 150,
   "cac_target_high": 200,
   "cac_target_mid": 175,
-  "labels": "Every number in this file is a model assumption unless marked case fact or external fact."
+  "labels": "Every number in this file is a model assumption unless marked case fact or external fact.",
+  "stage1_budget_inr": 400000,
+  "stage2_budget_inr": 600000,
+  "accounting_basis": "Contribution is on a cash-collected basis at purchase; recognised revenue for the 2027 season pass spreads to November 2027, one month beyond the 12-month horizon, which slightly overstates 12-month recognised contribution for renewers.",
+  "version": "v2 (redesign audit corrections, 21 Sep 2026)"
  },
  "units": {
-  "c_session": 20.416271186440678,
+  "c_session": 25.261016949152545,
   "c_t79": 55.78915254237289,
   "c_t89": 61.86372881355932,
   "c_t99": 69.93830508474578,
   "c_tmix": 58.826440677966104,
   "c_fts": 136.68406779661018,
   "c_step_t_fts": 74.82033898305085,
-  "c_step_s_t": 41.447457627118645,
+  "c_step_s_t": 36.602711864406785,
   "c_season399": 262.175593220339,
   "c_season349": 221.80271186440683,
   "c_monthly": 124.53491525423729,
@@ -53,217 +57,380 @@
   "m24": 180.0276545084746
  },
  "E_s": {
-  "d90": 50.120690033898306,
-  "m12": 62.695552271186436,
-  "m24": 81.05985567457628
+  "d90": 54.72319850847458,
+  "m12": 67.9036539661017,
+  "m24": 87.4791438101695
  },
- "base_totals": {
+ "base_full": {
   "spend": 1000000,
-  "purchases": 3937.06,
-  "new_payers_attributed_dedup": 2797.9880000000003,
-  "incremental_new_payers": 1692.8690000000001,
-  "xsell_purchases": 385.55999999999995,
-  "incr_xsell": 192.77999999999997,
-  "dedup_removed": 70.912,
-  "paid_spend": 520000,
-  "paid_new_payers": 2350.868,
-  "paid_blended_cac_attributed": 221.19489482182752,
-  "paid_blended_cac_incremental": 353.90785736696637,
-  "paid_ex_test_cac_attributed": 184.1404237334208,
-  "paid_ex_test_cac_incremental": 294.2600375952229,
-  "harmonic_check_paid": 218.22149481723952,
-  "programme_cost_per_new_payer": 357.3996743374167,
-  "programme_cost_per_incremental_new_payer": 590.7131620934638,
-  "value": {
-   "d90": 310528.9799097056,
-   "m12": 474448.4672097653,
-   "m24": 664462.3421921738
+  "implementation": 400000,
+  "new_attr": 2275.654857142857,
+  "new_incr": 1363.398857142857,
+  "react_attr": 865.6892857142858,
+  "react_incr": 446.1392857142858,
+  "exist_attr": 894.9135714285713,
+  "exist_incr": 474.4835714285714,
+  "cost_per_new_attr": 439.43394880870716,
+  "cost_per_new_incr": 733.4610812976646,
+  "cost_per_new_incr_incl_impl": 1026.8455138167303,
+  "cost_per_new_or_react_attr": 318.33506757730504,
+  "paid_spend": 470000,
+  "paid_cac_attr": 257.03639072781453,
+  "paid_cac_incr": 412.3389872653679,
+  "c2_cac_attr": 205.88235294117646,
+  "c2_cac_incr": 316.7420814479638,
+  "c2_value": {
+   "d90": 113.08809245423728,
+   "m12": 190.86183853559322,
+   "m24": 276.15402647322037
+  },
+  "value_attr": {
+   "d90": 419749.79103402176,
+   "m12": 665791.7067719535,
+   "m24": 944576.0516880134
+  },
+  "value_incr": {
+   "d90": 239860.88566642132,
+   "m12": 383524.1448774307,
+   "m24": 545565.7234298423
   },
   "cannibalisation": {
-   "d90": 6672.889665261018,
-   "m12": 16558.22055051525,
-   "m24": 16558.22055051525,
-   "loss_fts_leakage": 4566.472338983052,
-   "loss_multi_event": 2106.417326277966,
-   "loss_loyalty": 9885.33088525423,
-   "n_fts_direct": 610.325,
-   "n_upgraders": 352.8758,
-   "n_renewers": 489.70153
+   "d90": 9477.5844581908,
+   "m12": 23869.212357972872,
+   "m24": 23869.212357972872
   },
-  "net": {
-   "d90": -696143.9097555554,
-   "m12": -542109.75334075,
-   "m24": -352095.8783583414
+  "net_attr": {
+   "d90": -589727.7934241691,
+   "m12": -358077.50558601937,
+   "m24": -79293.1606699595
   },
-  "acq_value": {
-   "d90": 229124.013681629,
-   "m12": 351711.06666557625,
-   "m24": 493321.87493643607
+  "net_incr": {
+   "d90": -769616.6987917694,
+   "m12": -640345.0674805422,
+   "m24": -478303.4889281306
   },
-  "acq_net": {
-   "d90": -190875.986318371,
-   "m12": -68288.93333442375,
-   "m24": 73321.87493643607
+  "net_incr_incl_impl": {
+   "d90": -1169616.6987917693,
+   "m12": -1040345.0674805422,
+   "m24": -878303.4889281306
   },
-  "per_lakh_c2": {
-   "new_payers": 546.4285714285714,
-   "value_m12": 88502.44731733655,
-   "value_m24": 125126.40541048913
-  },
-  "xsell_value": {
-   "d90": 30727.485018378306,
-   "m12": 44161.093687143046,
-   "m24": 60539.236628173014
-  },
-  "new_payer_value": {
-   "d90": 279801.4948913273,
-   "m12": 430287.3735226222,
-   "m24": 603923.1055640008
-  },
-  "value_per_new_payer_m12": 147.8666645361263,
-  "value_per_new_payer_m24": 209.92401862105396,
-  "value_per_new_payer_d90": 97.61607456002893,
   "breakeven": {
-   "be_upgrade_m12_cac150": 0.29498363906652597,
-   "be_upgrade_m12_cac175": 0.46252537717791187,
-   "be_upgrade_m12_cac200": 0.6300671152892978,
-   "be_upgrade_m12_cac183": 0.5161387333735554,
-   "be_upgrade_m24_cac150": 0.06543999143595049,
-   "be_upgrade_m24_cac175": 0.17747006068933915,
-   "be_upgrade_m24_cac200": 0.28950012994272784,
-   "be_upgrade_m24_cac183": 0.21331968285042355
-  }
+   "attr_m12": 0.669488700727271,
+   "attr_m24": 0.3158601462376428,
+   "incr_m12": 1.4124339647506114,
+   "incr_m24": 0.812645068718733,
+   "150_m12": 0.29498363906652597,
+   "150_m24": 0.06543999143595049,
+   "200_m12": 0.6300671152892978,
+   "200_m24": 0.28950012994272784
+  },
+  "dedup_new": 65.08800000000001,
+  "performance_share": 0.47
  },
- "rows_base": [
+ "base_stage1": {
+  "spend": 400000,
+  "implementation": 0,
+  "new_attr": 1236.1354285714285,
+  "new_incr": 727.3534285714286,
+  "react_attr": 630.0571428571429,
+  "react_incr": 321.4571428571429,
+  "exist_attr": 576.4842857142856,
+  "exist_incr": 301.0992857142857,
+  "cost_per_new_attr": 323.5891397937443,
+  "cost_per_new_incr": 549.9389764142958,
+  "cost_per_new_incr_incl_impl": 549.9389764142958,
+  "cost_per_new_or_react_attr": 214.34015231011222,
+  "paid_spend": 190000,
+  "paid_cac_attr": 210.9246938578729,
+  "paid_cac_incr": 339.4776230644671,
+  "c2_cac_attr": 205.88235294117646,
+  "c2_cac_incr": 316.7420814479638,
+  "c2_value": {
+   "d90": 113.08809245423728,
+   "m12": 190.86183853559322,
+   "m24": 276.15402647322037
+  },
+  "value_attr": {
+   "d90": 251130.7120469529,
+   "m12": 394815.6059366067,
+   "m24": 558472.7626022422
+  },
+  "value_incr": {
+   "d90": 140038.98946206723,
+   "m12": 221811.2437911024,
+   "m24": 314541.89963728376
+  },
+  "cannibalisation": {
+   "d90": 5495.000037698792,
+   "m12": 13800.64824597966,
+   "m24": 13800.64824597966
+  },
+  "net_attr": {
+   "d90": -154364.2879907459,
+   "m12": -18985.042309372977,
+   "m24": 144672.1143562625
+  },
+  "net_incr": {
+   "d90": -265456.0105756316,
+   "m12": -191989.40445487725,
+   "m24": -99258.74860869593
+  },
+  "net_incr_incl_impl": {
+   "d90": -265456.0105756316,
+   "m12": -191989.40445487725,
+   "m24": -99258.74860869593
+  },
+  "breakeven": {
+   "attr_m12": 0.669488700727271,
+   "attr_m24": 0.3158601462376428,
+   "incr_m12": 1.4124339647506114,
+   "incr_m24": 0.812645068718733,
+   "150_m12": 0.29498363906652597,
+   "150_m24": 0.06543999143595049,
+   "200_m12": 0.6300671152892978,
+   "200_m24": 0.28950012994272784
+  },
+  "dedup_new": 44.136,
+  "performance_share": 0.475
+ },
+ "rows_base_full": [
   {
    "id": "C1",
-   "name": "Performance prospecting, cold tennis-interest audiences (learning test)",
+   "name": "Performance prospecting, cold tennis-interest audiences (bounded test, Stage 2 only)",
    "group": "paid acquisition",
    "spend": 100000,
-   "share": 0.1,
-   "persona": "P2 cold / P6",
-   "execution": "Meta/YouTube video, FTS \u20b9199 in marquee weeks, geo-split",
-   "evidence": "assumption (CPM, CTR, CVR); geo-split readout",
-   "rule": "Stop at day 30 unless attributed CAC < \u20b9300; shift remainder to C2",
+   "spend_full": 100000,
+   "stage1": 0,
+   "stage2": 100000,
    "method": "cpm",
+   "persona": "P2 cold; P6",
+   "execution": "Meta/YouTube video; ₹199 rest-of-season in marquee weeks; geo-split",
+   "evidence": "CPM, CTR, CVR assumed; geo readout",
+   "rule": "Bounded ₹1 lakh test; stop unless attributed CAC < ₹300",
+   "incremental_share": 0.6,
    "impressions": 833333.3333333334,
    "clicks": 5833.333333333334,
    "cpc": 17.142857142857142,
-   "cvr": 0.015,
    "purchases": 87.5,
-   "new_payers": 70.0,
-   "incr_new_payers": 42.0,
-   "cac_attributed": 1428.5714285714287,
-   "cac_incremental": 2380.9523809523807,
-   "new_payer_share": 0.8,
-   "incremental_share": 0.6,
-   "value_d90": 124.69842576271188,
-   "value_m12": 217.35618372881356,
-   "value_m24": 317.538465220339,
+   "new": 70.0,
+   "react": 4.375,
+   "exist": 13.125,
+   "incr_new": 42.0,
+   "incr_react": 2.625,
+   "incr_exist": 7.875,
+   "cac_new_attr": 1428.5714285714287,
+   "cac_new_incr": 2380.9523809523807,
+   "cost_per_react": null,
+   "value_new": {
+    "d90": 119.92900147796611,
+    "m12": 210.5638622101695,
+    "m24": 308.28361415050847
+   },
+   "value_react": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_exist": {
+    "d90": 114.78133029152544,
+    "m12": 205.4161910237288,
+    "m24": 303.1359429640678
+   },
    "mix": {
-    "tournament": 0.5,
+    "tournament": 0.4,
     "fts": 0.5,
-    "session": 0.0
+    "session": 0.1
    }
   },
   {
    "id": "C2",
-   "name": "High-intent search + retargeting at T-48h, new-to-pay tennis intent",
+   "name": "High-intent search + retargeting at T-48h, never-paid tennis intent",
    "group": "paid acquisition",
-   "spend": 350000,
-   "share": 0.35,
-   "persona": "P2 (free tennis viewers, tennis-page visitors, lapsed 2025 buyers)",
-   "execution": "Google search on tennis/live terms; Meta retargeting of tennis page visitors and free-content viewers; control IDs excluded via customer lists",
-   "evidence": "case timing (CF11) + assumptions (CPC, CVR)",
-   "rule": "Scale if attributed \u2264 \u20b9200 and incremental \u2264 \u20b9300; pause at \u20b9250 attributed",
+   "spend": 300000,
+   "spend_full": 300000,
+   "stage1": 150000,
+   "stage2": 150000,
    "method": "cpc",
-   "clicks": 50000.0,
-   "cpc": 7.0,
-   "cvr": 0.045,
-   "purchases": 2250.0,
-   "new_payers": 1912.5,
-   "incr_new_payers": 1243.125,
-   "cac_attributed": 183.00653594771242,
-   "cac_incremental": 281.5485168426345,
-   "new_payer_share": 0.85,
+   "persona": "P2 never-paid (free tennis viewers, tennis-page visitors)",
+   "execution": "Search on tennis/live terms; retargeting of free tennis viewers; control IDs excluded; ₹199 rest-of-season promoted in marquee weeks",
+   "evidence": "timing CF11; CPC, CVR assumed",
+   "rule": "Stage 2 half released only if incremental CAC ≤ 24-month entrant value and upgrade share ≥ 30%",
    "incremental_share": 0.65,
-   "value_d90": 103.09858329491527,
-   "value_m12": 161.96526306440677,
-   "value_m24": 228.98950009762714,
+   "clicks": 42857.142857142855,
+   "cpc": 7.0,
+   "purchases": 1714.2857142857142,
+   "new": 1457.142857142857,
+   "react": 85.71428571428572,
+   "exist": 171.42857142857144,
+   "incr_new": 947.1428571428571,
+   "incr_react": 55.71428571428572,
+   "incr_exist": 111.42857142857144,
+   "cac_new_attr": 205.88235294117646,
+   "cac_new_incr": 316.7420814479638,
+   "cost_per_react": null,
+   "value_new": {
+    "d90": 113.08809245423728,
+    "m12": 190.86183853559322,
+    "m24": 276.15402647322037
+   },
+   "value_react": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_exist": {
+    "d90": 108.96995550508476,
+    "m12": 186.7437015864407,
+    "m24": 272.03588952406784
+   },
    "mix": {
-    "tournament": 0.55,
-    "fts": 0.25,
-    "session": 0.2
+    "tournament": 0.45,
+    "fts": 0.4,
+    "session": 0.15
    }
   },
   {
    "id": "C3",
    "name": "First-party CRM activation (push, email, in-app) with 10% persistent holdout",
    "group": "owned activation",
-   "spend": 100000,
-   "share": 0.1,
-   "persona": "P2-free (new payers); P3/P4/P5 (existing payers, first ATP purchase)",
-   "execution": "Segment-specific pushes at T-48h and 07:00 IST morning replay; suppression after purchase; 3 pushes/week cap",
-   "evidence": "planning pools are assumptions to be replaced with CRM counts on day 0; rates are assumptions; holdout readout",
-   "rule": "Keep if measured relative lift \u2265 30%; otherwise fold into C2",
+   "spend": 80000,
+   "spend_full": 80000,
+   "stage1": 60000,
+   "stage2": 20000,
    "method": "owned",
-   "treated_total": 333000.0,
-   "treated_new_pool": 135000.0,
+   "persona": "P2 never-paid free pool (new payers); F1, MotoGP, LaLiga pass holders (existing-payer cross-sell)",
+   "execution": "Segment pushes at T-48h and 07:00 IST replay; suppression after purchase; caps",
+   "evidence": "planning pools and rates are assumptions replaced by CRM counts on day 0; holdout readout",
+   "rule": "Keep if measured relative lift ≥ 30%",
+   "incremental_share": 0.5,
+   "purchases": 871.56,
+   "new": 486.0,
+   "react": 0,
+   "exist": 385.55999999999995,
+   "incr_new": 243.0,
+   "incr_react": 0,
+   "incr_exist": 192.77999999999997,
    "conversions_by_pool": {
     "P2free": 486.0,
     "P3_F1": 233.28,
     "P4_MotoGP": 64.8,
     "P5_LaLiga": 87.47999999999999
    },
-   "purchases": 871.56,
-   "new_payers": 486.0,
-   "incr_new_payers": 243.0,
-   "xsell_purchases": 385.55999999999995,
-   "incr_xsell": 192.77999999999997,
-   "cost_allocated_new": 40540.54054054054,
-   "cost_allocated_xsell": 59459.45945945946,
-   "cac_attributed": 83.41675008341674,
-   "cac_incremental": 166.8335001668335,
-   "cost_per_xsell": 154.21584049035033,
-   "cost_per_incr_xsell": 308.43168098070066,
-   "incremental_share": 0.5,
-   "new_payer_share": 1.0,
-   "value_d90": 95.6408097220339,
-   "value_m12": 146.49919991864408,
-   "value_m24": 205.34163914305088,
+   "cost_allocated_new": 32432.432432432433,
+   "cost_allocated_exist": 47567.56756756757,
+   "cac_new_attr": 66.7334000667334,
+   "cac_new_incr": 133.4668001334668,
+   "cost_per_exist": 123.37267239228025,
+   "value_new": {
+    "d90": 97.02156226440678,
+    "m12": 148.06163042711864,
+    "m24": 207.26742558372882
+   },
+   "value_react": {
+    "d90": 0,
+    "m12": 0,
+    "m24": 0
+   },
+   "value_exist": {
+    "d90": 81.9969825762712,
+    "m12": 117.14159023728814,
+    "m24": 160.2260270644068
+   },
    "mix": {
     "tournament": 0.5,
     "fts": 0.2,
     "session": 0.3
    },
-   "xsell_value_m12": 114.53753938983051,
-   "xsell_value_m24": 157.0163829966102,
-   "xsell_value_d90": 79.69572833898306
+   "treated_total": 333000.0
+  },
+  {
+   "id": "C3b",
+   "name": "Reactivation of lapsed 2025 ATP buyers: CRM plus customer-list retargeting",
+   "group": "owned activation",
+   "spend": 50000,
+   "spend_full": 50000,
+   "stage1": 40000,
+   "stage2": 10000,
+   "method": "cpc",
+   "persona": "Lapsed 2025 ATP buyers (no 2026 purchase)",
+   "execution": "Customer-list retargeting and email around Shanghai and Paris; reported as reactivated payers, never as new payers",
+   "evidence": "CPC, CVR assumed (known past buyers)",
+   "rule": "Keep while cost per reactivation ≤ ₹150",
+   "incremental_share": 0.5,
+   "clicks": 10000.0,
+   "cpc": 5.0,
+   "purchases": 700.0000000000001,
+   "new": 0.0,
+   "react": 630.0000000000001,
+   "exist": 70.00000000000001,
+   "incr_new": 0.0,
+   "incr_react": 315.00000000000006,
+   "incr_exist": 35.00000000000001,
+   "cac_new_attr": null,
+   "cac_new_incr": null,
+   "cost_per_react": 79.36507936507935,
+   "value_new": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_react": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_exist": {
+    "d90": 107.92800500338983,
+    "m12": 174.86353366779662,
+    "m24": 250.19068715389832
+   },
+   "mix": {
+    "tournament": 0.6,
+    "fts": 0.3,
+    "session": 0.1
+   }
   },
   {
    "id": "C4",
-   "name": "Tennis communities and contests (e.g., Indian Tennis Daily), pass prizes",
+   "name": "Tennis communities and contests (Indian Tennis Daily), pass prizes",
    "group": "paid acquisition",
    "spend": 70000,
-   "share": 0.07,
-   "persona": "P1/P2 community members",
-   "execution": "3 contests (Shanghai, Paris, Finals) with pass prizes; creator fees; light boosting",
-   "evidence": "case CVR 7.8% (CF12); effective CPC is an assumption",
-   "rule": "Continue only if effective CPC \u2264 \u20b98.6 (CPC ceiling at 55% new-payer share)",
+   "spend_full": 70000,
+   "stage1": 40000,
+   "stage2": 30000,
    "method": "cpc",
+   "persona": "Community members (mixed classes)",
+   "execution": "3 contests (Shanghai, Paris, Finals) with pass prizes; light boosting",
+   "evidence": "case CVR 7.8% (CF12); effective CPC assumed",
+   "rule": "Continue only if effective CPC ≤ ceiling for the new-payer share",
+   "incremental_share": 0.5,
    "clicks": 9333.333333333334,
    "cpc": 7.5,
-   "cvr": 0.078,
    "purchases": 728.0,
-   "new_payers": 400.40000000000003,
-   "incr_new_payers": 200.20000000000002,
-   "cac_attributed": 174.8251748251748,
-   "cac_incremental": 349.6503496503496,
-   "new_payer_share": 0.55,
-   "incremental_share": 0.5,
-   "value_d90": 86.72841595932204,
-   "value_m12": 113.88747408813559,
-   "value_m24": 150.3373148583051,
+   "new": 327.6,
+   "react": 145.6,
+   "exist": 254.79999999999998,
+   "incr_new": 163.8,
+   "incr_react": 72.8,
+   "incr_exist": 127.39999999999999,
+   "cac_new_attr": 213.67521367521366,
+   "cac_new_incr": 427.3504273504273,
+   "cost_per_react": null,
+   "value_new": {
+    "d90": 88.10916850169491,
+    "m12": 115.44990459661017,
+    "m24": 152.26310129898306
+   },
+   "value_react": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_exist": {
+    "d90": 88.10916850169491,
+    "m12": 115.44990459661017,
+    "m24": 152.26310129898306
+   },
    "mix": {
     "tournament": 0.7,
     "fts": 0.0,
@@ -272,758 +439,942 @@
   },
   {
    "id": "C5",
-   "name": "Editorial and native tennis personalities (Race to Turin, 20-minute Morning Match cuts, weekly-show tie-ins)",
+   "name": "Editorial and native tennis personalities (Race to Turin, Morning Match cuts)",
    "group": "shared content",
    "spend": 150000,
-   "share": 0.15,
-   "persona": "All",
-   "execution": "Existing weekly show + 2 editors on event weeks; personality segments; zero incremental rights cost but production costed",
-   "evidence": "CF14; cost assumption",
-   "rule": "Cut if morning-replay open rate < 15% and no next-event return lift",
+   "spend_full": 150000,
+   "stage1": 30000,
+   "stage2": 120000,
    "method": "not directly attributed",
+   "persona": "All",
+   "execution": "Stage 1 uses the existing weekly show; event-week editors funded at G2",
+   "evidence": "CF14; cost assumption",
+   "rule": "Cut if replay opens < 15% with no next-event return lift",
+   "incremental_share": 0.0,
    "purchases": null,
-   "new_payers": null,
-   "incr_new_payers": null,
-   "cac_attributed": null,
-   "cac_incremental": null
+   "new": null,
+   "react": null,
+   "exist": null,
+   "incr_new": null,
+   "cac_new_attr": null,
+   "cac_new_incr": null
   },
   {
    "id": "C6",
-   "name": "ESPN.in takeovers converted to a geo/time-split test (2 marquee weeks)",
+   "name": "ESPN.in takeovers as a geo/time-split test (Stage 2 only)",
    "group": "shared content",
    "spend": 100000,
-   "share": 0.1,
-   "persona": "Broad tennis readers",
-   "execution": "Takeover live in test cities, held out in matched cities, crossover between Shanghai and Paris weeks",
-   "evidence": "CF13; lift readout",
-   "rule": "Scale only if geo lift in new payers is positive at p<0.1",
+   "spend_full": 100000,
+   "stage1": 0,
+   "stage2": 100000,
    "method": "not directly attributed",
+   "persona": "Broad tennis readers",
+   "execution": "Live in test cities, held out in matched cities; crossover between marquee weeks",
+   "evidence": "CF13; lift readout",
+   "rule": "Released at G2; scale only on positive geo lift",
+   "incremental_share": 0.0,
    "purchases": null,
-   "new_payers": null,
-   "incr_new_payers": null,
-   "cac_attributed": null,
-   "cac_incremental": null
+   "new": null,
+   "react": null,
+   "exist": null,
+   "incr_new": null,
+   "cac_new_attr": null,
+   "cac_new_incr": null
   },
   {
    "id": "C7",
-   "name": "Retention: morning-replay journey creative, upgrade and renewal communications",
+   "name": "Retention communications (onboarding, replay, pre-event, expiry, season-end)",
    "group": "retention",
    "spend": 60000,
-   "share": 0.06,
-   "persona": "All payers",
-   "execution": "Onboarding, post-first-view, pre-next-event, expiry and season-end bridge messages",
-   "evidence": "cost assumption",
-   "rule": "n/a (retention, measured via cohort KPIs)",
+   "spend_full": 60000,
+   "stage1": 30000,
+   "stage2": 30000,
    "method": "not directly attributed",
+   "persona": "All payers",
+   "execution": "Lifecycle messages (Solution 5)",
+   "evidence": "cost assumption",
+   "rule": "n/a (cohort KPIs)",
+   "incremental_share": 0.0,
    "purchases": null,
-   "new_payers": null,
-   "incr_new_payers": null,
-   "cac_attributed": null,
-   "cac_incremental": null
+   "new": null,
+   "react": null,
+   "exist": null,
+   "incr_new": null,
+   "cac_new_attr": null,
+   "cac_new_incr": null
   },
   {
    "id": "C8",
-   "name": "Measurement and analytics (holdout operations, geo design, dashboards, analyst time)",
+   "name": "Measurement and analytics (holdout operations, geo design, dashboards)",
    "group": "measurement",
-   "spend": 70000,
-   "share": 0.07,
+   "spend": 90000,
+   "spend_full": 90000,
+   "stage1": 50000,
+   "stage2": 40000,
+   "method": "not directly attributed",
    "persona": "n/a",
    "execution": "Owner: Growth analytics",
    "evidence": "cost assumption",
    "rule": "n/a",
-   "method": "not directly attributed",
+   "incremental_share": 0.0,
    "purchases": null,
-   "new_payers": null,
-   "incr_new_payers": null,
-   "cac_attributed": null,
-   "cac_incremental": null
+   "new": null,
+   "react": null,
+   "exist": null,
+   "incr_new": null,
+   "cac_new_attr": null,
+   "cac_new_incr": null
+  }
+ ],
+ "rows_base_stage1": [
+  {
+   "id": "C1",
+   "name": "Performance prospecting, cold tennis-interest audiences (bounded test, Stage 2 only)",
+   "group": "paid acquisition",
+   "spend": 0,
+   "spend_full": 100000,
+   "stage1": 0,
+   "stage2": 100000,
+   "method": "cpm",
+   "persona": "P2 cold; P6",
+   "execution": "Meta/YouTube video; ₹199 rest-of-season in marquee weeks; geo-split",
+   "evidence": "CPM, CTR, CVR assumed; geo readout",
+   "rule": "Bounded ₹1 lakh test; stop unless attributed CAC < ₹300",
+   "incremental_share": 0.6,
+   "purchases": 0,
+   "new": 0,
+   "react": 0,
+   "exist": 0,
+   "incr_new": 0,
+   "incr_react": 0,
+   "incr_exist": 0,
+   "cac_new_attr": null,
+   "cac_new_incr": null,
+   "value_new": {
+    "d90": 0,
+    "m12": 0,
+    "m24": 0
+   },
+   "value_react": {
+    "d90": 0,
+    "m12": 0,
+    "m24": 0
+   },
+   "value_exist": {
+    "d90": 0,
+    "m12": 0,
+    "m24": 0
+   },
+   "mix": {
+    "tournament": 0.4,
+    "fts": 0.5,
+    "session": 0.1
+   }
+  },
+  {
+   "id": "C2",
+   "name": "High-intent search + retargeting at T-48h, never-paid tennis intent",
+   "group": "paid acquisition",
+   "spend": 150000,
+   "spend_full": 300000,
+   "stage1": 150000,
+   "stage2": 150000,
+   "method": "cpc",
+   "persona": "P2 never-paid (free tennis viewers, tennis-page visitors)",
+   "execution": "Search on tennis/live terms; retargeting of free tennis viewers; control IDs excluded; ₹199 rest-of-season promoted in marquee weeks",
+   "evidence": "timing CF11; CPC, CVR assumed",
+   "rule": "Stage 2 half released only if incremental CAC ≤ 24-month entrant value and upgrade share ≥ 30%",
+   "incremental_share": 0.65,
+   "clicks": 21428.571428571428,
+   "cpc": 7.0,
+   "purchases": 857.1428571428571,
+   "new": 728.5714285714286,
+   "react": 42.85714285714286,
+   "exist": 85.71428571428572,
+   "incr_new": 473.57142857142856,
+   "incr_react": 27.85714285714286,
+   "incr_exist": 55.71428571428572,
+   "cac_new_attr": 205.88235294117646,
+   "cac_new_incr": 316.7420814479638,
+   "cost_per_react": null,
+   "value_new": {
+    "d90": 113.08809245423728,
+    "m12": 190.86183853559322,
+    "m24": 276.15402647322037
+   },
+   "value_react": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_exist": {
+    "d90": 108.96995550508476,
+    "m12": 186.7437015864407,
+    "m24": 272.03588952406784
+   },
+   "mix": {
+    "tournament": 0.45,
+    "fts": 0.4,
+    "session": 0.15
+   }
+  },
+  {
+   "id": "C3",
+   "name": "First-party CRM activation (push, email, in-app) with 10% persistent holdout",
+   "group": "owned activation",
+   "spend": 60000,
+   "spend_full": 80000,
+   "stage1": 60000,
+   "stage2": 20000,
+   "method": "owned",
+   "persona": "P2 never-paid free pool (new payers); F1, MotoGP, LaLiga pass holders (existing-payer cross-sell)",
+   "execution": "Segment pushes at T-48h and 07:00 IST replay; suppression after purchase; caps",
+   "evidence": "planning pools and rates are assumptions replaced by CRM counts on day 0; holdout readout",
+   "rule": "Keep if measured relative lift ≥ 30%",
+   "incremental_share": 0.5,
+   "purchases": 653.67,
+   "new": 364.5,
+   "react": 0,
+   "exist": 289.16999999999996,
+   "incr_new": 182.25,
+   "incr_react": 0,
+   "incr_exist": 144.58499999999998,
+   "conversions_by_pool": {
+    "P2free": 364.5,
+    "P3_F1": 174.96,
+    "P4_MotoGP": 48.599999999999994,
+    "P5_LaLiga": 65.60999999999999
+   },
+   "cost_allocated_new": 24324.324324324327,
+   "cost_allocated_exist": 35675.67567567567,
+   "cac_new_attr": 66.73340006673341,
+   "cac_new_incr": 133.46680013346682,
+   "cost_per_exist": 123.37267239228025,
+   "value_new": {
+    "d90": 97.02156226440678,
+    "m12": 148.06163042711864,
+    "m24": 207.26742558372882
+   },
+   "value_react": {
+    "d90": 0,
+    "m12": 0,
+    "m24": 0
+   },
+   "value_exist": {
+    "d90": 81.9969825762712,
+    "m12": 117.14159023728814,
+    "m24": 160.2260270644068
+   },
+   "mix": {
+    "tournament": 0.5,
+    "fts": 0.2,
+    "session": 0.3
+   },
+   "treated_total": 333000.0
+  },
+  {
+   "id": "C3b",
+   "name": "Reactivation of lapsed 2025 ATP buyers: CRM plus customer-list retargeting",
+   "group": "owned activation",
+   "spend": 40000,
+   "spend_full": 50000,
+   "stage1": 40000,
+   "stage2": 10000,
+   "method": "cpc",
+   "persona": "Lapsed 2025 ATP buyers (no 2026 purchase)",
+   "execution": "Customer-list retargeting and email around Shanghai and Paris; reported as reactivated payers, never as new payers",
+   "evidence": "CPC, CVR assumed (known past buyers)",
+   "rule": "Keep while cost per reactivation ≤ ₹150",
+   "incremental_share": 0.5,
+   "clicks": 8000.0,
+   "cpc": 5.0,
+   "purchases": 560.0,
+   "new": 0.0,
+   "react": 504.0,
+   "exist": 56.0,
+   "incr_new": 0.0,
+   "incr_react": 252.0,
+   "incr_exist": 28.0,
+   "cac_new_attr": null,
+   "cac_new_incr": null,
+   "cost_per_react": 79.36507936507937,
+   "value_new": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_react": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_exist": {
+    "d90": 107.92800500338983,
+    "m12": 174.86353366779662,
+    "m24": 250.19068715389832
+   },
+   "mix": {
+    "tournament": 0.6,
+    "fts": 0.3,
+    "session": 0.1
+   }
+  },
+  {
+   "id": "C4",
+   "name": "Tennis communities and contests (Indian Tennis Daily), pass prizes",
+   "group": "paid acquisition",
+   "spend": 40000,
+   "spend_full": 70000,
+   "stage1": 40000,
+   "stage2": 30000,
+   "method": "cpc",
+   "persona": "Community members (mixed classes)",
+   "execution": "3 contests (Shanghai, Paris, Finals) with pass prizes; light boosting",
+   "evidence": "case CVR 7.8% (CF12); effective CPC assumed",
+   "rule": "Continue only if effective CPC ≤ ceiling for the new-payer share",
+   "incremental_share": 0.5,
+   "clicks": 5333.333333333333,
+   "cpc": 7.5,
+   "purchases": 416.0,
+   "new": 187.20000000000002,
+   "react": 83.2,
+   "exist": 145.6,
+   "incr_new": 93.60000000000001,
+   "incr_react": 41.6,
+   "incr_exist": 72.8,
+   "cac_new_attr": 213.67521367521366,
+   "cac_new_incr": 427.3504273504273,
+   "cost_per_react": null,
+   "value_new": {
+    "d90": 88.10916850169491,
+    "m12": 115.44990459661017,
+    "m24": 152.26310129898306
+   },
+   "value_react": {
+    "d90": 111.01660771525422,
+    "m12": 177.952136379661,
+    "m24": 253.27928986576273
+   },
+   "value_exist": {
+    "d90": 88.10916850169491,
+    "m12": 115.44990459661017,
+    "m24": 152.26310129898306
+   },
+   "mix": {
+    "tournament": 0.7,
+    "fts": 0.0,
+    "session": 0.3
+   }
+  },
+  {
+   "id": "C5",
+   "name": "Editorial and native tennis personalities (Race to Turin, Morning Match cuts)",
+   "group": "shared content",
+   "spend": 30000,
+   "spend_full": 150000,
+   "stage1": 30000,
+   "stage2": 120000,
+   "method": "not directly attributed",
+   "persona": "All",
+   "execution": "Stage 1 uses the existing weekly show; event-week editors funded at G2",
+   "evidence": "CF14; cost assumption",
+   "rule": "Cut if replay opens < 15% with no next-event return lift",
+   "incremental_share": 0.0,
+   "purchases": null,
+   "new": null,
+   "react": null,
+   "exist": null,
+   "incr_new": null,
+   "cac_new_attr": null,
+   "cac_new_incr": null
+  },
+  {
+   "id": "C6",
+   "name": "ESPN.in takeovers as a geo/time-split test (Stage 2 only)",
+   "group": "shared content",
+   "spend": 0,
+   "spend_full": 100000,
+   "stage1": 0,
+   "stage2": 100000,
+   "method": "not directly attributed",
+   "persona": "Broad tennis readers",
+   "execution": "Live in test cities, held out in matched cities; crossover between marquee weeks",
+   "evidence": "CF13; lift readout",
+   "rule": "Released at G2; scale only on positive geo lift",
+   "incremental_share": 0.0,
+   "purchases": null,
+   "new": null,
+   "react": null,
+   "exist": null,
+   "incr_new": null,
+   "cac_new_attr": null,
+   "cac_new_incr": null
+  },
+  {
+   "id": "C7",
+   "name": "Retention communications (onboarding, replay, pre-event, expiry, season-end)",
+   "group": "retention",
+   "spend": 30000,
+   "spend_full": 60000,
+   "stage1": 30000,
+   "stage2": 30000,
+   "method": "not directly attributed",
+   "persona": "All payers",
+   "execution": "Lifecycle messages (Solution 5)",
+   "evidence": "cost assumption",
+   "rule": "n/a (cohort KPIs)",
+   "incremental_share": 0.0,
+   "purchases": null,
+   "new": null,
+   "react": null,
+   "exist": null,
+   "incr_new": null,
+   "cac_new_attr": null,
+   "cac_new_incr": null
+  },
+  {
+   "id": "C8",
+   "name": "Measurement and analytics (holdout operations, geo design, dashboards)",
+   "group": "measurement",
+   "spend": 50000,
+   "spend_full": 90000,
+   "stage1": 50000,
+   "stage2": 40000,
+   "method": "not directly attributed",
+   "persona": "n/a",
+   "execution": "Owner: Growth analytics",
+   "evidence": "cost assumption",
+   "rule": "n/a",
+   "incremental_share": 0.0,
+   "purchases": null,
+   "new": null,
+   "react": null,
+   "exist": null,
+   "incr_new": null,
+   "cac_new_attr": null,
+   "cac_new_incr": null
   }
  ],
  "scenarios": {
-  "downside": {
-   "totals": {
-    "spend": 1000000,
-    "purchases": 2755.9419999999996,
-    "new_payers_attributed_dedup": 1958.5916,
-    "incremental_new_payers": 888.756225,
-    "xsell_purchases": 269.89199999999994,
-    "incr_xsell": 101.20949999999998,
-    "dedup_removed": 49.638400000000004,
-    "paid_spend": 520000,
-    "paid_new_payers": 1645.6076,
-    "paid_blended_cac_attributed": 315.992706888325,
-    "paid_blended_cac_incremental": 674.1102045085073,
-    "paid_ex_test_cac_attributed": 263.0577481906011,
-    "paid_ex_test_cac_incremental": 560.4953097051864,
-    "harmonic_check_paid": 311.74499259605636,
-    "programme_cost_per_new_payer": 510.5709633391668,
-    "programme_cost_per_incremental_new_payer": 1125.167927797074,
-    "value": {
-     "d90": 181414.0646663368,
-     "m12": 253332.8884464355,
-     "m24": 336040.9775378495
-    },
-    "cannibalisation": {
-     "d90": 5461.190976948002,
-     "m12": 11359.601066880205,
-     "m24": 11359.601066880205,
-     "loss_fts_leakage": 3039.310917288137,
-     "loss_multi_event": 601.483067343864,
-     "loss_loyalty": 3932.273393288136,
-     "n_fts_direct": 427.2275,
-     "n_upgraders": 103.42423000000002,
-     "n_renewers": 196.74705750000004
-    },
-    "net": {
-     "d90": -824047.1263106111,
-     "m12": -758026.7126204447,
-     "m24": -675318.6235290307
-    },
-    "acq_value": {
-     "d90": 133277.36981972054,
-     "m12": 186999.5633358102,
-     "m24": 248453.46286032227
-    },
-    "acq_net": {
-     "d90": -286722.6301802795,
-     "m12": -233000.4366641898,
-     "m24": -171546.53713967773
-    },
-    "per_lakh_c2": {
-     "new_payers": 382.5,
-     "value_m12": 47395.3761269695,
-     "value_m24": 63468.766824345774
-    },
-    "xsell_value": {
-     "d90": 18554.263838221665,
-     "m12": 24392.011549808376,
-     "m24": 31657.479266425784
-    },
-    "new_payer_value": {
-     "d90": 162859.80082811514,
-     "m12": 228940.87689662713,
-     "m24": 304383.49827142374
-    },
-    "value_per_new_payer_m12": 111.09068160495885,
-    "value_per_new_payer_m24": 149.60949347712076,
-    "value_per_new_payer_d90": 80.36315985995607,
-    "breakeven": {
-     "be_upgrade_m12_cac150": 0.4454520424386063,
-     "be_upgrade_m12_cac175": 0.628637276326731,
-     "be_upgrade_m12_cac200": 0.8118225102148557,
-     "be_upgrade_m12_cac261": 1.2587944809018798,
-     "be_upgrade_m24_cac150": 0.20978968444191776,
-     "be_upgrade_m24_cac175": 0.33847784854598595,
-     "be_upgrade_m24_cac200": 0.46716601265005414,
-     "be_upgrade_m24_cac261": 0.7811651330639805
-    }
+  "downside_stage1": {
+   "spend": 400000,
+   "implementation": 0,
+   "new_attr": 865.2947999999998,
+   "new_incr": 381.86055,
+   "react_attr": 441.04,
+   "react_incr": 168.76500000000001,
+   "exist_attr": 403.539,
+   "exist_incr": 158.077125,
+   "cost_per_new_attr": 462.2701997053491,
+   "cost_per_new_incr": 1047.5028122177062,
+   "cost_per_new_incr_incl_impl": 1047.5028122177062,
+   "cost_per_new_or_react_attr": 306.20021758587467,
+   "paid_spend": 190000,
+   "paid_cac_attr": 301.3209912255328,
+   "paid_cac_incr": 646.6240439323182,
+   "c2_cac_attr": 294.1176470588236,
+   "c2_cac_incr": 603.3182503770739,
+   "c2_value": {
+    "d90": 97.77678581694914,
+    "m12": 149.7967067661017,
+    "m24": 205.0372994745763
    },
-   "E_t": {
-    "d90": 85.28157396610169,
-    "m12": 102.85481871186441,
-    "m24": 128.67137098305085
+   "value_attr": {
+    "d90": 149755.79052564845,
+    "m12": 214573.4363497048,
+    "m24": 287281.98682150163
    },
-   "E_s": {
-    "d90": 43.21031625762712,
-    "m12": 50.440716800000004,
-    "m24": 62.10253671864407
+   "value_incr": {
+    "d90": 62745.17843951479,
+    "m12": 90540.31744158677,
+    "m24": 121518.2875456449
    },
-   "pathways": {
-    "entry_only": {
-     "d90": 59.151728813559316,
-     "m12": 59.151728813559316,
-     "m24": 59.151728813559316
-    },
-    "repeat_no_upgrade": {
-     "d90": 104.23528135593219,
-     "m12": 126.77705762711864,
-     "m24": 171.8606101694915
-    },
-    "upgrade_via_credit": {
-     "d90": 140.11597016949153,
-     "m12": 225.6813125423729,
-     "m24": 303.51262508474576
-    },
-    "fts_direct": {
-     "d90": 140.11597016949153,
-     "m12": 249.97038644067797,
-     "m24": 357.59415430508477
-    }
+   "cannibalisation": {
+    "d90": 4826.338864885831,
+    "m12": 10066.683628479052,
+    "m24": 10066.683628479052
    },
-   "rows": {
-    "C1": {
-     "new_payers": 49.0,
-     "incr_new_payers": 22.049999999999997,
-     "cac_attributed": 2040.8163265306123,
-     "cac_incremental": 4535.14739229025,
-     "value_m12": 171.17119238508474,
-     "value_m24": 236.47587921762715,
-     "xsell_purchases": null
-    },
-    "C2": {
-     "new_payers": 1338.75,
-     "incr_new_payers": 652.6406250000001,
-     "cac_attributed": 261.437908496732,
-     "cac_incremental": 536.2828892240656,
-     "value_m12": 123.9094800705085,
-     "value_m24": 165.93141653423731,
-     "xsell_purchases": null
-    },
-    "C3": {
-     "new_payers": 340.2,
-     "incr_new_payers": 127.57499999999999,
-     "cac_attributed": 119.16678583345251,
-     "cac_incremental": 317.77809555587334,
-     "value_m12": 111.31229149288137,
-     "value_m24": 147.8283939416949,
-     "xsell_purchases": 269.89199999999994
-    },
-    "C4": {
-     "new_payers": 280.28000000000003,
-     "incr_new_payers": 105.10500000000002,
-     "cac_attributed": 249.75024975024974,
-     "cac_incremental": 666.0006660006659,
-     "value_m12": 81.88917794711865,
-     "value_m24": 102.04383727728813,
-     "xsell_purchases": null
-    },
-    "C5": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C6": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C7": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C8": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    }
-   }
+   "net_attr": {
+    "d90": -255070.54833923737,
+    "m12": -195493.24727877424,
+    "m24": -122784.69680697744
+   },
+   "net_incr": {
+    "d90": -342081.160425371,
+    "m12": -319526.36618689226,
+    "m24": -288548.39608283417
+   },
+   "net_incr_incl_impl": {
+    "d90": -342081.160425371,
+    "m12": -319526.36618689226,
+    "m24": -288548.39608283417
+   },
+   "breakeven": {
+    "attr_m12": 1.5014610377936786,
+    "attr_m24": 0.9516391010418406,
+    "incr_m12": 3.767100431281797,
+    "incr_m24": 2.543257420277676,
+    "150_m12": 0.4454520424386063,
+    "150_m24": 0.20978968444191776,
+    "200_m12": 0.8118225102148557,
+    "200_m24": 0.46716601265005414
+   },
+   "dedup_new": 30.895199999999996,
+   "performance_share": 0.475
   },
-  "base": {
-   "totals": {
-    "spend": 1000000,
-    "purchases": 3937.06,
-    "new_payers_attributed_dedup": 2797.9880000000003,
-    "incremental_new_payers": 1692.8690000000001,
-    "xsell_purchases": 385.55999999999995,
-    "incr_xsell": 192.77999999999997,
-    "dedup_removed": 70.912,
-    "paid_spend": 520000,
-    "paid_new_payers": 2350.868,
-    "paid_blended_cac_attributed": 221.19489482182752,
-    "paid_blended_cac_incremental": 353.90785736696637,
-    "paid_ex_test_cac_attributed": 184.1404237334208,
-    "paid_ex_test_cac_incremental": 294.2600375952229,
-    "harmonic_check_paid": 218.22149481723952,
-    "programme_cost_per_new_payer": 357.3996743374167,
-    "programme_cost_per_incremental_new_payer": 590.7131620934638,
-    "value": {
-     "d90": 310528.9799097056,
-     "m12": 474448.4672097653,
-     "m24": 664462.3421921738
-    },
-    "cannibalisation": {
-     "d90": 6672.889665261018,
-     "m12": 16558.22055051525,
-     "m24": 16558.22055051525,
-     "loss_fts_leakage": 4566.472338983052,
-     "loss_multi_event": 2106.417326277966,
-     "loss_loyalty": 9885.33088525423,
-     "n_fts_direct": 610.325,
-     "n_upgraders": 352.8758,
-     "n_renewers": 489.70153
-    },
-    "net": {
-     "d90": -696143.9097555554,
-     "m12": -542109.75334075,
-     "m24": -352095.8783583414
-    },
-    "acq_value": {
-     "d90": 229124.013681629,
-     "m12": 351711.06666557625,
-     "m24": 493321.87493643607
-    },
-    "acq_net": {
-     "d90": -190875.986318371,
-     "m12": -68288.93333442375,
-     "m24": 73321.87493643607
-    },
-    "per_lakh_c2": {
-     "new_payers": 546.4285714285714,
-     "value_m12": 88502.44731733655,
-     "value_m24": 125126.40541048913
-    },
-    "xsell_value": {
-     "d90": 30727.485018378306,
-     "m12": 44161.093687143046,
-     "m24": 60539.236628173014
-    },
-    "new_payer_value": {
-     "d90": 279801.4948913273,
-     "m12": 430287.3735226222,
-     "m24": 603923.1055640008
-    },
-    "value_per_new_payer_m12": 147.8666645361263,
-    "value_per_new_payer_m24": 209.92401862105396,
-    "value_per_new_payer_d90": 97.61607456002893,
-    "breakeven": {
-     "be_upgrade_m12_cac150": 0.29498363906652597,
-     "be_upgrade_m12_cac175": 0.46252537717791187,
-     "be_upgrade_m12_cac200": 0.6300671152892978,
-     "be_upgrade_m12_cac183": 0.5161387333735554,
-     "be_upgrade_m24_cac150": 0.06543999143595049,
-     "be_upgrade_m24_cac175": 0.17747006068933915,
-     "be_upgrade_m24_cac200": 0.28950012994272784,
-     "be_upgrade_m24_cac183": 0.21331968285042355
-    }
+  "downside_full": {
+   "spend": 1000000,
+   "implementation": 400000,
+   "new_attr": 1592.9583999999998,
+   "new_incr": 715.7844,
+   "react_attr": 605.9825000000001,
+   "react_incr": 234.22312500000004,
+   "exist_attr": 626.4395,
+   "exist_incr": 249.10387499999996,
+   "cost_per_new_attr": 627.7627840124388,
+   "cost_per_new_incr": 1397.0687262812658,
+   "cost_per_new_incr_incl_impl": 1955.896216793772,
+   "cost_per_new_or_react_attr": 454.76438225329304,
+   "paid_spend": 470000,
+   "paid_cac_attr": 367.19484389687807,
+   "paid_cac_incr": 785.4075947911768,
+   "c2_cac_attr": 294.1176470588236,
+   "c2_cac_incr": 603.3182503770739,
+   "c2_value": {
+    "d90": 97.77678581694914,
+    "m12": 149.7967067661017,
+    "m24": 205.0372994745763
    },
-   "E_t": {
-    "d90": 102.41744135593221,
-    "m12": 135.82686915254237,
-    "m24": 180.0276545084746
+   "value_attr": {
+    "d90": 250854.84730673966,
+    "m12": 362455.9540348386,
+    "m24": 486689.4542074955
    },
-   "E_s": {
-    "d90": 50.120690033898306,
-    "m12": 62.695552271186436,
-    "m24": 81.05985567457628
+   "value_incr": {
+    "d90": 107723.80295311494,
+    "m12": 156831.32570177232,
+    "m24": 211134.93932319098
    },
-   "pathways": {
-    "entry_only": {
-     "d90": 61.86372881355932,
-     "m12": 61.86372881355932,
-     "m24": 61.86372881355932
-    },
-    "repeat_no_upgrade": {
-     "d90": 120.69016949152542,
-     "m12": 150.1033898305085,
-     "m24": 208.9298305084746
-    },
-    "upgrade_via_credit": {
-     "d90": 146.97941016949153,
-     "m12": 255.20010847457627,
-     "m24": 358.5511538983051
-    },
-    "fts_direct": {
-     "d90": 146.97941016949153,
-     "m12": 298.88549830508475,
-     "m24": 455.0492759322034
-    }
+   "cannibalisation": {
+    "d90": 8398.512907956814,
+    "m12": 17540.90519585512,
+    "m24": 17540.90519585512
    },
-   "rows": {
-    "C1": {
-     "new_payers": 70.0,
-     "incr_new_payers": 42.0,
-     "cac_attributed": 1428.5714285714287,
-     "cac_incremental": 2380.9523809523807,
-     "value_m12": 217.35618372881356,
-     "value_m24": 317.538465220339,
-     "xsell_purchases": null
-    },
-    "C2": {
-     "new_payers": 1912.5,
-     "incr_new_payers": 1243.125,
-     "cac_attributed": 183.00653594771242,
-     "cac_incremental": 281.5485168426345,
-     "value_m12": 161.96526306440677,
-     "value_m24": 228.98950009762714,
-     "xsell_purchases": null
-    },
-    "C3": {
-     "new_payers": 486.0,
-     "incr_new_payers": 243.0,
-     "cac_attributed": 83.41675008341674,
-     "cac_incremental": 166.8335001668335,
-     "value_m12": 146.49919991864408,
-     "value_m24": 205.34163914305088,
-     "xsell_purchases": 385.55999999999995
-    },
-    "C4": {
-     "new_payers": 400.40000000000003,
-     "incr_new_payers": 200.20000000000002,
-     "cac_attributed": 174.8251748251748,
-     "cac_incremental": 349.6503496503496,
-     "value_m12": 113.88747408813559,
-     "value_m24": 150.3373148583051,
-     "xsell_purchases": null
-    },
-    "C5": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C6": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C7": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C8": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    }
-   }
+   "net_attr": {
+    "d90": -757543.6656012172,
+    "m12": -655084.9511610165,
+    "m24": -530851.4509883596
+   },
+   "net_incr": {
+    "d90": -900674.7099548419,
+    "m12": -860709.5794940828,
+    "m24": -806405.9658726641
+   },
+   "net_incr_incl_impl": {
+    "d90": -1300674.709954842,
+    "m12": -1260709.5794940828,
+    "m24": -1206405.965872664
+   },
+   "breakeven": {
+    "attr_m12": 1.5014610377936786,
+    "attr_m24": 0.9516391010418406,
+    "incr_m12": 3.767100431281797,
+    "incr_m24": 2.543257420277676,
+    "150_m12": 0.4454520424386063,
+    "150_m24": 0.20978968444191776,
+    "200_m12": 0.8118225102148557,
+    "200_m24": 0.46716601265005414
+   },
+   "dedup_new": 45.5616,
+   "performance_share": 0.47
   },
-  "upside": {
-   "totals": {
-    "spend": 1000000,
-    "purchases": 5118.178,
-    "new_payers_attributed_dedup": 3637.3844000000004,
-    "incremental_new_payers": 2750.912125,
-    "xsell_purchases": 501.228,
-    "incr_xsell": 313.2675,
-    "dedup_removed": 92.18560000000001,
-    "paid_spend": 520000,
-    "paid_new_payers": 3056.1284,
-    "paid_blended_cac_attributed": 170.14991909371346,
-    "paid_blended_cac_incremental": 217.78945068736394,
-    "paid_ex_test_cac_attributed": 141.64647979493907,
-    "paid_ex_test_cac_incremental": 181.08310005859872,
-    "harmonic_check_paid": 167.86268832095345,
-    "programme_cost_per_new_payer": 274.92282641339744,
-    "programme_cost_per_incremental_new_payer": 363.5157920575162,
-    "value": {
-     "d90": 459805.20587381715,
-     "m12": 764300.649571617,
-     "m24": 1118186.0925566393
-    },
-    "cannibalisation": {
-     "d90": 5290.501940322984,
-     "m12": 15099.934813878073,
-     "m24": 15099.934813878073,
-     "loss_fts_leakage": 6082.403780677969,
-     "loss_multi_event": 4498.600099968,
-     "loss_loyalty": 19618.86574711018,
-     "n_fts_direct": 793.4225,
-     "n_upgraders": 744.05136,
-     "n_renewers": 967.092555
-    },
-    "net": {
-     "d90": -545485.2960665058,
-     "m12": -250799.28524226102,
-     "m24": 103086.15774276131
-    },
-    "acq_value": {
-     "d90": 340014.35760788206,
-     "m12": 567798.4379384051,
-     "m24": 831825.7869389656
-    },
-    "acq_net": {
-     "d90": -79985.64239211794,
-     "m12": 147798.43793840508,
-     "m24": 411825.78693896555
-    },
-    "per_lakh_c2": {
-     "new_payers": 710.3571428571428,
-     "value_m12": 141744.1647695546,
-     "value_m24": 209011.71387606213
-    },
-    "xsell_value": {
-     "d90": 44818.834767711014,
-     "m12": 70258.57646108011,
-     "m24": 100937.03380264789
-    },
-    "new_payer_value": {
-     "d90": 414986.37110610615,
-     "m12": 694042.0731105369,
-     "m24": 1017249.0587539915
-    },
-    "value_per_new_payer_m12": 186.65669163167325,
-    "value_per_new_payer_m24": 275.51366964132615,
-    "value_per_new_payer_d90": 112.63474632095061,
-    "breakeven": {
-     "be_upgrade_m12_cac150": 0.15241516708867167,
-     "be_upgrade_m12_cac175": 0.30481960018182336,
-     "be_upgrade_m12_cac200": 0.457224033274975,
-     "be_upgrade_m12_cac141": 0.09754957117513706,
-     "be_upgrade_m24_cac150": -0.061849299331861896,
-     "be_upgrade_m24_cac175": 0.033692026134893506,
-     "be_upgrade_m24_cac200": 0.1292333516016489,
-     "be_upgrade_m24_cac141": -0.09624417649989384
-    }
+  "base_stage1": {
+   "spend": 400000,
+   "implementation": 0,
+   "new_attr": 1236.1354285714285,
+   "new_incr": 727.3534285714286,
+   "react_attr": 630.0571428571429,
+   "react_incr": 321.4571428571429,
+   "exist_attr": 576.4842857142856,
+   "exist_incr": 301.0992857142857,
+   "cost_per_new_attr": 323.5891397937443,
+   "cost_per_new_incr": 549.9389764142958,
+   "cost_per_new_incr_incl_impl": 549.9389764142958,
+   "cost_per_new_or_react_attr": 214.34015231011222,
+   "paid_spend": 190000,
+   "paid_cac_attr": 210.9246938578729,
+   "paid_cac_incr": 339.4776230644671,
+   "c2_cac_attr": 205.88235294117646,
+   "c2_cac_incr": 316.7420814479638,
+   "c2_value": {
+    "d90": 113.08809245423728,
+    "m12": 190.86183853559322,
+    "m24": 276.15402647322037
    },
-   "E_t": {
-    "d90": 118.20712074576272,
-    "m12": 174.20940616949156,
-    "m24": 244.6839751186441
+   "value_attr": {
+    "d90": 251130.7120469529,
+    "m12": 394815.6059366067,
+    "m24": 558472.7626022422
    },
-   "E_s": {
-    "d90": 56.29440741016949,
-    "m12": 76.21993371525424,
-    "m24": 103.61198575593221
+   "value_incr": {
+    "d90": 140038.98946206723,
+    "m12": 221811.2437911024,
+    "m24": 314541.89963728376
    },
-   "pathways": {
-    "entry_only": {
-     "d90": 63.21972881355933,
-     "m12": 63.21972881355933,
-     "m24": 63.21972881355933
-    },
-    "repeat_no_upgrade": {
-     "d90": 135.29465762711865,
-     "m12": 171.33212203389832,
-     "m24": 243.40705084745767
-    },
-    "upgrade_via_credit": {
-     "d90": 150.41113016949157,
-     "m12": 289.0354623728814,
-     "m24": 427.8507871186441
-    },
-    "fts_direct": {
-     "d90": 150.41113016949157,
-     "m12": 334.3226522033899,
-     "m24": 527.5300291525425
-    }
+   "cannibalisation": {
+    "d90": 5495.000037698792,
+    "m12": 13800.64824597966,
+    "m24": 13800.64824597966
    },
-   "rows": {
-    "C1": {
-     "new_payers": 91.0,
-     "incr_new_payers": 68.25,
-     "cac_attributed": 1098.901098901099,
-     "cac_incremental": 1465.2014652014652,
-     "value_m12": 259.1655028091526,
-     "value_m24": 393.1606016037289,
-     "xsell_purchases": null
-    },
-    "C2": {
-     "new_payers": 2486.25,
-     "incr_new_payers": 2020.078125,
-     "cac_attributed": 140.77425842131726,
-     "cac_incremental": 173.26062574931353,
-     "value_m12": 199.53929680983055,
-     "value_m24": 294.23469022271195,
-     "xsell_purchases": null
-    },
-    "C3": {
-     "new_payers": 631.8000000000001,
-     "incr_new_payers": 394.87500000000006,
-     "cac_attributed": 64.1667308333975,
-     "cac_incremental": 102.66676933343598,
-     "value_m12": 181.7346872627119,
-     "value_m24": 265.98518858474586,
-     "xsell_purchases": 501.228
-    },
-    "C4": {
-     "new_payers": 520.52,
-     "incr_new_payers": 325.325,
-     "cac_attributed": 134.48090371167294,
-     "cac_incremental": 215.16944593867672,
-     "value_m12": 149.71203805593223,
-     "value_m24": 209.41597777796613,
-     "xsell_purchases": null
-    },
-    "C5": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C6": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C7": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    },
-    "C8": {
-     "new_payers": null,
-     "incr_new_payers": null,
-     "cac_attributed": null,
-     "cac_incremental": null,
-     "value_m12": null,
-     "value_m24": null,
-     "xsell_purchases": null
-    }
-   }
+   "net_attr": {
+    "d90": -154364.2879907459,
+    "m12": -18985.042309372977,
+    "m24": 144672.1143562625
+   },
+   "net_incr": {
+    "d90": -265456.0105756316,
+    "m12": -191989.40445487725,
+    "m24": -99258.74860869593
+   },
+   "net_incr_incl_impl": {
+    "d90": -265456.0105756316,
+    "m12": -191989.40445487725,
+    "m24": -99258.74860869593
+   },
+   "breakeven": {
+    "attr_m12": 0.669488700727271,
+    "attr_m24": 0.3158601462376428,
+    "incr_m12": 1.4124339647506114,
+    "incr_m24": 0.812645068718733,
+    "150_m12": 0.29498363906652597,
+    "150_m24": 0.06543999143595049,
+    "200_m12": 0.6300671152892978,
+    "200_m24": 0.28950012994272784
+   },
+   "dedup_new": 44.136,
+   "performance_share": 0.475
+  },
+  "base_full": {
+   "spend": 1000000,
+   "implementation": 400000,
+   "new_attr": 2275.654857142857,
+   "new_incr": 1363.398857142857,
+   "react_attr": 865.6892857142858,
+   "react_incr": 446.1392857142858,
+   "exist_attr": 894.9135714285713,
+   "exist_incr": 474.4835714285714,
+   "cost_per_new_attr": 439.43394880870716,
+   "cost_per_new_incr": 733.4610812976646,
+   "cost_per_new_incr_incl_impl": 1026.8455138167303,
+   "cost_per_new_or_react_attr": 318.33506757730504,
+   "paid_spend": 470000,
+   "paid_cac_attr": 257.03639072781453,
+   "paid_cac_incr": 412.3389872653679,
+   "c2_cac_attr": 205.88235294117646,
+   "c2_cac_incr": 316.7420814479638,
+   "c2_value": {
+    "d90": 113.08809245423728,
+    "m12": 190.86183853559322,
+    "m24": 276.15402647322037
+   },
+   "value_attr": {
+    "d90": 419749.79103402176,
+    "m12": 665791.7067719535,
+    "m24": 944576.0516880134
+   },
+   "value_incr": {
+    "d90": 239860.88566642132,
+    "m12": 383524.1448774307,
+    "m24": 545565.7234298423
+   },
+   "cannibalisation": {
+    "d90": 9477.5844581908,
+    "m12": 23869.212357972872,
+    "m24": 23869.212357972872
+   },
+   "net_attr": {
+    "d90": -589727.7934241691,
+    "m12": -358077.50558601937,
+    "m24": -79293.1606699595
+   },
+   "net_incr": {
+    "d90": -769616.6987917694,
+    "m12": -640345.0674805422,
+    "m24": -478303.4889281306
+   },
+   "net_incr_incl_impl": {
+    "d90": -1169616.6987917693,
+    "m12": -1040345.0674805422,
+    "m24": -878303.4889281306
+   },
+   "breakeven": {
+    "attr_m12": 0.669488700727271,
+    "attr_m24": 0.3158601462376428,
+    "incr_m12": 1.4124339647506114,
+    "incr_m24": 0.812645068718733,
+    "150_m12": 0.29498363906652597,
+    "150_m24": 0.06543999143595049,
+    "200_m12": 0.6300671152892978,
+    "200_m24": 0.28950012994272784
+   },
+   "dedup_new": 65.08800000000001,
+   "performance_share": 0.47
+  },
+  "upside_stage1": {
+   "spend": 400000,
+   "implementation": 0,
+   "new_attr": 1606.9760571428574,
+   "new_incr": 1181.9493214285715,
+   "react_attr": 819.0742857142857,
+   "react_incr": 522.3678571428572,
+   "exist_attr": 749.4295714285714,
+   "exist_incr": 489.2863392857143,
+   "cost_per_new_attr": 248.9147229182648,
+   "cost_per_new_incr": 338.42398548572044,
+   "cost_per_new_incr_incl_impl": 338.42398548572044,
+   "cost_per_new_or_react_attr": 164.87704023854786,
+   "paid_spend": 190000,
+   "paid_cac_attr": 162.2497645060561,
+   "paid_cac_incr": 208.9093065012105,
+   "c2_cac_attr": 158.3710407239819,
+   "c2_cac_incr": 194.91820396797772,
+   "c2_value": {
+    "d90": 125.38432775796613,
+    "m12": 229.01566310033903,
+    "m24": 344.4211659315255
+   },
+   "value_attr": {
+    "d90": 367075.4376606406,
+    "m12": 626859.1664359751,
+    "m24": 924829.0862620601
+   },
+   "value_incr": {
+    "d90": 255467.07044816643,
+    "m12": 439331.3661038555,
+    "m24": 649524.1208787548
+   },
+   "cannibalisation": {
+    "d90": 4095.2514869027223,
+    "m12": 11812.291725029845,
+    "m24": 11812.291725029845
+   },
+   "net_attr": {
+    "d90": -37019.813826262136,
+    "m12": 215046.8747109453,
+    "m24": 513016.7945370303
+   },
+   "net_incr": {
+    "d90": -148628.1810387363,
+    "m12": 27519.074378825666,
+    "m24": 237711.82915372495
+   },
+   "net_incr_incl_impl": {
+    "d90": -148628.1810387363,
+    "m12": 27519.074378825666,
+    "m24": 237711.82915372495
+   },
+   "breakeven": {
+    "attr_m12": 0.2034465157261976,
+    "attr_m24": -0.029858086279645132,
+    "incr_m12": 0.42624450354075966,
+    "incr_m24": 0.10981249045560462,
+    "150_m12": 0.15241516708867167,
+    "150_m24": -0.061849299331861896,
+    "200_m12": 0.457224033274975,
+    "200_m24": 0.1292333516016489
+   },
+   "dedup_new": 57.3768,
+   "performance_share": 0.475
+  },
+  "upside_full": {
+   "spend": 1000000,
+   "implementation": 400000,
+   "new_attr": 2958.3513142857146,
+   "new_incr": 2215.523142857143,
+   "react_attr": 1125.3960714285718,
+   "react_incr": 724.9763392857144,
+   "exist_attr": 1163.3876428571427,
+   "exist_incr": 771.0358035714286,
+   "cost_per_new_attr": 338.0261144682362,
+   "cost_per_new_incr": 451.3606654139474,
+   "cost_per_new_incr_incl_impl": 631.9049315795263,
+   "cost_per_new_or_react_attr": 244.87312890561924,
+   "paid_spend": 470000,
+   "paid_cac_attr": 197.72030055985735,
+   "paid_cac_incr": 253.74706908638024,
+   "c2_cac_attr": 158.3710407239819,
+   "c2_cac_incr": 194.91820396797772,
+   "c2_value": {
+    "d90": 125.38432775796613,
+    "m12": 229.01566310033903,
+    "m24": 344.4211659315255
+   },
+   "value_attr": {
+    "d90": 612398.3477396241,
+    "m12": 1054576.0084413383,
+    "m24": 1559750.3981437888
+   },
+   "value_incr": {
+    "d90": 436686.07173702354,
+    "m12": 757704.5916660469,
+    "m24": 1123184.8286108691
+   },
+   "cannibalisation": {
+    "d90": 7014.332332490394,
+    "m12": 20273.355640865404,
+    "m24": 20273.355640865404
+   },
+   "net_attr": {
+    "d90": -394615.98459286627,
+    "m12": 34302.65280047292,
+    "m24": 539477.0425029234
+   },
+   "net_incr": {
+    "d90": -570328.2605954669,
+    "m12": -262568.7639748185,
+    "m24": 102911.47297000373
+   },
+   "net_incr_incl_impl": {
+    "d90": -970328.2605954669,
+    "m12": -662568.7639748185,
+    "m24": -297088.5270299963
+   },
+   "breakeven": {
+    "attr_m12": 0.2034465157261976,
+    "attr_m24": -0.029858086279645132,
+    "incr_m12": 0.42624450354075966,
+    "incr_m24": 0.10981249045560462,
+    "150_m12": 0.15241516708867167,
+    "150_m24": -0.061849299331861896,
+    "200_m12": 0.457224033274975,
+    "200_m24": 0.1292333516016489
+   },
+   "dedup_new": 84.6144,
+   "performance_share": 0.47
   }
  },
  "sensitivity": [
   {
    "upgrade_share": 0.1,
-   "repeat_passes_12m": 0.9,
    "repeat_passes_24m": 1.5,
    "value_m12": 102.4,
    "value_m24": 126.8
   },
   {
    "upgrade_share": 0.1,
-   "repeat_passes_12m": 1.5,
    "repeat_passes_24m": 2.5,
    "value_m12": 116.5,
    "value_m24": 150.4
   },
   {
    "upgrade_share": 0.1,
-   "repeat_passes_12m": 2.1,
    "repeat_passes_24m": 3.5,
    "value_m12": 130.6,
    "value_m24": 173.9
   },
   {
    "upgrade_share": 0.2,
-   "repeat_passes_12m": 0.9,
    "repeat_passes_24m": 1.5,
    "value_m12": 121.7,
    "value_m24": 156.5
   },
   {
    "upgrade_share": 0.2,
-   "repeat_passes_12m": 1.5,
    "repeat_passes_24m": 2.5,
    "value_m12": 135.8,
    "value_m24": 180.0
   },
   {
    "upgrade_share": 0.2,
-   "repeat_passes_12m": 2.1,
    "repeat_passes_24m": 3.5,
    "value_m12": 149.9,
    "value_m24": 203.6
   },
   {
    "upgrade_share": 0.3,
-   "repeat_passes_12m": 0.9,
    "repeat_passes_24m": 1.5,
    "value_m12": 141.0,
    "value_m24": 186.2
   },
   {
    "upgrade_share": 0.3,
-   "repeat_passes_12m": 1.5,
    "repeat_passes_24m": 2.5,
    "value_m12": 155.2,
    "value_m24": 209.7
   },
   {
    "upgrade_share": 0.3,
-   "repeat_passes_12m": 2.1,
    "repeat_passes_24m": 3.5,
    "value_m12": 169.3,
    "value_m24": 233.2
   },
   {
    "upgrade_share": 0.4,
-   "repeat_passes_12m": 0.9,
    "repeat_passes_24m": 1.5,
    "value_m12": 160.4,
    "value_m24": 215.8
   },
   {
    "upgrade_share": 0.4,
-   "repeat_passes_12m": 1.5,
    "repeat_passes_24m": 2.5,
    "value_m12": 174.5,
    "value_m24": 239.4
   },
   {
    "upgrade_share": 0.4,
-   "repeat_passes_12m": 2.1,
    "repeat_passes_24m": 3.5,
    "value_m12": 188.6,
    "value_m24": 262.9
   }
  ],
- "sample_sizes": [
+ "sample_sizes_90_10": [
   {
    "baseline": 0.0036,
    "relative_lift": 0.3,
    "treated_conv": 0.00468,
-   "n_per_arm": 55486,
-   "eligible_with_10pct_holdout": 554855
+   "n_control": 32033,
+   "n_treatment": 288296,
+   "n_total": 320329
   },
   {
    "baseline": 0.0036,
    "relative_lift": 0.5,
    "treated_conv": 0.0054,
-   "n_per_arm": 21704,
-   "eligible_with_10pct_holdout": 217032
+   "n_control": 12759,
+   "n_treatment": 114825,
+   "n_total": 127583
   },
   {
    "baseline": 0.01,
    "relative_lift": 0.3,
    "treated_conv": 0.013000000000000001,
-   "n_per_arm": 19827,
-   "eligible_with_10pct_holdout": 198264
+   "n_control": 11443,
+   "n_treatment": 102983,
+   "n_total": 114425
   },
   {
    "baseline": 0.01,
    "relative_lift": 0.5,
    "treated_conv": 0.015,
-   "n_per_arm": 7750,
-   "eligible_with_10pct_holdout": 77496
+   "n_control": 4554,
+   "n_treatment": 40979,
+   "n_total": 45532
   },
   {
    "baseline": 0.02,
    "relative_lift": 0.3,
    "treated_conv": 0.026000000000000002,
-   "n_per_arm": 9798,
-   "eligible_with_10pct_holdout": 97973
+   "n_control": 5652,
+   "n_treatment": 50863,
+   "n_total": 56515
   },
   {
    "baseline": 0.02,
    "relative_lift": 0.5,
    "treated_conv": 0.03,
-   "n_per_arm": 3826,
-   "eligible_with_10pct_holdout": 38252
+   "n_control": 2246,
+   "n_treatment": 20209,
+   "n_total": 22455
   }
  ],
  "contest_cpc_ceilings": {
@@ -1031,22 +1382,14 @@
    "150": 11.7,
    "200": 15.6
   },
-  "n055": {
-   "150": 6.4350000000000005,
-   "200": 8.58
+  "n045": {
+   "150": 5.265,
+   "200": 7.02
   },
-  "n055_f05": {
-   "150": 3.2175000000000002,
-   "200": 4.29
+  "n045_f05": {
+   "150": 2.6325,
+   "200": 3.51
   }
- },
- "crm_per_10k": {
-  "eligible": 10000,
-  "treated": 9000,
-  "delivered": 8100,
-  "clicks": 405.0,
-  "purchases": 32.4,
-  "incremental": 16.2
  },
  "competitors": [
   {
@@ -1054,7 +1397,7 @@
    "price_inr": "79-99",
    "period": "one tournament",
    "scope": "one ATP event, live + replays",
-   "source": "case (CF15); ITD S12 (\u20b989 Indian Wells)",
+   "source": "case (CF15); ITD S12 (₹89 Indian Wells)",
    "status": "existing"
   },
   {
@@ -1067,7 +1410,7 @@
   },
   {
    "name": "FanCode Monthly Pass",
-   "price_inr": "179 (\u20b9199 struck)",
+   "price_inr": "179 (₹199 struck)",
    "period": "1 month",
    "scope": "all paywalled sports on FanCode",
    "source": "S10",
@@ -1115,104 +1458,79 @@
   }
  ],
  "skus": {
-  "session_masters_prime": {
+  "session_250_500": {
+   "price": 29,
+   "hours": 1.5,
+   "status": "proposed",
+   "label": "Session pass, ATP 250/500 (any start time; live + 48h replay)"
+  },
+  "session_masters": {
    "price": 39,
    "hours": 1.5,
    "status": "proposed",
-   "label": "Session pass, Masters/Finals, India-friendly start"
-  },
-  "session_masters_overnight": {
-   "price": 29,
-   "hours": 1.5,
-   "status": "proposed",
-   "label": "Session pass, Masters/Finals, overnight start (live + 48h replay)"
-  },
-  "session_500_prime": {
-   "price": 29,
-   "hours": 1.5,
-   "status": "proposed",
-   "label": "Session pass, ATP 500, India-friendly"
-  },
-  "session_500_overnight": {
-   "price": 19,
-   "hours": 1.5,
-   "status": "proposed",
-   "label": "Session pass, ATP 500, overnight"
-  },
-  "session_250": {
-   "price": 19,
-   "hours": 1.5,
-   "status": "proposed",
-   "label": "Session pass, ATP 250, any start"
+   "label": "Session pass, Masters 1000 / ATP Finals (any start time; live + 48h replay)"
   },
   "session_model": {
-   "price": 29,
+   "price": 35,
    "hours": 1.5,
    "status": "model mix",
-   "label": "Blended session price used in cohort model"
+   "label": "Blended session price in the cohort model (mix of ₹29 and ₹39)"
   },
   "tournament_250_500": {
    "price": 79,
    "hours": 4.0,
-   "status": "existing (case: \u20b979-\u20b999)",
+   "status": "existing (case: ₹79-₹99)",
    "label": "Tournament pass, ATP 250/500"
   },
   "tournament_masters": {
    "price": 89,
    "hours": 5.0,
-   "status": "existing (case: \u20b979-\u20b999)",
+   "status": "existing (case: ₹79-₹99)",
    "label": "Tournament pass, Masters 1000"
   },
   "tournament_finals": {
    "price": 99,
    "hours": 5.0,
-   "status": "existing (case: \u20b979-\u20b999)",
+   "status": "existing (case: ₹79-₹99)",
    "label": "Tournament pass, Nitto ATP Finals"
   },
   "finish_season": {
    "price": 199,
    "hours": 12.0,
-   "status": "proposed",
-   "label": "Finish-the-Season pass (5 Oct-22 Nov 2026: Shanghai, Basel/Vienna, Paris, ATP Finals + all 250s, weekly show, replays)"
+   "status": "existing late-season price (S12), new treatment",
+   "label": "Rest-of-season pass, 5 Oct-22 Nov 2026; the ₹199 late-season price already appears in FanCode promotion (S12): what is new is the credit from tournament passes and the loyalty renewal"
   },
   "season_2027": {
    "price": 399,
    "hours": 30.0,
-   "status": "existing (case: \u20b9399)",
-   "label": "ATP Season Pass 2027 (list)"
+   "status": "assumed = 2026 list (CF16); 2027 tariff unverified",
+   "label": "ATP Season Pass 2027 (assumed list)"
   },
   "season_2027_loyalty": {
    "price": 349,
    "hours": 30.0,
    "status": "proposed",
-   "label": "ATP Season Pass 2027 loyalty price for 2026 season/FTS holders buying by 15 Jan 2027"
+   "label": "ATP Season Pass 2027 loyalty price for 2026 rest-of-season/season holders buying by 15 Jan 2027"
   },
   "monthly_pass": {
    "price": 179,
    "hours": 10.0,
-   "status": "existing (fancode.com, S10)",
-   "label": "FanCode Monthly Pass, all sports"
+   "status": "existing (S10); scope = 'all applicable' paywalled tours (S11), inclusions to be confirmed",
+   "label": "FanCode Monthly Pass"
   },
   "f1_weekend": {
    "price": 99,
    "hours": 4.0,
-   "status": "existing (Autocar India, S14; secondary)",
+   "status": "existing (S14, secondary)",
    "label": "F1 race-weekend pass"
   }
  },
  "credit_ladder": {
-  "session_to_tournament": "full session price credited toward the tournament pass of the same tournament, until that tournament's final",
-  "tournament_to_fts": "full tournament pass price credited (cap \u20b999, one per account) toward the Finish-the-Season pass within 30 days of the tournament purchase",
-  "fts_to_season_2027": "not a credit: loyalty price \u20b9349 instead of \u20b9399 if bought by 15 Jan 2027",
+  "session_to_tournament": "session price credited toward the same tournament's pass until that tournament's final (₹29 + ₹50 = ₹79; ₹39 + ₹50 = ₹89)",
+  "tournament_to_fts": "tournament pass price credited (cap ₹99, one credit per account) toward the rest-of-season pass within 30 days (₹89 + ₹110 = ₹199)",
+  "fts_to_season_2027": "not a credit: loyalty price ₹349 instead of the assumed ₹399 list if bought by 15 Jan 2027",
   "precedence": "exactly one price reduction per checkout: upgrade credit > segment offer > public promo; credits never stack",
-  "floors": {
-   "session": 19,
-   "tournament": 59,
-   "finish_season": 149,
-   "season": 249
-  },
-  "ceilings": "list prices above",
-  "arbitrage_checks": "3 cheapest session passes (3x19=57) < tournament floor 59 only for ATP 250 where tournament list is 79; 4 sessions (76) < 79 => cap: session-pass purchases limited to 3 per tournament per account; 2 tournament passes (158-178) < FTS 199 so only 3+ event buyers gain from FTS"
+  "identical_scope_checks": "Sessions vs tournament (same event): 3 x ₹29 = ₹87 > ₹79 and 3 x ₹39 = ₹117 > ₹89/₹99, so buying sessions never beats the tournament pass from the third session; 2 sessions cost less than a pass and are the intended entry. Tournaments vs rest-of-season (same 7-week scope): 2 passes = ₹158-₹178 < ₹199 < 3 passes = ₹237-₹267, so only three-or-more event buyers save. Ladder totals equal direct prices (₹29+₹50 = ₹79; ₹89+₹110 = ₹199), so no path undercuts a direct purchase."
  },
  "cohorts": {
   "note": "Pathway probabilities for a tournament-pass entrant; repeat+upgrade = 60% base reflects the case's 60-65% repeat-purchase observation (lower bound, window unspecified).",
@@ -1253,59 +1571,75 @@
    "multi_event_buyer_share_of_upgraders": 0.15,
    "note_b": "share of upgraders who would have bought 3+ tournament passes at full price",
    "loyalty_discount_would_renew_anyway_share": 0.5,
-   "note_c": "share of loyalty-price renewers who would have renewed at \u20b9399"
+   "note_c": "share of loyalty-price renewers who would have renewed at ₹399"
+  },
+  "reactivated_mix": {
+   "tournament": 0.6,
+   "fts": 0.3,
+   "session": 0.1
   }
  },
  "channels": [
   {
    "id": "C1",
-   "name": "Performance prospecting, cold tennis-interest audiences (learning test)",
+   "name": "Performance prospecting, cold tennis-interest audiences (bounded test, Stage 2 only)",
    "group": "paid acquisition",
    "spend": 100000,
-   "share": 0.1,
+   "stage1": 0,
+   "stage2": 100000,
    "method": "cpm",
    "cpm": 120,
    "ctr": 0.007,
    "cvr": 0.015,
-   "new_payer_share": 0.8,
+   "customer_mix": {
+    "new": 0.8,
+    "react": 0.05,
+    "exist": 0.15
+   },
    "incremental_share": 0.6,
    "mix": {
-    "tournament": 0.5,
+    "tournament": 0.4,
     "fts": 0.5,
-    "session": 0.0
+    "session": 0.1
    },
-   "persona": "P2 cold / P6",
-   "execution": "Meta/YouTube video, FTS \u20b9199 in marquee weeks, geo-split",
-   "evidence": "assumption (CPM, CTR, CVR); geo-split readout",
-   "rule": "Stop at day 30 unless attributed CAC < \u20b9300; shift remainder to C2"
+   "persona": "P2 cold; P6",
+   "execution": "Meta/YouTube video; ₹199 rest-of-season in marquee weeks; geo-split",
+   "evidence": "CPM, CTR, CVR assumed; geo readout",
+   "rule": "Bounded ₹1 lakh test; stop unless attributed CAC < ₹300"
   },
   {
    "id": "C2",
-   "name": "High-intent search + retargeting at T-48h, new-to-pay tennis intent",
+   "name": "High-intent search + retargeting at T-48h, never-paid tennis intent",
    "group": "paid acquisition",
-   "spend": 350000,
-   "share": 0.35,
+   "spend": 300000,
+   "stage1": 150000,
+   "stage2": 150000,
    "method": "cpc",
    "cpc": 7.0,
-   "cvr": 0.045,
-   "new_payer_share": 0.85,
+   "cvr": 0.04,
+   "customer_mix": {
+    "new": 0.85,
+    "react": 0.05,
+    "exist": 0.1
+   },
    "incremental_share": 0.65,
    "mix": {
-    "tournament": 0.55,
-    "fts": 0.25,
-    "session": 0.2
+    "tournament": 0.45,
+    "fts": 0.4,
+    "session": 0.15
    },
-   "persona": "P2 (free tennis viewers, tennis-page visitors, lapsed 2025 buyers)",
-   "execution": "Google search on tennis/live terms; Meta retargeting of tennis page visitors and free-content viewers; control IDs excluded via customer lists",
-   "evidence": "case timing (CF11) + assumptions (CPC, CVR)",
-   "rule": "Scale if attributed \u2264 \u20b9200 and incremental \u2264 \u20b9300; pause at \u20b9250 attributed"
+   "persona": "P2 never-paid (free tennis viewers, tennis-page visitors)",
+   "execution": "Search on tennis/live terms; retargeting of free tennis viewers; control IDs excluded; ₹199 rest-of-season promoted in marquee weeks",
+   "evidence": "timing CF11; CPC, CVR assumed",
+   "rule": "Stage 2 half released only if incremental CAC ≤ 24-month entrant value and upgrade share ≥ 30%"
   },
   {
    "id": "C3",
    "name": "First-party CRM activation (push, email, in-app) with 10% persistent holdout",
    "group": "owned activation",
-   "spend": 100000,
-   "share": 0.1,
+   "spend": 80000,
+   "stage1": 60000,
+   "stage2": 20000,
    "method": "owned",
    "holdout": 0.1,
    "delivery": 0.9,
@@ -1328,9 +1662,12 @@
     "P4_MotoGP": 0.05,
     "P5_LaLiga": 0.045
    },
-   "new_payer_pools": [
-    "P2free"
-   ],
+   "pool_class": {
+    "P2free": "new",
+    "P3_F1": "exist",
+    "P4_MotoGP": "exist",
+    "P5_LaLiga": "exist"
+   },
    "mix_new": {
     "tournament": 0.5,
     "fts": 0.2,
@@ -1341,74 +1678,109 @@
     "fts": 0.1,
     "session": 0.5
    },
-   "persona": "P2-free (new payers); P3/P4/P5 (existing payers, first ATP purchase)",
-   "execution": "Segment-specific pushes at T-48h and 07:00 IST morning replay; suppression after purchase; 3 pushes/week cap",
-   "evidence": "planning pools are assumptions to be replaced with CRM counts on day 0; rates are assumptions; holdout readout",
-   "rule": "Keep if measured relative lift \u2265 30%; otherwise fold into C2"
+   "persona": "P2 never-paid free pool (new payers); F1, MotoGP, LaLiga pass holders (existing-payer cross-sell)",
+   "execution": "Segment pushes at T-48h and 07:00 IST replay; suppression after purchase; caps",
+   "evidence": "planning pools and rates are assumptions replaced by CRM counts on day 0; holdout readout",
+   "rule": "Keep if measured relative lift ≥ 30%"
+  },
+  {
+   "id": "C3b",
+   "name": "Reactivation of lapsed 2025 ATP buyers: CRM plus customer-list retargeting",
+   "group": "owned activation",
+   "spend": 50000,
+   "stage1": 40000,
+   "stage2": 10000,
+   "method": "cpc",
+   "cpc": 5.0,
+   "cvr": 0.07,
+   "customer_mix": {
+    "new": 0.0,
+    "react": 0.9,
+    "exist": 0.1
+   },
+   "incremental_share": 0.5,
+   "mix": {
+    "tournament": 0.6,
+    "fts": 0.3,
+    "session": 0.1
+   },
+   "persona": "Lapsed 2025 ATP buyers (no 2026 purchase)",
+   "execution": "Customer-list retargeting and email around Shanghai and Paris; reported as reactivated payers, never as new payers",
+   "evidence": "CPC, CVR assumed (known past buyers)",
+   "rule": "Keep while cost per reactivation ≤ ₹150"
   },
   {
    "id": "C4",
-   "name": "Tennis communities and contests (e.g., Indian Tennis Daily), pass prizes",
+   "name": "Tennis communities and contests (Indian Tennis Daily), pass prizes",
    "group": "paid acquisition",
    "spend": 70000,
-   "share": 0.07,
+   "stage1": 40000,
+   "stage2": 30000,
    "method": "cpc",
    "cpc": 7.5,
    "cvr": 0.078,
-   "new_payer_share": 0.55,
+   "customer_mix": {
+    "new": 0.45,
+    "react": 0.2,
+    "exist": 0.35
+   },
    "incremental_share": 0.5,
    "mix": {
     "tournament": 0.7,
     "fts": 0.0,
     "session": 0.3
    },
-   "persona": "P1/P2 community members",
-   "execution": "3 contests (Shanghai, Paris, Finals) with pass prizes; creator fees; light boosting",
-   "evidence": "case CVR 7.8% (CF12); effective CPC is an assumption",
-   "rule": "Continue only if effective CPC \u2264 \u20b98.6 (CPC ceiling at 55% new-payer share)"
+   "persona": "Community members (mixed classes)",
+   "execution": "3 contests (Shanghai, Paris, Finals) with pass prizes; light boosting",
+   "evidence": "case CVR 7.8% (CF12); effective CPC assumed",
+   "rule": "Continue only if effective CPC ≤ ceiling for the new-payer share"
   },
   {
    "id": "C5",
-   "name": "Editorial and native tennis personalities (Race to Turin, 20-minute Morning Match cuts, weekly-show tie-ins)",
+   "name": "Editorial and native tennis personalities (Race to Turin, Morning Match cuts)",
    "group": "shared content",
    "spend": 150000,
-   "share": 0.15,
+   "stage1": 30000,
+   "stage2": 120000,
    "method": "not directly attributed",
    "persona": "All",
-   "execution": "Existing weekly show + 2 editors on event weeks; personality segments; zero incremental rights cost but production costed",
+   "execution": "Stage 1 uses the existing weekly show; event-week editors funded at G2",
    "evidence": "CF14; cost assumption",
-   "rule": "Cut if morning-replay open rate < 15% and no next-event return lift"
+   "rule": "Cut if replay opens < 15% with no next-event return lift"
   },
   {
    "id": "C6",
-   "name": "ESPN.in takeovers converted to a geo/time-split test (2 marquee weeks)",
+   "name": "ESPN.in takeovers as a geo/time-split test (Stage 2 only)",
    "group": "shared content",
    "spend": 100000,
-   "share": 0.1,
+   "stage1": 0,
+   "stage2": 100000,
    "method": "not directly attributed",
    "persona": "Broad tennis readers",
-   "execution": "Takeover live in test cities, held out in matched cities, crossover between Shanghai and Paris weeks",
+   "execution": "Live in test cities, held out in matched cities; crossover between marquee weeks",
    "evidence": "CF13; lift readout",
-   "rule": "Scale only if geo lift in new payers is positive at p<0.1"
+   "rule": "Released at G2; scale only on positive geo lift"
   },
   {
    "id": "C7",
-   "name": "Retention: morning-replay journey creative, upgrade and renewal communications",
+   "name": "Retention communications (onboarding, replay, pre-event, expiry, season-end)",
    "group": "retention",
    "spend": 60000,
-   "share": 0.06,
+   "stage1": 30000,
+   "stage2": 30000,
    "method": "not directly attributed",
    "persona": "All payers",
-   "execution": "Onboarding, post-first-view, pre-next-event, expiry and season-end bridge messages",
+   "execution": "Lifecycle messages (Solution 5)",
    "evidence": "cost assumption",
-   "rule": "n/a (retention, measured via cohort KPIs)"
+   "rule": "n/a (cohort KPIs)"
   },
   {
    "id": "C8",
-   "name": "Measurement and analytics (holdout operations, geo design, dashboards, analyst time)",
+   "name": "Measurement and analytics (holdout operations, geo design, dashboards)",
    "group": "measurement",
-   "spend": 70000,
-   "share": 0.07,
+   "spend": 90000,
+   "stage1": 50000,
+   "stage2": 40000,
    "method": "not directly attributed",
    "persona": "n/a",
    "execution": "Owner: Growth analytics",

@@ -1,106 +1,494 @@
 {
-  "meta": {
-    "pilot_window": "2026-09-23 (Chengdu/Hangzhou) to 2026-11-22 (Nitto ATP Finals final), 9 weeks",
-    "evidence_cutoff": "2026-09-21",
-    "budget_inr": 1000000,
-    "implementation_budget_inr": 400000,
-    "implementation_note": "Separate one-off budget (assumption): ~6 engineer-weeks for morning mode (spoiler-free surfaces, timed replay push) and credit-ladder checkout logic (~₹3.6 lakh) plus analytics tooling (~₹0.4 lakh). Included in total programme economics, not in the ₹10 lakh marketing budget.",
-    "cac_target_low": 150, "cac_target_high": 200, "cac_target_mid": 175,
-    "labels": "Every number in this file is a model assumption unless marked case fact or external fact."
+ "meta": {
+  "pilot_window": "2026-09-23 (Chengdu/Hangzhou) to 2026-11-22 (Nitto ATP Finals final), 9 weeks",
+  "evidence_cutoff": "2026-09-21",
+  "budget_inr": 1000000,
+  "implementation_budget_inr": 400000,
+  "implementation_note": "Separate one-off engineering budget (assumption): spoiler-free replay surfaces, timed replay push automation and credit-ladder checkout (~6 engineer-weeks) plus analytics tooling. Released only at gate G2; Stage 1 runs CRM-only (v0) without engineering.",
+  "cac_target_low": 150,
+  "cac_target_high": 200,
+  "cac_target_mid": 175,
+  "labels": "Every number in this file is a model assumption unless marked case fact or external fact.",
+  "stage1_budget_inr": 400000,
+  "stage2_budget_inr": 600000,
+  "accounting_basis": "Contribution is on a cash-collected basis at purchase; recognised revenue for the 2027 season pass spreads to November 2027, one month beyond the 12-month horizon, which slightly overstates 12-month recognised contribution for renewers.",
+  "version": "v2 (redesign audit corrections, 21 Sep 2026)"
+ },
+ "tax": {
+  "gst_rate": 0.18,
+  "note": "assumption: displayed consumer prices are inclusive of 18% GST; net sales = price/1.18"
+ },
+ "variable_costs": {
+  "payment_gateway_share_of_gross": 0.02,
+  "support_refund_share_of_gross": 0.02,
+  "cdn_cost_per_hour_inr": 2.0,
+  "note": "assumptions; rights fee is fixed and confidential and is excluded (contribution, not profit); no revenue share on pass sales assumed"
+ },
+ "skus": {
+  "session_250_500": {
+   "price": 29,
+   "hours": 1.5,
+   "status": "proposed",
+   "label": "Session pass, ATP 250/500 (any start time; live + 48h replay)"
   },
-  "tax": {"gst_rate": 0.18, "note": "assumption: displayed consumer prices are inclusive of 18% GST; net sales = price/1.18"},
-  "variable_costs": {"payment_gateway_share_of_gross": 0.02, "support_refund_share_of_gross": 0.02, "cdn_cost_per_hour_inr": 2.0,
-    "note": "assumptions; rights fee is fixed and confidential and is excluded (contribution, not profit); no revenue share on pass sales assumed"},
-  "skus": {
-    "session_masters_prime":      {"price": 39,  "hours": 1.5, "status": "proposed",  "label": "Session pass, Masters/Finals, India-friendly start"},
-    "session_masters_overnight":  {"price": 29,  "hours": 1.5, "status": "proposed",  "label": "Session pass, Masters/Finals, overnight start (live + 48h replay)"},
-    "session_500_prime":          {"price": 29,  "hours": 1.5, "status": "proposed",  "label": "Session pass, ATP 500, India-friendly"},
-    "session_500_overnight":      {"price": 19,  "hours": 1.5, "status": "proposed",  "label": "Session pass, ATP 500, overnight"},
-    "session_250":                {"price": 19,  "hours": 1.5, "status": "proposed",  "label": "Session pass, ATP 250, any start"},
-    "session_model":              {"price": 29,  "hours": 1.5, "status": "model mix", "label": "Blended session price used in cohort model"},
-    "tournament_250_500":         {"price": 79,  "hours": 4.0, "status": "existing (case: ₹79-₹99)", "label": "Tournament pass, ATP 250/500"},
-    "tournament_masters":         {"price": 89,  "hours": 5.0, "status": "existing (case: ₹79-₹99)", "label": "Tournament pass, Masters 1000"},
-    "tournament_finals":          {"price": 99,  "hours": 5.0, "status": "existing (case: ₹79-₹99)", "label": "Tournament pass, Nitto ATP Finals"},
-    "finish_season":              {"price": 199, "hours": 12.0,"status": "proposed",  "label": "Finish-the-Season pass (5 Oct-22 Nov 2026: Shanghai, Basel/Vienna, Paris, ATP Finals + all 250s, weekly show, replays)"},
-    "season_2027":                {"price": 399, "hours": 30.0,"status": "existing (case: ₹399)", "label": "ATP Season Pass 2027 (list)"},
-    "season_2027_loyalty":        {"price": 349, "hours": 30.0,"status": "proposed",  "label": "ATP Season Pass 2027 loyalty price for 2026 season/FTS holders buying by 15 Jan 2027"},
-    "monthly_pass":               {"price": 179, "hours": 10.0,"status": "existing (fancode.com, S10)", "label": "FanCode Monthly Pass, all sports"},
-    "f1_weekend":                 {"price": 99,  "hours": 4.0, "status": "existing (Autocar India, S14; secondary)", "label": "F1 race-weekend pass"}
+  "session_masters": {
+   "price": 39,
+   "hours": 1.5,
+   "status": "proposed",
+   "label": "Session pass, Masters 1000 / ATP Finals (any start time; live + 48h replay)"
   },
-  "credit_ladder": {
-    "session_to_tournament": "full session price credited toward the tournament pass of the same tournament, until that tournament's final",
-    "tournament_to_fts": "full tournament pass price credited (cap ₹99, one per account) toward the Finish-the-Season pass within 30 days of the tournament purchase",
-    "fts_to_season_2027": "not a credit: loyalty price ₹349 instead of ₹399 if bought by 15 Jan 2027",
-    "precedence": "exactly one price reduction per checkout: upgrade credit > segment offer > public promo; credits never stack",
-    "floors": {"session": 19, "tournament": 59, "finish_season": 149, "season": 249},
-    "ceilings": "list prices above",
-    "arbitrage_checks": "3 cheapest session passes (3x19=57) < tournament floor 59 only for ATP 250 where tournament list is 79; 4 sessions (76) < 79 => cap: session-pass purchases limited to 3 per tournament per account; 2 tournament passes (158-178) < FTS 199 so only 3+ event buyers gain from FTS"
+  "session_model": {
+   "price": 35,
+   "hours": 1.5,
+   "status": "model mix",
+   "label": "Blended session price in the cohort model (mix of ₹29 and ₹39)"
   },
-  "cohorts": {
-    "note": "Pathway probabilities for a tournament-pass entrant; repeat+upgrade = 60% base reflects the case's 60-65% repeat-purchase observation (lower bound, window unspecified).",
-    "tournament_entrant": {"p_entry_only": 0.40, "p_repeat": 0.40, "p_upgrade": 0.20},
-    "repeat_passes_beyond_entry": {"d90": 1.0, "m12": 1.5, "m24": 2.5},
-    "session_entrant": {"p_never": 0.45, "p_repeat_sessions": 0.25, "p_upgrade_to_tournament": 0.30},
-    "repeat_sessions_beyond_entry": {"d90": 1.0, "m12": 1.5, "m24": 2.5},
-    "renewal_2027_loyalty": {"upgraders": 0.35, "fts_direct": 0.60, "note": "assumptions for newly acquired lower-intent cohorts; the case's ~90% season renewal is not applied to them"},
-    "renewal_2028_of_2027_renewers": 0.90,
-    "note_2028": "case-informed (~90% season renewal, CF7) applied only to customers who already renewed once; 2028 season bought Jan 2028 within the rights horizon",
-    "non_renewer_passes_2027": 0.8, "non_renewer_passes_2028_partial": 0.5,
-    "cross_sport_monthly_take_rate": 0.10, "cross_sport_would_have_bought_f1_share": 0.30,
-    "cannibalisation": {
-      "fts_intender_leakage_share": 0.10, "note_a": "share of would-be FTS-direct buyers who enter via a tournament pass and never upgrade",
-      "multi_event_buyer_share_of_upgraders": 0.15, "note_b": "share of upgraders who would have bought 3+ tournament passes at full price",
-      "loyalty_discount_would_renew_anyway_share": 0.50, "note_c": "share of loyalty-price renewers who would have renewed at ₹399"
-    }
+  "tournament_250_500": {
+   "price": 79,
+   "hours": 4.0,
+   "status": "existing (case: ₹79-₹99)",
+   "label": "Tournament pass, ATP 250/500"
   },
-  "channels": [
-    {"id": "C1", "name": "Performance prospecting, cold tennis-interest audiences (learning test)", "group": "paid acquisition", "spend": 100000, "share": 0.10,
-     "method": "cpm", "cpm": 120, "ctr": 0.007, "cvr": 0.015, "new_payer_share": 0.80, "incremental_share": 0.60,
-     "mix": {"tournament": 0.5, "fts": 0.5, "session": 0.0}, "persona": "P2 cold / P6", "execution": "Meta/YouTube video, FTS ₹199 in marquee weeks, geo-split",
-     "evidence": "assumption (CPM, CTR, CVR); geo-split readout", "rule": "Stop at day 30 unless attributed CAC < ₹300; shift remainder to C2"},
-    {"id": "C2", "name": "High-intent search + retargeting at T-48h, new-to-pay tennis intent", "group": "paid acquisition", "spend": 350000, "share": 0.35,
-     "method": "cpc", "cpc": 7.0, "cvr": 0.045, "new_payer_share": 0.85, "incremental_share": 0.65,
-     "mix": {"tournament": 0.55, "fts": 0.25, "session": 0.20}, "persona": "P2 (free tennis viewers, tennis-page visitors, lapsed 2025 buyers)", "execution": "Google search on tennis/live terms; Meta retargeting of tennis page visitors and free-content viewers; control IDs excluded via customer lists",
-     "evidence": "case timing (CF11) + assumptions (CPC, CVR)", "rule": "Scale if attributed ≤ ₹200 and incremental ≤ ₹300; pause at ₹250 attributed"},
-    {"id": "C3", "name": "First-party CRM activation (push, email, in-app) with 10% persistent holdout", "group": "owned activation", "spend": 100000, "share": 0.10,
-     "method": "owned", "holdout": 0.10, "delivery": 0.90, "incremental_share": 0.50,
-     "pools": {"P2free": 150000, "P3_F1": 120000, "P4_MotoGP": 40000, "P5_LaLiga": 60000},
-     "click": {"P2free": 0.05, "P3_F1": 0.04, "P4_MotoGP": 0.04, "P5_LaLiga": 0.04},
-     "purchase": {"P2free": 0.08, "P3_F1": 0.06, "P4_MotoGP": 0.05, "P5_LaLiga": 0.045},
-     "new_payer_pools": ["P2free"], "mix_new": {"tournament": 0.5, "fts": 0.2, "session": 0.3}, "mix_existing": {"tournament": 0.4, "fts": 0.1, "session": 0.5},
-     "persona": "P2-free (new payers); P3/P4/P5 (existing payers, first ATP purchase)", "execution": "Segment-specific pushes at T-48h and 07:00 IST morning replay; suppression after purchase; 3 pushes/week cap",
-     "evidence": "planning pools are assumptions to be replaced with CRM counts on day 0; rates are assumptions; holdout readout", "rule": "Keep if measured relative lift ≥ 30%; otherwise fold into C2"},
-    {"id": "C4", "name": "Tennis communities and contests (e.g., Indian Tennis Daily), pass prizes", "group": "paid acquisition", "spend": 70000, "share": 0.07,
-     "method": "cpc", "cpc": 7.5, "cvr": 0.078, "new_payer_share": 0.55, "incremental_share": 0.50,
-     "mix": {"tournament": 0.7, "fts": 0.0, "session": 0.3}, "persona": "P1/P2 community members", "execution": "3 contests (Shanghai, Paris, Finals) with pass prizes; creator fees; light boosting",
-     "evidence": "case CVR 7.8% (CF12); effective CPC is an assumption", "rule": "Continue only if effective CPC ≤ ₹8.6 (CPC ceiling at 55% new-payer share)"},
-    {"id": "C5", "name": "Editorial and native tennis personalities (Race to Turin, 20-minute Morning Match cuts, weekly-show tie-ins)", "group": "shared content", "spend": 150000, "share": 0.15,
-     "method": "not directly attributed", "persona": "All", "execution": "Existing weekly show + 2 editors on event weeks; personality segments; zero incremental rights cost but production costed",
-     "evidence": "CF14; cost assumption", "rule": "Cut if morning-replay open rate < 15% and no next-event return lift"},
-    {"id": "C6", "name": "ESPN.in takeovers converted to a geo/time-split test (2 marquee weeks)", "group": "shared content", "spend": 100000, "share": 0.10,
-     "method": "not directly attributed", "persona": "Broad tennis readers", "execution": "Takeover live in test cities, held out in matched cities, crossover between Shanghai and Paris weeks",
-     "evidence": "CF13; lift readout", "rule": "Scale only if geo lift in new payers is positive at p<0.1"},
-    {"id": "C7", "name": "Retention: morning-replay journey creative, upgrade and renewal communications", "group": "retention", "spend": 60000, "share": 0.06,
-     "method": "not directly attributed", "persona": "All payers", "execution": "Onboarding, post-first-view, pre-next-event, expiry and season-end bridge messages", "evidence": "cost assumption", "rule": "n/a (retention, measured via cohort KPIs)"},
-    {"id": "C8", "name": "Measurement and analytics (holdout operations, geo design, dashboards, analyst time)", "group": "measurement", "spend": 70000, "share": 0.07,
-     "method": "not directly attributed", "persona": "n/a", "execution": "Owner: Growth analytics", "evidence": "cost assumption", "rule": "n/a"}
+  "tournament_masters": {
+   "price": 89,
+   "hours": 5.0,
+   "status": "existing (case: ₹79-₹99)",
+   "label": "Tournament pass, Masters 1000"
+  },
+  "tournament_finals": {
+   "price": 99,
+   "hours": 5.0,
+   "status": "existing (case: ₹79-₹99)",
+   "label": "Tournament pass, Nitto ATP Finals"
+  },
+  "finish_season": {
+   "price": 199,
+   "hours": 12.0,
+   "status": "existing late-season price (S12), new treatment",
+   "label": "Rest-of-season pass, 5 Oct-22 Nov 2026; the ₹199 late-season price already appears in FanCode promotion (S12): what is new is the credit from tournament passes and the loyalty renewal"
+  },
+  "season_2027": {
+   "price": 399,
+   "hours": 30.0,
+   "status": "assumed = 2026 list (CF16); 2027 tariff unverified",
+   "label": "ATP Season Pass 2027 (assumed list)"
+  },
+  "season_2027_loyalty": {
+   "price": 349,
+   "hours": 30.0,
+   "status": "proposed",
+   "label": "ATP Season Pass 2027 loyalty price for 2026 rest-of-season/season holders buying by 15 Jan 2027"
+  },
+  "monthly_pass": {
+   "price": 179,
+   "hours": 10.0,
+   "status": "existing (S10); scope = 'all applicable' paywalled tours (S11), inclusions to be confirmed",
+   "label": "FanCode Monthly Pass"
+  },
+  "f1_weekend": {
+   "price": 99,
+   "hours": 4.0,
+   "status": "existing (S14, secondary)",
+   "label": "F1 race-weekend pass"
+  }
+ },
+ "credit_ladder": {
+  "session_to_tournament": "session price credited toward the same tournament's pass until that tournament's final (₹29 + ₹50 = ₹79; ₹39 + ₹50 = ₹89)",
+  "tournament_to_fts": "tournament pass price credited (cap ₹99, one credit per account) toward the rest-of-season pass within 30 days (₹89 + ₹110 = ₹199)",
+  "fts_to_season_2027": "not a credit: loyalty price ₹349 instead of the assumed ₹399 list if bought by 15 Jan 2027",
+  "precedence": "exactly one price reduction per checkout: upgrade credit > segment offer > public promo; credits never stack",
+  "identical_scope_checks": "Sessions vs tournament (same event): 3 x ₹29 = ₹87 > ₹79 and 3 x ₹39 = ₹117 > ₹89/₹99, so buying sessions never beats the tournament pass from the third session; 2 sessions cost less than a pass and are the intended entry. Tournaments vs rest-of-season (same 7-week scope): 2 passes = ₹158-₹178 < ₹199 < 3 passes = ₹237-₹267, so only three-or-more event buyers save. Ladder totals equal direct prices (₹29+₹50 = ₹79; ₹89+₹110 = ₹199), so no path undercuts a direct purchase."
+ },
+ "cohorts": {
+  "note": "Pathway probabilities for a tournament-pass entrant; repeat+upgrade = 60% base reflects the case's 60-65% repeat-purchase observation (lower bound, window unspecified).",
+  "tournament_entrant": {
+   "p_entry_only": 0.4,
+   "p_repeat": 0.4,
+   "p_upgrade": 0.2
+  },
+  "repeat_passes_beyond_entry": {
+   "d90": 1.0,
+   "m12": 1.5,
+   "m24": 2.5
+  },
+  "session_entrant": {
+   "p_never": 0.45,
+   "p_repeat_sessions": 0.25,
+   "p_upgrade_to_tournament": 0.3
+  },
+  "repeat_sessions_beyond_entry": {
+   "d90": 1.0,
+   "m12": 1.5,
+   "m24": 2.5
+  },
+  "renewal_2027_loyalty": {
+   "upgraders": 0.35,
+   "fts_direct": 0.6,
+   "note": "assumptions for newly acquired lower-intent cohorts; the case's ~90% season renewal is not applied to them"
+  },
+  "renewal_2028_of_2027_renewers": 0.9,
+  "note_2028": "case-informed (~90% season renewal, CF7) applied only to customers who already renewed once; 2028 season bought Jan 2028 within the rights horizon",
+  "non_renewer_passes_2027": 0.8,
+  "non_renewer_passes_2028_partial": 0.5,
+  "cross_sport_monthly_take_rate": 0.1,
+  "cross_sport_would_have_bought_f1_share": 0.3,
+  "cannibalisation": {
+   "fts_intender_leakage_share": 0.1,
+   "note_a": "share of would-be FTS-direct buyers who enter via a tournament pass and never upgrade",
+   "multi_event_buyer_share_of_upgraders": 0.15,
+   "note_b": "share of upgraders who would have bought 3+ tournament passes at full price",
+   "loyalty_discount_would_renew_anyway_share": 0.5,
+   "note_c": "share of loyalty-price renewers who would have renewed at ₹399"
+  },
+  "reactivated_mix": {
+   "tournament": 0.6,
+   "fts": 0.3,
+   "session": 0.1
+  }
+ },
+ "channels": [
+  {
+   "id": "C1",
+   "name": "Performance prospecting, cold tennis-interest audiences (bounded test, Stage 2 only)",
+   "group": "paid acquisition",
+   "spend": 100000,
+   "stage1": 0,
+   "stage2": 100000,
+   "method": "cpm",
+   "cpm": 120,
+   "ctr": 0.007,
+   "cvr": 0.015,
+   "customer_mix": {
+    "new": 0.8,
+    "react": 0.05,
+    "exist": 0.15
+   },
+   "incremental_share": 0.6,
+   "mix": {
+    "tournament": 0.4,
+    "fts": 0.5,
+    "session": 0.1
+   },
+   "persona": "P2 cold; P6",
+   "execution": "Meta/YouTube video; ₹199 rest-of-season in marquee weeks; geo-split",
+   "evidence": "CPM, CTR, CVR assumed; geo readout",
+   "rule": "Bounded ₹1 lakh test; stop unless attributed CAC < ₹300"
+  },
+  {
+   "id": "C2",
+   "name": "High-intent search + retargeting at T-48h, never-paid tennis intent",
+   "group": "paid acquisition",
+   "spend": 300000,
+   "stage1": 150000,
+   "stage2": 150000,
+   "method": "cpc",
+   "cpc": 7.0,
+   "cvr": 0.04,
+   "customer_mix": {
+    "new": 0.85,
+    "react": 0.05,
+    "exist": 0.1
+   },
+   "incremental_share": 0.65,
+   "mix": {
+    "tournament": 0.45,
+    "fts": 0.4,
+    "session": 0.15
+   },
+   "persona": "P2 never-paid (free tennis viewers, tennis-page visitors)",
+   "execution": "Search on tennis/live terms; retargeting of free tennis viewers; control IDs excluded; ₹199 rest-of-season promoted in marquee weeks",
+   "evidence": "timing CF11; CPC, CVR assumed",
+   "rule": "Stage 2 half released only if incremental CAC ≤ 24-month entrant value and upgrade share ≥ 30%"
+  },
+  {
+   "id": "C3",
+   "name": "First-party CRM activation (push, email, in-app) with 10% persistent holdout",
+   "group": "owned activation",
+   "spend": 80000,
+   "stage1": 60000,
+   "stage2": 20000,
+   "method": "owned",
+   "holdout": 0.1,
+   "delivery": 0.9,
+   "incremental_share": 0.5,
+   "pools": {
+    "P2free": 150000,
+    "P3_F1": 120000,
+    "P4_MotoGP": 40000,
+    "P5_LaLiga": 60000
+   },
+   "click": {
+    "P2free": 0.05,
+    "P3_F1": 0.04,
+    "P4_MotoGP": 0.04,
+    "P5_LaLiga": 0.04
+   },
+   "purchase": {
+    "P2free": 0.08,
+    "P3_F1": 0.06,
+    "P4_MotoGP": 0.05,
+    "P5_LaLiga": 0.045
+   },
+   "pool_class": {
+    "P2free": "new",
+    "P3_F1": "exist",
+    "P4_MotoGP": "exist",
+    "P5_LaLiga": "exist"
+   },
+   "mix_new": {
+    "tournament": 0.5,
+    "fts": 0.2,
+    "session": 0.3
+   },
+   "mix_existing": {
+    "tournament": 0.4,
+    "fts": 0.1,
+    "session": 0.5
+   },
+   "persona": "P2 never-paid free pool (new payers); F1, MotoGP, LaLiga pass holders (existing-payer cross-sell)",
+   "execution": "Segment pushes at T-48h and 07:00 IST replay; suppression after purchase; caps",
+   "evidence": "planning pools and rates are assumptions replaced by CRM counts on day 0; holdout readout",
+   "rule": "Keep if measured relative lift ≥ 30%"
+  },
+  {
+   "id": "C3b",
+   "name": "Reactivation of lapsed 2025 ATP buyers: CRM plus customer-list retargeting",
+   "group": "owned activation",
+   "spend": 50000,
+   "stage1": 40000,
+   "stage2": 10000,
+   "method": "cpc",
+   "cpc": 5.0,
+   "cvr": 0.07,
+   "customer_mix": {
+    "new": 0.0,
+    "react": 0.9,
+    "exist": 0.1
+   },
+   "incremental_share": 0.5,
+   "mix": {
+    "tournament": 0.6,
+    "fts": 0.3,
+    "session": 0.1
+   },
+   "persona": "Lapsed 2025 ATP buyers (no 2026 purchase)",
+   "execution": "Customer-list retargeting and email around Shanghai and Paris; reported as reactivated payers, never as new payers",
+   "evidence": "CPC, CVR assumed (known past buyers)",
+   "rule": "Keep while cost per reactivation ≤ ₹150"
+  },
+  {
+   "id": "C4",
+   "name": "Tennis communities and contests (Indian Tennis Daily), pass prizes",
+   "group": "paid acquisition",
+   "spend": 70000,
+   "stage1": 40000,
+   "stage2": 30000,
+   "method": "cpc",
+   "cpc": 7.5,
+   "cvr": 0.078,
+   "customer_mix": {
+    "new": 0.45,
+    "react": 0.2,
+    "exist": 0.35
+   },
+   "incremental_share": 0.5,
+   "mix": {
+    "tournament": 0.7,
+    "fts": 0.0,
+    "session": 0.3
+   },
+   "persona": "Community members (mixed classes)",
+   "execution": "3 contests (Shanghai, Paris, Finals) with pass prizes; light boosting",
+   "evidence": "case CVR 7.8% (CF12); effective CPC assumed",
+   "rule": "Continue only if effective CPC ≤ ceiling for the new-payer share"
+  },
+  {
+   "id": "C5",
+   "name": "Editorial and native tennis personalities (Race to Turin, Morning Match cuts)",
+   "group": "shared content",
+   "spend": 150000,
+   "stage1": 30000,
+   "stage2": 120000,
+   "method": "not directly attributed",
+   "persona": "All",
+   "execution": "Stage 1 uses the existing weekly show; event-week editors funded at G2",
+   "evidence": "CF14; cost assumption",
+   "rule": "Cut if replay opens < 15% with no next-event return lift"
+  },
+  {
+   "id": "C6",
+   "name": "ESPN.in takeovers as a geo/time-split test (Stage 2 only)",
+   "group": "shared content",
+   "spend": 100000,
+   "stage1": 0,
+   "stage2": 100000,
+   "method": "not directly attributed",
+   "persona": "Broad tennis readers",
+   "execution": "Live in test cities, held out in matched cities; crossover between marquee weeks",
+   "evidence": "CF13; lift readout",
+   "rule": "Released at G2; scale only on positive geo lift"
+  },
+  {
+   "id": "C7",
+   "name": "Retention communications (onboarding, replay, pre-event, expiry, season-end)",
+   "group": "retention",
+   "spend": 60000,
+   "stage1": 30000,
+   "stage2": 30000,
+   "method": "not directly attributed",
+   "persona": "All payers",
+   "execution": "Lifecycle messages (Solution 5)",
+   "evidence": "cost assumption",
+   "rule": "n/a (cohort KPIs)"
+  },
+  {
+   "id": "C8",
+   "name": "Measurement and analytics (holdout operations, geo design, dashboards)",
+   "group": "measurement",
+   "spend": 90000,
+   "stage1": 50000,
+   "stage2": 40000,
+   "method": "not directly attributed",
+   "persona": "n/a",
+   "execution": "Owner: Growth analytics",
+   "evidence": "cost assumption",
+   "rule": "n/a"
+  }
+ ],
+ "dedup": {
+  "overlap_share_removed": 0.08,
+  "note": "share of C3 (new-payer pool) and C4 conversions assumed also reachable in C2 audiences and removed to avoid double counting"
+ },
+ "current_allocation": {
+  "performance_share_low": 0.65,
+  "performance_share_high": 0.7,
+  "note": "case fact CF10"
+ },
+ "scenarios": {
+  "downside": {
+   "cvr_mult": 0.7,
+   "tournament_entrant": {
+    "p_entry_only": 0.5,
+    "p_repeat": 0.4,
+    "p_upgrade": 0.1
+   },
+   "repeat_mult": 0.8,
+   "f_mult": 0.75,
+   "cost_mult": 1.2,
+   "cannib_mult": 1.5,
+   "renewal_upg": 0.25,
+   "renewal_fts": 0.4,
+   "session_shift": 0.1
+  },
+  "base": {
+   "cvr_mult": 1.0,
+   "tournament_entrant": {
+    "p_entry_only": 0.4,
+    "p_repeat": 0.4,
+    "p_upgrade": 0.2
+   },
+   "repeat_mult": 1.0,
+   "f_mult": 1.0,
+   "cost_mult": 1.0,
+   "cannib_mult": 1.0,
+   "renewal_upg": 0.35,
+   "renewal_fts": 0.6,
+   "session_shift": 0.0
+  },
+  "upside": {
+   "cvr_mult": 1.3,
+   "tournament_entrant": {
+    "p_entry_only": 0.3,
+    "p_repeat": 0.4,
+    "p_upgrade": 0.3
+   },
+   "repeat_mult": 1.2,
+   "f_mult": 1.25,
+   "cost_mult": 0.9,
+   "cannib_mult": 0.5,
+   "renewal_upg": 0.5,
+   "renewal_fts": 0.75,
+   "session_shift": -0.05
+  }
+ },
+ "sample_size": {
+  "alpha": 0.05,
+  "power": 0.8,
+  "allocation_treatment_share": 0.9,
+  "baselines": [
+   0.0036,
+   0.01,
+   0.02
   ],
-  "dedup": {"overlap_share_removed": 0.08, "note": "share of C3 (new-payer pool) and C4 conversions assumed also reachable in C2 audiences and removed to avoid double counting"},
-  "current_allocation": {"performance_share_low": 0.65, "performance_share_high": 0.70, "note": "case fact CF10"},
-  "scenarios": {
-    "downside": {"cvr_mult": 0.7, "tournament_entrant": {"p_entry_only": 0.50, "p_repeat": 0.40, "p_upgrade": 0.10}, "repeat_mult": 0.8, "f_mult": 0.75, "cost_mult": 1.2, "cannib_mult": 1.5, "renewal_upg": 0.25, "renewal_fts": 0.40, "session_shift": 0.10},
-    "base":     {"cvr_mult": 1.0, "tournament_entrant": {"p_entry_only": 0.40, "p_repeat": 0.40, "p_upgrade": 0.20}, "repeat_mult": 1.0, "f_mult": 1.0,  "cost_mult": 1.0, "cannib_mult": 1.0, "renewal_upg": 0.35, "renewal_fts": 0.60, "session_shift": 0.0},
-    "upside":   {"cvr_mult": 1.3, "tournament_entrant": {"p_entry_only": 0.30, "p_repeat": 0.40, "p_upgrade": 0.30}, "repeat_mult": 1.2, "f_mult": 1.25, "cost_mult": 0.9, "cannib_mult": 0.5, "renewal_upg": 0.50, "renewal_fts": 0.75, "session_shift": -0.05}
-  },
-  "sample_size": {"alpha": 0.05, "power": 0.80, "baselines": [0.0036, 0.01, 0.02], "relative_lifts": [0.30, 0.50]},
-  "competitors": [
-    {"name": "FanCode ATP tournament pass", "price_inr": "79-99", "period": "one tournament", "scope": "one ATP event, live + replays", "source": "case (CF15); ITD S12 (₹89 Indian Wells)", "status": "existing"},
-    {"name": "FanCode ATP season pass", "price_inr": "399 (declines in season)", "period": "ATP calendar season", "scope": "all 56 ATP events", "source": "case (CF16); ITD S12", "status": "existing"},
-    {"name": "FanCode Monthly Pass", "price_inr": "179 (₹199 struck)", "period": "1 month", "scope": "all paywalled sports on FanCode", "source": "S10", "status": "existing"},
-    {"name": "JioHotstar Mobile", "price_inr": "79 / month, 499 / year", "period": "month or year", "scope": "1 mobile device, ads; all content except Hollywood (no ATP Tour)", "source": "S5 (new-subscriber prices from 28 Jan 2026)", "status": "competitor"},
-    {"name": "JioHotstar Super", "price_inr": "149 / month, 1,099 / year", "period": "month or year", "scope": "2 devices, ads (no ATP Tour)", "source": "S5", "status": "competitor"},
-    {"name": "SonyLIV Mobile Only", "price_inr": "699 / year", "period": "year", "scope": "1 device 720p; live sports included (no ATP Tour)", "source": "S6", "status": "competitor"},
-    {"name": "SonyLIV Premium", "price_inr": "399 / month, 1,499 / year", "period": "month or year", "scope": "up to 4K, 2 concurrent; live sports included (no ATP Tour)", "source": "S6", "status": "competitor"},
-    {"name": "Tennis TV (ATP's own service)", "price_inr": "449 / month, 4,499 / year (App Store India in-app listing)", "period": "month or year", "scope": "ATP-only, 2,500+ matches, no Slams; India live availability under FanCode exclusivity not verified", "source": "S7, S8", "status": "international benchmark"}
+  "relative_lifts": [
+   0.3,
+   0.5
   ]
+ },
+ "competitors": [
+  {
+   "name": "FanCode ATP tournament pass",
+   "price_inr": "79-99",
+   "period": "one tournament",
+   "scope": "one ATP event, live + replays",
+   "source": "case (CF15); ITD S12 (₹89 Indian Wells)",
+   "status": "existing"
+  },
+  {
+   "name": "FanCode ATP season pass",
+   "price_inr": "399 (declines in season)",
+   "period": "ATP calendar season",
+   "scope": "all 56 ATP events",
+   "source": "case (CF16); ITD S12",
+   "status": "existing"
+  },
+  {
+   "name": "FanCode Monthly Pass",
+   "price_inr": "179 (₹199 struck)",
+   "period": "1 month",
+   "scope": "all paywalled sports on FanCode",
+   "source": "S10",
+   "status": "existing"
+  },
+  {
+   "name": "JioHotstar Mobile",
+   "price_inr": "79 / month, 499 / year",
+   "period": "month or year",
+   "scope": "1 mobile device, ads; all content except Hollywood (no ATP Tour)",
+   "source": "S5 (new-subscriber prices from 28 Jan 2026)",
+   "status": "competitor"
+  },
+  {
+   "name": "JioHotstar Super",
+   "price_inr": "149 / month, 1,099 / year",
+   "period": "month or year",
+   "scope": "2 devices, ads (no ATP Tour)",
+   "source": "S5",
+   "status": "competitor"
+  },
+  {
+   "name": "SonyLIV Mobile Only",
+   "price_inr": "699 / year",
+   "period": "year",
+   "scope": "1 device 720p; live sports included (no ATP Tour)",
+   "source": "S6",
+   "status": "competitor"
+  },
+  {
+   "name": "SonyLIV Premium",
+   "price_inr": "399 / month, 1,499 / year",
+   "period": "month or year",
+   "scope": "up to 4K, 2 concurrent; live sports included (no ATP Tour)",
+   "source": "S6",
+   "status": "competitor"
+  },
+  {
+   "name": "Tennis TV (ATP's own service)",
+   "price_inr": "449 / month, 4,499 / year (App Store India in-app listing)",
+   "period": "month or year",
+   "scope": "ATP-only, 2,500+ matches, no Slams; India live availability under FanCode exclusivity not verified",
+   "source": "S7, S8",
+   "status": "international benchmark"
+  }
+ ]
 }

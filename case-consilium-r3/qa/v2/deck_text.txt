@@ -1,0 +1,593 @@
+BGCC Case Consilium 2026  ·  Round 3  ·  Case partner: FanCode
+From ATP peaks to 
+retained paying 
+subscribers
+Converting irregular ATP Tour interest into incremental, retained 
+subscription growth for FanCode in India
+Wookies
+Raunak Jain · Khushi Jha · Dhruv Mundra · Sambhav Khandelwal
+Submission deck · 12 pages · prices in ₹, times in IST
+
+Buy intent, sell the season, prove the lift: ₹4 lakh now, 
+₹6 lakh on evidence
+Executive summary
+1 · Eligible audience
+Acquire never-paid tennis intent, 
+reactivate lapsed 2025 buyers, 
+cross-sell F1, MotoGP, LaLiga 
+payers; defer the broad base.
+2 · Relevant paid occasion
+Sessions ₹29-₹39 with morning 
+replay, tournaments ₹79-₹99, rest 
+of season ₹199; each rung 
+credited to the next.
+3 · Repeat value
+Race to Turin, a 30-day upgrade 
+credit, a season-end bridge and a 
+₹349 loyalty price for 2027.
+₹206 / ₹317
+Attributed / incremental CAC per new 
+payer, search + retargeting row only, base 
+case
+₹550 to ₹1,027
+Cost per incremental new payer: Stage 1 
+(₹4 lakh, no engineering) to the full ₹14 lakh 
+incl. implementation
+−₹1.0 lakh / −₹8.8 lakh
+24-month incremental contribution net of 
+spend: Stage 1 / full programme incl. ₹4 
+lakh engineering
+Decision: commit Stage 1 (₹4 lakh: owned channels, reactivation, one paid search cell, 10% holdout). Release Stage 
+2 (₹6 lakh) and ₹4 lakh engineering only if day-45 incremental CAC ≤ ₹276 and upgrade share ≥ 32%. The base 
+case misses this gate: the pilot buys measurement, not a return.
+Case facts CF1-CF19 from the Round 3 brief (see References). Model v2, base case; contribution before marketing excludes the fixed ATP rights fee. CAC = customer acquisition cost.
+2
+
+Intent and payment state decide the action: acquire, 
+reactivate, cross-sell or retain
+Solution 1 of 8
+All-sport pass 
+(ATP included)
+Paying ATP
+Paying, no ATP
+Lapsed 2025 
+buyer
+Never paid
+Observable tennis intent →
+none
+high
+1
+Never paid, tennis signals (free 
+highlights, page visits, 90 d)
+ACQUIRE
+2
+Lapsed 2025 ATP buyers
+REACTIVATE (reported apart)
+3
+ATP core: 2026 passes, season 
+holders
+REPEAT · UPGRADE · RENEW
+4
+F1 · MotoGP · LaLiga pass 
+holders, no ATP
+CROSS-SELL A SESSION
+5
+Monthly / Yearly holders
+ENGAGE · RENEW, never new payers
+6
+Broad base, no tennis 
+signal (240M registered)
+DEFER · BOUNDED TEST
+F1 weeknights · MotoGP mornings · LaLiga late nights
+Ordinary week
+India-friendly Masters 
+week
+100
+150
+Viewership index (case, CF3)
+Priority. 1 acquire, 2 reactivate, 3 
+cross-sell; ATP core is a retention 
+audience.
+Equal markers: no audience sizes are verified 
+(CF1). Signals use first-party consented data 
+only.
+Ordinary weeks are retention weeks: about 90% of their viewers are already fans (CF4).
+Sources: CF1-CF4, CF17 (case brief); S3 ATP calendar; S15 LaLiga on FanCode. Adjacent-sport rows are existing-payer cross-sell and never enter the new-payer count.
+3
+
+Owned channels build the occasion from T-7 days; paid 
+conversion fires at T-48 hours
+Solution 2 of 8
+T-7 days
+T-48 hours
+Match time
+Next morning 07:00 IST
+Next event
+Owned / editorial
+Paid conversion
+After the view
+Race-to-Turin preview, 
+IST times
+Session / tournament offer 
+to segments
+Next-event push, 
+day-20 credit 
+reminder
+Search + retargeting, control IDs 
+excluded
+No paid spend in 
+ordinary weeks
+Live: Shanghai 
+night 17:00 IST
+Spoiler-free replay push: 
+Paris evening 00:00 IST → 
+07:00
+India-friendly occasion = live; overnight occasion = next-morning replay (times typical, illustrative)
+Persona
+Trigger
+Offer → next paid step
+Sample message (≤ 15 words)
+ATP core (paying)
+After each final
+Upgrade credit → ₹199
+Marquee followers, never 
+paid
+T-48 h, Shanghai
+₹89 pass; credit within 30 days
+"Shanghai starts Wednesday, 17:00 IST. ₹89 covers 
+all 12 days and counts toward your season."
+F1 pass holders
+Tue-Fri, never race Sunday
+₹39 night session
+MotoGP pass holders
+Asian-swing mornings
+₹39 day session
+LaLiga late-night viewers
+Fri / Sat, Paris and Turin 
+weeks
+₹39 evening session + 07:00 replay
+"Kick-off at 1:30 AM? So is Paris. ₹39: watch live, 
+or spoiler-free at 7 AM."
+Sources: CF6, CF11 (case brief); S3 ATP 2026 calendar. Session start times are typical of recent editions and illustrative until the 2026 orders of play are published. Copy is original 
+and subject to commercial approval.
+4
+
+One public ladder, session to tournament to rest of 
+season: each rung is credited to the next
+Solution 3 of 8
+Session
+₹29 / ₹39
+ATP 250/500 ₹29 · 
+Masters, Finals ₹39
+one session, live + 48 h 
+replay
+proposed
+Tournament
+₹79 / ₹89 / ₹99
+ATP 250/500 · Masters 
+1000 · Finals
+whole event, live + 
+replays
+existing (case)
+Rest of season
+₹199
+5 Oct-22 Nov 2026 · all 
+events
+price already used late-
+season (S12)
+new: credits in, loyalty 
+renewal out
+existing price, new 
+treatment
+₹29 paid + ₹50 = ₹79
+session price credited to the 
+same event
+₹89 paid + ₹110 = ₹199
+cap ₹99 · one credit per account · 
+30 days
+2027 season: ₹399 
+assumed list · ₹349 loyalty 
+by 15 Jan (proposed)
+Timing examples. Shanghai night, 17:00 IST: 
+₹39 session. Vienna evening, 00:00 IST: ₹29 
+session with the 07:00 replay.
+Folded or rejected. Replay rental folded into the 
+session pass; player bundle rejected 
+(participation cannot be guaranteed).
+Caveat. Monthly Pass ₹179 covers 'all 
+applicable' tours (S11): confirm inclusions before 
+promising F1 or LaLiga.
+Product
+Upfront price · 
+period
+ATP
+FanCode tournament
+₹79-₹99 · one 
+event
+Yes
+FanCode rest of season
+₹199 · 7 weeks
+Yes
+JioHotstar Mobile (S5)
+₹79 · month
+No
+SonyLIV Mobile Only 
+(S6)
+₹699 · year
+No
+Ladder totals equal direct prices (₹29 + ₹50 = ₹79; ₹89 + ₹110 = ₹199), so no path undercuts a direct purchase.
+Sources: CF15, CF16 (case); S5, S6, S10-S12. Prices assumed GST-inclusive. Tennis TV is not listed as a local competitor: India availability under FanCode exclusivity is unverified (S7-
+S8).
+5
+
+Rest-of-season entrants clear the acquisition hurdle; 
+tournament entrants do not without upgrades
+Solution 4 of 8
+Contribution before marketing per 
+entrant, ₹ (base case)
+case target ₹150-₹200
+₹206 attributed 
+CAC
+₹317 incremental 
+CAC
+Direct rest-of-season buyer 
+(₹199)
+₹299
+₹455
+clears
+Upgrade via credit (₹89 + ₹110)
+₹255
+₹359
+clears
+Repeat buyer, no upgrade
+₹150
+₹209
+fails
+Expected tournament entrant
+₹136
+₹180
+fails
+Session entrant (₹35 blended)
+₹68
+₹87
+fails
+Entry-only (₹89, never returns)
+₹62
+₹62
+fails
+12 months
+24 months (rights horizon)
+clears = 24-month value ≥ 
+₹317
+Break-even upgrade share, tournament 
+entrants, 24 months: 32% at ₹206 
+attributed, 81% at ₹317 incremental (not 
+achievable); base assumption 20%. u* = 
+(CAC − C entry) ÷ (C upgrade − C entry).
+24-month net, ₹ 
+lakh
+Down
+Base
+Up
+Stage 1: ₹4 lakh, 
+no engineering
+−₹2.9L
+−₹1.0L
++₹2.4L
+Full: ₹10 lakh + ₹4 
+lakh engineering
+−
+₹12.1L
+−₹8.8L
+−₹3.0L
+Full, attributed 
+basis
+−₹5.3L
+−₹0.8L
++₹5.4L
+Incremental basis, net of cannibalisation, cash 
+at purchase; the fixed ATP rights fee is 
+excluded, so this is not profit.
+Base case: the full programme loses ₹8.8 lakh over the rights horizon; Stage 1 nearly breaks even (−₹1.0 lakh).
+Sources: CF7-CF9, CF15, CF16, CF18 (case); model v2 (pathway mix 40/40/20, repeaters 1.5/2.5 more passes, loyalty renewal 35%/60%, 90% for 2028, GST 18%, 4% gateway and 
+support, ₹2 per streaming hour). All values modelled.
+6
+
+Retention runs on the next occasion: first purchase, 
+next viewing, next paid decision, renewal
+Solution 5 of 8
+1  First purchase
+Trigger: Any rung bought
+Action: Pick 2 players and a 
+viewing window; spoiler 
+preference
+Outcome: Qualified first view (≥ 
+20 min)
+CRM
+2  Next viewing occasion
+Trigger: Next session of the 
+event
+Live, 17:00 IST (India-
+friendly)
+Morning replay 07:00, 
+spoiler-free (overnight)
+Outcome: Second qualified 
+view; next-event return
+Product · Editorial
+3  Next paid decision
+Trigger: Tournament ends; day 
+20 of the credit window
+Credit upgrade ₹110 → ₹199 
+rest of season
+Next tournament ₹79-₹99
+Outcome: Upgrade share; 
+repeat purchase
+CRM · Commercial
+4  Expiry and renewal
+Trigger: 22 Nov expiry; 2027 
+opens 5 Jan
+Monthly Pass ₹179 (paid; 
+inclusions to confirm)
+2027 loyalty ₹349 by 15 Jan 
+(paid)
+Outcome: Renewal (event-
+based); off-season replays, 
+Next Gen Finals = engagement
+CRM · Commercial
+Portfolio branches. F1, MotoGP and LaLiga: an engagement nudge 
+when already entitled; a paid purchase when not. Never new payers.
+Controls. Entitlement checked before every send; caps 3 / 2 / 1 pushes 
+a week (new payers / others / replay); refunds suppress offers 30 days.
+Behavioural return, paid access and renewal are three different measures, reported separately (Solution 7).
+Sources: CF6, CF7, CF17 (case); S3 calendar (2027 season opens 5 Jan; no Slam rights); S9 spoiler control exists in the ATP's own service; S10-S11 Monthly Pass scope; S13 weekly 
+show.
+7
+
+₹10 lakh in two stages: ₹4 lakh now, ₹6 lakh only if the 
+gate is met
+Solution 6 of 8
+C2 Search + retargeting · 30% · ₹3.0L
+C5 Editorial · 15% · ₹1.5L
+C1 Prospecting, bounded test · 10% · ₹1.0L
+C6 ESPN.in geo test · 10% · ₹1.0L
+C8 Measurement · 9% · ₹0.9L
+C3 CRM activation · 8% · ₹0.8L
+C4 Contests · 7% · ₹0.7L
+C7 Retention comms · 6% · ₹0.6L
+C3b Reactivation · 5% · ₹0.5L
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+1.5
+0.3
+0.5
+0.6
+0.4
+0.3
+0.4
+1.5
+1.2
+1.0
+1.0
+0.4
+0.2
+0.3
+0.3
+0.1
+Allocation by row, ₹ lakh (total ₹10.0 lakh = 100%)
+Stage 1 (now)
+Stage 2 (at gate G2)
+C1 Prospecting
+C2 Search
+C3 CRM
+C4 Contests
+₹1,429
+₹206
+₹67
+₹214
+₹2,381
+₹317
+₹133
+₹427
+CAC per new payer, ₹ (rows with a new-payer 
+denominator)
+Incremental
+Attributed
+Not directly attributed: C5, C6, C7, C8 (₹4.0 lakh) sit in 
+programme cost with no CAC. Performance share: 65-70% 
+today → 47% (C1 + C2 + C4).
+Stage 1 (₹4 lakh): 1,236 attributed / 727 
+incremental new payers, 630 reactivated; 
+₹550 per incremental new payer.
+Full programme: ₹439 attributed, ₹733 
+incremental, ₹1,027 with ₹4 lakh 
+implementation, per new payer.
+Gate G2 (day 45): release Stage 2 paid rows 
+only if C2 incremental CAC ≤ ₹276 and 
+upgrade share ≥ 32%. The base case fails 
+this gate.
+Sources: CF9-CF13 (case); model v2 (CPM ₹120, CPC ₹7 / ₹5 / ₹7.5, CVR 1.5% / 4.0% / 7.0% / 7.8%, class mixes, 8% dedup, planning pools; all assumptions). ₹276 = 24-month 
+contribution of a C2 entrant.
+8
+
+A persistent 10% holdout turns attributed sales into 
+measured incremental payers
+Solution 7 of 8
+Eligible users per 
+segment (day 0), N
+Treatment 90% (N_T): ATP 
+CRM + retargeting; control 
+IDs excluded
+Holdout 10% (N_C): no ATP 
+marketing; persistent; 
+stratified by payment state, 
+sport, viewing window
+Outcomes per eligible 
+user at day 30 and day 90: 
+new-payer rate p_T vs 
+p_C; retained-payer rate 
+r_T vs r_C
+Incremental new payers = (p_T − p_C) × N_T
+Incremental CAC = spend ÷ incremental new 
+payers
+Incremental D90 retained = (r_T − r_C) × N_T
+Lift ≤ 0 → unfavourable, never a positive CAC
+Detecting a 50% lift on a 0.36% purchase rate with a 90/10 split needs about 128,000 eligible users (12,800 held out). Cohorts mature at day 90: 22 Dec-16 
+Jan for October buyers.
+Measure
+Definition and window
+Threshold
+North star: incremental D90 retained 
+payers ÷ incremental new payers
+Paid entitlement on day 90 and ≥ 1 qualified view (≥ 20 min, any FanCode 
+content) in days 61-90; fixed window; treatment minus control
+≥ 30%
+Incremental CAC, search + retargeting row
+Row spend ÷ incremental new payers
+≤ ₹276
+Upgrade share within 30 days
+Rest-of-season purchases ÷ tournament entrants whose window closed
+≥ 32% (break-even at ₹206)
+Next-event return
+Qualified view in the next tournament ÷ new payers whose next tournament 
+ended
+≥ 45%
+2027 ATP renewal (event-based)
+Season purchases by 15 Feb ÷ eligible 2026 rest-of-season holders
+≥ 50%
+Sources: CF9, CF17 (case). Sample sizes: two-sided α 0.05, power 0.80, 90/10 allocation, 0.36% baseline (model v2). Organic F1/football demand sits in the control group; subscribers 
+already entitled to ATP are never counted as new.
+9
+
+Release ₹4 lakh now; ₹6 lakh and engineering wait for 
+measured lift at day 45
+Solution 8 of 8
+Days 0-14 · 23 Sep-6 Oct
+•
+CRM counts, segments, 
+holdout (Growth analytics)
+•
+Rate card, credits, refunds 
+(Commercial, Legal)
+•
+Contests (Community); 
+replay v0 (CRM)
+₹4 lakh Stage 1 committed
+Days 15-45 · 7 Oct-6 Nov
+•
+Paid search cell at T-48 h 
+(Growth)
+•
+Ladder live; reactivation 
+wave (CRM)
+•
+Race to Turin on the weekly 
+show (Editorial)
+No engineering yet
+Days 46-90 · 7 Nov-21 Dec
+•
+Season-end bridge; loyalty 
+renewal (CRM, Commercial)
+•
+If G2 passed: ₹6 lakh Stage 2 
++ ₹4 lakh engineering 
+(Product)
+•
+Day-30 / 45 readouts 
+(Analytics)
+Spend released only on G2
+Days 91-120 · 22 Dec-20 
+Jan
+•
+Day-90 readout, Sept-Oct 
+cohorts (Analytics)
+•
+2027 season-start push 
+(CRM)
+•
+Feb-Mar 2027 wave decision
+Scale decision at G3
+G1 · day 14
+holdout live; rate card signed
+G2 · day 45
+CAC ≤ ₹276 incremental and 
+upgrade ≥ 32%: release; else owned 
+rows only
+G3 · day 90
+next-event return ≥ 45%; D90 for 
+cohorts observed 90 days
+Risks. Cannibalisation → one credit per account, loyalty price for prior 
+holders. Weak lift → stop rules; owned rows continue. Withdrawals → event-
+defined SKUs, automatic credits.
+Decision. ₹14 lakh maximum exposure; ₹4 lakh committed now. Base 
+24-month incremental net: Stage 1 −₹1.0 lakh, full −₹8.8 lakh: Stage 2 
+is released only if results beat the base case.
+Sources: CF18 (rights through 2028); S3 calendar. Engineering (spoiler-free surfaces, replay automation, checkout credits) and ATP Media clip rights are dependencies released at 
+G2. Implementation budget is an assumption.
+10
+
+References (1 of 2): sources
+References
+S1  ATP Media. FanCode signs exclusive ATP Tour multi-year broadcast deal. Jan 
+2026; accessed 21 Sep 2026.
+S2  Moneycontrol. 
+FanCode strikes exclusive multi-year ATP Tour deal (56 events). Jan 2026; 
+accessed 21 Sep 2026.
+S3  ATP Tour. What is the 2026 ATP Tour calendar?. 27 Nov 2025; accessed 21 
+Sep 2026.
+S4  ATP Tour. TV schedule: broadcaster list (India: FanCode). 2026; accessed 21 
+Sep 2026.
+S5  JioStar (press release). 
+JioHotstar introduces monthly plans across tiers (prices from 28 Jan 2026). 21 
+Jan 2026; accessed 21 Sep 2026.
+S6  Sony LIV Help Centre. 
+What are the types of subscription available? / How much does Sony LIV cost?. 
+undated help article; accessed 21 Sep 2026.
+S7  Tennis TV Help Centre. How much does Tennis TV cost?. undated help article; 
+accessed 21 Sep 2026.
+S8  Apple App Store (India storefront). 
+Tennis TV app listing, India storefront (in-app prices). current listing; accessed 21 
+Sep 2026.
+S9  Tennis TV Help Centre. What is Spoiler Mode on Tennis TV?. undated help 
+article; accessed 21 Sep 2026.
+S10  FanCode. FanCode subscription page (Monthly Pass ₹179). current page; 
+accessed 21 Sep 2026.
+Evidence cut-off: sources published on or before 19 September 2026, accessed 21 September 2026 through search-index copies (the build environment could not open 
+the sites directly). Case facts (CF) come from the Round 3 brief and govern where public figures differ.
+11
+
+References (2 of 2): sources, definitions, assumptions
+References
+S11  FanCode. FanCode terms and conditions (pass definitions). current page; 
+accessed 21 Sep 2026.
+S12  Indian Tennis Daily (ITD) on X and Instagram. 
+Indian Tennis Daily posts on FanCode ATP passes (X, Instagram). Mar 2026 and 
+in-season 2026; accessed 21 Sep 2026.
+S13  FanCode. ATP Tour This Week, episode 35 (weekly show page). 2026; 
+accessed 21 Sep 2026.
+S14  Autocar India. F1 2026: FanCode and F1 TV India subscription prices. early 
+2026; accessed 21 Sep 2026.
+S15  FanCode. LALIGA 2026-27: live on FanCode (tour page). 2026; accessed 21 
+Sep 2026.
+S16  Unstop / BITS Goa Consulting Club. 
+Case Consilium 2026 competition page (Unstop). 2026, not reachable from the 
+build environment; accessed 21 Sep 2026.
+S17  BITS Goa Consulting Club / FanCode. Round 3 case brief (not available in the 
+build session). Facts quoted via the master prompt register with PDF page indices; 
+verify before upload.
+Definitions
+New payer. First-ever FanCode payment is an ATP pass. Reactivated = a lapsed 2025 buyer returning. Existing-payer ATP purchase = a current F1, MotoGP, LaLiga or 
+Monthly payer buying ATP.
+CAC. Attributed = row spend ÷ attributed new payers. Incremental = spend ÷ (attributed × validated share from the holdout). Programme cost per payer uses the whole 
+budget, with or without implementation.
+Contribution. Price ÷ 1.18 (GST assumed included) − 4% of gross (gateway, support) − ₹2 per streaming hour; cash basis; the fixed ATP rights fee is excluded.
+Horizons. 90 days, 12 and 24 months from a 7 Oct 2026 purchase; 24 months sits inside the rights term to 2028 (CF18).
+Assumptions and limits: CRM pools (150k / 120k / 40k / 60k), CPC, CPM, CVR, class mixes, pathway shares, renewals and session start times are model 
+assumptions. Unverified: the case PDF (quoted via the master prompt register), Tennis TV live availability in India, the 2027 season tariff, Monthly Pass tour 
+inclusions. ATP = Association of Tennis Professionals; CRM = customer relationship management; D90 = day 90 after first purchase; IST = India Standard Time.
+12

@@ -1,16 +1,31 @@
-metric,downside,base,upside
-new payers attributed (dedup),1959,2798,3637
-incremental new payers,889,1693,2751
-paid blended CAC attributed (C1+C2+C4),316,221,170
-paid blended CAC attributed excl. prospecting test,263,184,142
-paid blended CAC incremental,674,354,218
-programme cost per new payer (all ₹10 lakh),511,357,275
-12-month contribution per new payer (net of cannibalisation),111,148,187
-24-month contribution per new payer,150,210,276
-90-day contribution per new payer,80,98,113
-cross-sell ATP purchases by existing payers,270,386,501
-90-day programme net (₹),-824047,-696144,-545485
-12-month programme net (₹),-758027,-542110,-250799
-24-month programme net (₹),-675319,-352096,103086
-24-month acquisition-rows net C2+C4 (₹),-171547,73322,411826
-break-even upgrade share 24m at C2 CAC,0.7811651330639805,0.21331968285042355,-0.09624417649989384
+metric,stage,downside,base,upside
+attributed new payers (dedup),stage1,865,1236,1607
+incremental new payers,stage1,382,727,1182
+reactivated payers,stage1,441,630,819
+existing-payer ATP purchases,stage1,404,576,749
+C2 attributed CAC (new payers),stage1,294,206,158
+C2 incremental CAC,stage1,603,317,195
+programme cost per attributed new payer,stage1,462,324,249
+programme cost per incremental new payer,stage1,1048,550,338
+"incl. implementation, per incremental new payer",stage1,1048,550,338
+"m12 net, attributed contribution minus spend (₹)",stage1,-195493,-18985,215047
+"m12 net, incremental contribution minus spend (₹)",stage1,-319526,-191989,27519
+"m12 net, incremental minus spend and implementation (₹)",stage1,-319526,-191989,27519
+"m24 net, attributed contribution minus spend (₹)",stage1,-122785,144672,513017
+"m24 net, incremental contribution minus spend (₹)",stage1,-288548,-99259,237712
+"m24 net, incremental minus spend and implementation (₹)",stage1,-288548,-99259,237712
+attributed new payers (dedup),full,1593,2276,2958
+incremental new payers,full,716,1363,2216
+reactivated payers,full,606,866,1125
+existing-payer ATP purchases,full,626,895,1163
+C2 attributed CAC (new payers),full,294,206,158
+C2 incremental CAC,full,603,317,195
+programme cost per attributed new payer,full,628,439,338
+programme cost per incremental new payer,full,1397,733,451
+"incl. implementation, per incremental new payer",full,1956,1027,632
+"m12 net, attributed contribution minus spend (₹)",full,-655085,-358078,34303
+"m12 net, incremental contribution minus spend (₹)",full,-860710,-640345,-262569
+"m12 net, incremental minus spend and implementation (₹)",full,-1260710,-1040345,-662569
+"m24 net, attributed contribution minus spend (₹)",full,-530851,-79293,539477
+"m24 net, incremental contribution minus spend (₹)",full,-806406,-478303,102911
+"m24 net, incremental minus spend and implementation (₹)",full,-1206406,-878303,-297089
