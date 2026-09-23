@@ -1,0 +1,203 @@
+==============================================================================
+A. CHURN SENSITIVITY (case facts + arithmetic)
+==============================================================================
+Headline multiple: 4,000 / 220 = 18.18x (case rounds to 18x)
+  churn  ARR lost  retained  eff. mult  value@18.2x      gap  recovery growth
+   0.0%       0.0     220.0      18.2x        4,000       -0             0.0%
+  30.0%      66.0     154.0      26.0x        2,800    1,200            42.9%
+  37.5%      82.5     137.5      29.1x        2,500    1,500            60.0%
+  45.0%      99.0     121.0      33.1x        2,200    1,800            81.8%
+Top-4 ARR = 132; case churn 66-99 = 50-75% of top-4 ARR
+Value destroyed per 10pts of churn at 18.2x: 400 Cr
+
+==============================================================================
+B. THE CAPITAL DRAG IN CONTEXT
+==============================================================================
+Drag 750 vs Paytm EBITDA 640 = 117% ; vs PAT 480 = 156%
+Drag vs Liminal ARR 220 = 341% of Liminal's entire revenue
+NPV of drag @ 12%: 10-yr annuity = 4,238 Cr ; perpetuity = 6,250 Cr  (deal value 4,000)
+Liminal FCF needed to cover drag alone = 750; at 18.75% FCF margin -> ARR 4,000 Cr = 18.2x today's ARR
+  years to reach 4,000 ARR at 20% growth from 220 (zero churn): 15.9
+  years to reach 4,000 ARR at 30% growth from 220 (zero churn): 11.1
+  years to reach 4,000 ARR at 40% growth from 220 (zero churn): 8.6
+MDR offset: 115/750 = 15.3% gross ; at PAT/FCF conversion 60% -> 69 Cr = 9.2% of drag
+Net cash cost of full ownership after MDR: 681 Cr/yr
+
+==============================================================================
+C. LIMINAL STANDALONE PROJECTIONS (team assumptions; no churn)
+==============================================================================
+growth 10%: Y1 rev 242 PAT 9 | Y2 rev 266 PAT 20 | Y3 rev 293 PAT 33 | Y4 rev 322 PAT 48 | Y5 rev 354 PAT 66 | Y6 rev 390 PAT 73 | Y10 rev 571 PAT 107
+growth 20%: Y1 rev 264 PAT 10 | Y2 rev 317 PAT 24 | Y3 rev 380 PAT 43 | Y4 rev 456 PAT 68 | Y5 rev 547 PAT 103 | Y6 rev 657 PAT 123 | Y10 rev 1362 PAT 255
+growth 30%: Y1 rev 286 PAT 11 | Y2 rev 372 PAT 28 | Y3 rev 483 PAT 54 | Y4 rev 628 PAT 94 | Y5 rev 817 PAT 153 | Y6 rev 1062 PAT 199 | Y10 rev 3033 PAT 569
+
+==============================================================================
+D. WHAT YOU NEED TO BELIEVE - standalone DCF vs 4,000 headline (WACC 12%, TG 5%)
+==============================================================================
+  growth  10% for 10 yrs, margin -> 25%: DCF =     811 Cr  (3.7x ARR)  vs 4,000 -> NOT supported
+  growth  20% for 10 yrs, margin -> 25%: DCF =   1,753 Cr  (8.0x ARR)  vs 4,000 -> NOT supported
+  growth  30% for 10 yrs, margin -> 25%: DCF =   3,658 Cr  (16.6x ARR)  vs 4,000 -> NOT supported
+  growth  40% for 10 yrs, margin -> 25%: DCF =   7,345 Cr  (33.4x ARR)  vs 4,000 -> supported
+  growth  50% for 10 yrs, margin -> 25%: DCF =  14,194 Cr  (64.5x ARR)  vs 4,000 -> supported
+  Growth required for DCF = 4,000: 31.3% p.a. for 10 years, zero churn, no capital drag
+  WACC 11%: base DCF = 2,127; bull DCF = 4,478
+  WACC 12%: base DCF = 1,753; bull DCF = 3,658
+  WACC 14%: base DCF = 1,265; bull DCF = 2,593
+
+==============================================================================
+E. FULL-ACQUISITION YEAR-1 EPS UNDER FINANCING MIXES (churn 37.5% base)
+==============================================================================
+Liminal Y1 after 37.5% churn: rev 165.0, EBITDA -41.2, PAT -41.2 (sticky costs)
+structure                                         shares     PAT    EPS  vs 7.50  EPS+MDR    cash gross debt GD/EBITDA mech-only EPS
+Case headline: 2,100 cash (B/S) + 1,900 equity     65.02     344   5.29   -29.4%     6.36   6,800        350      0.5x          7.38
+2,100 new debt + 1,900 equity                      65.02     305   4.69   -37.5%     5.75   8,900      2,450      3.8x          7.38
+Mix: 1,400 cash + 700 debt + 1,900 equity          65.02     331   5.09   -32.1%     6.15   7,500      1,050      1.6x          7.38
+All cash 4,000                                     64.00     259   4.04   -46.1%     5.12   4,900        350      0.5x          7.50
+All equity 4,000                                   66.16     439   6.63   -11.6%     7.68   8,900        350      0.5x          7.26
+Implied share price 1,855; 1,900 Cr equity = 1.024 Cr shares; trailing P/E = 247x (earnings yield 0.40%)
+At 25% lower share price (1,392): 1,900 Cr equity = 1.37 Cr shares
+Headline-mix Y1 EPS by churn: 0%: 6.08, 30%: 5.46, 38%: 5.29, 45%: 5.13
+
+==============================================================================
+F. FULL ACQUISITION (headline mix) 10-YEAR PAT & FCF BREAKEVEN, churn 37.5%, growth 20%
+==============================================================================
+Cost of funds (foregone interest on 2,100): 94.5/yr ; shares 65.02
+ Yr  Lim rev  Lim PAT  incr PAT    EPS  EPS+MDR  incr FCF incrFCF+MDR   cum FCF
+  1      165      -41      -136   5.29     6.36      -986        -917     -3086
+  2      198       15       -80   6.16     7.22      -830        -761     -3915
+  3      238       27       -68   6.34     7.40      -818        -749     -4733
+  4      285       43       -52   6.59     7.65      -802        -733     -5535
+  5      342       64       -30   6.92     7.98      -780        -711     -6315
+  6      411       77       -18   7.11     8.17      -768        -699     -7083
+  7      493       92        -2   7.35     8.41      -752        -683     -7835
+  8      591      111        16   7.63     8.69      -734        -665     -8569
+  9      709      133        39   7.97     9.04      -711        -642     -9280
+ 10      851      160        65   8.38     9.44      -685        -616     -9965
+PAT breakeven year: 8 (with MDR credited: 3) ; FCF breakeven year: >10 (with MDR: >10)
+Even at 0% churn, 30% growth, MDR credited: FCF breakeven year = >10
+
+==============================================================================
+G. PHASE 1: 26% MINORITY FOR 1,040 CASH (no churn, no drag - validation gates)
+==============================================================================
+Foregone post-tax treasury income: 46.8/yr ; Phase-1 fees 15 one-time ; cash after 7,860
+Standalone EPS with MDR: 8.58
+growth 10%: EPS Y1 6.81 Y2 6.85 Y3 6.90 Y4 6.97 Y5 7.04 ... associate income covers foregone interest in year >10
+growth 20%: EPS Y1 6.81 Y2 6.87 Y3 6.94 Y4 7.05 Y5 7.19 ... associate income covers foregone interest in year 9
+growth 30%: EPS Y1 6.81 Y2 6.88 Y3 6.99 Y4 7.15 Y5 7.39 ... associate income covers foregone interest in year 6
+Base Y1 EPS 6.81 (-9.2% vs 7.50); with MDR 7.89 (-8.1% vs 8.58 like-for-like)
+  yield sensitivity 5%: Y1 EPS 6.93
+  yield sensitivity 6%: Y1 EPS 6.81
+  yield sensitivity 7%: Y1 EPS 6.69
+If RBI applied the drag pro-rata at 26%: 195 Cr/yr FCF -> Phase-1 cash cost 242/yr ; full drag 750 -> structure fails
+Share-funded alternative: 0.56 Cr new shares -> EPS 7.47
+Phase-1 stake IRR (exit end-Y5 at multiple x ARR5, 26% stake, no dividends):
+growth / exit       6x      10x      14x      18x
+         10%   -11.9%    -2.4%     4.4%    10.0%
+         20%    -3.9%     6.5%    13.9%    20.0%
+         30%     4.1%    15.3%    23.4%    30.0%
+
+==============================================================================
+H. CONTROL TRANCHE: RETENTION-LINKED EARN-OUT
+==============================================================================
+Total control consideration cap 2,960 = 1,650 upfront + up to 1,310 earn-out (linear 55%-100% retention)
+ churn retention  earn-out control total grand total  74% of 18.2x value
+  0.0%      100%     1,310         2,960       4,000               2,960
+ 10.0%       90%     1,019         2,669       3,709               2,664
+ 20.0%       80%       728         2,378       3,418               2,368
+ 30.0%       70%       437         2,087       3,127               2,072
+ 37.5%       62%       218         1,868       2,908               1,850
+ 45.0%       55%         0         1,650       2,690               1,628
+ 55.0%       45%         0         1,650       2,690               1,332
+Earn-out in Paytm shares at current price: up to 0.71 Cr shares (1.1% of share count)
+
+==============================================================================
+I. PHASE 3 CONTROL EXERCISE AT END-Y1 (gates pass): consolidated EPS/FCF, growth 20%
+==============================================================================
+Cost of funds after control: P1 46.8 + cash 51.8 + debt 31.9 = 130.4/yr
+Balance sheet post-control: cash 6,710 ; gross debt 850 (1.33x EBITDA) ; guardrails: cash >= 5,000, GD/EBITDA <= 1.5x
+churn    0%, drag   0: earn-out 1,310, shares 64.71 | EPS Y1 6.81 Y2 5.77 Y3 6.06 Y4 6.46 Y5 6.99 Y6 7.31 | PAT b/e Y7 ; FCF b/e Y7
+churn   20%, drag   0: earn-out 728, shares 64.39 | EPS Y1 6.81 Y2 5.33 Y3 5.96 Y4 6.28 Y5 6.70 Y6 6.96 | PAT b/e Y8 ; FCF b/e Y8
+churn   20%, drag 100: earn-out 728, shares 64.39 | EPS Y1 6.81 Y2 5.33 Y3 5.96 Y4 6.28 Y5 6.70 Y6 6.96 | PAT b/e Y8 ; FCF b/e Y>10
+churn   30%, drag   0: earn-out 437, shares 64.24 | EPS Y1 6.81 Y2 5.05 Y3 5.91 Y4 6.19 Y5 6.56 Y6 6.78 | PAT b/e Y9 ; FCF b/e Y9
+churn   20%, drag 750: earn-out 728, shares 64.39 | EPS Y1 6.81 Y2 5.33 Y3 5.96 Y4 6.28 Y5 6.70 Y6 6.96 | PAT b/e Y8 ; FCF b/e Y>10
+
+==============================================================================
+J. LIQUIDITY & RATING GUARDRAILS BY STRUCTURE
+==============================================================================
+Phase 1 only                                 cash  7,860 | gross debt   350 | GD/EBITDA  0.5x | net cash  7,510 | yrs of drag funding above 5,000 floor:  3.8
+Phase 1 + control upfront                    cash  6,710 | gross debt   850 | GD/EBITDA  1.3x | net cash  5,860 | yrs of drag funding above 5,000 floor:  2.3
+Full acquisition headline (cash from B/S)    cash  6,800 | gross debt   350 | GD/EBITDA  0.5x | net cash  6,450 | yrs of drag funding above 5,000 floor:  2.4
+Full acquisition, cash portion all debt      cash  8,900 | gross debt 2,450 | GD/EBITDA  3.8x | net cash  6,450 | yrs of drag funding above 5,000 floor:  5.2
+
+==============================================================================
+K. CONTROL GATE CHECK: base (20%) vs bull (30%) growth, exercise end-Y1, no drag
+==============================================================================
+Signal at month 12: ARR >= 286 Cr (30% growth) = bull ; ARR ~264 Cr (20%) = base
+base 20%, churn   0%: EPS Y1 6.81 Y2 5.77 Y3 6.06 Y4 6.46 Y5 6.99 Y6 7.31 Y7 7.69 | PAT b/e Y7 FCF b/e Y7 -> HOLD (b/e > 5 yrs after exercise)
+base 20%, churn  20%: EPS Y1 6.81 Y2 5.33 Y3 5.96 Y4 6.28 Y5 6.70 Y6 6.96 Y7 7.27 | PAT b/e Y8 FCF b/e Y8 -> HOLD (b/e > 5 yrs after exercise)
+bull 30%, churn   0%: EPS Y1 6.81 Y2 5.83 Y3 6.24 Y4 6.86 Y5 7.77 Y6 8.48 Y7 9.40 | PAT b/e Y5 FCF b/e Y5 -> EXERCISE (b/e <= 5 yrs after exercise)
+bull 30%, churn  20%: EPS Y1 6.81 Y2 5.31 Y3 6.10 Y4 6.60 Y5 7.33 Y6 7.90 Y7 8.64 | PAT b/e Y6 FCF b/e Y6 -> EXERCISE (b/e <= 5 yrs after exercise)
+
+==============================================================================
+L. LIMINAL BASE-CASE P&L (team assumptions; appendix table)
+==============================================================================
+ Yr  ARR/rev  EBITDA m  EBITDA    PAT  26% share  foregone int net EPS effect
+  0      220        0%       0      0        0.0           0.0           0.00
+  1      264        5%      13     10        2.6          46.8          -0.69
+  2      317       10%      32     24        6.2          46.8          -0.63
+  3      380       15%      57     43       11.1          46.8          -0.56
+  4      456       20%      91     68       17.8          46.8          -0.45
+  5      547       25%     137    103       26.7          46.8          -0.31
+  6      657       25%     164    123       32.0          46.8          -0.23
+
+==============================================================================
+M. FULL-ACQUISITION Y1 EPS, ALL MIXES, AT 0% CHURN (best case for full deal)
+==============================================================================
+Case headline: 2,100 cash (B/S) + 1,900 equity   EPS 6.08 (-18.9%)
+2,100 new debt + 1,900 equity                    EPS 5.48 (-27.0%)
+Mix: 1,400 cash + 700 debt + 1,900 equity        EPS 5.88 (-21.6%)
+All cash 4,000                                   EPS 4.84 (-35.4%)
+All equity 4,000                                 EPS 7.41 (-1.3%)
+
+==============================================================================
+N. DOWNSIDE MATRIX -> RECOMMENDATION (churn consents x capital treatment)
+==============================================================================
+churn <=20%   | capital none / structured away       -> Eligible to exercise if bull trajectory (b/e <= 4 yrs) and valuation cap hold
+churn <=20%   | capital pro-rata at 26% (195)        -> Do not exercise; hold minority only if Phase-1 cash cost acceptable; pursue JV/licence
+churn <=20%   | capital full 750 at any ownership    -> Do not exercise; hold 26% only if minority is drag-free, else restructure to JV/licence or exit
+churn 20-45%  | capital none / structured away       -> Hold minority; earn-out floor protects; re-test at month 24
+churn 20-45%  | capital pro-rata at 26% (195)        -> Do not exercise; hold minority only if Phase-1 cash cost acceptable; pursue JV/licence
+churn 20-45%  | capital full 750 at any ownership    -> Do not exercise; hold 26% only if minority is drag-free, else restructure to JV/licence or exit
+churn >45%    | capital none / structured away       -> No control; activate remediation; consider exit via ROFO/tag
+churn >45%    | capital pro-rata at 26% (195)        -> Do not exercise; hold minority only if Phase-1 cash cost acceptable; pursue JV/licence
+churn >45%    | capital full 750 at any ownership    -> Do not exercise; hold 26% only if minority is drag-free, else restructure to JV/licence or exit
+
+==============================================================================
+O. WHAT PAYTM PAYS FOR IN PHASE 1: fundamental value of 26% vs 1,040 ceiling
+==============================================================================
+base 20%: standalone DCF 1,753 -> 26% = 456 Cr ; premium in 1,040 ceiling = 584 Cr
+bull 30%: standalone DCF 3,658 -> 26% = 951 Cr ; premium in 1,040 ceiling = 89 Cr
+DCF at end-Y1 if bull delivered (ARR 286): 4,756 Cr -> 4,000 total cap is 16% below it
+Phase-1 cheque as % of market cap: 0.88% ; of cash: 12%
+
+==============================================================================
+P. RECURRING CAPITAL COST AT CONTROL: does a 100 Cr/yr cost pass the 5-year gate?
+==============================================================================
+base 20%, churn   0%, recurring cost   0: FCF b/e Y7 -> FAIL 5-yr gate
+base 20%, churn   0%, recurring cost  50: FCF b/e Y9 -> FAIL 5-yr gate
+base 20%, churn   0%, recurring cost 100: FCF b/e Y10 -> FAIL 5-yr gate
+base 20%, churn  20%, recurring cost   0: FCF b/e Y8 -> FAIL 5-yr gate
+base 20%, churn  20%, recurring cost  50: FCF b/e Y10 -> FAIL 5-yr gate
+base 20%, churn  20%, recurring cost 100: FCF b/e Y>10 -> FAIL 5-yr gate
+bull 30%, churn   0%, recurring cost   0: FCF b/e Y5 -> PASS 5-yr gate
+bull 30%, churn   0%, recurring cost  50: FCF b/e Y6 -> PASS 5-yr gate
+bull 30%, churn   0%, recurring cost 100: FCF b/e Y7 -> FAIL 5-yr gate
+bull 30%, churn  20%, recurring cost   0: FCF b/e Y6 -> PASS 5-yr gate
+bull 30%, churn  20%, recurring cost  50: FCF b/e Y7 -> FAIL 5-yr gate
+bull 30%, churn  20%, recurring cost 100: FCF b/e Y8 -> FAIL 5-yr gate
+
+==============================================================================
+Q. SOURCES & USES
+==============================================================================
+Phase 1  | Uses: 26% secondary 1,040 + fees 15 = 1,055 | Sources: balance-sheet cash 1,055 (debt 0, equity 0)
+Control  | Uses: upfront 1,650 + integration 100 + earn-out <= 1,310 | Sources: cash 1,250 + new debt 500 + Paytm shares <= 1,310 (0.71 Cr shares)
+Maximum total consideration 4,000 = headline; maximum unconditional 1,040
