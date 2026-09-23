@@ -1,0 +1,785 @@
+{
+ "comps": [
+  {
+   "name": "BitGo (NYSE: BTGO) — only listed pure-play institutional custodian",
+   "mcap": 0.95,
+   "ev": "~1.2 (aggregator; co. says no corporate debt)",
+   "rev": "Q2'26 net-of-direct-costs $42.5M (S&S $27.5M); gross $4.3B",
+   "growth": 0.076,
+   "margin": "Adj. EBITDA −$4.2M (Q2'26)",
+   "ev_rev": "5–7x net revenue; 9–11x S&S (derived)",
+   "ev_ebitda": "n/m (negative)",
+   "pe": "n/m",
+   "why": "Regulated cold-storage custody, wallets, staking; institutional client base (5,833 clients; $65B on platform); S&S line is the closest analogue to Liminal's ARR",
+   "why_not": "~40x Liminal's scale; OCC trust-bank charter; revenue mix dominated by gross digital-asset sales; −55% since Jan 2026 IPO → apply a discount, not a premium, for Liminal's scale and concentration",
+   "source": "BitGo Q2 2026 8-K Ex.99.1, 12 Aug 2026 https://www.sec.gov/Archives/edgar/data/0001740604/000174060426000048/btgo-exhibit991_2026xq2.htm ; stockanalysis.com 23 Sep 2026",
+   "certainty": "High (financials) / Medium (market data)"
+  },
+  {
+   "name": "Coinbase (COIN)",
+   "mcap": 53.05,
+   "ev": 50.93,
+   "rev": 6.04,
+   "growth": -0.19,
+   "margin": "Adj. EBITDA ~31% LTM",
+   "ev_rev": 8.43,
+   "ev_ebitda": "~27x adj. EBITDA (derived)",
+   "pe": "n/m",
+   "why": "Largest institutional custodian (Prime/Custody); now live in India with INR rails (31 May 2026); sets sector sentiment",
+   "why_not": "Retail-exchange economics, USDC float, Base, derivatives; 200x scale",
+   "source": "Coinbase Q2 2026 release 30 Jul 2026; stockanalysis.com 22 Sep 2026",
+   "certainty": "High / Medium"
+  },
+  {
+   "name": "Circle (CRCL)",
+   "mcap": 24.01,
+   "ev": 22.3,
+   "rev": 2.91,
+   "growth": 0.07,
+   "margin": "Adj. EBITDA 20% of total revenue (derived)",
+   "ev_rev": 7.68,
+   "ev_ebitda": 97.4,
+   "pe": 52.5,
+   "why": "Regulated crypto infrastructure with enterprise distribution; recent IPO",
+   "why_not": "Stablecoin issuer: revenue is reserve interest, not custody fees",
+   "source": "Circle Q2 2026 results 5 Aug 2026; stockanalysis.com",
+   "certainty": "Medium"
+  },
+  {
+   "name": "Gemini (GEMI)",
+   "mcap": 0.75,
+   "ev": 1.06,
+   "rev": 0.21,
+   "growth": 0.37,
+   "margin": "Loss-making (net loss −$107.7M Q2'26)",
+   "ev_rev": 5.24,
+   "ev_ebitda": "n/m",
+   "pe": "n/m",
+   "why": "NY-chartered custody business; custodial fee revenue fell to $0.6M on 'institutional custody net outflows'",
+   "why_not": "Retail exchange + credit card losses; −75% over 52 weeks",
+   "source": "Gemini Q2 2026 release 13 Aug 2026",
+   "certainty": "Medium"
+  },
+  {
+   "name": "Bullish (BLSH)",
+   "mcap": 6.07,
+   "ev": 6.28,
+   "rev": 0.3,
+   "growth": 0.62,
+   "margin": "Adj. EBITDA ~32%",
+   "ev_rev": "17–21x (EV inflated by treasury assets)",
+   "ev_ebitda": "~53x adj.",
+   "pe": "n/m",
+   "why": "Institutional-only exchange with subscription/data revenue (CoinDesk)",
+   "why_not": "Exchange, not custody; balance-sheet digital assets distort EV — the one crypto comp near 18x, for the wrong reasons",
+   "source": "Bullish Q2 2026 results 13 Aug 2026; stockanalysis.com",
+   "certainty": "Medium"
+  },
+  {
+   "name": "Robinhood (HOOD)",
+   "mcap": 111.71,
+   "ev": 110.73,
+   "rev": 4.93,
+   "growth": 0.32,
+   "margin": "Adj. EBITDA 57%",
+   "ev_rev": 22.45,
+   "ev_ebitda": "n/d",
+   "pe": 55.0,
+   "why": "Owner of Bitstamp (institutional-heavy) and WonderFi — source of the Bitstamp precedent",
+   "why_not": "Retail brokerage economics",
+   "source": "Robinhood Q2 2026 release 29 Jul 2026",
+   "certainty": "Medium"
+  },
+  {
+   "name": "Temenos (SIX: TEMN)",
+   "mcap": 4.68,
+   "ev": 5.2,
+   "rev": 0.89,
+   "growth": 0.11,
+   "margin": "Non-IFRS EBIT margin ~41%",
+   "ev_rev": 5.81,
+   "ev_ebitda": 20.6,
+   "pe": 29.7,
+   "why": "ARR-based enterprise software sold to banks: the cleanest 'ARR × multiple' benchmark for regulated FI infrastructure",
+   "why_not": "Scale; core banking, not custody",
+   "source": "Temenos Q2 2026 results 22 Jul 2026; stockanalysis.com (CHF)",
+   "certainty": "Medium"
+  },
+  {
+   "name": "SS&C Technologies (SSNC)",
+   "mcap": 18.67,
+   "ev": 26.0,
+   "rev": 6.56,
+   "growth": 0.1,
+   "margin": "Adj. EBITDA 39.5%",
+   "ev_rev": 3.96,
+   "ev_ebitda": 12.3,
+   "pe": 22.8,
+   "why": "Fund administration / custodian software; institutional recurring revenue — what a bank/infra buyer benchmarks against",
+   "why_not": "100x scale; slow growth; no crypto",
+   "source": "SS&C Q2 2026 results 23 Jul 2026",
+   "certainty": "Medium"
+  },
+  {
+   "name": "Broadridge (BR)",
+   "mcap": 18.67,
+   "ev": 21.79,
+   "rev": 7.48,
+   "growth": 0.08,
+   "margin": "Adj. operating margin 27%",
+   "ev_rev": 2.89,
+   "ev_ebitda": 12.0,
+   "pe": 17.0,
+   "why": "Post-trade infrastructure with a tokenisation push; recurring/contracted revenue",
+   "why_not": "Scale; growth 8%",
+   "source": "Broadridge FY2026 results 4 Aug 2026",
+   "certainty": "Medium"
+  },
+  {
+   "name": "Adyen (AMS: ADYEN)",
+   "mcap": 28.5,
+   "ev": 16.51,
+   "rev": 2.58,
+   "growth": 0.19,
+   "margin": "EBITDA 49%",
+   "ev_rev": 6.39,
+   "ev_ebitda": 12.2,
+   "pe": 25.4,
+   "why": "Regulated payments infrastructure growing 20%+ at 49% margins — the ceiling for 'infrastructure quality' multiples",
+   "why_not": "Payments, not custody; EV nets €12.4B cash",
+   "source": "Adyen H1 2026 results Aug 2026; stockanalysis.com",
+   "certainty": "Medium"
+  },
+  {
+   "name": "Marqeta (MQ)",
+   "mcap": 1.65,
+   "ev": 0.96,
+   "rev": 0.68,
+   "growth": 0.17,
+   "margin": "Adj. EBITDA 21%",
+   "ev_rev": 1.42,
+   "ev_ebitda": "n/m",
+   "pe": "n/m",
+   "why": "API infrastructure with a documented single-customer concentration history — a live read on how markets price concentration (Liminal: top-4 = 60%)",
+   "why_not": "Card issuing, not custody",
+   "source": "Marqeta Q2 2026 8-K 4 Aug 2026; stockanalysis.com",
+   "certainty": "Medium"
+  },
+  {
+   "name": "One97 Communications / Paytm (PAYTM)",
+   "mcap": "₹1.16 lakh Cr",
+   "ev": "₹1.02 lakh Cr",
+   "rev": "₹8,967 Cr LTM",
+   "growth": 0.28,
+   "margin": "EBITDA ~8% (Q1 FY27)",
+   "ev_rev": 11.35,
+   "ev_ebitda": 157.2,
+   "pe": 180.3,
+   "why": "The acquirer's own multiple: issuing paper at ~11x sales / ~180x earnings to buy a breakeven asset at 18x ARR",
+   "why_not": "Consumer platform; not a custody comp",
+   "source": "stockanalysis.com 23 Sep 2026; Paytm Q1 FY27 release 20 Jul 2026",
+   "certainty": "Medium"
+  },
+  {
+   "name": "Zaggle (ZAGGLE) / MobiKwik / AvenuesAI — Indian B2B fintech infra",
+   "mcap": "₹2,420 / 1,646 / 5,602 Cr",
+   "ev": "n/d",
+   "rev": "₹1,999 / 1,129 / 9,516 Cr (gross)",
+   "growth": "27% / 4% / 109%",
+   "margin": "thin",
+   "ev_rev": "0.97x / 0.91x / 0.53x",
+   "ev_ebitda": "n/m",
+   "pe": "18.7x / n/m / 19.1x",
+   "why": "Indian listed B2B fintech infrastructure benchmarks",
+   "why_not": "Gross-revenue accounting; consumer wallets; different growth profiles",
+   "source": "stockanalysis.com 23 Sep 2026; company Q1 FY27 releases",
+   "certainty": "Medium"
+  }
+ ],
+ "comps_notes": [
+  "Reading: the public market prices regulated institutional custody at ~5–11x recurring revenue (BitGo) and FI-infrastructure software at 3–6x sales; 18x ARR is a 2021–22 private-market vintage (Fireblocks $8B at >$100M ARR ≈ 80x in Jan 2022) that has since compressed (BitGo −55% since IPO; Gemini −75%; Copper offers ~$200M vs ~$2B 2022 round).",
+  "Illustrative arithmetic only (peer multiple × case ARR ₹220 Cr): Bitstamp 2.1x → ₹460 Cr; SS&C 4.0x → ₹870 Cr; Temenos 5.8x → ₹1,280 Cr; BitGo 5–11x → ₹1,100–2,460 Cr; Coinbase 8.4x → ₹1,850 Cr; Paytm's own 11.4x → ₹2,500 Cr. Only Bullish (treasury-inflated) and the all-stock Zomato–Blinkit deal reach 18x.",
+  "None of this replaces the case's ₹4,000 Cr: it frames how much of the headline is strategic premium rather than financial value (see Thresholds)."
+ ],
+ "precedents": [
+  {
+   "deal": "Ripple – Metaco (Swiss institutional custody & tokenisation tech)",
+   "date": "17 May 2023",
+   "value": 250,
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Bank-grade custody/tokenisation tech; clients BNP Paribas SS, SocGen Forge, Citi, DBS; diversify outside US",
+   "buyer": "Strategic (crypto-native); Swiss target",
+   "comparability": "Closest business analogue (custody tech for banks) — and a $250M price for a bank-client roster; value undisclosed relative to revenue",
+   "source": "https://ripple.com/ripple-press/leading-enterprise-crypto-company-ripple-acquires-custody-provider-metaco-for-250m/ (17 May 2023)",
+   "certainty": "High"
+  },
+  {
+   "deal": "Robinhood – Bitstamp (licensed institutional-heavy exchange, 50+ licences)",
+   "date": "Ann. 6 Jun 2024; closed 2 Jun 2025",
+   "value": 200,
+   "target_rev": 95,
+   "multiple": 2.1,
+   "rationale": "Global licences, institutional client base, crypto-as-a-service; guided adj. EBITDA-neutral at close",
+   "buyer": "Strategic (listed)",
+   "comparability": "The only custody/exchange precedent with both price and revenue public: regulated, institutional, ~breakeven → ~2.1x net revenue",
+   "source": "Robinhood investor document https://investors.robinhood.com/static-files/4183f04d-6658-438d-9045-64ffa8e7402d ; CoinDesk 3 Jun 2025",
+   "certainty": "High"
+  },
+  {
+   "deal": "Ripple – Palisade (European MPC wallet & custody tech)",
+   "date": "3 Nov 2025",
+   "value": "n/d",
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Fast wallet provisioning; extend Ripple Custody to fintechs/corporates",
+   "buyer": "Strategic",
+   "comparability": "Closest technology analogue to an MPC custody target — terms undisclosed (typical for small tech/team deals)",
+   "source": "https://ripple.com/ripple-press/ripple-acquires-palisade-to-offer-comprehensive-digital-asset-custody-solution/ (3 Nov 2025)",
+   "certainty": "High (undisclosed)"
+  },
+  {
+   "deal": "Standard Chartered – Zodia Custody (custody business)",
+   "date": "Offer accepted May 2026; completion targeted end-Aug 2026",
+   "value": "n/d",
+   "target_rev": "n/d (Zodia raised $36M in 2023)",
+   "multiple": "n/d",
+   "rationale": "Bank consolidates digital-asset custody in-house; software arm spun out as Zodia Solutions",
+   "buyer": "Strategic (global bank)",
+   "comparability": "Shows the bank-owned custodian model and that custody-tech businesses change hands at undisclosed (small) prices in 2026",
+   "source": "https://www.sc.com/en/press-release/standard-chartered-to-acquire-zodia-custodys-custody-business/ (18 May 2026); CoinDesk 3 Jun 2026",
+   "certainty": "High"
+  },
+  {
+   "deal": "Copper (institutional custody + ClearLoop) — sale process",
+   "date": "May–Aug 2026",
+   "value": "Ask ~$500M; offers ~$200M",
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Custodian once valued ~$2B (Oct 2022 round) seeking a buyer",
+   "buyer": "Unnamed",
+   "comparability": "Live price discovery for a scaled custodian in 2026: offers at ~10% of the 2022 valuation",
+   "source": "CoinDesk 20 May 2026 and 25 Aug 2026 https://www.coindesk.com/business/2026/08/25/crypto-custody-firm-copper-has-potential-buyers-but-offers-are-way-below-its-usd500-million-asking-price",
+   "certainty": "Medium"
+  },
+  {
+   "deal": "Mastercard – BVNK (stablecoin payments infrastructure)",
+   "date": "Ann. 17 Mar 2026; completed 3 Aug 2026",
+   "value": "up to 1,800 (incl. $300M contingent)",
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Licensed fiat–stablecoin rails; faster than building",
+   "buyer": "Strategic (payments network, listed)",
+   "comparability": "Shows Mastercard's appetite and its use of contingent consideration (~17% of price) — relevant to the counter-bid and to earn-out design",
+   "source": "Mastercard IR 17 Mar 2026 / 3 Aug 2026; CNBC 17 Mar 2026",
+   "certainty": "High"
+  },
+  {
+   "deal": "Mastercard – Zerohash (talks, not consummated)",
+   "date": "Oct 2025 – May 2026",
+   "value": "reported 1,500–2,000 (never signed)",
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Stablecoin infrastructure; target chose independence",
+   "buyer": "Strategic",
+   "comparability": "Mastercard walked away twice (takeover, then minority) — it bids, but with discipline",
+   "source": "Fortune 29 Oct 2025; CoinDesk 16 Jan 2026 and 19 May 2026",
+   "certainty": "Medium"
+  },
+  {
+   "deal": "Stripe – Bridge (stablecoin orchestration)",
+   "date": "Ann. Oct 2024; closed 4 Feb 2025",
+   "value": 1100,
+   "target_rev": "n/d (third-party chatter ~$10–15M; not used)",
+   "multiple": "n/d",
+   "rationale": "Stablecoin rails; 'grew >10x in the year'",
+   "buyer": "Strategic (private payments)",
+   "comparability": "Licence-scarcity/hyper-growth premium — revenue undisclosed, so no multiple can be asserted",
+   "source": "CNBC 4 Feb 2025",
+   "certainty": "High (price) / Low (revenue)"
+  },
+  {
+   "deal": "Coinbase – Deribit (options exchange)",
+   "date": "Ann. 8 May 2025; closed 14 Aug 2025",
+   "value": 2900,
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Derivatives leadership; $700M cash + 11M COIN shares; 'immediately accretive to adj. EBITDA'",
+   "buyer": "Strategic (listed)",
+   "comparability": "Equity-heavy consideration for a profitable volume platform — the opposite profile to Liminal",
+   "source": "Coinbase blog 8 May 2025; The Block 14 Aug 2025",
+   "certainty": "High"
+  },
+  {
+   "deal": "Ripple – Hidden Road (prime broker) / GTreasury / Rail",
+   "date": "Apr, Oct, Aug 2025",
+   "value": "1,250 / 1,000 / 200",
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Prime brokerage, corporate treasury distribution, stablecoin B2B payments",
+   "buyer": "Strategic",
+   "comparability": "Large tickets with undisclosed revenue; not custody",
+   "source": "Ripple press releases 8 Apr, 16 Oct, 7 Aug 2025",
+   "certainty": "High"
+  },
+  {
+   "deal": "Fireblocks – Dynamic / TRES Finance",
+   "date": "Oct 2025 / Jan 2026",
+   "value": "~90 / ~130 (press; undisclosed by company)",
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Wallet-infra and digital-asset accounting tuck-ins by the custody-tech leader",
+   "buyer": "Strategic (private)",
+   "comparability": "Custody-tech leader buys capabilities at $90–130M — the size of tech tuck-ins in this space",
+   "source": "Fortune 7 Jan 2026; Calcalist Oct 2025",
+   "certainty": "Medium"
+  },
+  {
+   "deal": "Zomato – Paytm Insider (entertainment ticketing)",
+   "date": "21 Aug 2024",
+   "value": "₹2,048 Cr (all cash)",
+   "target_rev": "in Zomato shareholder letter (not retrieved)",
+   "multiple": "n/d",
+   "rationale": "Paytm sold a non-core asset for cash",
+   "buyer": "Strategic (listed consumer platform)",
+   "comparability": "Paytm's largest ever transaction was a SALE, not a purchase — relevant to capability/culture for a ₹4,000 Cr acquisition",
+   "source": "Business Today 22 Aug 2024; Paytm Q2 FY25 release",
+   "certainty": "High"
+  },
+  {
+   "deal": "Zomato – Blinkit (quick commerce)",
+   "date": "24 Jun 2022",
+   "value": "₹4,447 Cr (all stock)",
+   "target_rev": "₹236 Cr FY22",
+   "multiple": 18.8,
+   "rationale": "Hyper-growth consumer adjacency, paid in richly valued paper",
+   "buyer": "Strategic (listed)",
+   "comparability": "The only Indian precedent near 18x revenue: all-stock, consumer, hyper-growth — not a cash purchase of breakeven B2B infrastructure",
+   "source": "Mint 24 Jun 2022 https://www.livemint.com/companies/news/zomato-to-acquire-blinkit-for-4-447-crore-in-all-stock-deal-11656093457147.html",
+   "certainty": "High"
+  },
+  {
+   "deal": "PhonePe – ZestMoney (aborted) / WealthDesk & OpenQ",
+   "date": "Mar 2023 / May 2022",
+   "value": "aborted / ~$75M",
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "PhonePe's M&A record: small wealth-tech buys; BNPL deal abandoned after diligence",
+   "buyer": "Strategic (Walmart-backed)",
+   "comparability": "Counter-bidder's record: no acquisition since 2022; disciplined walk-away",
+   "source": "Business Standard 30 Mar 2023; Bloomberg 17 May 2022",
+   "certainty": "High/Medium"
+  },
+  {
+   "deal": "Groww – Fisdom / Razorpay – Ezetap / Pine Labs – Setu",
+   "date": "2025 / 2022 / 2022",
+   "value": "~$150M / $150–200M / $70–75M",
+   "target_rev": "n/d",
+   "multiple": "n/d",
+   "rationale": "Indian fintech infrastructure and wealth-tech tuck-ins",
+   "buyer": "Strategic",
+   "comparability": "The size band of Indian fintech infrastructure deals: ₹600–1,700 Cr; no Indian fintech has paid ₹4,000 Cr in cash for a B2B infrastructure asset",
+   "source": "TOI 2025; TOI Aug 2022; Moneycontrol Jun 2022",
+   "certainty": "Medium"
+  }
+ ],
+ "precedents_notes": [
+  "No 2025–26 custody-technology transaction with a disclosed price above $250M (Ripple–Metaco, 2023) was found; large tickets cluster in stablecoin rails and volume platforms with undisclosed revenue.",
+  "Contingent consideration is standard where value is uncertain (Mastercard–BVNK: ~17% contingent; Coinbase–Deribit and Zomato–Blinkit: equity-heavy). A 60% top-4 concentration is normally priced through structure, not through the headline.",
+  "Comparability limit: none of these targets carries an owner-specific regulatory capital charge like the case's ₹750 Cr; the drag is a case construct that has no analogue in MiCA (€125k), VARA (AED 600k / 25% of overheads), MAS (S$250k) or ADGM (6 months' opex) custodian capital rules."
+ ],
+ "regulatory": [
+  {
+   "item": "RBI Payment Aggregator Directions 2025 (Master Direction, 15 Sep 2025)",
+   "says": "Consolidates PA-O/PA-P/PA-CB; net worth ₹15 Cr → ₹25 Cr; fit-and-proper for promoters/directors; prior RBI approval only for takeover/acquisition of control OF the PA (4 Jul 2022 circular) and sale/transfer of payment activity; no provision requiring RBI approval for a PA or its parent to invest in another company; no mention of VDA/crypto",
+   "source": "RBI/DPSS/2025-26/141 https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896 (15 Sep 2025); RBI circular 4 Jul 2022 https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12348",
+   "relevance": "No licence-consent item for OCL buying Liminal; PPSL's control unchanged. Check PPSL's CoA No. 258/2025 conditions (Nov/Dec 2025) for bespoke undertakings. Hold the stake at OCL or an SPV, never inside PPSL.",
+   "type": "Diligence (CoA conditions); intimation = CS",
+   "certainty": "High"
+  },
+  {
+   "item": "RBI position on crypto: Parliamentary testimony 2 Jul 2026; FSR Dec 2025; Governor speeches 2025-26",
+   "says": "'Containment': prohibition remains a policy option; banks and regulated financial institutions should be insulated from crypto and private stablecoins; crypto barred from payments/settlement; carve-out for tokenised G-secs/corporate bonds; Reuters 8 Jul 2026: RBI formally backed a ban",
+   "source": "RBI FSR Dec 2025 https://www.rbi.org.in/Scripts/PublicationReportDetails.aspx?UrlPage=&ID=1308 ; ET/Business Today 2–3 Jul 2026; Reuters 8 Jul 2026 (via The Crypto Times 12 Jul 2026)",
+   "relevance": "The biggest non-legal risk: OCL/PPSL are RBI-regulated; RBI has asked lawmakers to keep regulated entities out of private crypto. Expect supervisory probing of ring-fencing; PPSL is <12 months into its CoA; PPBL licence cancelled 24 Apr 2026. Engage DPSS before announcement; position Liminal as tokenisation/CBDC key-management, not crypto custody.",
+   "type": "Sequencing (supervisory engagement before signing)",
+   "certainty": "High"
+  },
+  {
+   "item": "Case §3.2 'bank-like capital reserves' vs real custodian capital rules",
+   "says": "MiCA Art 67: Class 2 custodian €125k or ¼ fixed overheads; VARA: AED 600k or 25% of overheads; MAS MPI base capital S$250k; ADGM 3C: US$250k or 6 months' opex; Basel SCO60 (in force 1 Jan 2026): 1250% risk weight applies to a BANK's own Group 2 crypto exposures, not to client assets in custody (operational-risk capital only); RBI adoption of SCO60 NOT FOUND",
+   "source": "ESMA MiCA rulebook; VARA rulebook Part VI.B; MAS licensing page; ADGM FSRA VA guidance 2025; BIS SCO60 https://www.bis.org/committees/bcbs/basel-framework/standard/sco/60/inforce/2026-01-01/published/2024-11-27",
+   "relevance": "No non-bank custodian regime anywhere levies capital at the scale of ₹750 Cr/yr; the case's drag is owner-specific (Paytm as an RBI-regulated PA consolidating custody). Not overridden — used to interpret it: avoidable by structure (no consolidation), and unlikely to bind a foreign or bank-licensed buyer in the same way.",
+   "type": "Interpretation; diligence (written RBI treatment is a CP)",
+   "certainty": "High (rules) / Inference (application)"
+  },
+  {
+   "item": "FEMA Overseas Investment Rules 2022 — ODI into 'financial services' needs 3 years of net profits",
+   "says": "Schedule I para 2: an Indian entity may make ODI into a foreign financial-services entity only if it has posted net profits in the preceding three financial years; 'financial services' = activity that would require registration with / regulation by an Indian financial-sector regulator",
+   "source": "FEM (OI) Rules 2022, 22 Aug 2022; RBI Master Direction on OI (24 Jul 2024) https://m.rbi.org.in/scripts/NotificationUser.aspx?Id=12710&fn=5&Mode=0",
+   "relevance": "OCL had losses in FY24 and FY25 and its first profit in FY26 → fails the test until FY28 accounts if Liminal (Singapore parent) is 'financial services'. Whether FIU-IND registration counts is an open question. Options: RBI approval route; invest via a group entity that passes; or invest into the Indian entity. This is a binding structural gate the case does not mention.",
+   "type": "CP (structural)",
+   "certainty": "High (rule) / Medium (application)"
+  },
+  {
+   "item": "CCI merger control — deal-value threshold and minority exemptions (effective 10 Sep 2024)",
+   "says": "Deal-value threshold ₹2,000 Cr with substantial business operations in India; de minimis target exemption (India assets ≤ ₹450 Cr or turnover ≤ ₹1,250 Cr); minority exemption only <25% without control; veto rights = control ('material influence'); Phase I 30 calendar days, outer limit 150 days; gun-jumping penalty up to 1% of global assets/turnover",
+   "source": "Competition (Amendment) Act 2023 and 2024 Regulations; Cyril Amarchand alert 12 Sep 2024 https://www.cyrilshroff.com/wp-content/uploads/2024/09/Client-Alert-Demystifying-the-revised-merger-exemptions.pdf",
+   "relevance": "Full ₹4,000 Cr acquisition: above the DVT → notifiable if Liminal has SBO in India. 26% with veto: outside the minority exemption; notifiable only if thresholds met and de minimis unavailable — likely exempt on Liminal's size, but document the analysis.",
+   "type": "CP (if notifiable); standstill",
+   "certainty": "High"
+  },
+  {
+   "item": "Overseas regulators' change-of-controller consents (ADGM FSRA; VARA; MAS)",
+   "says": "FSRA requires prior approval for a person becoming a 'controller' (thresholds from 10%); VARA approval/notification for controlling-ownership changes; MAS approval for ≥20% substantial shareholders of a licensee. Liminal's actual status: ADGM FSP withdrawn Mar 2025 (register); UAE arm rebranded 'Chainberg' with VARA in-principle approval (May 2026); Singapore entity Answer Eleven on MAS 'no longer exempt' list",
+   "source": "ADGM FSRA register entry 220125 (retrieved 23 Sep 2026); LARA on the Block 17 May 2026; MAS list https://www.mas.gov.sg/regulation/payments/entities-that-are-no-longer-exempt-pursuant-to-the-ps-amend-act-21-stpr",
+   "relevance": "Case constructs Liminal as ISO 27001/SOC 2 certified with bank clients; the real-world regulatory perimeter has narrowed since 2024. First-order diligence: which entities are licensed today, and which consents a 26% or 100% buyer triggers.",
+   "type": "CP (where licensed) / red flag (where not)",
+   "certainty": "High (register) / Medium"
+  },
+  {
+   "item": "PMLA notification 7 Mar 2023 — VDA custody is a reporting activity; FIU-IND registration",
+   "says": "'Safekeeping or administration of virtual digital assets or instruments enabling control over virtual digital assets' is a notified activity; providers are reporting entities; FIU-IND registration (Liminal's Indian entity registered May 2024); enforcement against Binance (₹18.82 Cr) and Bybit (₹9.27 Cr); Jan 2026 update adds CERT-In cyber audits and travel-rule norms",
+   "source": "Gazette S.O. 1072(E) 7 Mar 2023 https://egazette.gov.in/WriteReadData/2023/244184.pdf ; PIB 31 Jan 2025 https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2098153",
+   "relevance": "AML/CFT is the only Indian regime that applies to custody today; confirm registration covers every entity serving Indian clients (offshore entities need registration too).",
+   "type": "CS (registration/compliance at closing)",
+   "certainty": "High"
+  },
+  {
+   "item": "VDA custody is otherwise unregulated in India; discussion paper shelved; Parliamentary panel pending",
+   "says": "MoF to Parliament (36th Report, 23 Jul 2026): VDAs 'presently unregulated in India, except for the limited purposes of taxation, prevention of money laundering and reporting'; DEA discussion paper shelved (Apr 2026); panel chair 16 Sep 2026: government 'does not want to regulate it'; possible SRO/SEBI/RBI framework, timing unknown",
+   "source": "Lok Sabha Finance Committee 36th Report https://sansad.in/getFile/app/lsscommittee/Finance/18_Finance_36.pdf ; The Crypto Times 16 Sep 2026",
+   "relevance": "No licensing moat for Liminal in India and no near-term Indian capital rule; a future regime (licensing, capital, ring-fencing from banks) is a scenario risk — the case's drag is one such scenario.",
+   "type": "None; scenario",
+   "certainty": "High"
+  },
+  {
+   "item": "UPI MDR — enabling Act (Aug 2026) and NPCI circular (15 Sep 2026)",
+   "says": "Taxation and Other Laws (Amendment) Act 2026 delinked s.10A PSS Act; NPCI circular OC-237: 0.4% MDR on P2M UPI > ₹2,000, capped ₹300, effective 15 Oct 2026; small merchants (≤ ₹1 lakh/month) exempt; essential categories ₹5 flat; capital-market payments 0.02%; RBI publicly backed it; Supreme Court PIL filed 16 Sep 2026; Paytm's Reg 30 filing says MDR 'will generate additional revenue' but gives no number",
+   "source": "Reuters 15 Sep 2026 https://www.reuters.com/world/india/india-payments-authority-sets-04-fee-upi-merchant-payments-above-2000-rupees-2026-09-15/ ; PIB PRID 2310586; Paytm BSE filing 15 Sep 2026",
+   "relevance": "Confirms the case's framework and date. The ₹115 Cr/yr is the case's modelling input (not a company figure). Risks: Paytm's share of the 0.4% (issuer/acquirer/TPAP split), exemptions, rollback by notification, the PIL. It accrues to Paytm regardless of Liminal → not a deal synergy.",
+   "type": "None (policy risk)",
+   "certainty": "High (framework) / Medium (Paytm share)"
+  },
+  {
+   "item": "Companies Act s.186 / s.114; SEBI LODR Reg 30; ICDR preferential issue",
+   "says": "s.186: investments beyond 60% of paid-up capital + free reserves (or 100% of free reserves) need a special resolution and a unanimous board; s.114: special resolutions need 75% → a >25% holder blocks; LODR Reg 30: acquisitions disclosed within 30 minutes/12–24 hours incl. SHA terms; ICDR Reg 164: preferential-issue floor = higher of 90-day and 10-day VWAP; special resolution; lock-in",
+   "source": "Companies Act 2013; SEBI LODR (amended 2023); SEBI ICDR 2018 (amended 2024)",
+   "relevance": "Explains why 26% is 'negative control'; a ₹1,900 Cr share-settled leg needs an EGM/postal ballot (~4–6 weeks) and locks the issue price near market → cash is cleaner; disclosure at signing means RBI reads the filing — sequence the engagement first.",
+   "type": "Sequencing",
+   "certainty": "High"
+  },
+  {
+   "item": "Data, cyber and AML obligations that bind Liminal India",
+   "says": "DPDP Act 2023 / Rules notified 14 Nov 2025 (full obligations 14 May 2027; penalties up to ₹250 Cr); RBI payment-data localisation (6 Apr 2018); CERT-In Directions 28 Apr 2022 (6-hour incident reporting; custodian wallet providers keep KYC/transaction records 5 years); RBI cyber-resilience MD for non-bank PSOs (30 Jul 2024)",
+   "source": "PIB DPDP explainer Nov 2025; RBI circular 6 Apr 2018; CERT-In Directions https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf",
+   "relevance": "Compliance stack for the ring-fence: independent CISO/CCO, segregated data and keys, India-resident payment data if Liminal ever touches PPSL's stack.",
+   "type": "CS",
+   "certainty": "High"
+  },
+  {
+   "item": "WazirX hack (18 Jul 2024, ~US$234.9M) — Liminal-managed multisig",
+   "says": "Funds drained from a WazirX Gnosis Safe multisig under a Liminal self-custody arrangement (5 WazirX + 1 Liminal signers); WazirX/Mandiant pointed at Liminal's environment; Grant Thornton (for Liminal) found no compromise of Liminal infrastructure; Delhi Police chargesheet (Nov 2024) criticised log provision; WazirX terminated Liminal (Aug 2024) and moved to BitGo/Zodia; Supreme Court dismissed victims' petition (16 Apr 2025); attributed to Lazarus Group; root cause publicly unresolved",
+   "source": "CoinDesk 14 Aug 2024 https://www.coindesk.com/business/2024/08/14/wazirx-ends-custody-relationship-with-liminal-is-moving-funds-to-new-multisig-wallets ; Inc42 9 Sep 2024; YourStory Nov 2024; CrowdfundInsider 20 Apr 2025",
+   "relevance": "Real-world reputational, litigation and cyber diligence item on the target; the case does not mention it. Reps/warranties, indemnity escrow, independent security assessment and insurance are minimum protections. Also a concrete mechanism for why institutional clients are sensitive to who controls their custodian.",
+   "type": "Diligence; indemnity/escrow",
+   "certainty": "High"
+  },
+  {
+   "item": "RBI-led tokenisation stack: UMI, tokenised CDs (8 Oct 2025), 'Demat 2.0' tokenised corporate bonds (10 Sep 2026), NPCI Drunix (17 Jun 2026); e₹ pilots with HDFC Bank and Axis Bank",
+   "says": "RBI's Unified Markets Interface settles tokenised financial assets in wholesale CBDC; SEBI/RBI 'Demat 2.0' pilot with CDSL, NSDL, exchanges, NPCI, SBI, Axis Bank; NPCI's open-source DLT; e₹-R in circulation ₹771.66 Cr at 31 Mar 2026; cross-border CBDC pilots planned 2026-27",
+   "source": "Business Standard 7 Oct 2025 and 29 May 2026; Indian Express 11 Sep 2026; Business Standard 17 Jun 2026",
+   "relevance": "The regulator builds the tokenisation and CBDC rails itself and banks are the pilot participants: a private MPC custodian's role in e₹/tokenised-deposit settlement is unproven. This caps the 'CBDC infrastructure' synergy and the hidden-value thesis; the plausible role is key-management/custody technology supplied to banks under RBI outsourcing rules.",
+   "type": "None; strategic assessment",
+   "certainty": "High"
+  },
+  {
+   "item": "Paytm group supervisory history",
+   "says": "RBI restricted Paytm Payments Bank (31 Jan 2024) and cancelled its licence (24 Apr 2026); PPSL received PA authorisation 26 Nov 2025 (online) and 17 Dec 2025 (offline, cross-border); PPBL stopped banking crypto exchanges in May 2021; RBI told Parliament (Jul 2026) regulated entities should be insulated from crypto",
+   "source": "RBI press releases prid=57224 (31 Jan 2024), prid=62621 (24 Apr 2026); Paytm Reg 30 26 Nov 2025; Inc42/The Paypers May 2021",
+   "relevance": "Paytm enters this deal with the least supervisory goodwill of any Indian payments group and a new PA licence under close watch; a crypto-custody acquisition lands in that window. The case's constructed 'bank-like reserves' is a plausible expression of exactly this risk.",
+   "type": "Sequencing / supervisory risk",
+   "certainty": "High"
+  },
+  {
+   "item": "Counter-bidder reality check: PhonePe and Mastercard",
+   "says": "No public record of any PhonePe–Mastercard consortium or custody interest (only a device-tokenisation partnership, 7 Oct 2025). PhonePe FY26 net loss ₹2,792 Cr; IPO paused 16 Mar 2026; no acquisitions since 2022; co-founders explained 'why PhonePe stayed away from cryptocurrency' (Jun 2025). Mastercard: $11.3B cash (30 Jun 2026); BVNK up to $1.8B; walked away from Zerohash; no India digital-asset action",
+   "source": "PhonePe press 7 Oct 2025; Entrackr 26 Jul 2026; TechCrunch 16 Mar 2026; Mastercard 10-Q 30 Jun 2026; CoinDesk 19 May 2026",
+   "relevance": "The consortium is a case construct. Externally, Mastercard has the money and appetite but no India custody thesis; PhonePe has neither cash nor crypto appetite. Mastercard, as a foreign non-RBI-regulated owner, would not trigger the case's Paytm-specific reserve — so its walk-away price could exceed Paytm's, which is a reason for price discipline, not for matching.",
+   "type": "None; competitive assessment",
+   "certainty": "High"
+  }
+ ],
+ "sources": [
+  {
+   "name": "Case document: Project Satoshi Gate — Problem Statement: Round 1 Case Deck Submission (5 pp.)",
+   "url": "uploaded PDF",
+   "date": "Sep 2026"
+  },
+  {
+   "name": "Addendum 1: Modeling Inputs and Clarifications (1 p.)",
+   "url": "uploaded PDF",
+   "date": "Sep 2026"
+  },
+  {
+   "name": "Paytm Q1 FY27 Earnings Release",
+   "url": "https://paytm.com/document/ir/financial-results/Paytm_Earning-Release_Q1-FY-2027.pdf",
+   "date": "20 Jul 2026"
+  },
+  {
+   "name": "Paytm Q4 FY26 Earnings Release",
+   "url": "https://paytm.com/document/ir/financial-results/fy2025-26/Paytm_Earning-Release-Q4-FY-2026.pdf",
+   "date": "6 May 2026"
+  },
+  {
+   "name": "Paytm Q4 FY26 earnings call transcript",
+   "url": "https://paytm.com/document/ir/financial-results/fy2025-26/Earnings-Call-Transcript_Q4-FY-2026.docx",
+   "date": "7 May 2026"
+  },
+  {
+   "name": "Paytm Q1 FY27 earnings call transcript (BSE filing)",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=98c94d54-c284-4e83-83b3-fc6e41943d16.pdf",
+   "date": "27 Jul 2026"
+  },
+  {
+   "name": "Paytm Reg 30 disclosure on NPCI MDR circular",
+   "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=70b3cc67-7038-473d-84e0-efad077128b0.pdf",
+   "date": "15 Sep 2026"
+  },
+  {
+   "name": "RBI press release: cancellation of Paytm Payments Bank licence",
+   "url": "https://m.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62621",
+   "date": "24 Apr 2026"
+  },
+  {
+   "name": "RBI press release: action against Paytm Payments Bank",
+   "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=57224",
+   "date": "31 Jan 2024"
+  },
+  {
+   "name": "RBI (Regulation of Payment Aggregators) Directions 2025",
+   "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+   "date": "15 Sep 2025"
+  },
+  {
+   "name": "RBI circular: takeover/acquisition of control of non-bank PSOs",
+   "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12348",
+   "date": "4 Jul 2022"
+  },
+  {
+   "name": "RBI Financial Stability Report (stablecoins chapter)",
+   "url": "https://www.rbi.org.in/Scripts/PublicationReportDetails.aspx?UrlPage=&ID=1308",
+   "date": "31 Dec 2025"
+  },
+  {
+   "name": "RBI Master Direction on Overseas Investment",
+   "url": "https://m.rbi.org.in/scripts/NotificationUser.aspx?Id=12710&fn=5&Mode=0",
+   "date": "24 Jul 2024"
+  },
+  {
+   "name": "Gazette notification S.O. 1072(E): VDA service providers under PMLA",
+   "url": "https://egazette.gov.in/WriteReadData/2023/244184.pdf",
+   "date": "7 Mar 2023"
+  },
+  {
+   "name": "Lok Sabha Standing Committee on Finance, 36th Report (Securities Markets Code 2025; VDA status)",
+   "url": "https://sansad.in/getFile/app/lsscommittee/Finance/18_Finance_36.pdf",
+   "date": "23 Jul 2026"
+  },
+  {
+   "name": "Reuters: NPCI sets 0.4% fee on UPI merchant payments above ₹2,000",
+   "url": "https://www.reuters.com/world/india/india-payments-authority-sets-04-fee-upi-merchant-payments-above-2000-rupees-2026-09-15/",
+   "date": "15 Sep 2026"
+  },
+  {
+   "name": "PIB: UPI continues to remain free for P2P and 96% of merchant transactions",
+   "url": "https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=2310586",
+   "date": "Sep 2026"
+  },
+  {
+   "name": "Cyril Amarchand: revised CCI merger exemptions and deal-value threshold",
+   "url": "https://www.cyrilshroff.com/wp-content/uploads/2024/09/Client-Alert-Demystifying-the-revised-merger-exemptions.pdf",
+   "date": "12 Sep 2024"
+  },
+  {
+   "name": "BIS Basel Framework SCO60 (cryptoasset exposures), in force 1 Jan 2026",
+   "url": "https://www.bis.org/committees/bcbs/basel-framework/standard/sco/60/inforce/2026-01-01/published/2024-11-27",
+   "date": "27 Nov 2024"
+  },
+  {
+   "name": "ADGM FSRA public register: First Answer Middle East Ltd (Liminal) — withdrawn",
+   "url": "https://www.adgm.com/public-registers/fsra/firms/financial-firms/first-answer-middle-east-limited-liminal-220125",
+   "date": "retrieved 23 Sep 2026"
+  },
+  {
+   "name": "MAS: entities no longer exempt under the PS (Amendment) Act 2021 transitional regulations",
+   "url": "https://www.mas.gov.sg/regulation/payments/entities-that-are-no-longer-exempt-pursuant-to-the-ps-amend-act-21-stpr",
+   "date": "retrieved 23 Sep 2026"
+  },
+  {
+   "name": "Liminal client disclosure (MAS exempt status statement)",
+   "url": "https://www.liminalcustody.com/client-disclosure/",
+   "date": "Apr 2025 (page modified 10 Jul 2026)"
+  },
+  {
+   "name": "Liminal seed round led by Elevation Capital ($4.7M)",
+   "url": "https://www.businesswire.com/news/home/20220531006014/en/",
+   "date": "31 May 2022"
+  },
+  {
+   "name": "Liminal FIU-IND registration (Business Today)",
+   "url": "https://www.businesstoday.in/technology/news/story/crypto-storage-provider-liminal-custody-secures-financial-intelligence-unit-registration-in-india-boosting-institutional-trust-in-web3-430708-2024-05-24",
+   "date": "24 May 2024"
+  },
+  {
+   "name": "Liminal: $100B cumulative volume, 130+ staff, 80+ businesses (PR Newswire)",
+   "url": "https://www.prnewswire.com/news-releases/liminal-custody-crosses-100-billion-in-total-transaction-volume-302706024.html",
+   "date": "5 Mar 2026"
+  },
+  {
+   "name": "Liminal Prime launch (OTC products unavailable in UAE, India, Singapore, Taiwan)",
+   "url": "https://www.globenewswire.com/news-release/2026/09/02/3355288/0/en/liminal-launches-liminal-prime-for-institutional-otc-and-stablecoin-liquidity.html",
+   "date": "2 Sep 2026"
+  },
+  {
+   "name": "CoinDesk: WazirX ends custody relationship with Liminal",
+   "url": "https://www.coindesk.com/business/2024/08/14/wazirx-ends-custody-relationship-with-liminal-is-moving-funds-to-new-multisig-wallets",
+   "date": "14 Aug 2024"
+  },
+  {
+   "name": "Inc42: third-party forensic report (Grant Thornton) on the WazirX hack",
+   "url": "https://inc42.com/buzz/wazirx-hack-liminals-platform-not-responsible-confirms-third-party-forensic-report/",
+   "date": "9 Sep 2024"
+  },
+  {
+   "name": "Liminal blog: response to WazirX 'disinformation campaign'",
+   "url": "https://www.liminalcustody.com/blog/wazirx-incident-update-response-to-ongoing-disinformation-campaign/",
+   "date": "22 Oct 2024"
+  },
+  {
+   "name": "BitGo Q2 2026 results (8-K Ex. 99.1)",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001740604/000174060426000048/btgo-exhibit991_2026xq2.htm",
+   "date": "12 Aug 2026"
+  },
+  {
+   "name": "Robinhood–Bitstamp closing investor document (Bitstamp LTM net revenue ~$95M)",
+   "url": "https://investors.robinhood.com/static-files/4183f04d-6658-438d-9045-64ffa8e7402d",
+   "date": "Jun 2025"
+  },
+  {
+   "name": "Ripple acquires Metaco for $250M",
+   "url": "https://ripple.com/ripple-press/leading-enterprise-crypto-company-ripple-acquires-custody-provider-metaco-for-250m/",
+   "date": "17 May 2023"
+  },
+  {
+   "name": "CoinDesk: Copper offers far below $500M asking price",
+   "url": "https://www.coindesk.com/business/2026/08/25/crypto-custody-firm-copper-has-potential-buyers-but-offers-are-way-below-its-usd500-million-asking-price",
+   "date": "25 Aug 2026"
+  },
+  {
+   "name": "Standard Chartered to acquire Zodia Custody's custody business",
+   "url": "https://www.sc.com/en/press-release/standard-chartered-to-acquire-zodia-custodys-custody-business/",
+   "date": "18 May 2026"
+  },
+  {
+   "name": "Mastercard completes acquisition of BVNK",
+   "url": "https://investor.mastercard.com/investor-news/investor-news-details/2026/Mastercard-completes-acquisition-of-BVNK-to-advance-global-stablecoin-capabilities/default.aspx",
+   "date": "3 Aug 2026"
+  },
+  {
+   "name": "Mastercard Q2 2026 earnings (cash $11.3B; buyback headroom $7.8B)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000081/ma06302026-exx991xearnings.htm",
+   "date": "30 Jul 2026"
+  },
+  {
+   "name": "Fireblocks surpasses $100M ARR (2022)",
+   "url": "https://www.fireblocks.com/press/fireblocks-surpasses-100-million-arr-milestone-cementing-its-status-as-saas-centaur",
+   "date": "2022"
+  },
+  {
+   "name": "Mint: Zomato to acquire Blinkit for ₹4,447 Cr in all-stock deal",
+   "url": "https://www.livemint.com/companies/news/zomato-to-acquire-blinkit-for-4-447-crore-in-all-stock-deal-11656093457147.html",
+   "date": "24 Jun 2022"
+  },
+  {
+   "name": "Business Today: Zomato–Paytm ticketing deal ₹2,048 Cr",
+   "url": "https://www.businesstoday.in/markets/stocks/story/paytm-zomato-shares-in-focus-after-rs-2048-crore-entertainment-ticketing-business-deal-442514-2024-08-22",
+   "date": "22 Aug 2024"
+  },
+  {
+   "name": "Entrackr: PhonePe FY26 loss ₹2,792 Cr",
+   "url": "https://entrackr.com/fintrackr/decoding-phonepe-fy26-the-rs-364-cr-loss-behind-the-rs-2792-cr-headline-12199210",
+   "date": "26 Jul 2026"
+  },
+  {
+   "name": "TechCrunch: PhonePe shelves IPO",
+   "url": "https://techcrunch.com/2026/03/16/walmart-backed-phonepe-shelves-ipo-as-global-tensions-rattle-markets/",
+   "date": "16 Mar 2026"
+  },
+  {
+   "name": "PhonePe Payment Gateway × Mastercard device tokenisation",
+   "url": "https://www.phonepe.com/press/phonepe-payment-gateway-collaborates-with-mastercard-to-launch-ecosystem-wide-device-tokenization-now-live-with-ixigo/",
+   "date": "7 Oct 2025"
+  },
+  {
+   "name": "Entrackr: UPI app market shares August 2026 (NPCI data)",
+   "url": "https://entrackr.com/news/phonepe-crosses-11-bn-monthly-upi-transactions-in-august-g-pay-nears-8-bn-12537408",
+   "date": "16 Sep 2026"
+  },
+  {
+   "name": "Reuters: Coinbase invests in CoinDCX at $2.45B valuation",
+   "url": "https://www.reuters.com/world/india/coinbase-invests-indian-crypto-exchange-coindcx-245-billion-valuation-2025-10-15/",
+   "date": "15 Oct 2025"
+  },
+  {
+   "name": "Coinbase launches in India with direct INR rails",
+   "url": "https://www.coinbase.com/blog/coinbase-launches-in-india-with-direct-inr-rails",
+   "date": "31 May 2026"
+  },
+  {
+   "name": "CoinSwitch launches DigiVault custody with Fireblocks",
+   "url": "https://coinswitch.co/press/coinswitch-launches-digivault-a-secure-crypto-custody-solution-for-indias-hnis-enterprises-family-offices",
+   "date": "17 Mar 2026"
+  },
+  {
+   "name": "CoinDCX incident report (July 2025 hack)",
+   "url": "https://coindcx.com/blog/announcements/incident-report-july-19-2025/",
+   "date": "20 Jul 2025"
+  },
+  {
+   "name": "Indian Express: SEBI–RBI 'Demat 2.0' tokenised corporate-bond pilot",
+   "url": "https://indianexpress.com/article/business/banking-and-finance/sebi-rbi-launch-demat-2-0-pilot-for-corporate-bond-tokenisation-10872369/",
+   "date": "11 Sep 2026"
+  },
+  {
+   "name": "Business Standard: RBI deposit-tokenisation pilot on UMI",
+   "url": "https://www.business-standard.com/amp/economy/news/rbi-deposit-tokenisation-pilot-cbdc-wholesale-digital-tokens-oct8-125100700532_1.html",
+   "date": "7 Oct 2025"
+  },
+  {
+   "name": "J.P. Morgan: Axis Bank 24/7 USD clearing via Kinexys",
+   "url": "https://www.jpmorgan.com/payments/newsroom/axis-bank-usd-clearing-kinexys",
+   "date": "26 Mar 2025"
+  },
+  {
+   "name": "The Paypers: Paytm Payments Bank stops support for crypto exchanges",
+   "url": "https://thepaypers.com/crypto-web3-and-cbdc/news/paytm-payments-bank-stops-support-for-crypto-exchanges",
+   "date": "May 2021"
+  },
+  {
+   "name": "Business Standard: 'Cryptocurrency is here to stay' — Vijay Shekhar Sharma",
+   "url": "https://www.business-standard.com/article/current-affairs/cryptocurrency-is-here-to-stay-says-paytm-founder-vijay-shekhar-sharma-121112501365_1.html",
+   "date": "25 Nov 2021"
+  },
+  {
+   "name": "Screener.in: One97 Communications consolidated page (price, market cap, shareholding)",
+   "url": "https://www.screener.in/company/PAYTM/consolidated/",
+   "date": "scraped 23 Sep 2026"
+  },
+  {
+   "name": "stockanalysis.com statistics pages (BTGO, COIN, CRCL, GEMI, BLSH, HOOD, TEMN, SSNC, BR, ADYEN, MQ, PAYTM, ZAGGLE, MOBIKWIK, INFIBEAM)",
+   "url": "https://stockanalysis.com/",
+   "date": "22–23 Sep 2026"
+  }
+ ]
+}
