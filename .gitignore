@@ -5,3 +5,4 @@ dist/
 artifacts/screenshots/*.tmp.png
 # Organizer brief and downloaded third-party papers stay private inputs
 private-inputs/
+__pycache__/
