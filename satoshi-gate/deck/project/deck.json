@@ -1,0 +1,56 @@
+{
+ "v": 4,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-24T09:00:00Z"
+ },
+ "title": "Project Satoshi Gate",
+ "order": [
+  "cover",
+  "rec",
+  "rationale",
+  "paradox",
+  "options",
+  "architecture",
+  "assumptions",
+  "valuation",
+  "financing",
+  "breakeven",
+  "governance",
+  "regulatory",
+  "downside",
+  "roadmap",
+  "appx-a",
+  "appx-b",
+  "appx-c"
+ ],
+ "sections": {
+  "s1": {
+   "description": "The recommendation and why full control fails on the case's own numbers",
+   "start": "cover"
+  },
+  "s2": {
+   "description": "The staged structure, its assumptions, valuation and financing",
+   "start": "architecture"
+  },
+  "s3": {
+   "description": "Breakeven, retention, regulation, downside and the roadmap",
+   "start": "breakeven"
+  },
+  "s4": {
+   "description": "Appendix: bridges, tables, risks, returns",
+   "start": "appx-a"
+  }
+ },
+ "faces": {
+  "poppins": {
+   "family": "Poppins",
+   "href": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap"
+  },
+  "inter": {
+   "family": "Inter",
+   "href": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+  }
+ },
+ "designSystems": []
+}
