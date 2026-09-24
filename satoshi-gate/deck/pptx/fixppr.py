@@ -1,5 +1,5 @@
 import zipfile, re, shutil, sys
-src='ETERNAL_Project_Satoshi_Gate.pptx'; tmp='fixed.pptx'
+src=__import__('sys').argv[1]; tmp='fixed.pptx'
 zin=zipfile.ZipFile(src); zout=zipfile.ZipFile(tmp,'w',zipfile.ZIP_DEFLATED)
 pPr=re.compile(r'<a:pPr\b[^>]*?(?:/>|>.*?</a:pPr>)',re.S); para=re.compile(r'<a:p>(.*?)</a:p>',re.S); fixed=0
 for it in zin.infolist():
