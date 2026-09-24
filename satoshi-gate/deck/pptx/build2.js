@@ -1,7 +1,7 @@
 const pptxgen = require('pptxgenjs');
 const P = new pptxgen(); P.layout='LAYOUT_WIDE'; P.author='Team ETERNAL'; P.title='Project Satoshi Gate';
 const NAVY='0B2A5B', BLUE='1F5FBF', SKY='2F80ED', LIGHT='DCE8FA', PALE='EEF3FB', INK='1A2433', BODY='333D4D', MUTED='6A7383', LINE='BFC9DA', GREY='F3F5F9', WHITE='FFFFFF', RED='B23A3A', GREEN='1F7A45', AMBER='C2790F';
-const HF='Cambria', BF='Calibri';
+const HF='Times New Roman', BF='Times New Roman';
 const SECTIONS=['RECOMMENDATION','RATIONALE','STRUCTURE','FINANCIALS','RISK & GOVERNANCE','ROADMAP','APPENDIX'];
 let n=0;
 const R=(str,base={})=>str.split('**').map((t,i)=>({text:t,options:{...base,bold:i%2===1||base.bold}})).filter(p=>p.text!=='');
@@ -15,7 +15,7 @@ function footer(s,sec){
   rect(s,12.2,6.9,0.03,0.5,NAVY); T(s,12.3,6.85,0.9,0.6,String(n),{fs:22,bold:true,color:NAVY,valign:'middle',font:HF});
 }
 function slide(sec,title,tagline){ const s=P.addSlide(); n++; s.background={color:WHITE};
-  T(s,0.45,0.3,12.4,0.5,title,{fs:24,bold:true,color:NAVY,font:HF,valign:'middle'});
+  T(s,0.45,0.3,12.4,0.5,title.toUpperCase(),{fs:22,bold:true,color:NAVY,font:HF,valign:'middle'});
   T(s,0.45,0.8,12.4,0.35,tagline,{fs:13,color:BLUE,italic:true,valign:'middle'});
   hline(s,0.45,1.2,12.43,NAVY,1.5); footer(s,sec); return s; }
 function hdr(s,x,y,w,text,color=NAVY){ rect(s,x,y,w,0.34,color); T(s,x+0.12,y,w-0.2,0.34,text,{fs:11,bold:true,color:WHITE,valign:'middle'}); }
@@ -33,19 +33,28 @@ function note(s,x,y,w,h,label,text,fill=NAVY){ rect(s,x,y,w,h,fill); T(s,x+0.15,
 
 // ===== TITLE =====
 { const s=P.addSlide(); n++; s.background={color:WHITE};
-  rect(s,0,0,13.33,0.12,NAVY); rect(s,0,0.12,13.33,0.05,SKY);
-  rect(s,0.45,1.7,0.1,3.0,NAVY);
-  T(s,0.8,1.6,8,0.4,'PAYTM  ×  LIMINAL CUSTODY SOLUTIONS',{fs:14,bold:true,color:BLUE});
-  T(s,0.8,2.05,11.5,1.2,'PROJECT SATOSHI GATE',{fs:46,bold:true,color:NAVY,font:HF,valign:'middle'});
-  T(s,0.8,3.4,9,0.5,'Board Transaction Recommendation',{fs:22,color:INK,font:HF});
-  T(s,0.8,4.1,9,0.5,'Strategic access today. Control only when the economics are proven.',{fs:15,italic:true,color:BLUE});
-  rect(s,0.45,5.2,12.43,0.02,LINE);
-  T(s,0.45,5.35,2.5,0.35,'TEAM ETERNAL',{fs:13,bold:true,color:NAVY});
-  const team=['Raunak Jain','Sambhav Khandelwal','Surya Swarup','Naman Ghosh','Akshith Aitha'];
-  team.forEach((t,i)=>{ rect(s,0.45+i*2.5,5.8,2.35,0.5,PALE,LINE); T(s,0.45+i*2.5,5.8,2.35,0.5,t,{fs:12,bold:true,color:INK,align:'center',valign:'middle'}); });
-  rect(s,0,6.72,13.33,0.78,GREY); rect(s,0,6.72,13.33,0.05,NAVY); rect(s,0,6.79,13.33,0.03,SKY);
-  T(s,0.45,6.85,8,0.6,'DataForge 2026  ·  Case: Project Satoshi Gate  ·  Board deck',{fs:11,bold:true,color:NAVY,valign:'middle'});
-  rect(s,12.2,6.9,0.03,0.5,NAVY); T(s,12.3,6.85,0.9,0.6,'1',{fs:22,bold:true,color:NAVY,valign:'middle',font:HF});
+  // right illustration panel
+  rect(s,8.3,0,5.03,7.5,NAVY);
+  rect(s,8.3,0,0.06,7.5,SKY);
+  // concentric rings ("gate" motif)
+  const cx=10.82, cy=3.35;
+  [[3.6,'1F3F7A',1.0],[2.9,'2B5296',1.0],[2.2,'3A67B5',1.25],[1.5,'5B8AD6',1.5],[0.8,'8FB4EA',2.0]].forEach(([d,col,w])=>{ s.addShape(P.ShapeType.ellipse,{x:cx-d/2,y:cy-d/2,w:d,h:d,fill:{type:'none'},line:{color:col,width:w}}); });
+  s.addShape(P.ShapeType.ellipse,{x:cx-0.16,y:cy-0.16,w:0.32,h:0.32,fill:{color:SKY},line:{color:SKY}});
+  // horizontal rails through the rings
+  [cy-0.9,cy,cy+0.9].forEach((yy,k)=>{ s.addShape(P.ShapeType.line,{x:8.75,y:yy,w:4.2,h:0,line:{color:k===1?'8FB4EA':'3A67B5',width:k===1?1.25:0.75}}); });
+  // subtle dot grid at bottom of panel
+  for(let r=0;r<3;r++) for(let c=0;c<14;c++){ s.addShape(P.ShapeType.ellipse,{x:8.7+c*0.32,y:6.15+r*0.32,w:0.06,h:0.06,fill:{color:'3A67B5'},line:{color:'3A67B5'}}); }
+  // left content
+  rect(s,0.7,1.55,0.08,2.9,NAVY);
+  T(s,1.05,1.5,7,0.35,'PAYTM  ×  LIMINAL CUSTODY SOLUTIONS',{fs:12,bold:true,color:BLUE});
+  T(s,1.05,1.95,7,1.4,'PROJECT\nSATOSHI GATE',{fs:40,bold:true,color:NAVY,font:HF,valign:'middle'});
+  T(s,1.05,3.45,7,0.45,'BOARD TRANSACTION RECOMMENDATION',{fs:14,color:INK,font:HF});
+  hline(s,1.05,4.0,2.2,SKY,2);
+  T(s,1.05,4.15,7,0.5,'Strategic access today. Control only when the economics are proven.',{fs:13,italic:true,color:BLUE});
+  T(s,1.05,5.55,7,0.3,'TEAM ETERNAL',{fs:11,bold:true,color:NAVY});
+  T(s,1.05,5.85,7,0.3,'Raunak Jain  ·  Sambhav Khandelwal  ·  Surya Swarup  ·  Naman Ghosh  ·  Akshith Aitha',{fs:10.5,color:BODY});
+  rect(s,0,6.72,8.3,0.78,GREY); rect(s,0,6.72,8.3,0.05,NAVY); rect(s,0,6.79,8.3,0.03,SKY);
+  T(s,0.45,6.85,7,0.6,'DATAFORGE 2026  ·  CASE: PROJECT SATOSHI GATE',{fs:10.5,bold:true,color:NAVY,valign:'middle'});
 }
 
 // ===== SLIDE 1 RECOMMENDATION =====
@@ -144,9 +153,8 @@ function note(s,x,y,w,h,label,text,fill=NAVY){ rect(s,x,y,w,h,fill); T(s,x+0.15,
   panel(s,0.45,4.3,4.6,2.25,'VALUE AT THE ORIGINAL 18.2× MULTIPLE');
   tbl(s,0.55,4.75,4.4,[['Churn','Retained ARR','Implied value'],['30%','₹154 Cr','**~₹2,800 Cr**'],['37.5%','₹137.5 Cr','**~₹2,500 Cr**'],['45%','₹121 Cr','**~₹2,200 Cr**']],[26,34,40],10.5,0.38,{firstBold:false});
   panel(s,5.2,4.3,3.7,2.25,'REVENUE RECOVERY HURDLE');
-  stat(s,5.35,4.75,1.65,1.1,'+42.9%','growth required after **30% churn**: ₹154 Cr → ₹220 Cr',AMBER);
-  stat(s,7.1,4.75,1.65,1.1,'+81.8%','growth required after **45% churn**: ₹121 Cr → ₹220 Cr',RED);
-  T(s,5.35,5.95,3.4,0.5,'…just to **recover the original ARR base**.',{fs:10.5,italic:true,color:MUTED,valign:'middle'});
+  tbl(s,5.3,4.75,3.5,[['After churn','Retained → original','Growth required'],['30%','₹154 Cr → ₹220 Cr','**+42.9%**'],['45%','₹121 Cr → ₹220 Cr','**+81.8%**']],[24,44,32],10,0.4,{firstBold:true});
+  rect(s,5.3,6.0,3.5,0.42,PALE,LINE); T(s,5.4,6.0,3.3,0.42,'…just to **recover the original ARR base**',{fs:10,italic:true,color:NAVY,align:'center',valign:'middle'});
   panel(s,9.05,4.3,3.83,2.25,'STRUCTURING RESPONSE');
   chips(s,9.2,4.75,3.55,['Deferred Consideration','Earn-Out'],0.38,9.5); chips(s,9.2,5.2,3.55,['CVR','Retention-Linked Payout'],0.38,9.5);
   rect(s,9.2,5.68,3.55,0.75,NAVY); T(s,9.3,5.68,3.35,0.75,'**KEY MESSAGE:** Do not pay ₹4,000 Cr unconditionally for revenue that may disappear because of the acquisition itself.',{fs:9.5,color:WHITE,valign:'middle'});
@@ -311,4 +319,4 @@ function note(s,x,y,w,h,label,text,fill=NAVY){ rect(s,x,y,w,h,fill); T(s,x+0.15,
   rect(s,7.35,5.8,5.38,0.6,NAVY); T(s,7.45,5.8,5.2,0.6,'**END STATE:** Control becomes an earned option — not a day-one commitment.',{fs:10.5,color:WHITE,valign:'middle',align:'center'});
 }
 
-P.writeFile({fileName:'ETERNAL_Project_Satoshi_Gate_v2.pptx'}).then(()=>console.log('written',n,'slides'));
+P.writeFile({fileName:'ETERNAL_Project_Satoshi_Gate_v3.pptx'}).then(()=>console.log('written',n,'slides'));
