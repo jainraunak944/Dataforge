@@ -2,11 +2,12 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.properties import PageSetupProperties
+from openpyxl.formatting.rule import CellIsRule, ColorScaleRule, DataBarRule, FormulaRule
 
 FN='Times New Roman'
 F=lambda **k: Font(name=FN, **k)
-GREY=PatternFill('solid',fgColor='E7E6E6'); LBLUE=PatternFill('solid',fgColor='DDEBF7'); LGREEN=PatternFill('solid',fgColor='E2EFDA'); LYEL=PatternFill('solid',fgColor='FFF2CC'); WHITE=PatternFill('solid',fgColor='FFFFFF')
-thin=Side(style='thin',color='A6A6A6'); BOX=Border(left=thin,right=thin,top=thin,bottom=thin); BOT=Border(bottom=Side(style='medium',color='000000'))
+GREY=PatternFill('solid',fgColor='1F3864'); LBLUE=PatternFill('solid',fgColor='2F5597'); LGREEN=PatternFill('solid',fgColor='E2EFDA'); LYEL=PatternFill('solid',fgColor='FFF2CC'); WHITE=PatternFill('solid',fgColor='FFFFFF'); BAND=PatternFill('solid',fgColor='DDEBF7'); INFILL=PatternFill('solid',fgColor='FFF9DB'); PAGE=PatternFill('solid',fgColor='F7F9FC')
+thin=Side(style='thin',color='8EA9DB'); BOX=Border(left=thin,right=thin,top=thin,bottom=thin); BOT=Border(bottom=Side(style='medium',color='000000'))
 INPUT=F(color='0000FF'); LINK=F(color='008000'); BOLD=F(bold=True); HDR=F(bold=True); TITLE=F(bold=True,size=14); SUB=F(italic=True,size=10,color='595959')
 NUM='#,##0;(#,##0);-'; NUM1='#,##0.0;(#,##0.0);-'; NUM2='#,##0.00;(#,##0.00);-'; PCT='0.0%;(0.0%);-'; MULT='0.0"x"'; RS='"₹"#,##0;("₹"#,##0);-'
 
@@ -16,26 +17,32 @@ for k in ('creator','lastModifiedBy','title','subject','description','keywords',
     except Exception: pass
 wb.properties.creator=''; wb.properties.lastModifiedBy=''
 
+TABS={'Cover':'1F3864','Summary':'375623','Inputs':'BF8F00','Valuation & Churn':'2F5597','Financing & EPS':'2E75B6','Liminal Projection':'44546A','PAT & FCF Breakeven':'C00000','Call Option & Earn-out':'0E7C7B','Sensitivities':'7F6000'}
 def sheet(name,widths):
     ws=wb.create_sheet(name)
     for i,w in enumerate(widths,1): ws.column_dimensions[get_column_letter(i)].width=w
-    ws.sheet_view.showGridLines=False
+    ws.sheet_view.showGridLines=True
+    ws.sheet_properties.tabColor=TABS.get(name,'1F3864')
     return ws
 def title(ws,t,sub):
     ws['B2']=t; ws['B2'].font=TITLE; ws['B3']=sub; ws['B3'].font=SUB
 def hdr(ws,row,cols,vals,fill=GREY):
     for c,v in zip(cols,vals):
-        cell=ws.cell(row=row,column=c,value=v); cell.font=HDR; cell.fill=fill; cell.border=BOX; cell.alignment=Alignment(horizontal='center',vertical='center',wrap_text=True)
+        cell=ws.cell(row=row,column=c,value=v); cell.font=F(bold=True,color='FFFFFF'); cell.fill=fill; cell.border=BOX; cell.alignment=Alignment(horizontal='center',vertical='center',wrap_text=True)
 def put(ws,ref,val,fmt=None,font=None,fill=None,bold=False,align=None,border=True):
     c=ws[ref]; c.value=val
     c.font=font or (F(bold=True) if bold else F())
     if fmt: c.number_format=fmt
     if fill: c.fill=fill
+    elif font is INPUT: c.fill=INFILL
     if border: c.border=BOX
     if align: c.alignment=Alignment(horizontal=align,vertical='center',wrap_text=True)
+    else:
+        col=''.join(ch for ch in ref if ch.isalpha())
+        c.alignment=Alignment(horizontal='left' if col=='B' and isinstance(val,str) else 'center',vertical='center',wrap_text=isinstance(val,str) and col!='B' and len(val)>28)
     return c
 def section(ws,row,text,span=6):
-    c=ws.cell(row=row,column=2,value=text); c.font=F(bold=True,size=11); c.fill=LBLUE
+    c=ws.cell(row=row,column=2,value=text); c.font=F(bold=True,size=11,color='FFFFFF'); c.fill=LBLUE; c.alignment=Alignment(vertical='center')
     for col in range(2,2+span): ws.cell(row=row,column=col).fill=LBLUE; ws.cell(row=row,column=col).border=BOX
 def allfont(ws):
     for row in ws.iter_rows():
@@ -43,7 +50,7 @@ def allfont(ws):
             if c.font is None or c.font.name!=FN: c.font=F(bold=c.font.bold,italic=c.font.italic,color=c.font.color,size=c.font.size or 11)
 
 # ================= COVER =================
-ws=wb.active; ws.title='Cover'; ws.sheet_view.showGridLines=False
+ws=wb.active; ws.title='Cover'; ws.sheet_view.showGridLines=True; ws.sheet_properties.tabColor=TABS['Cover']
 ws.column_dimensions['A'].width=3; ws.column_dimensions['B'].width=34; ws.column_dimensions['C'].width=80
 ws['B2']='PROJECT SATOSHI GATE'; ws['B2'].font=F(bold=True,size=18)
 ws['B3']='Paytm × Liminal Custody Solutions — Accretion/Dilution and Transaction Model'; ws['B3'].font=F(size=12)
@@ -137,12 +144,12 @@ rows=[('Liminal ARR growth — base case',0.20,PCT,'TA','Bear 10% / Bull 30% tes
 ('FCF as % of PAT',1.00,PCT,'TA','Asset-light; working capital neutral','fcfconv'),
 ('Churn applied in full-acquisition counterfactual',0.375,PCT,'TA','Midpoint of case 30–45% range','churnbase'),
 ('Cost stickiness in churn year (share of lost revenue)',0.50,PCT,'TA','Half of the lost revenue’s cost base persists one year','sticky'),
-('Churn under minority / JV structure',0.00,PCT,'TA','No change of control — validated through client consents','churnmin'),
-('Capital drag applied at minority level (₹ Cr/yr)',0,NUM,'TA','Case does not specify; RBI treatment is a validation gate','dragmin'),
+('Churn under minority / JV structure',0.00,'0.0%','TA','No change of control — validated through client consents','churnmin'),
+('Capital drag applied at minority level (₹ Cr/yr)',0,'#,##0','TA','Case does not specify; RBI treatment is a validation gate','dragmin'),
 ('Capital drag applied at control (₹ Cr/yr)',750,NUM,'TA','Default = case ₹750 Cr; flex to test gate','dragctrl'),
 ('Churn applied at control exercise',0.20,PCT,'TA','Maximum acceptable under client-consent gate','churnctrl'),
 ('UPI MDR — EBITDA flow-through',0.80,PCT,'TA','Net revenue with minimal incremental cost','mdrflow'),
-('Synergies in base case (₹ Cr/yr)',0,NUM,'TA','Conservative: zero in base; upside only','syn')]
+('Synergies in base case (₹ Cr/yr)',0,'#,##0','TA','Conservative: zero in base; upside only','syn')]
 for lab,v,fm,cat,src,nm in rows: inp(r,lab,v,fm,cat,src,nm); r+=1
 r+=1; section(ws,r,'DERIVED CALCULATIONS (formulas)',4); r+=1
 def calc(row,label,formula,fmt,note,name):
@@ -161,7 +168,6 @@ calc(r,'MDR as % of ₹750 Cr drag — gross',f"={I['mdr']}/{I['drag']}",PCT,'�
 calc(r,'MDR as % of ₹750 Cr drag — after conversion',f"={I['mdrpat']}/{I['drag']}",PCT,'≈ 9%','mdrnet'); r+=1
 calc(r,'NPV of capital drag — 10-year annuity at WACC (₹ Cr)',f"={I['drag']}*(1-(1+{I['wacc']})^-10)/{I['wacc']}",NUM,'≈ ₹4,238 Cr vs ₹4,000 Cr price','dragnpv'); r+=1
 calc(r,'Capital drag as % of Paytm EBITDA',f"={I['drag']}/{I['ebitda']}",PCT,'≈ 117%','dragebitda'); r+=1
-ws.freeze_panes='B6'
 
 # ================= VALUATION & CHURN =================
 ws=sheet('Valuation & Churn',[3,30,16,16,18,18,20])
@@ -170,7 +176,7 @@ put(ws,'B5','Headline valuation'); put(ws,'C5',f"={I['deal']}",NUM,LINK); put(ws
 hdr(ws,7,[2,3,4,5,6,7],['Full-control churn','ARR lost (₹ Cr)','Retained ARR (₹ Cr)','₹4,000 Cr / retained ARR','Implied value at headline multiple (₹ Cr)','Value gap vs ₹4,000 Cr'])
 churns=[0,f"={I['churnlo']}",f"={I['churnbase']}",f"={I['churnhi']}"]
 for i,cv in enumerate(churns):
-    r=8+i; put(ws,f'B{r}',cv,PCT,INPUT if i==0 else LINK); put(ws,f'C{r}',f"={I['arr']}*B{r}",NUM1); put(ws,f'D{r}',f"={I['arr']}-C{r}",NUM1); put(ws,f'E{r}',f"={I['deal']}/D{r}",MULT,bold=True); put(ws,f'F{r}',f"={I['mult']}*D{r}",NUM); put(ws,f'G{r}',f"={I['deal']}-F{r}",NUM)
+    r=8+i; put(ws,f'B{r}',cv,'0.0%',INPUT if i==0 else LINK); put(ws,f'C{r}',f"={I['arr']}*B{r}",NUM1); put(ws,f'D{r}',f"={I['arr']}-C{r}",NUM1); put(ws,f'E{r}',f"={I['deal']}/D{r}",MULT,bold=True); put(ws,f'F{r}',f"={I['mult']}*D{r}",NUM); put(ws,f'G{r}',f"={I['deal']}-F{r}",NUM)
 put(ws,'B13','Value destroyed per 10 pts of churn at headline multiple (₹ Cr)'); put(ws,'E13',f"={I['mult']}*{I['arr']}*0.1",NUM,fill=LYEL,bold=True)
 hdr(ws,15,[2,3,4,5],['Revenue recovery hurdle','Retained ARR (₹ Cr)','Original ARR (₹ Cr)','Growth required to recover'])
 put(ws,'B16','After 30% churn'); put(ws,'C16','=D9',NUM1); put(ws,'D16',f"={I['arr']}",NUM,LINK); put(ws,'E16','=D16/C16-1',PCT,bold=True)
@@ -352,7 +358,6 @@ put(ws,f'B{r+24}','UPI MDR incremental net revenue (₹ Cr/yr)'); put(ws,f'C{r+2
 put(ws,f'B{r+25}','UPI MDR after PAT/FCF conversion (₹ Cr/yr)'); put(ws,f'C{r+25}',f"={I['mdrpat']}",NUM,LINK); put(ws,f'D{r+25}','offset after conversion'); put(ws,f'F{r+25}',f"={I['mdrnet']}",PCT,bold=True)
 put(ws,f'B{r+26}','Net annual cash cost of full ownership after MDR (₹ Cr/yr)'); put(ws,f'C{r+26}',f"={I['drag']}-{I['mdrpat']}",NUM,fill=LYEL,bold=True)
 put(ws,f'B{r+27}','10-year NPV of the drag at WACC (₹ Cr) vs headline price'); put(ws,f'C{r+27}',f"={I['dragnpv']}",NUM,LINK); put(ws,f'D{r+27}',f"={I['deal']}",NUM,LINK)
-ws.freeze_panes='C7'
 
 # ================= CALL OPTION & EARN-OUT =================
 ws=sheet('Call Option & Earn-out',[3,44,16,16,16,16,18])
@@ -366,7 +371,7 @@ put(ws,'B10','Maximum total consideration incl. Phase 1 (₹ Cr)'); put(ws,'C10'
 put(ws,'B11','Maximum unconditional consideration (₹ Cr)'); put(ws,'C11',f"={I['p1inv']}",NUM,LINK)
 hdr(ws,13,[2,3,4,5,6,7],['Post-control churn','Retained ARR','Earn-out paid (₹ Cr)','Control total (₹ Cr)','Grand total incl. Phase 1 (₹ Cr)','Remaining stake × headline multiple × retained ARR (₹ Cr)'])
 for i,cv in enumerate([0,0.10,0.20,0.30,0.375,0.45,0.55]):
-    r=14+i; put(ws,f'B{r}',cv,PCT,INPUT); put(ws,f'C{r}',f"=1-B{r}",PCT); put(ws,f'D{r}',f"=$C$8*MIN(MAX((C{r}-$C$9)/(1-$C$9),0),1)",NUM); put(ws,f'E{r}',f"=$C$7+D{r}",NUM,bold=True); put(ws,f'F{r}',f"={I['p1inv']}+E{r}",NUM); put(ws,f'G{r}',f"={I['rem']}*{I['mult']}*{I['arr']}*C{r}",NUM)
+    r=14+i; put(ws,f'B{r}',cv,'0.0%',INPUT); put(ws,f'C{r}',f"=1-B{r}",PCT); put(ws,f'D{r}',f"=$C$8*MIN(MAX((C{r}-$C$9)/(1-$C$9),0),1)",NUM); put(ws,f'E{r}',f"=$C$7+D{r}",NUM,bold=True); put(ws,f'F{r}',f"={I['p1inv']}+E{r}",NUM); put(ws,f'G{r}',f"={I['rem']}*{I['mult']}*{I['arr']}*C{r}",NUM)
 put(ws,'B22','Earn-out shares if settled in Paytm stock at current price (Cr, maximum)'); put(ws,'C22',f"=IF({I['eoshares']}=1,C8/{I['price']},0)",NUM2,fill=LYEL); put(ws,'D22','% of share count'); put(ws,'E22',f"=C22/{I['shares']}",PCT)
 put(ws,'B23','Earn-out per 10 points of retained ARR (₹ Cr)'); put(ws,'C23','=C8/(1-C9)*0.1',NUM)
 put(ws,'B25','Pricing principle: consideration = lower of (1) agreed headline valuation mechanics and (2) retained-ARR / performance-based value, subject to client retention, regulatory capital treatment, financial performance, the valuation cap and customary adjustments. Column G shows the retained-ARR value; column E shows what the schedule pays.',font=F(size=9,italic=True,color='595959'),border=False)
@@ -384,7 +389,7 @@ title(ws,'7. Sensitivities','Year-1 EPS and FCF under key downside scenarios —
 section(ws,5,'A. Full acquisition (headline mix) — year-1 EPS by churn and cash-yield assumption',7)
 hdr(ws,6,[2,3,4,5,6,7],['Cash yield ↓ · Churn →','0%','30%','37.5%','45%','55%'])
 churn_vals=[0,0.30,0.375,0.45,0.55]
-for j,cv in enumerate(churn_vals): put(ws,f'{"CDEFG"[j]}6',cv,PCT,INPUT)
+for j,cv in enumerate(churn_vals): put(ws,f'{"CDEFG"[j]}6',cv,'0.0%',INPUT)
 for i,yv in enumerate([0.05,0.06,0.07]):
     r=7+i; put(ws,f'B{r}',yv,PCT,INPUT)
     for j in range(5):
@@ -399,9 +404,9 @@ for i,yv in enumerate([0.05,0.06,0.07]):
 put(ws,'B10','Baseline EPS for reference (₹)'); put(ws,'C10',f"={I['eps']}",NUM2,LINK)
 section(ws,12,'B. Full acquisition — year-1 incremental FCF by churn and capital-drag treatment (₹ Cr)',7)
 hdr(ws,13,[2,3,4,5,6,7],['Capital drag ↓ · Churn →','0%','30%','37.5%','45%','55%'])
-for j,cv in enumerate(churn_vals): put(ws,f'{"CDEFG"[j]}13',cv,PCT,INPUT)
+for j,cv in enumerate(churn_vals): put(ws,f'{"CDEFG"[j]}13',cv,'0.0%',INPUT)
 for i,dv in enumerate([0,195,375,750]):
-    r=14+i; put(ws,f'B{r}',dv,NUM,INPUT)
+    r=14+i; put(ws,f'B{r}',dv,'#,##0',INPUT)
     for j in range(5):
         c='CDEFG'[j]
         lim=(f"IF(({I['arr']}*(1+{I['g']})*(1-{c}$13)*MIN({I['mstep']},{I['mcapm']})-{I['sticky']}*{I['arr']}*(1+{I['g']})*{c}$13)>0,"
@@ -411,7 +416,7 @@ for i,dv in enumerate([0,195,375,750]):
 put(ws,'B19','Reading: the ₹750 Cr row is the case assumption; ₹195 Cr ≈ pro-rata at 25%+; ₹0 = drag avoided or structured away. No cell in the ₹750 Cr row is positive at any churn level.',font=F(size=9,italic=True,color='595959'),border=False)
 section(ws,21,'C. Phase-1 minority — year-1 EPS by cash yield and minority-level capital drag (economic basis)',7)
 hdr(ws,22,[2,3,4,5,6],['Cash yield ↓ · Drag at minority (₹ Cr) → (EPS unaffected: drag is a cash item; see FCF row)','0','100','195','750'])
-for j,dv in enumerate([0,100,195,750]): put(ws,f'{"CDEF"[j]}22',dv,NUM,INPUT)
+for j,dv in enumerate([0,100,195,750]): put(ws,f'{"CDEF"[j]}22',dv,'#,##0',INPUT)
 for i,yv in enumerate([0.05,0.06,0.07]):
     r=23+i; put(ws,f'B{r}',yv,PCT,INPUT)
     for j in range(4):
@@ -434,7 +439,7 @@ put(ws,'B31','Multiple of ARR');
 for j in range(4): c='CDEF'[j]; put(ws,f'{c}31',f"={c}30/{I['arr']}",MULT)
 put(ws,'B32','Supports ₹4,000 Cr headline?')
 for j in range(4): c='CDEF'[j]; put(ws,f'{c}32',f'=IF({c}30>={I["deal"]},"Yes","No")',align='center')
-put(ws,'G30','≈ 31% p.a. (solved iteratively; enter a growth rate on Inputs and read Valuation & Churn!G36)',font=F(size=9,italic=True,color='595959'))
+put(ws,'G30','≈ 31% p.a. (solve by entering a growth rate on Inputs; read Valuation & Churn!G36)',font=F(size=9,italic=True,color='595959'),align='left'); ws['G30'].alignment=Alignment(horizontal='left',vertical='center',wrap_text=False)
 section(ws,34,'E. Downside playbook — triggers read from the model',7)
 hdr(ws,35,[2,3,4],['Trigger','Model reading','Response'])
 dp=[('Churn > 45%',"='Valuation & Churn'!E11",'Do not exercise control / activate price protection / reassess partnership'),
@@ -476,5 +481,45 @@ wb.move_sheet('Summary', offset=-(len(wb.sheetnames)-2))
 # sheet order / fonts
 for w in wb.worksheets:
     allfont(w)
-    w.sheet_properties.tabColor=None
+    w.sheet_properties.tabColor=TABS.get(w.title,'1F3864')
+# ---- banding, alignment and conditional formatting ----
+REDF=Font(name=FN,color='C00000'); GREENF=Font(name=FN,color='375623')
+YES=PatternFill('solid',fgColor='C6EFCE'); NO=PatternFill('solid',fgColor='FFC7CE')
+for w in wb.worksheets:
+    mr=w.max_row; mc=w.max_column; last=get_column_letter(mc)
+    for row in w.iter_rows(min_row=1,max_row=mr):
+        for c in row:
+            if c.value is None: continue
+            a=c.alignment; c.alignment=Alignment(horizontal=a.horizontal or 'center',vertical='center',wrap_text=a.wrap_text)
+    if w.title in ('Cover',): continue
+    rng=f"C1:{last}{mr}"
+    w.conditional_formatting.add(rng,CellIsRule(operator='lessThan',formula=['0'],font=REDF))
+    w.conditional_formatting.add(rng,CellIsRule(operator='equal',formula=['"Yes"'],fill=YES,font=GREENF))
+    w.conditional_formatting.add(rng,CellIsRule(operator='equal',formula=['"No"'],fill=NO,font=REDF))
+    w.conditional_formatting.add(rng,CellIsRule(operator='equal',formula=['"Not within 10 years"'],fill=NO,font=REDF))
+    w.conditional_formatting.add(rng,CellIsRule(operator='equal',formula=['"Not supported"'],fill=NO,font=REDF))
+    w.conditional_formatting.add(rng,CellIsRule(operator='equal',formula=['"Supported"'],fill=YES,font=GREENF))
+S=wb['Sensitivities']
+for r in ('C7:G9','C23:F25'): S.conditional_formatting.add(r,ColorScaleRule(start_type='min',start_color='F8CBAD',mid_type='percentile',mid_value=50,mid_color='FFFFFF',end_type='max',end_color='C6EFCE'))
+S.conditional_formatting.add('C14:G17',ColorScaleRule(start_type='min',start_color='F8CBAD',end_type='max',end_color='FFFFFF'))
+S.conditional_formatting.add('C30:F30',ColorScaleRule(start_type='min',start_color='FFFFFF',end_type='max',end_color='C6EFCE'))
+C=wb['Call Option & Earn-out']; C.conditional_formatting.add('D14:D20',DataBarRule(start_type='num',start_value=0,end_type='max',color='2F5597'))
+C.conditional_formatting.add('C29:F31',ColorScaleRule(start_type='min',start_color='F8CBAD',mid_type='num',mid_value=0.12,mid_color='FFFFFF',end_type='max',end_color='C6EFCE'))
+V=wb['Valuation & Churn']; V.conditional_formatting.add('E8:E11',DataBarRule(start_type='num',start_value=0,end_type='max',color='C65911'))
+# band alternate rows in tables that were left white (Valuation churn table, projection rows, breakeven rows)
+def band(ws,r1,r2,c1,c2):
+    for r in range(r1,r2+1):
+        if (r-r1)%2==1:
+            for c in range(c1,c2+1):
+                cell=ws.cell(row=r,column=c)
+                if cell.fill is None or cell.fill.fgColor is None or cell.fill.fgColor.rgb in ('00000000',None,'FFFFFFFF'): cell.fill=BAND
+band(V,8,11,2,7); band(V,25,34,2,7)
+L=wb['Liminal Projection']; band(L,7,12,2,13); band(L,17,26,2,13); band(L,31,34,2,13)
+B=wb['PAT & FCF Breakeven']; band(B,7,29,2,12); band(B,37,50,2,12); band(B,57,73,2,12)
+band(C,14,20,2,7); band(S,7,9,2,7); band(S,14,17,2,7); band(S,23,25,2,6)
+Fi=wb['Financing & EPS']; band(Fi,15,32,2,7)
+for w in wb.worksheets:
+    for row in w.iter_rows():
+        for c in row:
+            if c.font.name!=FN: c.font=F(bold=c.font.bold,italic=c.font.italic,color=c.font.color,size=c.font.size or 11)
 wb.save('ETERNAL_Satoshi_Gate_Transaction_Model.xlsx'); print('saved')
