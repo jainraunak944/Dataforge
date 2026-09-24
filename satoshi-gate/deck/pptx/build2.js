@@ -132,13 +132,13 @@ function note(s,x,y,w,h,label,text,fill=NAVY){ rect(s,x,y,w,h,fill); T(s,x+0.15,
 
 // ===== SLIDE 6 FACTS VS ASSUMPTIONS =====
 { const s=slide('STRUCTURE','Case facts vs team assumptions','Keep the model auditable: separate facts, calculations and assumptions');
-  panel(s,0.45,1.4,4.05,4.35,'CASE FACTS — PAYTM');
-  tbl(s,0.55,1.85,3.85,[['Metric','Value'],['Market capitalization','₹1,18,750 Cr'],['Diluted shares','64 Cr'],['Cash','₹8,900 Cr'],['Gross debt','₹350 Cr'],['Revenue','₹8,450 Cr'],['EBITDA','₹640 Cr'],['PAT','₹480 Cr'],['Diluted EPS','₹7.50'],['Credit rating','CRISIL AA− Stable']],[52,48],10,0.36,{firstBold:false});
-  panel(s,4.65,1.4,4.05,4.35,'CASE FACTS — LIMINAL / DEAL');
-  tbl(s,4.75,1.85,3.85,[['Metric','Value'],['Headline acquisition value','₹4,000 Cr'],['Headline consideration','₹2,100 Cr cash + ₹1,900 Cr equity'],['ARR','₹220 Cr'],['Current PAT','~ breakeven'],['Four largest clients','60% of ARR'],['Full-acquisition churn','30–45%'],['Full-control capital drag','₹750 Cr annual FCF'],['UPI MDR benefit to Paytm','₹115 Cr/year incremental net revenue']],[48,52],10,0.36,{firstBold:false});
-  panel(s,8.85,1.4,4.03,4.35,'TEAM ASSUMPTIONS',BLUE);
-  bullets(s,9.0,1.85,1.85,3.85,['Initial ownership: **25%** midpoint','Indicative minority investment: **₹1,000 Cr** pro-rata','Initial funding: existing cash','Validation period','Minority/JV churn','Minority/JV regulatory capital treatment','Liminal ARR growth','EBITDA / PAT / FCF margins'],9.5,3);
-  bullets(s,10.95,1.85,1.85,3.85,['Debt cost and tax rate','WACC / required return','Integration costs','Synergies','MDR-to-PAT / FCF conversion','Call-option mechanics','Future-control valuation methodology'],9.5,3);
+  panel(s,0.45,1.4,3.6,4.35,'CASE FACTS — PAYTM');
+  tbl(s,0.55,1.85,3.4,[['Metric','Value'],['Market capitalization','₹1,18,750 Cr'],['Diluted shares','64 Cr'],['Cash','₹8,900 Cr'],['Gross debt','₹350 Cr'],['Revenue','₹8,450 Cr'],['EBITDA','₹640 Cr'],['PAT','₹480 Cr'],['Diluted EPS','₹7.50'],['Credit rating','CRISIL AA− Stable']],[52,48],10,0.36,{firstBold:false});
+  panel(s,4.2,1.4,3.6,4.35,'CASE FACTS — LIMINAL / DEAL');
+  tbl(s,4.3,1.85,3.4,[['Metric','Value'],['Headline acquisition value','₹4,000 Cr'],['Headline consideration','₹2,100 Cr cash + ₹1,900 Cr equity'],['ARR','₹220 Cr'],['Current PAT','~ breakeven'],['Four largest clients','60% of ARR'],['Full-acquisition churn','30–45%'],['Full-control capital drag','₹750 Cr annual FCF'],['UPI MDR benefit to Paytm','₹115 Cr/year incremental net revenue']],[48,52],10,0.36,{firstBold:false});
+  panel(s,7.95,1.4,4.93,4.35,'TEAM ASSUMPTIONS — with the values used in the model',BLUE);
+  bullets(s,8.08,1.85,2.35,3.85,['Initial ownership: **25%** midpoint','Indicative minority investment: **₹1,000 Cr** pro-rata','Initial funding: existing cash (**100%**, no debt/equity)','Validation period: **12 months**; option window months 12–24','Minority/JV churn: **0%** (client-consent gate)','Minority/JV regulatory capital treatment: **nil** (RBI gate; tested at ₹195 / ₹750 Cr)','Liminal ARR growth: **20%** p.a. (bear 10%, bull 30%)','EBITDA / PAT / FCF margins: **0% → 25%** (+5 pp/yr); PAT = 75% of EBITDA; FCF ≈ PAT'],8.5,2);
+  bullets(s,10.5,1.85,2.3,3.85,['Debt cost and tax rate: **8.5%** pre-tax; tax **25%**','Cash yield foregone: **6.0%** pre-tax','WACC / required return: **12%**; terminal growth 5%','Integration costs: **₹100 Cr** one-time; Phase-1 fees ₹15 Cr','Synergies: **₹0** in base case','MDR-to-PAT / FCF conversion: **80% × (1 − 25%) → ₹69 Cr/yr**','Call-option mechanics: cap **₹3,000 Cr** = ₹1,650 Cr upfront + ≤ ₹1,350 Cr earn-out (55–100% retained ARR)','Future-control valuation methodology: **min(cap, 75% × 18.2× × retained ARR)**'],8.5,2);
   rect(s,0.45,5.9,12.43,0.65,NAVY);
   T(s,0.6,5.9,7.9,0.65,'MODELING PRINCIPLE:   CASE FACT  ≠  DERIVED CALCULATION  ≠  TEAM ASSUMPTION',{fs:11.5,bold:true,color:WHITE,valign:'middle'});
   T(s,8.6,5.9,4.15,0.65,'Every material assumption must be **disclosed and sensitivity-tested**.',{fs:11.5,color:WHITE,valign:'middle',align:'right'});
@@ -184,24 +184,22 @@ function note(s,x,y,w,h,label,text,fill=NAVY){ rect(s,x,y,w,h,fill); T(s,x+0.15,
 
 // ===== SLIDE 9 PAT & FCF BREAKEVEN =====
 { const s=slide('FINANCIALS','PAT & FCF breakeven','The deal must clear two separate hurdles: accounting accretion and cash-flow viability');
-  panel(s,0.45,1.4,4.0,3.0,'1. ACCOUNTING / PAT TEST');
-  tbl(s,0.6,1.85,3.7,[['Incremental PAT =',''],['Liminal PAT',''],['+ Realized operating synergies',''],['− Financing costs',''],['− Integration / operating costs',''],['− Other incremental expenses','']],[100,0],10,0.3,{firstBold:false});
-  rect(s,0.6,3.75,3.7,0.5,PALE,LINE); T(s,0.6,3.75,3.7,0.5,'**Pro-Forma EPS = Pro-Forma PAT ÷ Diluted Shares**',{fs:10.5,align:'center',valign:'middle'});
-  panel(s,4.6,1.4,4.0,3.0,'2. CASH / FCF TEST');
-  tbl(s,4.75,1.85,3.7,[['Incremental FCF =',''],['Liminal FCF',''],['+ Realized cash synergies',''],['+ Applicable MDR cash contribution',''],['− **₹750 Cr capital drag**',''],['− Integration / other cash costs','']],[100,0],10,0.3,{firstBold:false});
-  rect(s,4.75,3.75,3.7,0.5,PALE,LINE); T(s,4.75,3.75,3.7,0.5,'**Starting position:** Liminal ≈ PAT breakeven → limited acquired earnings to offset dilution or financing costs',{fs:9,align:'center',valign:'middle'});
-  panel(s,8.75,1.4,4.13,3.0,'CRITICAL DISTINCTION — THE ₹115 Cr UPI MDR');
-  T(s,8.9,1.85,3.85,0.3,'The ₹115 Cr UPI MDR benefit is **incremental Paytm net revenue**. It is:',{fs:10.5});
-  bullets(s,8.9,2.35,3.85,0.9,['**not** automatically ₹115 Cr PAT','**not** automatically ₹115 Cr FCF','**not** created by acquiring Liminal'],10.5,2);
-  rect(s,8.9,3.3,3.85,0.95,PALE,LINE); T(s,9.0,3.3,3.65,0.95,'**Treatment:** model it separately as a Paytm standalone corporate benefit / offset, using an explicit revenue-to-PAT / FCF conversion assumption.',{fs:9.5,valign:'middle'});
-  panel(s,0.45,4.55,6.1,2.0,'WHAT THE CASE DOES NOT PROVIDE FOR LIMINAL');
-  chips(s,0.6,5.0,5.8,['FCF','margins','capex'],0.36,10); chips(s,0.6,5.42,5.8,['working capital','growth','financing costs'],0.36,10);
-  T(s,0.6,5.85,5.8,0.6,'Therefore, a specific breakeven year must be **assumption-driven and sensitivity-tested**.',{fs:10.5,valign:'middle'});
-  panel(s,6.78,4.55,6.1,2.0,'CONTROL-EXERCISE RULE',RED);
-  T(s,6.93,5.0,5.8,0.4,'Do **not** exercise control until the model demonstrates:',{fs:11});
-  rect(s,6.93,5.45,2.8,0.9,NAVY); T(s,7.03,5.45,2.6,0.9,'credible **PAT / EPS breakeven**',{fs:11,color:WHITE,align:'center',valign:'middle'});
-  T(s,9.73,5.45,0.5,0.9,'+',{fs:18,bold:true,color:NAVY,align:'center',valign:'middle'});
-  rect(s,10.23,5.45,2.5,0.9,NAVY); T(s,10.33,5.45,2.3,0.9,'credible **FCF breakeven** after regulatory capital requirements',{fs:10,color:WHITE,align:'center',valign:'middle'});
+  panel(s,0.45,1.4,4.0,2.5,'1. ACCOUNTING / PAT TEST');
+  tbl(s,0.6,1.82,3.7,[['Incremental PAT =',''],['Liminal PAT',''],['+ Realized operating synergies',''],['− Financing costs',''],['− Integration / operating costs',''],['− Other incremental expenses','']],[100,0],9.5,0.25,{firstBold:false});
+  rect(s,0.6,3.4,3.7,0.4,PALE,LINE); T(s,0.6,3.4,3.7,0.4,'**Pro-Forma EPS = Pro-Forma PAT ÷ Diluted Shares**',{fs:9.5,align:'center',valign:'middle'});
+  panel(s,4.6,1.4,4.0,2.5,'2. CASH / FCF TEST');
+  tbl(s,4.75,1.82,3.7,[['Incremental FCF =',''],['Liminal FCF',''],['+ Realized cash synergies',''],['+ Applicable MDR cash contribution',''],['− **₹750 Cr capital drag**',''],['− Integration / other cash costs','']],[100,0],9.5,0.25,{firstBold:false});
+  rect(s,4.75,3.4,3.7,0.4,PALE,LINE); T(s,4.75,3.4,3.7,0.4,'**Starting position:** Liminal ≈ PAT breakeven → limited acquired earnings to offset dilution or financing costs',{fs:8,align:'center',valign:'middle'});
+  panel(s,8.75,1.4,4.13,2.5,'CRITICAL DISTINCTION — THE ₹115 Cr UPI MDR');
+  T(s,8.9,1.82,3.85,0.3,'The ₹115 Cr UPI MDR benefit is **incremental Paytm net revenue**. It is:',{fs:9.5});
+  bullets(s,8.9,2.22,3.85,0.7,['**not** automatically ₹115 Cr PAT','**not** automatically ₹115 Cr FCF','**not** created by acquiring Liminal'],9.5,1);
+  rect(s,8.9,2.95,3.85,0.85,PALE,LINE); T(s,9.0,2.95,3.65,0.85,'**Treatment:** model it separately as a Paytm standalone corporate benefit / offset, using an explicit revenue-to-PAT / FCF conversion assumption (80% × (1 − 25%) → ₹69 Cr/yr; covers 15% of the drag gross, 9% after conversion).',{fs:8.5,valign:'middle'});
+  panel(s,0.45,4.0,12.43,1.95,'BREAKEVEN RESULTS FROM THE TRANSACTION MODEL (TA base: 20% ARR growth, margins to 25%, 6% cash yield, ₹750 Cr drag; MDR excluded as it is not deal-driven)');
+  tbl(s,0.6,4.42,12.13,[['Scenario','Year-1 EPS (₹)','PAT / EPS breakeven','Annual FCF breakeven','Cumulative cash by Y10 (₹ Cr)'],['Minority phase — 25% for ₹1,000 Cr','**6.84** (−8.9%)','Associate income covers foregone interest in **Y9**; EPS-dilutive by foregone cash yield only','Not achieved without dividends (−₹45 Cr/yr foregone interest)','(1,450) — recovered through equity value / exit, not cash yield'],['Full control — 0% churn','6.08 (−18.9%)','**Year 5**','**Not within 10 years**','(9,481)'],['Full control — 30% churn','5.46 (−27.2%)','**Year 7**','**Not within 10 years**','(9,867)'],['Full control — base 37.5% churn','5.29 (−29.4%)','**Year 8**','**Not within 10 years**','(9,965)'],['Full control — 45% churn','5.13 (−31.6%)','**Year 8**','**Not within 10 years**','(10,062)']],[24,13,25,20,18],8,0.18,{firstBold:true});
+  panel(s,0.45,6.05,6.1,0.6,'WHAT THE CASE DOES NOT PROVIDE FOR LIMINAL');
+  T(s,0.6,6.38,5.8,0.26,'**FCF · margins · capex · working capital · growth · financing costs** → a specific breakeven year is assumption-driven and sensitivity-tested (values above).',{fs:8.5,valign:'middle'});
+  panel(s,6.78,6.05,6.1,0.6,'CONTROL-EXERCISE RULE',RED);
+  T(s,6.93,6.38,5.8,0.26,'Do **not** exercise control until the model demonstrates credible **PAT / EPS breakeven** + credible **FCF breakeven** after regulatory capital requirements.',{fs:8.5,valign:'middle'});
 }
 
 // ===== SLIDE 10 RETENTION & GOVERNANCE =====
@@ -319,4 +317,27 @@ function note(s,x,y,w,h,label,text,fill=NAVY){ rect(s,x,y,w,h,fill); T(s,x+0.15,
   rect(s,7.35,5.8,5.38,0.6,NAVY); T(s,7.45,5.8,5.2,0.6,'**END STATE:** Control becomes an earned option — not a day-one commitment.',{fs:10.5,color:WHITE,valign:'middle',align:'center'});
 }
 
-P.writeFile({fileName:'ETERNAL_Project_Satoshi_Gate_v3.pptx'}).then(()=>console.log('written',n,'slides'));
+// ===== APPENDIX A8 FUNDING ENVELOPE + PARTNERSHIP =====
+{ const s=slide('APPENDIX','Appendix A8','Full-control funding envelope · Commercial partnership terms');
+  panel(s,0.45,1.4,7.9,3.6,'A8 · FULL-CONTROL FUNDING CASES — year-1 EPS from the ₹7.50 baseline (team assumptions: 6% cash yield, 8.5% debt, 25% tax, 37.5% churn)');
+  tbl(s,0.55,1.85,7.7,[['Funding case (₹ Cr)','Cash remaining','Gross debt','New shares (Cr)','Y1 EPS','vs ₹7.50','Gross debt / EBITDA'],['Case mix: 2,100 cash + 1,900 equity','6,800','350','1.02','**₹5.29**','−29%','0.5×'],['Mix: 1,400 cash + 700 debt + 1,900 equity','7,500','1,050','1.02','₹5.09','−32%','1.6×'],['All equity 4,000','8,900','350','2.16','₹6.63','−12%','0.5×'],['2,100 debt + 1,900 equity','8,900','2,450','1.02','₹4.69','−38%','**3.8× — breaches**'],['All cash 4,000','**4,900**','350','—','₹4.04','−46%','0.5×'],['Share-count-only view of case mix','6,800','350','1.02','₹7.38','−1.6%','0.5×']],[30,12,11,12,10,10,15],9,0.3,{firstBold:false});
+  rect(s,0.55,4.25,7.7,0.65,NAVY); T(s,0.65,4.25,7.5,0.65,'**Preferred funding envelope if control is eventually exercised:** cash ≤ ₹1,400 Cr, new debt ≤ ₹700 Cr (gross debt / EBITDA ≤ 1.5×), balance in contingent equity via the earn-out; liquidity floor ₹5,000 Cr; never an unconditional ₹4,000 Cr.',{fs:9.5,color:WHITE,valign:'middle'});
+  panel(s,8.5,1.4,4.38,3.6,'A8 · COMMERCIAL PARTNERSHIP — RIGHTS SECURED WITHOUT CONTROL');
+  bullets(s,8.65,1.85,4.1,3.1,['**Custody / MPC access** for agreed Paytm use cases: tokenized treasury, e₹ / CBDC settlement, cross-border','**Service-level standards** identical to third-party institutional clients','**Pricing framework** at arm’s length, benchmarked annually','**Data segregation**: no automatic Paytm access to client data or key material','**Duration / renewal**: multi-year term co-terminous with the option window','**Termination rights** on change of control of either party, regulatory prohibition or material breach'],9,2);
+  panel(s,0.45,5.15,12.43,1.4,'HOW TO READ');
+  T(s,0.6,5.55,12.1,0.9,'Equity is the least EPS-dilutive currency at Paytm’s ~247× trailing P/E, but a fixed-value issuance is exposed to share-price compression; debt-funding the cash leg breaches rating headroom; an all-cash deal breaches the liquidity floor. No mix rescues a full acquisition today — which is why the recommendation stages the capital and pays the control tranche only against retained ARR.',{fs:9.5});
+}
+
+// ===== APPENDIX A9 VALUATION CROSS-CHECK + STRIKE =====
+{ const s=slide('APPENDIX','Appendix A9','Independent valuation cross-check · Call-option strike');
+  panel(s,0.45,1.4,6.6,5.15,'A9 · INDEPENDENT VALUATION CROSS-CHECK — standalone DCF (team assumptions: 12% WACC, 5% terminal growth, margin → 25%, no churn, no drag)');
+  tbl(s,0.55,1.85,6.4,[['Liminal ARR growth, 10 years','DCF value (₹ Cr)','Multiple of ARR','Supports ₹4,000 Cr?'],['10% (bear)','811','3.7×','No'],['20% (base)','**1,753**','**8.0×**','**No**'],['30% (bull)','3,658','16.6×','No'],['**31.3%** — break-even growth','4,000','18.2×','Only with zero churn and no drag'],['40%','7,345','33.4×','Yes']],[34,22,20,24],9.5,0.33,{firstBold:false});
+  tbl(s,0.55,4.05,6.4,[['Cross-check','Value'],['Headline offer','₹4,000 Cr'],['Standalone DCF, base case','₹1,753 Cr'],['Implied premium of headline over base DCF','**+128%**'],['WACC 11% / 14% (base growth)','₹2,127 Cr / ₹1,265 Cr'],['10-year NPV of ₹750 Cr drag at WACC','₹4,238 Cr — exceeds the price on its own']],[55,45],9.5,0.3,{firstBold:false});
+  T(s,0.6,6.0,6.3,0.5,'Conclusion: 18.2× is supportable only if Liminal compounds at ~31% for a decade with zero churn and no capital drag. The valuation is therefore acceptable only as a **cap reached through retained ARR**, never as an unconditional price.',{fs:9,italic:true,color:NAVY});
+  panel(s,7.2,1.4,5.68,5.15,'A9 · CALL-OPTION STRIKE — precise mechanics');
+  rect(s,7.35,1.85,5.38,0.75,NAVY); T(s,7.45,1.85,5.2,0.75,'**Control price = min( ₹3,000 Cr cap ,  75% × 18.2× × retained ARR )**\npaid as ₹1,650 Cr at exercise + earn-out ≤ ₹1,350 Cr, linear between 55% and 100% retained ARR (measured at month 18 post-control)',{fs:9.5,color:WHITE,valign:'middle'});
+  tbl(s,7.35,2.75,5.38,[['Post-control churn','Retained ARR','Earn-out','Control price','Total incl. Phase 1'],['0%','100%','₹1,350 Cr','₹3,000 Cr','₹4,000 Cr'],['20%','80%','₹750 Cr','₹2,400 Cr','₹3,400 Cr'],['30%','70%','₹450 Cr','**₹2,100 Cr**','₹3,100 Cr'],['45%','55%','₹0','**₹1,650 Cr**','₹2,650 Cr'],['>45%','<55%','₹0','₹1,650 Cr floor — no exercise','—']],[20,18,18,24,20],9,0.3,{firstBold:false});
+  bullets(s,7.35,4.75,5.38,1.7,['Adjusted for **regulatory outcome**: no exercise unless written capital treatment is incorporated into the FCF model','Adjusted for **performance**: PAT and FCF breakeven demonstrated before exercise','**Valuation cap** never exceeded: maximum total consideration = headline ₹4,000 Cr; maximum unconditional = ₹1,000 Cr','Earn-out settled in Paytm shares within a collar, or cash at Paytm’s election'],9,2);
+}
+
+P.writeFile({fileName:'ETERNAL_Project_Satoshi_Gate_v4.pptx'}).then(()=>console.log('written',n,'slides'));
